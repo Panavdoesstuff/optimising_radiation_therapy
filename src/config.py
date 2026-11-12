@@ -45,3 +45,16 @@ D_CAP_LADDER = 1.15         # rung 2
 # Paper's bound (50, normalised dose) scaled by 68 is 3400; that BINDS (78 beamlets at bound, objective +4.7%).
 # The unbounded optimum peaks at ~7605, so 4x the scaled paper value never binds. Deviation noted in SUMMARY.md.
 X_MAX_EASY = 4 * X_MAX_PAPER * RX_T68   # 13600
+
+# Beam angle selection (hard problem, promoted from stretch).
+# 18-degree spacing (20 candidates) is used instead of the brief's 20/10 degrees because it is
+# the only nearby spacing that contains the easy plan's beams (0, 72, 144, 216, 288), so the easy
+# plan is a feasible point of the K=5 MILP.
+BAO_CANDIDATES = list(range(0, 360, 18))
+BAO_K_VALUES = [3, 4, 5, 6, 7, 8, 9]
+BAO_TIME_LIMIT = 600.0
+
+# Dose-volume constraint kept as a secondary, bracketed hard result (see SUMMARY.md):
+# the exact MILP stalled at the root for every tighter limit tried; rectum <=17% above 50 Gy
+# is the tightest limit for which a feasible plan was found (fix-and-resolve).
+DVC_FINAL = [("Rectum", 50.0, 0.17)]

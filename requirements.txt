@@ -3,3 +3,4 @@ scipy>=1.9
 h5py
 matplotlib
 pytest
+highspy  # optional: MILP warm starts
