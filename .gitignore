@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+cache/
+# Data (never commit; ~2 GB)
+data/
+PROSTATE/
+TG119/
+Prostate_Dicom/
+codeSnippetsCortDataset/
+*.mat
