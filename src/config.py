@@ -38,3 +38,10 @@ D_CAP_FACTOR = 1.1          # d_cap = 1.1 * 68 = 74.8
 WEIGHTS = {"Rectum": 1.0, "Bladder": 0.6, "BODY": 0.6}
 X_MAX_PAPER = 50.0          # paper's bound, in normalised-dose units
 SEED = 0
+
+# Easy problem: slack penalty used only on rungs 3/4 of the feasibility ladder
+RHO_SLACK = 100.0           # cost per Gy of mean target shortfall (only if the ladder needs it)
+D_CAP_LADDER = 1.15         # rung 2
+# Paper's bound (50, normalised dose) scaled by 68 is 3400; that BINDS (78 beamlets at bound, objective +4.7%).
+# The unbounded optimum peaks at ~7605, so 4x the scaled paper value never binds. Deviation noted in SUMMARY.md.
+X_MAX_EASY = 4 * X_MAX_PAPER * RX_T68   # 13600

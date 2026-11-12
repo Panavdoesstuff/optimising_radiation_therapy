@@ -1,0 +1,151 @@
+{
+  "easy": {
+    "params": {
+      "w_R": 1.0,
+      "w_B": 0.6,
+      "w_N": 0.6,
+      "rx68": 68.0,
+      "rx56": 56.0,
+      "d_cap_factor": 1.1,
+      "x_max": 13600.0,
+      "rho": 100.0,
+      "slack56": false,
+      "slack68": false
+    },
+    "d_cap": 74.80000000000001,
+    "angles": [
+      0,
+      72,
+      144,
+      216,
+      288
+    ],
+    "set_mode": "disjoint",
+    "set_sizes": {
+      "PTV_68": 6770,
+      "PTV_56": 8483,
+      "Rectum": 1643,
+      "Bladder": 9708,
+      "BODY": 675120
+    },
+    "model": {
+      "n_vars": 721,
+      "n_constraints": 41857,
+      "n_binaries": 0,
+      "nnz": 6890922
+    },
+    "verification": {
+      "checks": {
+        "x >= 0": {
+          "max_violation": -0.0,
+          "relative": -0.0,
+          "ok": true
+        },
+        "x <= x_max": {
+          "max_violation": 0.0,
+          "relative": 0.0,
+          "ok": true
+        },
+        "T68 d>=rx68": {
+          "max_violation": 2.1884716261411086e-12,
+          "relative": 3.218340626678101e-14,
+          "ok": true
+        },
+        "T56 d>=rx56": {
+          "max_violation": 2.984990032928181e-11,
+          "relative": 5.330339344514608e-13,
+          "ok": true
+        },
+        "d<=d_cap on T68,T56,R,B": {
+          "max_violation": 1.0203393685515039e-11,
+          "relative": 1.3640900649084275e-13,
+          "ok": true
+        }
+      },
+      "all_ok": true,
+      "objective_recomputed": 51.82402404298897,
+      "objective_terms_mean_dose": {
+        "Rectum": 27.582639327174252,
+        "Bladder": 31.00038374038769,
+        "BODY": 9.401924119303505
+      },
+      "objective_terms_weighted": {
+        "Rectum": 27.582639327174252,
+        "Bladder": 18.600230244232613,
+        "BODY": 5.6411544715821025
+      },
+      "slack_penalty": 0.0,
+      "solver_objective": 51.824024042988924,
+      "objective_rel_diff": 8.226409456402214e-16,
+      "dvc": {},
+      "key_variables": {
+        "n_nonzero": 375,
+        "n_beamlets": 721,
+        "n_at_upper_bound": 0,
+        "max_intensity": 7604.569890880485,
+        "mean_intensity": 1278.9611343539952,
+        "mean_nonzero_intensity": 2459.0159409846146,
+        "total_intensity_per_beam": {
+          "0": 230031.84104454267,
+          "72": 205635.1129347409,
+          "144": 131212.7769678897,
+          "216": 88603.69929975,
+          "288": 266647.5476223073
+        }
+      },
+      "dose_stats": {
+        "PTV_68": {
+          "n": 6770,
+          "min": 67.99999999999781,
+          "mean": 71.54718012108903,
+          "max": 74.80000000001021,
+          "D95": 68.58036976875337,
+          "frac_below_rx": 0.0
+        },
+        "PTV_56": {
+          "n": 8483,
+          "min": 55.99999999997015,
+          "mean": 65.41803446994187,
+          "max": 74.80000000000126,
+          "D95": 57.22836119411643,
+          "frac_below_rx": 0.0
+        },
+        "Rectum": {
+          "n": 1643,
+          "min": 0.008987296119114904,
+          "mean": 27.582639327174252,
+          "max": 70.59795853770194
+        },
+        "Bladder": {
+          "n": 9708,
+          "min": 0.042151021997459986,
+          "mean": 31.00038374038769,
+          "max": 74.80000000000001
+        },
+        "BODY": {
+          "n": 675120,
+          "min": 0.0,
+          "mean": 9.401924119303505,
+          "max": 124.5931889974487
+        }
+      },
+      "solver": {
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "dual_objective": 51.82402404298979,
+        "duality_gap": -8.668621376273222e-13,
+        "solve_time": 19.056347846984863,
+        "iterations": 4666,
+        "ladder_level": 1,
+        "ladder_desc": "full model",
+        "ladder_log": [
+          {
+            "level": 1,
+            "desc": "full model",
+            "status": 0,
+            "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+          }
+        ]
+      }
+    }
+  }
+}
