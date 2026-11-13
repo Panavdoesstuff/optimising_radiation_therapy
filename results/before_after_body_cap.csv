@@ -1,0 +1,11 @@
+plan,objective_no_cap,objective_cap,objective_change_pct,max_body_no_cap,max_body_cap
+Easy LP (5 equispaced beams),51.824,52.534,1.37,124.6,74.8
+Rectum DVC plan (fix-and-resolve),52.217,52.683,0.89,138.6,74.8
+"Best plan, K=3 beams",48.995,60.789,24.07,128.8,74.8
+"Best plan, K=4 beams",45.933,52.931,15.24,170.6,74.8
+"Best plan, K=5 beams",42.326,45.451,7.38,188.6,74.8
+"Best plan, K=6 beams",39.615,,,184.0,
+"Best plan, K=7 beams",37.259,,,176.7,
+"Best plan, K=8 beams",35.706,,,180.4,
+"Best plan, K=9 beams",35.558,,,148.2,
+All 20 beams (LP),32.455,32.672,0.67,169.8,74.8

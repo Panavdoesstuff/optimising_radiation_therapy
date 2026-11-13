@@ -1,0 +1,12 @@
+plan,beams,objective,max_rel_violation,max_body_dose,dvc_ok,all_checks_pass
+Easy LP (5 equispaced beams),0 72 144 216 288,52.5344,2.0e-12,74.8,,True
+Rectum DVC plan (easy beams),0 72 144 216 288,52.6829,7.2e-13,74.8,True,True
+Certified best K=3 of 10 (enumeration),72 180 288,63.1642,2.1e-11,74.8,,True
+Certified best K=4 of 10 (enumeration),108 144 180 252,55.2976,3.6e-10,74.8,,True
+Certified best K=5 of 10 (enumeration),108 144 180 216 252,47.205,7.3e-12,74.8,,True
+Certified best K=6 of 10 (enumeration),72 108 144 180 216 252,44.0657,1.2e-09,74.8,,True
+Best found K=3 of 20 (MILP sweep),90 180 270,60.7891,3.5e-11,74.8,,True
+Best found K=4 of 20 (MILP sweep),90 126 180 270,52.9314,1.7e-13,74.8,,True
+Best found K=5 of 20 (MILP sweep),18 90 126 180 252,45.4514,3.8e-12,74.8,,True
+Best found K=5 of 20 (swap search),90 126 180 198 234,44.2032,8.5e-12,74.8,,True
+Final: certified best 5 + rectum limit,108 144 180 216 252,47.205,2.2e-12,74.8,True,True

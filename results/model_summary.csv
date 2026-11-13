@@ -1,0 +1,13 @@
+model,kind,n_vars,n_constraints,n_binaries,nnz,body_rows,solve_time_s,status,gap,lower_bound,objective,plan_source
+"Easy LP (5 equispaced beams), body cap by row generation",LP,721,47637,0,7028867,5785 of 675120,62.4,optimal,duality gap 9.6e-12,,52.5344,LP optimum (3 row-generation rounds)
+"Rectum DVC: fix-and-resolve LP, iter 1",LP (approximation),721,49019,0,,,48.3,optimal,"bracket [52.534, 52.683]",52.5344,52.6829,fix-and-resolve (approximation)
+"Rectum DVC: fix-and-resolve LP, iter 2",LP (approximation),721,49019,0,,,23.7,optimal,"bracket [52.534, 52.683]",52.5344,52.6829,fix-and-resolve (approximation)
+"Beam selection MILP, K=3 of 20 (every 3rd row)",MILP,2854,19336,20,9345228,subsampled pool,602.9,Time limit reached,46.3% (nodes 0),32.6716,60.7891,heuristic start → exact LP with body row generation
+"Beam selection MILP, K=4 of 20 (every 3rd row)",MILP,2854,25217,20,9924648,subsampled pool,601.5,Time limit reached,38.3% (nodes 0),32.6716,52.9314,MILP → exact LP with body row generation
+"Beam selection MILP, K=5 of 20 (every 3rd row)",MILP,2854,26153,20,9997404,subsampled pool,1802.6,Time limit reached,28.1% (nodes 87),32.6716,45.4514,MILP → exact LP with body row generation
+"Beam selection by enumeration, K=3 of 10 (every 36°)",120 exact LPs,~140 per beam,row generation (all rows),—,,shared pool,1720.0,"114 solved, 6 infeasible, 0 unresolved",0 (certified),63.1642,63.1642,enumeration; every subset verified on the full grid (max viol 1.4e-07)
+"Beam selection by enumeration, K=4 of 10 (every 36°)",210 exact LPs,~140 per beam,row generation (all rows),—,,shared pool,5244.0,"210 solved, 0 infeasible, 0 unresolved",0 (certified),55.2976,55.2976,enumeration; every subset verified on the full grid (max viol 9.9e-08)
+"Beam selection by enumeration, K=5 of 10 (every 36°)",252 exact LPs,~140 per beam,row generation (all rows),—,,shared pool,14546.0,"252 solved, 0 infeasible, 0 unresolved",0 (certified),47.205,47.205,enumeration; every subset verified on the full grid (max viol 1.1e-08)
+"Beam selection by enumeration, K=6 of 10 (every 36°)",210 exact LPs,~140 per beam,row generation (all rows),—,,shared pool,7623.0,"210 solved, 0 infeasible, 0 unresolved",0 (certified),44.0657,44.0657,enumeration; every subset verified on the full grid (max viol 1.5e-07)
+"Swap local search, K=5 of 20 (±18° moves)",42 exact LPs,,row generation (all rows),—,,shared pool,,local optimum,26.1% (not certified),32.6716,44.2032,from certified 36-degree optimum
+Final: certified best 5 beams + body cap + rectum limit,LP (approximation),,,0,,row generation,,feasible,"bracket [47.205, 47.205]",47.205,47.205,fix-and-resolve on the certified beams

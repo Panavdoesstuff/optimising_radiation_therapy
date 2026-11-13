@@ -38,7 +38,7 @@ d_final = P_bao.dose(x_final) if has_final else None
 alpha_dvc = config.DVC_FINAL[0][2]
 lab_easy = "Easy LP: 5 equispaced beams"
 lab_bao = f"Hard: certified best 5 of 10 beams ({', '.join(map(str, bao_angles))}°)"
-lab_dvc = f"Hard (secondary): + rectum ≤{alpha_dvc:.0%} > 50 Gy"
+lab_dvc = f"Equispaced beams + rectum ≤{alpha_dvc:.0%} above 50 Gy"
 STRUCTS = ["PTV_68", "PTV_56", "Rectum", "Bladder", "BODY"]
 plans = [("easy", lab_easy, d_easy), ("bao", lab_bao, d_bao)] + ([("dvc", lab_dvc, d_dvc)] if has_dvc else [])
 
@@ -71,7 +71,7 @@ V_e, V_b = vol(d_easy), vol(d_bao)
 tops = [("Easy LP", V_e), ("Hard: certified best 5 beams", V_b)]
 diffs = [("Certified best 5 − easy", V_b - V_e)]
 if has_dvc:
-    V_d = vol(d_dvc); tops.append(("Hard: + rectum DVC", V_d)); diffs.append(("Rectum DVC − easy", V_d - V_e))
+    V_d = vol(d_dvc); tops.append(("Equispaced + rectum limit", V_d)); diffs.append(("Equispaced + limit − easy", V_d - V_e))
 vmax = max(V[:, :, z].max() for _, V in tops)
 plots.fig_dose_maps(R / "fig2_dose_maps.png", tops, masks, z, diffs, crop, vmax)
 
@@ -91,7 +91,7 @@ t_all = dict(Rectum=sp_["w_R"] * red.cost["R"] @ x_all, Bladder=sp_["w_B"] * red
 v_easy = res["easy"]["verification"]
 rows4 = [("Easy LP\n5 equispaced beams", terms(v_easy), "")]
 if has_dvc:
-    rows4.append(("Hard: rectum DVC\n(fix-and-resolve)", terms(res["hard_dvc"]["verification"]), "approximation, feasible"))
+    rows4.append(("Equispaced beams\n+ rectum limit", terms(res["hard_dvc"]["verification"]), "approximation"))
 v_cert = verify.verify(P_bao, sets, easy_lp_spec, x_bao)
 rows4.append(("Hard: best 5 of 10 beams\n(certified, enumeration)", terms(v_cert), "optimal, gap 0"))
 if swap_final.get("swap_search"):
@@ -99,7 +99,7 @@ if swap_final.get("swap_search"):
                   f"not certified; gap {swap_final['swap_search']['gap']:.0%}"))
 if has_final:
     rows4.append(("Final: certified 5 beams\n+ rectum limit", terms(swap_final["final_plan"]["verification"]),
-                  "fix-and-resolve, feasible"))
+                  "limit already met: costs 0"))
 rows4.append(("All 20 beams (LP)\nno beam limit", t_all, "lower bound for any K"))
 plots.fig_price(R / "fig4_price_of_realism.png", rows4, ref_label="Easy LP\n5 equispaced beams")
 
@@ -124,8 +124,11 @@ dist_r = dist3.ravel(order="F")[sets["Rectum"]]
 dproj = np.where(rect3, dist3, np.inf).min(axis=1)               # min over rl -> [ap, si]
 dproj = np.where(np.isfinite(dproj), dproj, np.nan).T             # -> [si, ap]
 plots.fig_rectum_distance(R / "fig6_rectum_distance.png", dproj, ptv3.any(axis=1).T, dist_r,
-                          [("Easy LP", d_easy[sets["Rectum"]])] + ([(f"Rectum DVC plan (≤{alpha_dvc:.0%})", d_dvc[sets["Rectum"]])] if has_dvc else []),
-                          50.0, alpha_dvc)
+                          [("Easy LP (equispaced beams)", d_easy[sets["Rectum"]])]
+                          + ([(f"Equispaced beams + limit ≤{alpha_dvc:.0%}", d_dvc[sets["Rectum"]])] if has_dvc else [])
+                          + [("Certified best 5 beams", d_bao[sets["Rectum"]])],
+                          50.0, alpha_dvc,
+                          title="Rectal dose vs distance to the PTV, by plan")
 r_alpha = float(np.percentile(dist_r, 100 * alpha_dvc))
 hot = d_dvc[sets["Rectum"]] > 50 * (1 + verify.REL_TOL) if has_dvc else d_easy[sets["Rectum"]] > 50
 rect_dist_stats = dict(alpha=alpha_dvc, distance_at_alpha_mm=r_alpha,

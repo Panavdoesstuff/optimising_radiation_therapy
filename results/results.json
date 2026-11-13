@@ -354,5 +354,97 @@
         ]
       }
     }
+  },
+  "enumeration": {
+    "candidates": [
+      0,
+      36,
+      72,
+      108,
+      144,
+      180,
+      216,
+      252,
+      288,
+      324
+    ],
+    "per_K": {
+      "3": {
+        "n": 120,
+        "solved": 114,
+        "infeasible": 6,
+        "unresolved": 0,
+        "opt": 63.16423646703944,
+        "angles": [
+          72,
+          180,
+          288
+        ],
+        "lp_time": 1720.0314490795135,
+        "max_viol": 1.414853027416912e-07
+      },
+      "4": {
+        "n": 210,
+        "solved": 210,
+        "infeasible": 0,
+        "unresolved": 0,
+        "opt": 55.2976092387842,
+        "angles": [
+          108,
+          144,
+          180,
+          252
+        ],
+        "lp_time": 5243.769215106964,
+        "max_viol": 9.860737432936568e-08
+      },
+      "5": {
+        "n": 252,
+        "solved": 252,
+        "infeasible": 0,
+        "unresolved": 0,
+        "opt": 47.204994281267524,
+        "angles": [
+          108,
+          144,
+          180,
+          216,
+          252
+        ],
+        "lp_time": 14546.36183643341,
+        "max_viol": 1.0536842636505689e-08
+      },
+      "6": {
+        "n": 210,
+        "solved": 210,
+        "infeasible": 0,
+        "unresolved": 0,
+        "opt": 44.065704366010834,
+        "angles": [
+          72,
+          108,
+          144,
+          180,
+          216,
+          252
+        ],
+        "lp_time": 7622.978812932968,
+        "max_viol": 1.5236292550856553e-07
+      }
+    }
+  },
+  "rectum_distance": {
+    "alpha": 0.17,
+    "distance_at_alpha_mm": 6.70730950530837,
+    "frac_within_3mm": 0.06451612903225806,
+    "frac_within_6mm": 0.15276932440657334,
+    "hot_voxels_median_distance_mm": 4.2423578538355295,
+    "hot_voxels_max_distance_mm": 10.815211605881782
+  },
+  "all10_lp": {
+    "objective": 40.48249999756849,
+    "converged": true,
+    "y_relaxation_sum": 3.3237856164003903,
+    "y20_relaxation_sum": 5.342447748842448
   }
 }

@@ -1,0 +1,13 @@
+== swap search from certified 36-degree optimum: [108, 144, 180, 216, 252]
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+    [108, 144, 180, 216, 252]: 47.205 (16s)
+    [90, 144, 180, 216, 252]: 47.8358 (15s)
+    [126, 144, 180, 216, 252]: 51.3379 (25s)
+    [108, 126, 180, 216, 252]: 46.9757 (19s)
+  improved -> [108, 126, 180, 216, 252] 46.9757
+    [90, 126, 180, 216, 252]: 46.0349 (18s)
+  improved -> [90, 126, 180, 216, 252] 46.0349
+    [72, 126, 180, 216, 252]: 51.0654 (21s)
+    [90, 108, 180, 216, 252]: 46.7466 (16s)
+    [90, 126, 162, 216, 252]: 49.4041 (25s)

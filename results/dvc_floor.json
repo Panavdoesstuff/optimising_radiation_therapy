@@ -1,0 +1,60 @@
+{
+  "organ": "Rectum",
+  "t": 50.0,
+  "n_voxels": 1643,
+  "easy_n_above": 307,
+  "n_forced": 14,
+  "V_floor": 0.00852099817407182,
+  "n_solves": 22,
+  "n_unresolved": 0,
+  "n_not_attempted": 208,
+  "n_ruled_out": 85,
+  "forced_voxels": [
+    2148841,
+    2182513,
+    2014157,
+    2183065,
+    2013053,
+    2081314,
+    1979933,
+    1878735,
+    1912406,
+    1979749,
+    2013604,
+    1810839,
+    1911670,
+    1979565
+  ],
+  "limit_sweep": [
+    {
+      "alpha": 0.16,
+      "result": "no plan found (heuristic; not a proof)"
+    },
+    {
+      "alpha": 0.15,
+      "result": "no plan found (heuristic; not a proof)"
+    },
+    {
+      "alpha": 0.14,
+      "result": "no plan found (heuristic; not a proof)"
+    },
+    {
+      "alpha": 0.13,
+      "result": "no plan found (heuristic; not a proof)"
+    },
+    {
+      "alpha": 0.12,
+      "result": "no plan found (heuristic; not a proof)"
+    },
+    {
+      "alpha": 0.11,
+      "result": "no plan found (heuristic; not a proof)"
+    },
+    {
+      "alpha": 0.1,
+      "result": "no plan found (heuristic; not a proof)"
+    }
+  ],
+  "time": 7237.234955072403,
+  "note": "floor uses the body cap on the easy plan's generated rows only (a relaxation), so it is valid"
+}

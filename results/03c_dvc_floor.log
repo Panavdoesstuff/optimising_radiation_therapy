@@ -1,0 +1,35 @@
+Rectum: 1643 voxels; easy plan has 307 above 50.0 Gy -> checking each
+    28 of 307 ruled out by the witness plans
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+    witness round 1: ruled out 30; open 249 (86s)
+    witness round 2: ruled out 1; open 248 (155s)
+    group 1/6: ruled out 16; open 232 (264s)
+    group 2/6: ruled out 4; open 228 (358s)
+    group 3/6: ruled out 4; open 224 (488s)
+    group 4/6: ruled out 1; open 223 (569s)
+    group 5/6: ruled out 0; open 223 (679s)
+    group 6/6: ruled out 1; open 222 (792s)
+    solve 9: voxel 302 bound 63.91 -> forced; open 221, forced 1 (1289s)
+    solve 10: voxel 306 bound 65.85 -> forced; open 220, forced 2 (1484s)
+    solve 11: voxel 289 bound 64.76 -> forced; open 219, forced 3 (1942s)
+    solve 12: voxel 304 bound 64.61 -> forced; open 218, forced 4 (2038s)
+    solve 13: voxel 296 bound 64.15 -> forced; open 217, forced 5 (2252s)
+    solve 14: voxel 295 bound 64.12 -> forced; open 216, forced 6 (2374s)
+    solve 15: voxel 279 bound 64.08 -> forced; open 215, forced 7 (3086s)
+    solve 16: voxel 294 bound 64.96 -> forced; open 214, forced 8 (3414s)
+    solve 17: voxel 273 bound 63.56 -> forced; open 213, forced 9 (4276s)
+    solve 18: voxel 285 bound 63.61 -> forced; open 212, forced 10 (4512s)
+    solve 19: voxel 305 bound 63.32 -> forced; open 211, forced 11 (4661s)
+    solve 20: voxel 277 bound 63.31 -> forced; open 210, forced 12 (5103s)
+    solve 21: voxel 300 bound 64.92 -> forced; open 209, forced 13 (5549s)
+    solve 22: voxel 254 bound 63.14 -> forced; open 208, forced 14 (6456s)
+floor done in 6456s: 14 voxels forced above 50.0 Gy (V50 >= 0.85%); 22 solves; unresolved 0
+  alpha 0.16: no plan found by fix-and-resolve
+  alpha 0.15: no plan found by fix-and-resolve
+  alpha 0.14: no plan found by fix-and-resolve
+  alpha 0.13: no plan found by fix-and-resolve
+  alpha 0.12: no plan found by fix-and-resolve
+  alpha 0.11: no plan found by fix-and-resolve
+  alpha 0.10: no plan found by fix-and-resolve
+done

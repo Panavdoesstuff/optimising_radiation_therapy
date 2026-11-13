@@ -1,0 +1,81 @@
+== swap search from certified 36-degree optimum: [108, 144, 180, 216, 252]
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+    [108, 144, 180, 216, 252]: 47.205 (16s)
+    [90, 144, 180, 216, 252]: 47.8358 (15s)
+    [126, 144, 180, 216, 252]: 51.3379 (25s)
+    [108, 126, 180, 216, 252]: 46.9757 (19s)
+  improved -> [108, 126, 180, 216, 252] 46.9757
+    [90, 126, 180, 216, 252]: 46.0349 (18s)
+  improved -> [90, 126, 180, 216, 252] 46.0349
+    [72, 126, 180, 216, 252]: 51.0654 (20s)
+    [90, 108, 180, 216, 252]: 46.7466 (15s)
+    [90, 126, 162, 216, 252]: 49.4041 (24s)
+    [90, 126, 198, 216, 252]: 49.4234 (26s)
+    [90, 126, 180, 198, 252]: 45.3585 (17s)
+  improved -> [90, 126, 180, 198, 252] 45.3585
+    [72, 126, 180, 198, 252]: 50.0447 (17s)
+    [108, 126, 180, 198, 252]: 47.9827 (18s)
+    [90, 108, 180, 198, 252]: 45.8129 (14s)
+    [90, 144, 180, 198, 252]: 46.9565 (16s)
+    [90, 126, 162, 198, 252]: 47.4072 (20s)
+    [90, 126, 180, 198, 234]: 44.2032 (26s)
+  improved -> [90, 126, 180, 198, 234] 44.2032
+    [72, 126, 180, 198, 234]: 49.2758 (24s)
+    [108, 126, 180, 198, 234]: 50.2413 (24s)
+    [90, 108, 180, 198, 234]: 45.7735 (18s)
+    [90, 144, 180, 198, 234]: 46.5678 (19s)
+    [90, 126, 162, 198, 234]: 46.1729 (19s)
+    [90, 126, 180, 216, 234]: 46.7683 (16s)
+    [90, 126, 180, 198, 216]: 48.7478 (18s)
+== swap search from earlier best 20-candidate plan (MILP): [18, 90, 126, 180, 252]
+    [18, 90, 126, 180, 252]: 45.4514 (13s)
+    [0, 90, 126, 180, 252]: 46.9287 (17s)
+    [36, 90, 126, 180, 252]: 46.9757 (20s)
+    [18, 72, 126, 180, 252]: 50.884 (19s)
+    [18, 108, 126, 180, 252]: 47.9343 (21s)
+    [18, 90, 108, 180, 252]: 46.6959 (17s)
+    [18, 90, 144, 180, 252]: 47.6341 (21s)
+    [18, 90, 126, 162, 252]: 47.2295 (22s)
+    [18, 90, 126, 198, 252]: 50.9523 (21s)
+    [18, 90, 126, 180, 234]: 44.4915 (16s)
+  improved -> [18, 90, 126, 180, 234] 44.4915
+    [0, 90, 126, 180, 234]: 46.4344 (15s)
+    [36, 90, 126, 180, 234]: 47.0633 (18s)
+    [18, 72, 126, 180, 234]: 49.5319 (18s)
+    [18, 108, 126, 180, 234]: 49.2935 (20s)
+    [18, 90, 108, 180, 234]: 46.6842 (18s)
+    [18, 90, 144, 180, 234]: 47.1295 (16s)
+    [18, 90, 126, 162, 234]: 45.7313 (18s)
+    [18, 90, 126, 198, 234]: 49.8749 (24s)
+    [18, 90, 126, 180, 216]: 48.2704 (14s)
+--- verify: swap-search best K=5 (20 candidates): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 9.61e-11 (rel 1.4e-12)
+    [ok] T56 d>=rx56: max viol 1.89e-10 (rel 3.4e-12)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 5.88e-10 (rel 7.9e-12)
+    [ok] d<=d_cap on all BODY voxels outside targets: max viol 6.36e-10 (rel 8.5e-12)
+    objective recomputed 44.203238  solver 44.20323776986534  rel diff 9.644670005297653e-16
+    key vars: {'n_nonzero': 377, 'n_at_upper_bound': 0, 'max_intensity': 4995.309910758296, 'mean_intensity': 1264.7875636742954}
+== final plan: certified best 5 beams [108, 144, 180, 216, 252] + body cap + rectum DVC [('Rectum', 50.0, 0.17)]
+    rowgen 1: obj 45.0154  body rows 0  violated 9166  max rel viol 1.4e+00  (24s)
+    rowgen 2: obj 46.9750  body rows 9471  violated 1110  max rel viol 6.8e-01  (31s)
+    rowgen 3: obj 47.2041  body rows 10642  violated 11  max rel viol 7.2e-02  (34s)
+    rowgen 4: obj 47.2050  body rows 10659  violated 0  max rel viol 1.1e-13  (33s)
+   without the limit: objective 47.2050, Rectum above 50.0 Gy: {'frac_over': 0.14181375532562385, 'allowed': 279, 'n_over': 233}
+    rowgen 1: obj 47.2050  body rows 10659  violated 0  max rel viol 1.1e-13  (33s)
+  fix-and-resolve iter 1: Optimization terminated successfully. obj=47.204994281269805 (33s)
+    rowgen 1: obj 47.2050  body rows 10659  violated 0  max rel viol 1.1e-13  (34s)
+  fix-and-resolve iter 2: Optimization terminated successfully. obj=47.204994281269805 (34s)
+--- verify: final plan (best 5 + cap + DVC): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 3.04e-11 (rel 4.5e-13)
+    [ok] T56 d>=rx56: max viol 6.24e-11 (rel 1.1e-12)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 1.62e-10 (rel 2.2e-12)
+    [ok] d<=d_cap on all BODY voxels outside targets: max viol 8.10e-12 (rel 1.1e-13)
+    [ok] DVC Rectum: <= 17% above 50.0 Gy: over=233 allowed=279
+    objective recomputed 47.204994  solver 47.204994281269805  rel diff 0.0
+    key vars: {'n_nonzero': 390, 'n_at_upper_bound': 0, 'max_intensity': 5061.673231592284, 'mean_intensity': 1295.6171689226737}
+done

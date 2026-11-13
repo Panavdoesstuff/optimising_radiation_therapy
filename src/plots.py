@@ -31,13 +31,13 @@ def dvh_curve(doses, n=600, dmax=None):
     return grid, 100 * frac
 
 
-LABEL_AT = {"PTV_68": (60, (6, 0)), "PTV_56": (75, (-52, -4)), "Rectum": (30, (6, 2)),
+LABEL_AT = {"PTV_68": (90, (6, -2)), "PTV_56": (75, (-52, -4)), "Rectum": (30, (6, 2)),
             "Bladder": (50, (6, 2)), "BODY": (12, (6, 2))}   # (volume %, text offset)
 
 
 def fig_dvh(path, plans, sets, structures, constraints=(), title=None, xmax=100.0):
     """plans: list of (key, label, dose_vector). Doses beyond xmax are noted, not drawn."""
-    fig, ax = plt.subplots(figsize=(9, 5.6))
+    fig, ax = plt.subplots(figsize=(11.5, 5.6))
     dmax = max(d[sets[s]].max() for _, _, d in plans for s in structures) * 1.02
     for key, label, d in plans:
         for s in structures:
@@ -60,9 +60,11 @@ def fig_dvh(path, plans, sets, structures, constraints=(), title=None, xmax=100.
     from matplotlib.lines import Line2D
     h1 = [Line2D([], [], color=INK, ls=PLAN_STYLE[k], label=l) for k, l, _ in plans]
     h2 = [Line2D([], [], color=STRUCT_COLOR[s], label=s.replace("_", " ")) for s in structures]
-    leg1 = ax.legend(handles=h1, loc="upper right", title="Plan", fontsize=9)
+    leg1 = ax.legend(handles=h1, loc="upper left", bbox_to_anchor=(1.01, 1.0), title="Plan", fontsize=9,
+                     alignment="left")
     ax.add_artist(leg1)
-    ax.legend(handles=h2, loc="center right", title="Structure", fontsize=9)
+    ax.legend(handles=h2, loc="upper left", bbox_to_anchor=(1.01, 0.55), title="Structure", fontsize=9,
+              alignment="left")
     ax.set_xlabel("Dose (Gy)"); ax.set_ylabel("Volume receiving ≥ dose (%)")
     over = [f"{l.split(':')[0]}: {d[sets['BODY']].max():.0f} Gy" for _, l, d in plans] if "BODY" in structures else []
     if over and dmax > xmax:
@@ -176,7 +178,7 @@ def fig_sweep(path, Ks, objs, bounds, lb_all, easy_point):
     fig.tight_layout(); fig.savefig(path, dpi=200); plt.close(fig)
 
 
-def fig_rectum_distance(path, dist_proj, ptv_proj, dist_r, dose_plans, t, alpha):
+def fig_rectum_distance(path, dist_proj, ptv_proj, dist_r, dose_plans, t, alpha, title=None):
     """Why the rectum V_t limit cannot go much lower.
     dist_proj: 2D [si, ap] min distance (mm) of rectum voxels to the PTV along the left-right axis
     (NaN where no rectum); ptv_proj: 2D bool PTV projection; dist_r: per-voxel distances (mm);
@@ -200,11 +202,10 @@ def fig_rectum_distance(path, dist_proj, ptv_proj, dist_r, dose_plans, t, alpha)
     fig.colorbar(im, ax=ax, shrink=0.8, label="Distance to PTV (mm)")
     # (b) dose vs distance
     ax = axes[1]
-    styles = ["o", "s"]
-    for (label, dr), mk in zip(dose_plans, styles):
+    styles = [("o", "#2a78d6"), ("s", "#eb6834"), ("^", "#1baf7a")]
+    for (label, dr), (mk, col) in zip(dose_plans, styles):
         jit = np.random.default_rng(0).uniform(-0.6, 0.6, size=len(dist_r))
-        ax.scatter(dist_r + jit, dr, s=9, marker=mk, alpha=0.45, color="#2a78d6" if mk == "o" else "#eb6834",
-                   edgecolors="none", label=label)
+        ax.scatter(dist_r + jit, dr, s=9, marker=mk, alpha=0.4, color=col, edgecolors="none", label=label)
     ax.axhline(t, color=INK, lw=1.2, ls="--")
     ax.annotate(f"{t:g} Gy threshold", (np.percentile(dist_r, 97), t),
                 xytext=(0, 5), textcoords="offset points", ha="right", fontsize=9, color=INK)
@@ -225,7 +226,7 @@ def fig_rectum_distance(path, dist_proj, ptv_proj, dist_r, dose_plans, t, alpha)
     ax.set_xlabel("Distance to PTV (mm)"); ax.set_ylabel("Rectum volume within this distance (%)")
     ax.set_ylim(0, 102); ax.set_xlim(0, np.percentile(dist_r, 99))
     ax.set_title(f"Share of the rectum close to the PTV")
-    fig.suptitle(f"Why the rectal limit (≤{alpha:.0%} above {t:g} Gy) cannot be pushed much lower")
+    fig.suptitle(title or f"Rectal dose and distance to the PTV (limit: ≤{alpha:.0%} above {t:g} Gy)")
     fig.savefig(path, dpi=200); plt.close(fig)
 
 
@@ -233,7 +234,7 @@ def fig_sweep_certified(path, Ks, opt10, cand_note, K20, ub20, lb20, lb_all, eas
     """Certified optimum vs K on the 10-candidate grid, plus uncertified 20-candidate plans."""
     fig, ax = plt.subplots(figsize=(8.5, 5.2))
     ax.plot(Ks, opt10, "-o", color="#2a78d6", ms=8, zorder=3,
-            label=f"Certified optimum, {cand_note} (enumeration, gap 0)")
+            label=f"Certified optimum, {cand_note}: enumeration, gap 0")
     for K, o in zip(Ks, opt10):
         ax.annotate(f"{o:.1f}", (K, o), xytext=(0, 9), textcoords="offset points", ha="center", fontsize=9)
     if K20:
