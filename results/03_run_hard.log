@@ -1,0 +1,78 @@
+body cap: True (d <= 74.80000000000001 Gy on BODY outside targets); easy LP = 52.5344
+== (b) rectum dose-volume constraint (fix-and-resolve, approximation)
+   easy plan vs DVC: {'Rectum': {'t': 50.0, 'alpha': 0.17, 'easy_frac_over': 0.18685331710286063, 'easy_n_over': 307, 'allowed': 279}}
+    rowgen 1: obj 52.6827  body rows 5785  violated 4  max rel viol 7.6e-03  (23s)
+    rowgen 2: obj 52.6829  body rows 5805  violated 0  max rel viol 5.0e-13  (25s)
+  fix-and-resolve iter 1: Optimization terminated successfully. obj=52.682880702631664 (48s)
+    rowgen 1: obj 52.6829  body rows 5805  violated 0  max rel viol 3.1e-14  (24s)
+  fix-and-resolve iter 2: Optimization terminated successfully. obj=52.68288070262421 (24s)
+--- verify: hard DVC (fix-and-resolve): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 3.38e-11 (rel 5.0e-13)
+    [ok] T56 d>=rx56: max viol 4.05e-11 (rel 7.2e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 3.99e-11 (rel 5.3e-13)
+    [ok] d<=d_cap on all BODY voxels outside targets: max viol 2.29e-12 (rel 3.1e-14)
+    [ok] DVC Rectum: <= 17% above 50.0 Gy: over=279 allowed=279
+    objective recomputed 52.682881  solver 52.68288070262421  rel diff 2.697433117869376e-16
+    key vars: {'n_nonzero': 405, 'n_at_upper_bound': 0, 'max_intensity': 5087.000019664018, 'mean_intensity': 1268.5062948723812}
+== (a) beam angle selection
+   seeding body-row pool with 5780 voxels
+      rowgen 1: obj 32.5533  body rows 5780  violated 1671  max rel viol 5.3e-01
+      rowgen 2: obj 32.6706  body rows 7578  violated 53  max rel viol 1.0e-01
+      rowgen 3: obj 32.6716  body rows 7641  violated 2  max rel viol 3.6e-03
+      rowgen 4: obj 32.6716  body rows 7644  violated 0  max rel viol 1.6e-13
+   all 20 candidates LP, body-capped (lower bound for every K): 32.6716
+    heuristic K=3: top-K [90, 180, 270] -> 54.74546272593699
+    swap: [90, 180, 270] -> 54.7455
+   K=3: MILP on every 3rd row, 600s limit, start 54.7455
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+     MILP: Time limit reached  incumbent 52.75595978519411  bound 32.03300961390386  nodes 0  rows 19336  (603s)
+   exact LP on MILP beams [90, 108, 180]
+      rowgen 1: obj 55.8589  body rows 7644  violated 12918  max rel viol 1.6e+00
+      rowgen 2: obj 62.6509  body rows 20850  violated 516  max rel viol 4.3e-01
+      rowgen 3: obj 63.3480  body rows 21406  violated 36  max rel viol 5.5e-02
+      rowgen 4: obj 63.3501  body rows 21455  violated 0  max rel viol 1.9e-15
+   exact LP on heuristic start beams [90, 180, 270]
+      rowgen 1: obj 58.2468  body rows 21455  violated 3706  max rel viol 6.6e-01
+      rowgen 2: obj 60.7891  body rows 25286  violated 0  max rel viol 2.3e-15
+--- verify: BAO K=3: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 6.80e-11 (rel 1.0e-12)
+    [ok] T56 d>=rx56: max viol 1.96e-09 (rel 3.5e-11)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 2.53e-10 (rel 3.4e-12)
+    [ok] d<=d_cap on all BODY voxels outside targets: max viol 1.85e-13 (rel 2.5e-15)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 60.789070  solver 60.78907003379279  rel diff 1.2857525356147405e-15
+    key vars: {'n_nonzero': 279, 'n_at_upper_bound': 0, 'max_intensity': 5184.829045964589, 'mean_intensity': 2278.4176534323183}
+   K=3: upper 60.7891 (heuristic start) beams [90, 180, 270]  lower 32.6716  gap 46.3%
+    heuristic K=4: top-K [90, 180, 198, 270] -> 54.43212369414379
+    swap: [90, 180, 270, 288] -> 52.5764
+    swap: [90, 180, 270, 288] -> 52.5764
+   K=4: MILP on every 3rd row, 600s limit, start 52.5764
+     MILP: Time limit reached  incumbent 49.928169537491456  bound 31.345866689766133  nodes 0  rows 25217  (602s)
+   exact LP on MILP beams [90, 126, 180, 270]
+      rowgen 1: obj 52.0402  body rows 25286  violated 2171  max rel viol 7.7e-01
+      rowgen 2: obj 52.9299  body rows 27587  violated 61  max rel viol 4.3e-02
+      rowgen 3: obj 52.9314  body rows 27681  violated 0  max rel viol 1.3e-13
+   exact LP on heuristic start beams [90, 180, 270, 288]
+      rowgen 1: obj 53.3203  body rows 27681  violated 310  max rel viol 1.5e-01
+      rowgen 2: obj 53.3846  body rows 28083  violated 6  max rel viol 1.6e-02
+      rowgen 3: obj 53.3847  body rows 28094  violated 0  max rel viol 3.8e-14
+--- verify: BAO K=4: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 6.24e-12 (rel 9.2e-14)
+    [ok] T56 d>=rx56: max viol 9.25e-12 (rel 1.7e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 1.17e-11 (rel 1.6e-13)
+    [ok] d<=d_cap on all BODY voxels outside targets: max viol 9.45e-12 (rel 1.3e-13)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 52.931411  solver 52.93141066182685  rel diff 6.711919509378681e-16
+    key vars: {'n_nonzero': 336, 'n_at_upper_bound': 0, 'max_intensity': 5047.165105679322, 'mean_intensity': 1712.5536499755879}
+   K=4: upper 52.9314 (MILP) beams [90, 126, 180, 270]  lower 32.6716  gap 38.3%
+    heuristic K=5: top-K [90, 180, 198, 270, 288] -> 48.52513937952067
+    swap: [54, 90, 180, 270, 288] -> 45.8451
+    swap: [54, 90, 180, 198, 288] -> 45.5709
+   K=5: MILP on every 3rd row, 1800s limit, start 45.5709

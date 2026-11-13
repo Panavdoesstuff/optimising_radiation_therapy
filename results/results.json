@@ -1,0 +1,358 @@
+{
+  "easy": {
+    "params": {
+      "w_R": 1.0,
+      "w_B": 0.6,
+      "w_N": 0.6,
+      "rx68": 68.0,
+      "rx56": 56.0,
+      "d_cap_factor": 1.1,
+      "x_max": 13600.0,
+      "rho": 100.0,
+      "slack56": false,
+      "slack68": false,
+      "body_cap": true
+    },
+    "d_cap": 74.80000000000001,
+    "angles": [
+      0,
+      72,
+      144,
+      216,
+      288
+    ],
+    "set_mode": "disjoint",
+    "set_sizes": {
+      "PTV_68": 6770,
+      "PTV_56": 8483,
+      "Rectum": 1643,
+      "Bladder": 9708,
+      "BODY": 675120
+    },
+    "model": {
+      "n_vars": 721,
+      "n_constraints": 47637,
+      "n_binaries": 0,
+      "nnz": 7028867,
+      "body_rows": 5785,
+      "body_voxels_total": 675120
+    },
+    "verification": {
+      "checks": {
+        "x >= 0": {
+          "max_violation": -0.0,
+          "relative": -0.0,
+          "ok": true
+        },
+        "x <= x_max": {
+          "max_violation": 0.0,
+          "relative": 0.0,
+          "ok": true
+        },
+        "T68 d>=rx68": {
+          "max_violation": 6.147615749796387e-11,
+          "relative": 9.040611396759392e-13,
+          "ok": true
+        },
+        "T56 d>=rx56": {
+          "max_violation": 2.936673126896494e-11,
+          "relative": 5.244059155172311e-13,
+          "ok": true
+        },
+        "d<=d_cap on T68,T56,R,B": {
+          "max_violation": 1.4593126707040938e-10,
+          "relative": 1.9509527683209805e-12,
+          "ok": true
+        },
+        "d<=d_cap on all BODY voxels outside targets": {
+          "max_violation": 2.070521532004932e-11,
+          "relative": 2.768076914445096e-13,
+          "ok": true
+        }
+      },
+      "all_ok": true,
+      "objective_recomputed": 52.534416338698,
+      "objective_terms_mean_dose": {
+        "Rectum": 28.22824626315428,
+        "Bladder": 31.291429256900262,
+        "BODY": 9.218854202339275
+      },
+      "objective_terms_weighted": {
+        "Rectum": 28.22824626315428,
+        "Bladder": 18.774857554140155,
+        "BODY": 5.5313125214035646
+      },
+      "slack_penalty": 0.0,
+      "solver_objective": 52.534416338698,
+      "objective_rel_diff": 0.0,
+      "dvc": {},
+      "key_variables": {
+        "n_nonzero": 403,
+        "n_beamlets": 721,
+        "n_at_upper_bound": 0,
+        "max_intensity": 4992.053569492749,
+        "mean_intensity": 1268.3629309821956,
+        "mean_nonzero_intensity": 2269.205144511571,
+        "total_intensity_per_beam": {
+          "0": 247365.32765171287,
+          "72": 202911.6418676545,
+          "144": 144788.4112303796,
+          "216": 102385.13881654844,
+          "288": 217039.1536718678
+        }
+      },
+      "dose_stats": {
+        "PTV_68": {
+          "n": 6770,
+          "min": 67.99999999993852,
+          "mean": 71.58217242960545,
+          "max": 74.80000000014594,
+          "D95": 68.6074916338658,
+          "frac_below_rx": 0.0
+        },
+        "PTV_56": {
+          "n": 8483,
+          "min": 55.99999999997063,
+          "mean": 65.24648725459625,
+          "max": 74.80000000007307,
+          "D95": 57.17470818084471,
+          "frac_below_rx": 0.0
+        },
+        "Rectum": {
+          "n": 1643,
+          "min": 0.07125257597222949,
+          "mean": 28.22824626315428,
+          "max": 70.74429560956443
+        },
+        "Bladder": {
+          "n": 9708,
+          "min": 0.05612473693623897,
+          "mean": 31.291429256900262,
+          "max": 74.79999999999872
+        },
+        "BODY": {
+          "n": 675120,
+          "min": 0.0,
+          "mean": 9.218854202339275,
+          "max": 74.80000000002072
+        }
+      },
+      "solver": {
+        "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "dual_objective": 52.5344163386884,
+        "duality_gap": 9.599432360118954e-12,
+        "solve_time": 20.207703828811646,
+        "iterations": 4510,
+        "ladder_level": 1,
+        "ladder_desc": "full model",
+        "ladder_log": [
+          {
+            "level": 1,
+            "desc": "full model",
+            "status": 0,
+            "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+          }
+        ],
+        "rowgen": [
+          {
+            "iter": 1,
+            "body_rows": 0,
+            "rows": 41857,
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "time": 19.116204023361206,
+            "objective": 51.824024042988924,
+            "n_violated": 5163,
+            "max_rel_violation": 0.6656843448856776
+          },
+          {
+            "iter": 2,
+            "body_rows": 5434,
+            "rows": 47286,
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "time": 23.109889030456543,
+            "objective": 52.497833663081565,
+            "n_violated": 285,
+            "max_rel_violation": 0.17148879777618492
+          },
+          {
+            "iter": 3,
+            "body_rows": 5785,
+            "rows": 47637,
+            "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "time": 20.207703828811646,
+            "objective": 52.534416338698,
+            "n_violated": 0,
+            "max_rel_violation": 2.768076914445096e-13
+          }
+        ],
+        "body_rows_generated": 5785,
+        "note": "duality gap of the final reduced LP; its dual extends (zeros on the missing body rows) to the full LP, so it certifies full optimality"
+      }
+    }
+  },
+  "hard_dvc": {
+    "dvcs": [
+      [
+        "Rectum",
+        50.0,
+        0.17
+      ]
+    ],
+    "easy_plan_violation": {
+      "Rectum": {
+        "t": 50.0,
+        "alpha": 0.17,
+        "easy_frac_over": 0.18685331710286063,
+        "easy_n_over": 307,
+        "allowed": 279
+      }
+    },
+    "feasible_plan_found": true,
+    "bracket": {
+      "lower": 52.534416338698,
+      "lower_source": "easy LP (relaxation of the DVC problem)",
+      "upper": 52.682880702624225,
+      "upper_source": "fix-and-resolve feasible plan",
+      "rel_gap": 0.002818076041897759
+    },
+    "verification": {
+      "checks": {
+        "x >= 0": {
+          "max_violation": -0.0,
+          "relative": -0.0,
+          "ok": true
+        },
+        "x <= x_max": {
+          "max_violation": 0.0,
+          "relative": 0.0,
+          "ok": true
+        },
+        "T68 d>=rx68": {
+          "max_violation": 3.3793412512750365e-11,
+          "relative": 4.969619487169171e-13,
+          "ok": true
+        },
+        "T56 d>=rx56": {
+          "max_violation": 4.0451197946822504e-11,
+          "relative": 7.223428204789733e-13,
+          "ok": true
+        },
+        "d<=d_cap on T68,T56,R,B": {
+          "max_violation": 3.986144747614162e-11,
+          "relative": 5.32907051820075e-13,
+          "ok": true
+        },
+        "d<=d_cap on all BODY voxels outside targets": {
+          "max_violation": 2.2879476091475226e-12,
+          "relative": 3.0587534881651365e-14,
+          "ok": true
+        },
+        "DVC Rectum: <= 17% above 50.0 Gy": {
+          "ok": true,
+          "n_over": 279,
+          "allowed": 279
+        }
+      },
+      "all_ok": true,
+      "objective_recomputed": 52.682880702624225,
+      "objective_terms_mean_dose": {
+        "Rectum": 27.901583230116564,
+        "Bladder": 32.049245677251896,
+        "BODY": 9.252916776927538
+      },
+      "objective_terms_weighted": {
+        "Rectum": 27.901583230116564,
+        "Bladder": 19.229547406351138,
+        "BODY": 5.551750066156523
+      },
+      "slack_penalty": 0.0,
+      "solver_objective": 52.68288070262421,
+      "objective_rel_diff": 2.697433117869376e-16,
+      "dvc": {
+        "Rectum": {
+          "t": 50.0,
+          "alpha": 0.17,
+          "n_voxels": 1643,
+          "n_over": 279,
+          "allowed": 279,
+          "frac_over": 0.16981132075471697,
+          "ok": true
+        }
+      },
+      "key_variables": {
+        "n_nonzero": 405,
+        "n_beamlets": 721,
+        "n_at_upper_bound": 0,
+        "max_intensity": 5087.000019664018,
+        "mean_intensity": 1268.5062948723812,
+        "mean_nonzero_intensity": 2258.2544163036714,
+        "total_intensity_per_beam": {
+          "0": 257750.5088956813,
+          "72": 209637.6877757805,
+          "144": 125225.76041395684,
+          "216": 100476.66625228699,
+          "288": 221502.41526528128
+        }
+      },
+      "dose_stats": {
+        "PTV_68": {
+          "n": 6770,
+          "min": 67.9999999999662,
+          "mean": 71.57644574764478,
+          "max": 74.80000000002688,
+          "D95": 68.55631433760057,
+          "frac_below_rx": 0.0
+        },
+        "PTV_56": {
+          "n": 8483,
+          "min": 55.99999999995955,
+          "mean": 65.06828135740489,
+          "max": 74.80000000003987,
+          "D95": 57.10954427855286,
+          "frac_below_rx": 0.0
+        },
+        "Rectum": {
+          "n": 1643,
+          "min": 0.0725354633181523,
+          "mean": 27.901583230116564,
+          "max": 70.85163525923598
+        },
+        "Bladder": {
+          "n": 9708,
+          "min": 0.03777834223075126,
+          "mean": 32.049245677251896,
+          "max": 74.80000000000142
+        },
+        "BODY": {
+          "n": 675120,
+          "min": 0.0,
+          "mean": 9.252916776927538,
+          "max": 74.8000000000023
+        }
+      },
+      "solver": {
+        "method": "fix-and-resolve (approximation)",
+        "history": [
+          {
+            "iter": 1,
+            "success": true,
+            "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "time": 48.2836709022522,
+            "rowgen_rounds": 2,
+            "n_rows": 49019,
+            "objective": 52.682880702631664
+          },
+          {
+            "iter": 2,
+            "success": true,
+            "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "time": 23.674506902694702,
+            "rowgen_rounds": 1,
+            "n_rows": 49019,
+            "objective": 52.68288070262421
+          }
+        ]
+      }
+    }
+  }
+}

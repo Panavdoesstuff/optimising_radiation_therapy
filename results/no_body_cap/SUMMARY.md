@@ -1,4 +1,9 @@
-# Results summary: IMRT plan optimisation on the CORT prostate case
+# Results summary (ARCHIVED, without the normal-tissue dose cap)
+
+> **Superseded.** This is the earlier run in which dose was capped only on the targets, rectum and
+> bladder. Its plans reach up to 189 Gy in normal tissue. The current results, with a 74.8 Gy cap on
+> all body tissue, are in `results/SUMMARY.md`; `results/before_after_body_cap.csv` compares the two.
+> File paths below refer to this folder (`results/no_body_cap/`), except `results/logs/`.
 
 Group: Panav RG, Karthik Annadurai. Every number here comes from `results/results.json`,
 `results/bao_sweep.json` or the CSV tables, and every plan was re-verified on the full dose grid.
