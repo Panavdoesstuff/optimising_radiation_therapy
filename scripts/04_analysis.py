@@ -8,7 +8,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import numpy as np
 from scipy.ndimage import distance_transform_edt
-from src import config, problem, io_cort, hard_bao, plots, verify
+from src import config, problem, io_cort, hard_bao, plots, verify, easy_lp
+easy_lp_spec = easy_lp.Spec()
 
 warnings.simplefilter("ignore")
 R = config.RESULTS_DIR
@@ -24,18 +25,33 @@ sets = P5.sets("disjoint")
 x_easy = np.load(R / "easy_solution.npz")["x"]
 has_dvc = res["hard_dvc"].get("feasible_plan_found", False)
 x_dvc = np.load(R / "hard_dvc_solution.npz")["x"] if has_dvc else None
-z5 = np.load(R / "bao_K5_solution.npz")
+z5 = np.load(R / "enum" / "best_K5.npz")                      # certified optimum, 36-degree grid
 bao_angles = [int(a) for a in z5["angles"]]
 P_bao = problem.build("prostate", bao_angles, use_cache=False)
 x_bao = z5["x"]
+swap_final = json.loads((R / "swap_final.json").read_text()) if (R / "swap_final.json").exists() else {}
+has_final = swap_final.get("final_plan", {}).get("feasible_plan_found", False)
+x_final = np.load(R / "final_plan_solution.npz")["x"] if has_final else None
 d_easy, d_bao = P5.dose(x_easy), P_bao.dose(x_bao)
 d_dvc = P5.dose(x_dvc) if has_dvc else None
+d_final = P_bao.dose(x_final) if has_final else None
 alpha_dvc = config.DVC_FINAL[0][2]
 lab_easy = "Easy LP: 5 equispaced beams"
-lab_bao = f"Hard: best 5 of 20 beams ({', '.join(map(str, bao_angles))}°)"
+lab_bao = f"Hard: certified best 5 of 10 beams ({', '.join(map(str, bao_angles))}°)"
 lab_dvc = f"Hard (secondary): + rectum ≤{alpha_dvc:.0%} > 50 Gy"
 STRUCTS = ["PTV_68", "PTV_56", "Rectum", "Bladder", "BODY"]
 plans = [("easy", lab_easy, d_easy), ("bao", lab_bao, d_bao)] + ([("dvc", lab_dvc, d_dvc)] if has_dvc else [])
+
+# enumeration (certified optimum per K on the 36-degree grid)
+enum = {}
+for K in sorted(config.ENUM_K_VALUES):
+    recs = [json.loads(l) for l in open(R / "enum" / f"K{K}.jsonl")]
+    sol = [r for r in recs if r["outcome"] == "solved"]
+    b = min(sol, key=lambda r: r["objective"])
+    enum[K] = dict(n=len(recs), solved=len(sol), infeasible=sum(r["outcome"] == "infeasible" for r in recs),
+                   unresolved=sum(r["outcome"] == "unresolved" for r in recs), opt=b["objective"], angles=b["angles"],
+                   lp_time=sum(r["time"] for r in recs), max_viol=max(r["max_rel_violation"] for r in sol))
+verify.update_results("enumeration", dict(candidates=config.ENUM_CANDIDATES, per_K={str(k): v for k, v in enum.items()}))
 
 # 1. DVH
 plots.fig_dvh(R / "fig1_dvh.png", plans, sets, STRUCTS, constraints=config.DVC_FINAL if has_dvc else (),
@@ -52,8 +68,8 @@ body = np.zeros(P5.n_voxels, bool); body[sets["BODY"]] = True
 bz = np.nonzero(problem.reshape_volume(body, grid)[:, :, z])
 crop = ((max(bz[0].min() - 3, 0), bz[0].max() + 4), (max(bz[1].min() - 3, 0), bz[1].max() + 4))
 V_e, V_b = vol(d_easy), vol(d_bao)
-tops = [("Easy LP", V_e), ("Hard: best 5 beams", V_b)]
-diffs = [("Best 5 beams − easy", V_b - V_e)]
+tops = [("Easy LP", V_e), ("Hard: certified best 5 beams", V_b)]
+diffs = [("Certified best 5 − easy", V_b - V_e)]
 if has_dvc:
     V_d = vol(d_dvc); tops.append(("Hard: + rectum DVC", V_d)); diffs.append(("Rectum DVC − easy", V_d - V_e))
 vmax = max(V[:, :, z].max() for _, V in tops)
@@ -72,19 +88,30 @@ x_all = np.load(R / "bao_all_beams_x.npy")
 sp_ = res["easy"]["params"]
 t_all = dict(Rectum=sp_["w_R"] * red.cost["R"] @ x_all, Bladder=sp_["w_B"] * red.cost["B"] @ x_all,
              BODY=sp_["w_N"] * red.cost["N"] @ x_all)
-v_easy, v_bao = res["easy"]["verification"], sweep["5"]["verification"]
+v_easy = res["easy"]["verification"]
 rows4 = [("Easy LP\n5 equispaced beams", terms(v_easy), "")]
 if has_dvc:
     rows4.append(("Hard: rectum DVC\n(fix-and-resolve)", terms(res["hard_dvc"]["verification"]), "approximation, feasible"))
-rows4 += [("Hard: best 5 of 20 beams\n(MILP + heuristics)", terms(v_bao), f"gap to proven bound {sweep['5']['gap']:.0%}"),
-          ("All 20 beams (LP)\nno beam limit", t_all, "lower bound for any K")]
+v_cert = verify.verify(P_bao, sets, easy_lp_spec, x_bao)
+rows4.append(("Hard: best 5 of 10 beams\n(certified, enumeration)", terms(v_cert), "optimal, gap 0"))
+if swap_final.get("swap_search"):
+    rows4.append(("Best 5 of 20 beams found\n(swap search)", terms(swap_final["swap_search"]["verification"]),
+                  f"not certified; gap {swap_final['swap_search']['gap']:.0%}"))
+if has_final:
+    rows4.append(("Final: certified 5 beams\n+ rectum limit", terms(swap_final["final_plan"]["verification"]),
+                  "fix-and-resolve, feasible"))
+rows4.append(("All 20 beams (LP)\nno beam limit", t_all, "lower bound for any K"))
 plots.fig_price(R / "fig4_price_of_realism.png", rows4, ref_label="Easy LP\n5 equispaced beams")
 
-# 5. sweep over K (only K with a feasible plan)
-Ks = sorted(int(k) for k in sweep if k.isdigit() and sweep[k].get("objective") is not None)
-plots.fig_sweep(R / "fig5_sweep_K.png", Ks, [sweep[str(K)]["objective"] for K in Ks],
-                [sweep[str(K)]["lower_bound"] for K in Ks], sweep["all_beams_lp"]["objective"],
-                (5, v_easy["objective_recomputed"]))
+# 5. price of a beam budget: certified optimum (10 candidates) + uncertified 20-candidate plans
+Ks = sorted(enum)
+K20 = sorted(int(k) for k in sweep if k.isdigit() and sweep[k].get("objective") is not None)
+ub20 = {K: sweep[str(K)]["objective"] for K in K20}
+if swap_final.get("swap_search"):
+    ub20[5] = min(ub20.get(5, np.inf), swap_final["swap_search"]["objective"])
+plots.fig_sweep_certified(R / "fig5_sweep_K.png", Ks, [enum[K]["opt"] for K in Ks], "10 candidates (every 36°)",
+                          K20, [ub20[K] for K in K20], [sweep[str(K)]["lower_bound"] for K in K20],
+                          sweep["all_beams_lp"]["objective"], (5, v_easy["objective_recomputed"]))
 
 # 6. rectum voxels by distance to the PTV
 ptv = np.zeros(P5.n_voxels, bool); ptv[sets["PTV_68"]] = True; ptv[sets["PTV_56"]] = True
@@ -133,6 +160,31 @@ for K in sorted(int(k) for k in sweep if k.isdigit()):
                      lower_bound=round(s["lower_bound"], 4),
                      objective="" if s.get("objective") is None else round(s["objective"], 4),
                      plan_source=s.get("source", "none") + " → exact LP with body row generation"))
+for K in sorted(enum):
+    e_ = enum[K]
+    rows.append(dict(model=f"Beam selection by enumeration, K={K} of 10 (every 36°)", kind=f"{e_['n']} exact LPs",
+                     n_vars="~140 per beam", n_constraints="row generation (all rows)", n_binaries="—", nnz="",
+                     body_rows="shared pool", solve_time_s=round(e_["lp_time"], 0),
+                     status=f"{e_['solved']} solved, {e_['infeasible']} infeasible, {e_['unresolved']} unresolved",
+                     gap="0 (certified)" if e_["unresolved"] == 0 else "certificate incomplete",
+                     lower_bound=round(e_["opt"], 4), objective=round(e_["opt"], 4),
+                     plan_source=f"enumeration; every subset verified on the full grid (max viol {e_['max_viol']:.1e})"))
+if swap_final.get("swap_search"):
+    ss = swap_final["swap_search"]
+    rows.append(dict(model="Swap local search, K=5 of 20 (±18° moves)", kind=f"{ss['n_lp_evaluations']} exact LPs",
+                     n_vars="", n_constraints="row generation (all rows)", n_binaries="—", nnz="", body_rows="shared pool",
+                     solve_time_s="", status="local optimum", gap=f"{ss['gap']:.1%} (not certified)",
+                     lower_bound=round(ss["lower_bound_all20"], 4), objective=round(ss["objective"], 4),
+                     plan_source=f"from {ss['best_from']}"))
+if swap_final.get("final_plan"):
+    fp = swap_final["final_plan"]
+    rows.append(dict(model="Final: certified best 5 beams + body cap + rectum limit", kind="LP (approximation)",
+                     n_vars="", n_constraints="", n_binaries=0, nnz="", body_rows="row generation", solve_time_s="",
+                     status="feasible" if fp.get("feasible_plan_found") else "no plan found",
+                     gap="" if not fp.get("feasible_plan_found") else f"bracket [{fp['bracket'][0]:.3f}, {fp['bracket'][1]:.3f}]",
+                     lower_bound=round(fp["without_limit"]["objective"], 4),
+                     objective=round(fp["objective"], 4) if fp.get("feasible_plan_found") else "",
+                     plan_source="fix-and-resolve on the certified beams"))
 with open(R / "model_summary.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
 
@@ -141,7 +193,8 @@ def organ_fracs(d, S):
     v = d[S]   # same tolerance as verify.py
     return {f"V{t}": round(100 * float((v > t * (1 + verify.REL_TOL)).mean()), 1) for t in (30, 50, 60, 70)}
 drows = []
-for plan, d in [("easy", d_easy), ("hard_bao_K5", d_bao)] + ([("hard_dvc", d_dvc)] if has_dvc else []):
+for plan, d in [("easy", d_easy), ("certified_best5", d_bao)] + ([("easy_beams_dvc", d_dvc)] if has_dvc else []) \
+        + ([("final_best5_dvc", d_final)] if has_final else []):
     for s in STRUCTS:
         v = d[sets[s]]
         row = dict(plan=plan, structure=s, n_voxels=len(v), min=round(float(v.min()), 2),

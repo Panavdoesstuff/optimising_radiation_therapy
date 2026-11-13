@@ -245,3 +245,122 @@ def solve_bao(red, spec, K, time_limit=config.BAO_TIME_LIMIT, start=None, mip_re
         r["angles_selected"] = [red.angles[b] for b in r["beams"]]
         r["x"] = r["x"][:n_x]
     return r
+
+
+def rowgen_active(red, spec, sets, beams, seed_stride=10, margin=0.5, max_iter=40, verbose=False):
+    """Exact LP over the beams in `beams`, with row generation over ALL constraint rows.
+
+    An LP in ~700 variables has at most ~700 binding rows, so solving with all ~77k rows wastes
+    time. Start from every `seed_stride`-th row of each group; after each solve, check every target
+    and cap row held in `red` and the body cap on the full grid; add violated rows and rows within
+    `margin` Gy of binding; repeat. Each LP is a relaxation of the full one, so a solution that
+    passes every check is optimal for the full problem.
+    """
+    from .easy_lp import body_violations
+    tol = 1e-6
+    N = sets["BODY"]
+    cols = np.flatnonzero(np.isin(red.beam_of_column, beams))
+    c = _cost(red, spec)[cols]
+    s = int(seed_stride)
+    sel = dict(T68=red.loc["T68"][::s], T56=red.loc["T56"][::s], cap=np.arange(len(red.rows))[::s])
+    hist, t0 = [], time.time()
+    lp = _IncrementalLP(red, spec, cols, c)
+    added = dict(T68=np.zeros(0, np.int64), T56=np.zeros(0, np.int64), cap=np.zeros(0, np.int64))
+    for it in range(1, max_iter + 1):
+        new = {k: np.setdiff1d(sel[k], added[k]) for k in sel}
+        lp.add(new)
+        added = {k: np.union1d(added[k], new[k]) for k in sel}
+        r = lp.solve()
+        A = lp
+        rec = dict(iter=it, rows=int(A.shape[0]), status=r.message)
+        if not r.success:
+            hist.append(rec)
+            return dict(success=False, message=r.message, converged=False, rowgen=hist,
+                        beams=sorted(int(b) for b in beams), time=time.time() - t0)
+        d_red = red.D[:, cols] @ r.x
+        T68, T56 = red.loc["T68"], red.loc["T56"]
+        allc = np.arange(len(red.rows))
+        v68 = T68[d_red[T68] < spec.rx68 * (1 - tol)]
+        v56 = T56[d_red[T56] < spec.rx56 * (1 - tol)]
+        vcap = allc[d_red > spec.d_cap * (1 + tol)]
+        n_red_viol = len(v68) + len(v56) + len(vcap)
+        n_new_body = 0
+        if n_red_viol == 0:
+            x = np.zeros(red.n_beamlets); x[cols] = r.x
+            d = full_dose(red, x)
+            over, rel = body_violations(d, N, spec)
+            if spec.body_cap and len(over):
+                n_new_body = add_rows(red, N[d[N] > spec.d_cap - margin])
+                if n_new_body == 0:      # violators already in red but not selected: select them
+                    pos = np.flatnonzero(np.isin(red.rows, over))
+                    sel["cap"] = np.union1d(sel["cap"], pos)
+            else:
+                rec.update(objective=float(r.fun), n_violated=0)
+                hist.append(rec)
+                if verbose:
+                    print(f"      active rowgen {it}: obj {r.fun:.4f} rows {A.shape[0]}  converged", flush=True)
+                return dict(success=True, converged=True, message=r.message, x=x, objective=float(r.fun),
+                            beams=sorted(int(b) for b in beams), rowgen=hist, time=time.time() - t0,
+                            max_body_dose=float(d[N].max()))
+            # newly appended body rows: select them all (and recompute nothing else this round)
+            if n_new_body:
+                sel["cap"] = np.union1d(sel["cap"], np.arange(len(red.rows) - n_new_body, len(red.rows)))
+        else:
+            sel["T68"] = np.union1d(sel["T68"], T68[d_red[T68] < spec.rx68 + margin])
+            sel["T56"] = np.union1d(sel["T56"], T56[d_red[T56] < spec.rx56 + margin])
+            sel["cap"] = np.union1d(sel["cap"], allc[d_red > spec.d_cap - margin])
+        rec.update(objective=float(r.fun), n_violated=int(n_red_viol), new_body_rows=int(n_new_body))
+        hist.append(rec)
+        if verbose:
+            print(f"      active rowgen {it}: obj {r.fun:.4f} rows {A.shape[0]} red-violations {n_red_viol} "
+                  f"new body rows {n_new_body}", flush=True)
+    return dict(success=True, converged=False, message="max_iter", rowgen=hist,
+                beams=sorted(int(b) for b in beams), time=time.time() - t0)
+
+
+class _IncrementalLP:
+    """min c@x s.t. selected dose rows, 0 <= x <= x_max; rows can be added between solves.
+    With highspy the model is kept and re-solved from the previous basis (dual simplex after
+    adding rows); otherwise every solve is a fresh linprog."""
+
+    def __init__(self, red, spec, cols, c):
+        self.red, self.spec, self.cols, self.c = red, spec, cols, c
+        self.blocks = []                 # (A, b) blocks added so far (for the linprog fallback)
+        self.n_rows = 0
+        try:
+            import highspy
+            self.hs = highspy
+            h = highspy.Highs(); h.setOptionValue("output_flag", False)
+            n = len(cols)
+            h.addVars(n, np.zeros(n), np.full(n, spec.x_max))
+            h.changeColsCost(n, np.arange(n, dtype=np.int32), np.asarray(c, float))
+            self.h = h
+        except ImportError:
+            self.hs, self.h = None, None
+
+    @property
+    def shape(self):
+        return (self.n_rows, len(self.cols))
+
+    def add(self, new):
+        if sum(len(v) for v in new.values()) == 0:
+            return
+        A, b = _dose_rows(self.red, self.spec, self.cols, new)
+        A = A.tocsr()
+        self.n_rows += A.shape[0]
+        if self.h is None:
+            self.blocks.append((A, b)); return
+        self.h.addRows(A.shape[0], np.full(A.shape[0], -self.hs.kHighsInf), np.asarray(b, float),
+                       A.nnz, A.indptr[:-1].astype(np.int32), A.indices.astype(np.int32), A.data)
+
+    def solve(self):
+        from types import SimpleNamespace
+        if self.h is None:
+            A = sp.vstack([a for a, _ in self.blocks], format="csr"); b = np.concatenate([b for _, b in self.blocks])
+            return linprog(self.c, A_ub=A, b_ub=b, bounds=(0, self.spec.x_max), method="highs")
+        self.h.run()
+        st = self.h.getModelStatus()
+        ok = st == self.hs.HighsModelStatus.kOptimal
+        x = np.array(self.h.getSolution().col_value) if ok else None
+        return SimpleNamespace(success=ok, message=self.h.modelStatusToString(st), x=x,
+                               fun=self.h.getInfo().objective_function_value if ok else None)

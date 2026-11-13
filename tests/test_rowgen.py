@@ -59,3 +59,23 @@ def test_body_cap_costs_and_holds():
     assert r_on["objective"] >= r_off["objective"] - 1e-9          # a cap can only cost
     assert P.dose(r_on["x"][:P.n_beamlets])[sets["BODY"]].max() <= on.d_cap * (1 + 1e-6)
     assert len(r_on["rowgen"]) >= 2                                 # it really iterated
+
+
+def test_voxel_dose_floor_is_a_lower_bound():
+    from src import hard_dvc
+    P, sets = _synthetic()
+    _, spec = _binding_cap(P, sets)
+    r = easy_lp.solve_lp_rowgen(P, spec, sets, verbose=False)
+    d = P.dose(r["x"][:P.n_beamlets])
+    vox = sets["Rectum"]
+    from scipy.optimize import linprog
+    one = easy_lp.build_model(P, spec, sets, extra_cap=r["body_rows"])
+    true_min = np.array([linprog(np.asarray(P.D[i].todense()).ravel(), A_ub=one.A_ub, b_ub=one.b_ub,
+                                 bounds=list(zip(one.lb, one.ub)), method="highs").fun for i in vox])
+    t = float(np.median(true_min))                 # some voxels forced above t, some not
+    fl = hard_dvc.voxel_dose_floor(P, spec, sets, vox, t, body_rows=r["body_rows"], verbose=False)
+    forced = fl["status"] == "forced"
+    assert not (fl["status"] == "open").any() and not (fl["status"] == "unresolved").any()
+    assert np.array_equal(forced, true_min > t + 1e-6 * t)     # pruning never changes the answer
+    solved = np.isfinite(fl["bound"])
+    assert np.all(fl["bound"][solved] <= true_min[solved] + 1e-7)   # bounds are lower bounds

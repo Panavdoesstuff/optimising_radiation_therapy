@@ -1,7 +1,7 @@
 """Exact beam selection by enumeration on the 36-degree grid (10 candidates).
 
-For each K, every K-subset of the candidates is solved with the exact LP (body cap by row
-generation, converged on the full grid) and checked with verify.py on the full dose matrices of
+For each K, every K-subset of the candidates is solved with the exact LP (row generation over all
+target, organ and body-cap rows, converged against every row and the full-grid body cap) and checked with verify.py on the full dose matrices of
 its beams. The minimum over all subsets is the certified optimum of "choose at most K of these 10
 beams" (subsets with fewer beams are dominated by a superset). A subset whose reduced LP is
 infeasible is infeasible for the full problem too (the reduced LP is a relaxation).
@@ -36,9 +36,9 @@ def _solve(angles):
     t0 = time.time()
     n_body0 = len(red.body)
     beams = [red.angles.index(a) for a in angles]
-    r = hard_bao.rowgen_restricted(red, spec, sets, beams, verbose=False)
+    r = hard_bao.rowgen_active(red, spec, sets, beams)
     out = dict(angles=list(angles), K=len(angles), time=None, rowgen_rounds=len(r.get("rowgen", [])),
-               status=r["message"], converged=bool(r.get("converged")))
+               status=r["message"], converged=bool(r.get("converged")), method="rowgen_active (all rows)")
     x_sel = None
     if r["success"] and r["converged"]:
         # independent full-grid verification on the beams' full dose matrices

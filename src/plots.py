@@ -227,3 +227,27 @@ def fig_rectum_distance(path, dist_proj, ptv_proj, dist_r, dose_plans, t, alpha)
     ax.set_title(f"Share of the rectum close to the PTV")
     fig.suptitle(f"Why the rectal limit (≤{alpha:.0%} above {t:g} Gy) cannot be pushed much lower")
     fig.savefig(path, dpi=200); plt.close(fig)
+
+
+def fig_sweep_certified(path, Ks, opt10, cand_note, K20, ub20, lb20, lb_all, easy_point):
+    """Certified optimum vs K on the 10-candidate grid, plus uncertified 20-candidate plans."""
+    fig, ax = plt.subplots(figsize=(8.5, 5.2))
+    ax.plot(Ks, opt10, "-o", color="#2a78d6", ms=8, zorder=3,
+            label=f"Certified optimum, {cand_note} (enumeration, gap 0)")
+    for K, o in zip(Ks, opt10):
+        ax.annotate(f"{o:.1f}", (K, o), xytext=(0, 9), textcoords="offset points", ha="center", fontsize=9)
+    if K20:
+        ax.vlines(K20, lb20, ub20, color=INK2, lw=1, alpha=0.6, zorder=1)
+        ax.plot(K20, ub20, "D", color="#1baf7a", ms=7, markeredgecolor=SURFACE, markeredgewidth=1.5, zorder=3,
+                label="Best plan found, 20 candidates (not certified); line = gap to bound")
+    ax.axhline(lb_all, color=INK2, lw=1, ls=":")
+    ax.annotate(f"all 20 candidate beams (LP floor): {lb_all:.2f}", (max(Ks), lb_all), xytext=(0, -14),
+                textcoords="offset points", ha="right", fontsize=9, color=INK2)
+    ax.plot([easy_point[0]], [easy_point[1]], "s", color="#eb6834", ms=9, markeredgecolor=SURFACE,
+            markeredgewidth=2, zorder=4, label="Easy LP: 5 equispaced beams")
+    ax.set_xlabel("Maximum number of beams K"); ax.set_ylabel("Weighted objective (Gy)")
+    ax.set_xticks(sorted(set(Ks) | set(K20)))
+    ax.set_ylim(min(lb_all, min(lb20) if lb20 else lb_all) * 0.9, max(list(opt10) + list(ub20) + [easy_point[1]]) * 1.08)
+    ax.legend(loc="upper right", fontsize=8.5)
+    ax.set_title("Price of a beam budget (normal-tissue cap on)")
+    fig.tight_layout(); fig.savefig(path, dpi=200); plt.close(fig)

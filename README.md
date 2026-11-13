@@ -1,63 +1,70 @@
 # IMRT plan optimisation on the CORT prostate case
 
-Course project (Optimisation). Two formulations on the same real data:
+Course project (Optimisation). Choose beamlet intensities `x` so the tumour gets its prescribed dose
+(`d = D x`) while the rectum, bladder and the rest of the body get as little as possible.
 
-- **Easy (LP):** fixed 5 equispaced beams; minimise weighted mean dose to rectum, bladder and
-  body subject to target coverage and a dose cap.
-- **Hard (MILP), headline: beam angle selection.** Choose at most K of 20 candidate beams
-  (binary per beam). Real machines deliver few beams, so this is the more faithful model.
-- **Hard (secondary): dose-volume constraint** on the rectum (binary per voxel). The exact MILP
-  could not be solved at this size; the result is a feasible plan from a labelled
-  approximation, bracketed by a valid lower bound.
+- **Easy problem (LP):** 5 fixed, equispaced beams. Minimise weighted mean dose to the rectum,
+  bladder and body, subject to target coverage (68 / 56 Gy) and a 74.8 Gy cap on the targets, the
+  organs and **all normal tissue** (the body cap is enforced by row generation).
+- **Hard problem (integer): beam angle selection.** Choose at most K beams from a candidate set
+  (one binary per beam). Solved **exactly by enumeration** on a 10-beam grid (every 36°): every
+  K-subset is solved as an exact LP and verified, so the optimum is certified with zero gap.
+  A big-M MILP was tried first; its relaxation collapses to the all-beam LP, so it never closed the
+  gap (kept as evidence: `results/logs/`, `results/bao_sweep.json`).
+- **Realism on fixed beams:** a rectal dose-volume limit (≤17% of the rectum above 50 Gy) by
+  fix-and-resolve, bracketed by the LP, plus a provable floor on how far that limit can go.
 
-See `results/SUMMARY.md` for the findings and `BUILDMAP.md` for the original brief.
+Findings and numbers: `results/SUMMARY.md`. Original brief: `BUILDMAP.md`.
 
 ## Install
     python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
-`highspy` is optional. If installed, it is used for the MILPs because it accepts a warm start;
-otherwise `scipy.optimize.milp` (same HiGHS solver) is used through the same interface
-(`src/solvers.py`).
+`highspy` is used for warm-started LPs and the MILP warm start; without it the code falls back to
+`scipy.optimize` (same HiGHS engine), more slowly.
 
 ## Data
-The CORT dataset (GigaDB 100110, Craft et al. 2014) is read-only and never committed (~2 GB).
-Default location: `~/Downloads/{PROSTATE,TG119}`. Override with `CORT_DATA_ROOT=/path`.
-All paths, prescriptions and weights are in `src/config.py`.
+CORT dataset (GigaDB 100110, Craft et al. 2014); read-only, never committed (~2 GB).
+Default location `~/Downloads/{PROSTATE,TG119}`; override with `CORT_DATA_ROOT=/path`.
+Paths, prescriptions, weights and candidate grids are in `src/config.py`.
 
 ## Run order (from the repo root, no arguments)
 
 | Script | What it does | Time |
 |---|---|---|
-| `scripts/00_inspect_data.py` | Lists files, confirms beam counts, beamlet totals, grid sizes | <1 min |
-| `scripts/01_sanity_checks.py` | Reproduces the paper's "ones" doses and LPs → `results/sanity_checks.csv` | ~1 min |
-| `scripts/02_run_easy.py` | Easy LP, verified → `results/easy_solution.npz`, `results.json["easy"]` | ~1 min |
-| `scripts/03_run_hard.py` | DVC plan + beam selection sweep K=3..9 (600 s limit each), verified. Resumable | ~1.5 h |
-| `scripts/04_analysis.py` | Figures and tables from the saved solutions | ~2 min |
-| `.venv/bin/python -m pytest tests` | TG119 loader tests + synthetic beam-selection tests | <10 s |
+| `scripts/00_inspect_data.py` | Confirms beam counts, beamlet totals, grid sizes | <1 min |
+| `scripts/01_sanity_checks.py` | Reproduces the paper's "ones" doses and LPs → `sanity_checks.csv` | ~1 min |
+| `scripts/02_run_easy.py` | Easy LP with the body cap, verified → `easy_solution.npz` | ~2 min |
+| `scripts/03_run_hard.py` | Default: re-verifies all saved plans (`05_verify_all.py`). `RERUN=1`: rectum DVC plan + capped beam-selection MILP for K=3..5 | 5 min / ~5 h |
+| `scripts/03b_enumerate.py` | Exact beam selection: all 792 subsets for K=3..6 on the 36° grid, 4 workers, resumable | ~1.5 h |
+| `scripts/03c_dvc_floor.py` | Provable floor on the rectal V50 + limit sweep | ~2 h (budgeted) |
+| `scripts/03d_swap_final.py` | Swap search on the 18° grid (uncertified) + final plan (best 5 + cap + rectum limit) | ~30 min |
+| `scripts/04_analysis.py` | Figures and tables from saved solutions | ~5 min |
+| `scripts/05_verify_all.py` | Re-verifies every saved plan on the full grid → `verification_summary.csv` | ~5 min |
+| `.venv/bin/python -m pytest tests` | Loader tests (TG119) + synthetic tests (row generation, MILP relaxation, voxel floor) | <10 s |
 
 ## Outputs (`results/`)
 
 | File | Contents |
 |---|---|
-| `sanity_checks.csv` | Published vs computed numbers (Checks A and B) |
-| `results.json` | Parameters, solver status, verification (constraint violations, recomputed objective, key variables) for every plan |
-| `bao_sweep.json` | Beam selection per K: plan, chosen angles, best bound, gap, verification |
-| `fig1_dvh.png` | Dose-volume histograms, easy vs hard |
-| `fig2_dose_maps.png` | Axial dose through the PTV centre, plus hard − easy difference maps |
-| `fig3_fluence.png` | Beamlet intensities per beam |
-| `fig4_price_of_realism.png` | Objective per plan, split into rectum / bladder / body terms |
-| `fig5_sweep_K.png` | Objective vs number of beams K, with proven bounds |
-| `model_summary.csv` | Size, solve time, status and gap of every model |
-| `dose_table.csv` | Per-structure min / mean / max, D95 (targets), V30–V70 (organs) |
-| `logs/` | Raw logs of the exact DVC MILP attempts and feasibility scans |
+| `SUMMARY.md` | Findings, numbers, limitations, changes from the brief |
+| `sanity_checks.csv` | Published vs computed numbers |
+| `results.json` | Parameters, solver status and verification for the main plans |
+| `enum/K{3..6}.jsonl`, `enum/best_K*.npz` | Every enumerated subset (objective, verification) and the optimum per K |
+| `bao_sweep.json` | Capped MILP sweep K=3..5 (bounds, gaps) |
+| `swap_final.json` | Swap search and final plan |
+| `dvc_floor.json` | Proven-forced rectal voxels and the limit sweep |
+| `fig1_dvh.png` … `fig6_rectum_distance.png` | DVHs, dose maps, fluence, price of realism, price of a beam budget, rectum vs PTV distance |
+| `model_summary.csv`, `dose_table.csv`, `before_after_body_cap.csv`, `verification_summary.csv` | Tables |
+| `no_body_cap/` | The earlier run without the normal-tissue cap (superseded; kept for the comparison) |
+| `logs/` | Raw logs, including the failed exact MILP attempts |
 
 ## Layout
-    src/config.py      paths, beam sets, prescriptions, weights
+    src/config.py      paths, beam sets, prescriptions, weights, candidate grids
     src/io_cort.py     .mat loaders (scipy, with h5py fallback for v7.3), grid parser
     src/problem.py     stacked dose matrix, structure sets (raw / disjoint), cache
-    src/easy_lp.py     easy LP and the shared model builder
-    src/hard_bao.py    beam angle selection MILP, heuristic, bounds
-    src/hard_dvc.py    dose-volume MILP, fix-and-resolve, CVaR, row generation
+    src/easy_lp.py     LP model builder, body-cap row generation
+    src/hard_bao.py    beam selection: reduced matrices, exact LP with all-row generation, MILP, heuristics
+    src/hard_dvc.py    dose-volume limit: fix-and-resolve, provable voxel dose floor
     src/solvers.py     MIP backend (scipy.milp or highspy)
-    src/verify.py      independent feasibility / objective checks
+    src/verify.py      independent full-grid feasibility / objective checks
     src/plots.py       figures

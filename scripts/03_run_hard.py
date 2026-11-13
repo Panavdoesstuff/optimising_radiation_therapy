@@ -11,10 +11,17 @@
 (b) Rectum dose-volume constraint (secondary): fix-and-resolve plan with the body cap,
     bracketed by the easy LP (a relaxation). Labelled as an approximation.
 """
-import json, sys, time, warnings
+import json, os, runpy, sys, time, warnings
 from dataclasses import asdict
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+# Default: results exist -> only re-verify them (a few minutes). Set RERUN=1 to recompute (hours).
+_R = Path(__file__).resolve().parents[1] / "results"
+if not os.environ.get("RERUN") and (_R / "bao_sweep.json").exists() and (_R / "easy_solution.npz").exists():
+    print("Saved results found: re-verifying them (set RERUN=1 to re-solve; takes several hours).")
+    runpy.run_path(str(Path(__file__).with_name("05_verify_all.py")), run_name="__main__")
+    sys.exit(0)
 import numpy as np
 from src import config, problem, easy_lp, hard_dvc, hard_bao, verify
 

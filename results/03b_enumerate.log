@@ -1,0 +1,775 @@
+candidates [0, 36, 72, 108, 144, 180, 216, 252, 288, 324]; body-row pool 61651; workers 4
+K=5: 31 done, 221 to go
+K=4: 0 done, 210 to go
+K=6: 0 done, 210 to go
+K=3: 0 done, 120 to go
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[1/761] K=5 [0, 36, 108, 216, 324] solved 59.8838 (51s) best K=5: 52.02618990929027 | elapsed 1 min, eta 732 min
+[2/761] K=5 [0, 36, 108, 216, 252] solved 57.2549 (54s) best K=5: 52.02618990929027 | elapsed 1 min, eta 375 min
+[3/761] K=5 [0, 36, 108, 252, 324] solved 54.6034 (59s) best K=5: 52.02618990929027 | elapsed 1 min, eta 280 min
+[4/761] K=5 [0, 36, 108, 252, 288] solved 55.9916 (65s) best K=5: 52.02618990929027 | elapsed 1 min, eta 229 min
+[5/761] K=5 [0, 36, 144, 180, 252] solved 54.6885 (48s) best K=5: 52.02618990929027 | elapsed 2 min, eta 288 min
+[6/761] K=5 [0, 36, 108, 288, 324] solved 60.5827 (61s) best K=5: 52.02618990929027 | elapsed 2 min, eta 248 min
+[7/761] K=5 [0, 36, 144, 180, 216] solved 65.8710 (59s) best K=5: 52.02618990929027 | elapsed 2 min, eta 213 min
+[8/761] K=5 [0, 36, 144, 180, 288] solved 56.0441 (53s) best K=5: 52.02618990929027 | elapsed 2 min, eta 197 min
+[9/761] K=5 [0, 36, 144, 216, 288] solved 59.0564 (44s) best K=5: 52.02618990929027 | elapsed 3 min, eta 227 min
+[10/761] K=5 [0, 36, 144, 180, 324] solved 67.4017 (53s) best K=5: 52.02618990929027 | elapsed 3 min, eta 210 min
+[11/761] K=5 [0, 36, 144, 216, 252] solved 59.0608 (51s) best K=5: 52.02618990929027 | elapsed 3 min, eta 193 min
+[12/761] K=5 [0, 36, 144, 216, 324] solved 69.7454 (51s) best K=5: 52.02618990929027 | elapsed 3 min, eta 183 min
+[13/761] K=5 [0, 36, 144, 252, 288] solved 52.6487 (40s) best K=5: 52.02618990929027 | elapsed 3 min, eta 195 min
+[14/761] K=5 [0, 36, 144, 252, 324] solved 59.9148 (43s) best K=5: 52.02618990929027 | elapsed 4 min, eta 187 min
+[15/761] K=5 [0, 36, 144, 288, 324] solved 62.3086 (41s) best K=5: 52.02618990929027 | elapsed 4 min, eta 175 min
+[16/761] K=5 [0, 36, 180, 216, 252] solved 63.4024 (36s) best K=5: 52.02618990929027 | elapsed 4 min, eta 165 min
+[17/761] K=5 [0, 36, 180, 216, 288] solved 61.2209 (31s) best K=5: 52.02618990929027 | elapsed 4 min, eta 171 min
+[18/761] K=5 [0, 36, 180, 252, 288] solved 53.4023 (31s) best K=5: 52.02618990929027 | elapsed 4 min, eta 166 min
+[19/761] K=5 [0, 36, 180, 252, 324] solved 56.1978 (34s) best K=5: 52.02618990929027 | elapsed 4 min, eta 160 min
+[20/761] K=5 [0, 36, 180, 216, 324] solved 67.2766 (36s) best K=5: 52.02618990929027 | elapsed 4 min, eta 153 min
+[21/761] K=5 [0, 36, 180, 288, 324] solved 56.9764 (30s) best K=5: 52.02618990929027 | elapsed 4 min, eta 155 min
+[22/761] K=5 [0, 36, 216, 252, 288] solved 57.8123 (25s) best K=5: 52.02618990929027 | elapsed 4 min, eta 149 min
+[23/761] K=5 [0, 36, 216, 252, 324] solved 61.3920 (24s) best K=5: 52.02618990929027 | elapsed 4 min, eta 144 min
+[24/761] K=5 [0, 36, 216, 288, 324] solved 60.8813 (28s) best K=5: 52.02618990929027 | elapsed 5 min, eta 141 min
+[25/761] K=5 [0, 36, 252, 288, 324] solved 55.4144 (29s) best K=5: 52.02618990929027 | elapsed 5 min, eta 143 min
+[26/761] K=5 [0, 72, 108, 144, 216] solved 51.3025 (25s) best K=5: 51.302451007712335 | elapsed 5 min, eta 139 min
+[27/761] K=5 [0, 72, 108, 144, 180] solved 51.0394 (30s) best K=5: 51.03941902990303 | elapsed 5 min, eta 134 min
+[28/761] K=5 [0, 72, 108, 144, 252] solved 52.5553 (25s) best K=5: 51.03941902990303 | elapsed 5 min, eta 131 min
+[29/761] K=5 [0, 72, 108, 144, 324] solved 57.2287 (24s) best K=5: 51.03941902990303 | elapsed 5 min, eta 134 min
+[30/761] K=5 [0, 72, 108, 180, 216] solved 52.7283 (23s) best K=5: 51.03941902990303 | elapsed 5 min, eta 130 min
+[31/761] K=5 [0, 72, 108, 144, 288] solved 55.5287 (27s) best K=5: 51.03941902990303 | elapsed 5 min, eta 125 min
+[32/761] K=5 [0, 72, 108, 180, 252] solved 52.7502 (29s) best K=5: 51.03941902990303 | elapsed 5 min, eta 125 min
+[33/761] K=5 [0, 72, 108, 180, 324] solved 53.0181 (26s) best K=5: 51.03941902990303 | elapsed 6 min, eta 127 min
+[34/761] K=5 [0, 72, 108, 180, 288] solved 53.7150 (27s) best K=5: 51.03941902990303 | elapsed 6 min, eta 123 min
+[35/761] K=5 [0, 72, 108, 216, 252] solved 55.1602 (32s) best K=5: 51.03941902990303 | elapsed 6 min, eta 121 min
+[36/761] K=5 [0, 72, 108, 216, 288] solved 54.9926 (28s) best K=5: 51.03941902990303 | elapsed 6 min, eta 120 min
+[37/761] K=5 [0, 72, 108, 252, 288] solved 56.1025 (33s) best K=5: 51.03941902990303 | elapsed 6 min, eta 123 min
+[38/761] K=5 [0, 72, 108, 216, 324] solved 53.4209 (35s) best K=5: 51.03941902990303 | elapsed 6 min, eta 120 min
+[39/761] K=5 [0, 72, 108, 252, 324] solved 55.3719 (31s) best K=5: 51.03941902990303 | elapsed 6 min, eta 118 min
+[40/761] K=5 [0, 72, 108, 288, 324] solved 58.1999 (30s) best K=5: 51.03941902990303 | elapsed 6 min, eta 116 min
+[41/761] K=5 [0, 72, 144, 180, 216] solved 54.6009 (23s) best K=5: 51.03941902990303 | elapsed 7 min, eta 117 min
+[42/761] K=5 [0, 72, 144, 180, 252] solved 55.3038 (26s) best K=5: 51.03941902990303 | elapsed 7 min, eta 116 min
+[43/761] K=5 [0, 72, 144, 180, 288] solved 52.4239 (28s) best K=5: 51.03941902990303 | elapsed 7 min, eta 114 min
+[44/761] K=5 [0, 72, 144, 180, 324] solved 61.0159 (24s) best K=5: 51.03941902990303 | elapsed 7 min, eta 112 min
+[45/761] K=5 [0, 72, 144, 216, 252] solved 56.7629 (31s) best K=5: 51.03941902990303 | elapsed 7 min, eta 115 min
+[46/761] K=5 [0, 72, 144, 216, 288] solved 52.5344 (28s) best K=5: 51.03941902990303 | elapsed 7 min, eta 113 min
+[47/761] K=5 [0, 72, 144, 216, 324] solved 59.9031 (30s) best K=5: 51.03941902990303 | elapsed 7 min, eta 111 min
+[48/761] K=5 [0, 72, 144, 252, 288] solved 53.3315 (32s) best K=5: 51.03941902990303 | elapsed 7 min, eta 110 min
+[49/761] K=5 [0, 72, 144, 252, 324] solved 60.8507 (25s) best K=5: 51.03941902990303 | elapsed 8 min, eta 111 min
+[50/761] K=5 [0, 72, 144, 288, 324] solved 58.5792 (29s) best K=5: 51.03941902990303 | elapsed 8 min, eta 110 min
+[51/761] K=5 [0, 72, 180, 216, 252] solved 59.3636 (25s) best K=5: 51.03941902990303 | elapsed 8 min, eta 108 min
+[52/761] K=5 [0, 72, 180, 216, 288] solved 53.1501 (25s) best K=5: 51.03941902990303 | elapsed 8 min, eta 106 min
+[53/761] K=5 [0, 72, 180, 216, 324] solved 56.1330 (27s) best K=5: 51.03941902990303 | elapsed 8 min, eta 108 min
+[54/761] K=5 [0, 72, 180, 252, 288] solved 53.3919 (23s) best K=5: 51.03941902990303 | elapsed 8 min, eta 106 min
+[55/761] K=5 [0, 72, 180, 252, 324] solved 56.5748 (24s) best K=5: 51.03941902990303 | elapsed 8 min, eta 104 min
+[56/761] K=5 [0, 72, 180, 288, 324] solved 54.5002 (29s) best K=5: 51.03941902990303 | elapsed 8 min, eta 104 min
+[57/761] K=5 [0, 72, 216, 252, 288] solved 56.2118 (27s) best K=5: 51.03941902990303 | elapsed 9 min, eta 105 min
+[58/761] K=5 [0, 72, 216, 288, 324] solved 54.7671 (27s) best K=5: 51.03941902990303 | elapsed 9 min, eta 104 min
+[59/761] K=5 [0, 72, 216, 252, 324] solved 58.4471 (29s) best K=5: 51.03941902990303 | elapsed 9 min, eta 102 min
+[60/761] K=5 [0, 72, 252, 288, 324] solved 56.5816 (27s) best K=5: 51.03941902990303 | elapsed 9 min, eta 102 min
+[61/761] K=5 [0, 108, 144, 180, 216] solved 53.8243 (26s) best K=5: 51.03941902990303 | elapsed 9 min, eta 103 min
+[62/761] K=5 [0, 108, 144, 180, 252] solved 50.8260 (27s) best K=5: 50.82600228032107 | elapsed 9 min, eta 102 min
+[63/761] K=5 [0, 108, 144, 180, 324] solved 63.3311 (25s) best K=5: 50.82600228032107 | elapsed 9 min, eta 101 min
+[64/761] K=5 [0, 108, 144, 180, 288] solved 59.5272 (36s) best K=5: 50.82600228032107 | elapsed 9 min, eta 100 min
+[65/761] K=5 [0, 108, 144, 216, 252] solved 50.5697 (30s) best K=5: 50.569738532342896 | elapsed 9 min, eta 101 min
+[66/761] K=5 [0, 108, 144, 216, 324] solved 59.1423 (31s) best K=5: 50.569738532342896 | elapsed 10 min, eta 102 min
+[67/761] K=5 [0, 108, 144, 216, 288] solved 56.3988 (40s) best K=5: 50.569738532342896 | elapsed 10 min, eta 100 min
+[68/761] K=5 [0, 108, 144, 252, 288] solved 54.2680 (33s) best K=5: 50.569738532342896 | elapsed 10 min, eta 99 min
+[69/761] K=5 [0, 108, 144, 252, 324] solved 56.7414 (30s) best K=5: 50.569738532342896 | elapsed 10 min, eta 100 min
+[70/761] K=5 [0, 108, 180, 216, 252] solved 51.7789 (29s) best K=5: 50.569738532342896 | elapsed 10 min, eta 101 min
+[71/761] K=5 [0, 108, 180, 216, 288] solved 55.6787 (30s) best K=5: 50.569738532342896 | elapsed 10 min, eta 99 min
+[72/761] K=5 [0, 108, 144, 288, 324] solved 65.9528 (38s) best K=5: 50.569738532342896 | elapsed 10 min, eta 98 min
+[73/761] K=5 [0, 108, 180, 216, 324] solved 54.5395 (27s) best K=5: 50.569738532342896 | elapsed 10 min, eta 98 min
+[74/761] K=5 [0, 108, 180, 252, 288] solved 52.7700 (29s) best K=5: 50.569738532342896 | elapsed 11 min, eta 99 min
+[75/761] K=5 [0, 108, 180, 288, 324] solved 60.8073 (25s) best K=5: 50.569738532342896 | elapsed 11 min, eta 98 min
+[76/761] K=5 [0, 108, 180, 252, 324] solved 52.4731 (30s) best K=5: 50.569738532342896 | elapsed 11 min, eta 97 min
+[77/761] K=5 [0, 108, 216, 252, 288] solved 54.1971 (27s) best K=5: 50.569738532342896 | elapsed 11 min, eta 96 min
+[78/761] K=5 [0, 108, 216, 288, 324] solved 58.5616 (30s) best K=5: 50.569738532342896 | elapsed 11 min, eta 98 min
+[79/761] K=5 [0, 108, 216, 252, 324] solved 52.8883 (36s) best K=5: 50.569738532342896 | elapsed 11 min, eta 97 min
+[80/761] K=5 [0, 108, 252, 288, 324] solved 57.1863 (33s) best K=5: 50.569738532342896 | elapsed 11 min, eta 96 min
+[81/761] K=5 [0, 144, 180, 216, 252] solved 53.6404 (28s) best K=5: 50.569738532342896 | elapsed 11 min, eta 95 min
+[82/761] K=5 [0, 144, 180, 216, 288] solved 54.1751 (26s) best K=5: 50.569738532342896 | elapsed 12 min, eta 96 min
+[83/761] K=5 [0, 144, 180, 252, 288] solved 51.7352 (26s) best K=5: 50.569738532342896 | elapsed 12 min, eta 96 min
+[84/761] K=5 [0, 144, 180, 216, 324] solved 65.9013 (33s) best K=5: 50.569738532342896 | elapsed 12 min, eta 95 min
+[85/761] K=5 [0, 144, 180, 252, 324] solved 60.1585 (29s) best K=5: 50.569738532342896 | elapsed 12 min, eta 94 min
+[86/761] K=5 [0, 144, 180, 288, 324] solved 64.1182 (23s) best K=5: 50.569738532342896 | elapsed 12 min, eta 94 min
+[87/761] K=5 [0, 144, 216, 252, 288] solved 51.6608 (29s) best K=5: 50.569738532342896 | elapsed 12 min, eta 94 min
+[88/761] K=5 [0, 144, 216, 288, 324] solved 60.4779 (28s) best K=5: 50.569738532342896 | elapsed 12 min, eta 94 min
+[89/761] K=5 [0, 144, 216, 252, 324] solved 58.6832 (30s) best K=5: 50.569738532342896 | elapsed 12 min, eta 93 min
+[90/761] K=5 [0, 180, 216, 252, 288] solved 51.8666 (25s) best K=5: 50.569738532342896 | elapsed 13 min, eta 94 min
+[91/761] K=5 [0, 144, 252, 288, 324] solved 57.8074 (35s) best K=5: 50.569738532342896 | elapsed 13 min, eta 93 min
+[92/761] K=5 [0, 180, 216, 252, 324] solved 55.2424 (27s) best K=5: 50.569738532342896 | elapsed 13 min, eta 93 min
+[93/761] K=5 [0, 180, 216, 288, 324] solved 54.9328 (31s) best K=5: 50.569738532342896 | elapsed 13 min, eta 92 min
+[94/761] K=5 [0, 180, 252, 288, 324] solved 53.4839 (27s) best K=5: 50.569738532342896 | elapsed 13 min, eta 93 min
+[95/761] K=5 [0, 216, 252, 288, 324] solved 53.8859 (29s) best K=5: 50.569738532342896 | elapsed 13 min, eta 92 min
+[96/761] K=5 [36, 72, 108, 144, 180] solved 49.5946 (29s) best K=5: 49.594618192770234 | elapsed 13 min, eta 92 min
+[97/761] K=5 [36, 72, 108, 144, 216] solved 61.9328 (47s) best K=5: 49.594618192770234 | elapsed 14 min, eta 93 min
+[98/761] K=5 [36, 72, 108, 144, 324] solved 61.0872 (43s) best K=5: 49.594618192770234 | elapsed 14 min, eta 94 min
+[99/761] K=5 [36, 72, 108, 144, 288] solved 60.8884 (53s) best K=5: 49.594618192770234 | elapsed 14 min, eta 93 min
+[100/761] K=5 [36, 72, 108, 144, 252] solved 61.0162 (59s) best K=5: 49.594618192770234 | elapsed 14 min, eta 93 min
+[101/761] K=5 [36, 72, 108, 180, 216] solved 54.4128 (32s) best K=5: 49.594618192770234 | elapsed 14 min, eta 92 min
+[102/761] K=5 [36, 72, 108, 180, 252] solved 52.8884 (29s) best K=5: 49.594618192770234 | elapsed 14 min, eta 93 min
+[103/761] K=5 [36, 72, 108, 180, 288] solved 51.5880 (29s) best K=5: 49.594618192770234 | elapsed 14 min, eta 92 min
+[104/761] K=5 [36, 72, 108, 180, 324] solved 50.0344 (28s) best K=5: 49.594618192770234 | elapsed 15 min, eta 92 min
+[105/761] K=5 [36, 72, 108, 216, 252] solved 62.6257 (43s) best K=5: 49.594618192770234 | elapsed 15 min, eta 93 min
+[106/761] K=5 [36, 72, 108, 216, 288] solved 61.8787 (31s) best K=5: 49.594618192770234 | elapsed 15 min, eta 92 min
+[107/761] K=5 [36, 72, 108, 216, 324] solved 62.0613 (38s) best K=5: 49.594618192770234 | elapsed 15 min, eta 92 min
+[108/761] K=5 [36, 72, 108, 252, 288] solved 61.5532 (43s) best K=5: 49.594618192770234 | elapsed 15 min, eta 92 min
+[109/761] K=5 [36, 72, 108, 288, 324] solved 62.7495 (39s) best K=5: 49.594618192770234 | elapsed 16 min, eta 93 min
+[110/761] K=5 [36, 72, 108, 252, 324] solved 61.4232 (46s) best K=5: 49.594618192770234 | elapsed 16 min, eta 92 min
+[111/761] K=5 [36, 72, 144, 180, 216] solved 57.1244 (32s) best K=5: 49.594618192770234 | elapsed 16 min, eta 91 min
+[112/761] K=5 [36, 72, 144, 180, 252] solved 54.2178 (24s) best K=5: 49.594618192770234 | elapsed 16 min, eta 91 min
+[113/761] K=5 [36, 72, 144, 180, 288] solved 49.4964 (26s) best K=5: 49.49643098594675 | elapsed 16 min, eta 92 min
+[114/761] K=5 [36, 72, 144, 180, 324] solved 56.8333 (28s) best K=5: 49.49643098594675 | elapsed 16 min, eta 91 min
+[115/761] K=5 [36, 72, 144, 216, 288] solved 60.7356 (39s) best K=5: 49.49643098594675 | elapsed 16 min, eta 91 min
+[116/761] K=5 [36, 72, 144, 216, 252] solved 66.5274 (48s) best K=5: 49.49643098594675 | elapsed 16 min, eta 91 min
+[117/761] K=5 [36, 72, 144, 216, 324] solved 67.4246 (28s) best K=5: 49.49643098594675 | elapsed 16 min, eta 91 min
+[118/761] K=5 [36, 72, 144, 252, 288] solved 60.3150 (38s) best K=5: 49.49643098594675 | elapsed 17 min, eta 91 min
+[119/761] K=5 [36, 72, 144, 252, 324] solved 65.0095 (31s) best K=5: 49.49643098594675 | elapsed 17 min, eta 91 min
+[120/761] K=5 [36, 72, 180, 216, 252] solved 61.8230 (30s) best K=5: 49.49643098594675 | elapsed 17 min, eta 91 min
+[121/761] K=5 [36, 72, 144, 288, 324] solved 62.1257 (35s) best K=5: 49.49643098594675 | elapsed 17 min, eta 90 min
+[122/761] K=5 [36, 72, 180, 216, 288] solved 54.1093 (27s) best K=5: 49.49643098594675 | elapsed 17 min, eta 90 min
+[123/761] K=5 [36, 72, 180, 216, 324] solved 56.8835 (28s) best K=5: 49.49643098594675 | elapsed 17 min, eta 90 min
+[124/761] K=5 [36, 72, 180, 252, 288] solved 52.7442 (28s) best K=5: 49.49643098594675 | elapsed 17 min, eta 90 min
+[125/761] K=5 [36, 72, 180, 252, 324] solved 54.4689 (29s) best K=5: 49.49643098594675 | elapsed 17 min, eta 89 min
+[126/761] K=5 [36, 72, 180, 288, 324] solved 50.3945 (29s) best K=5: 49.49643098594675 | elapsed 18 min, eta 89 min
+[127/761] K=5 [36, 72, 216, 252, 288] solved 61.2892 (30s) best K=5: 49.49643098594675 | elapsed 18 min, eta 89 min
+[128/761] K=5 [36, 72, 216, 288, 324] solved 61.8614 (30s) best K=5: 49.49643098594675 | elapsed 18 min, eta 89 min
+[129/761] K=5 [36, 72, 216, 252, 324] solved 66.8197 (39s) best K=5: 49.49643098594675 | elapsed 18 min, eta 89 min
+[130/761] K=5 [36, 108, 144, 180, 216] solved 56.1655 (30s) best K=5: 49.49643098594675 | elapsed 18 min, eta 89 min
+[131/761] K=5 [36, 72, 252, 288, 324] solved 62.5466 (46s) best K=5: 49.49643098594675 | elapsed 18 min, eta 89 min
+[132/761] K=5 [36, 108, 144, 180, 252] solved 48.8302 (29s) best K=5: 48.83023070323071 | elapsed 18 min, eta 88 min
+[133/761] K=5 [36, 108, 144, 180, 288] solved 53.8610 (31s) best K=5: 48.83023070323071 | elapsed 19 min, eta 88 min
+[134/761] K=5 [36, 108, 144, 180, 324] solved 57.0399 (30s) best K=5: 48.83023070323071 | elapsed 19 min, eta 88 min
+[135/761] K=5 [36, 108, 144, 216, 252] solved 60.4929 (29s) best K=5: 48.83023070323071 | elapsed 19 min, eta 88 min
+[136/761] K=5 [36, 108, 144, 216, 288] solved 63.8005 (34s) best K=5: 48.83023070323071 | elapsed 19 min, eta 87 min
+[137/761] K=5 [36, 108, 144, 216, 324] solved 67.0355 (31s) best K=5: 48.83023070323071 | elapsed 19 min, eta 87 min
+[138/761] K=5 [36, 108, 144, 252, 288] solved 59.7178 (40s) best K=5: 48.83023070323071 | elapsed 19 min, eta 88 min
+[139/761] K=5 [36, 108, 144, 252, 324] solved 60.9562 (35s) best K=5: 48.83023070323071 | elapsed 19 min, eta 87 min
+[140/761] K=5 [36, 108, 180, 216, 252] solved 53.7374 (28s) best K=5: 48.83023070323071 | elapsed 20 min, eta 87 min
+[141/761] K=5 [36, 108, 144, 288, 324] solved 66.9433 (40s) best K=5: 48.83023070323071 | elapsed 20 min, eta 87 min
+[142/761] K=5 [36, 108, 180, 216, 288] solved 57.2859 (24s) best K=5: 48.83023070323071 | elapsed 20 min, eta 86 min
+[143/761] K=5 [36, 108, 180, 216, 324] solved 56.4239 (25s) best K=5: 48.83023070323071 | elapsed 20 min, eta 86 min
+[144/761] K=5 [36, 108, 180, 252, 288] solved 50.8869 (26s) best K=5: 48.83023070323071 | elapsed 20 min, eta 86 min
+[145/761] K=5 [36, 108, 180, 252, 324] solved 49.7703 (28s) best K=5: 48.83023070323071 | elapsed 20 min, eta 86 min
+[146/761] K=5 [36, 108, 180, 288, 324] solved 54.6544 (26s) best K=5: 48.83023070323071 | elapsed 20 min, eta 85 min
+[147/761] K=5 [36, 108, 216, 252, 288] solved 60.9591 (28s) best K=5: 48.83023070323071 | elapsed 20 min, eta 85 min
+[148/761] K=5 [36, 108, 216, 252, 324] solved 60.9461 (30s) best K=5: 48.83023070323071 | elapsed 21 min, eta 85 min
+[149/761] K=5 [36, 108, 216, 288, 324] solved 65.3827 (33s) best K=5: 48.83023070323071 | elapsed 21 min, eta 85 min
+[150/761] K=5 [36, 144, 180, 216, 252] solved 56.7026 (30s) best K=5: 48.83023070323071 | elapsed 21 min, eta 85 min
+[151/761] K=5 [36, 108, 252, 288, 324] solved 61.6441 (41s) best K=5: 48.83023070323071 | elapsed 21 min, eta 85 min
+[152/761] K=5 [36, 144, 180, 216, 288] solved 55.7266 (31s) best K=5: 48.83023070323071 | elapsed 21 min, eta 84 min
+[153/761] K=5 [36, 144, 180, 216, 324] solved 67.4555 (27s) best K=5: 48.83023070323071 | elapsed 21 min, eta 84 min
+[154/761] K=5 [36, 144, 180, 252, 288] solved 48.7407 (23s) best K=5: 48.74072187516492 | elapsed 21 min, eta 84 min
+[155/761] K=5 [36, 144, 180, 252, 324] solved 56.5039 (27s) best K=5: 48.74072187516492 | elapsed 21 min, eta 84 min
+[156/761] K=5 [36, 144, 180, 288, 324] solved 56.9656 (29s) best K=5: 48.74072187516492 | elapsed 22 min, eta 83 min
+[157/761] K=5 [36, 144, 216, 252, 288] solved 59.4642 (37s) best K=5: 48.74072187516492 | elapsed 22 min, eta 84 min
+[158/761] K=5 [36, 144, 216, 252, 324] solved 66.9279 (33s) best K=5: 48.74072187516492 | elapsed 22 min, eta 83 min
+[159/761] K=5 [36, 144, 216, 288, 324] solved 67.1339 (27s) best K=5: 48.74072187516492 | elapsed 22 min, eta 83 min
+[160/761] K=5 [36, 180, 216, 252, 288] solved 53.6986 (21s) best K=5: 48.74072187516492 | elapsed 22 min, eta 83 min
+[161/761] K=5 [36, 144, 252, 288, 324] solved 61.8837 (41s) best K=5: 48.74072187516492 | elapsed 22 min, eta 83 min
+[162/761] K=5 [36, 180, 216, 252, 324] solved 56.8304 (25s) best K=5: 48.74072187516492 | elapsed 22 min, eta 82 min
+[163/761] K=5 [36, 180, 216, 288, 324] solved 56.5409 (28s) best K=5: 48.74072187516492 | elapsed 22 min, eta 82 min
+[164/761] K=5 [36, 180, 252, 288, 324] solved 50.0315 (26s) best K=5: 48.74072187516492 | elapsed 23 min, eta 82 min
+[165/761] K=5 [72, 108, 144, 180, 216] solved 47.6069 (31s) best K=5: 47.60692195391267 | elapsed 23 min, eta 82 min
+[166/761] K=5 [72, 108, 144, 180, 252] solved 48.2976 (26s) best K=5: 47.60692195391267 | elapsed 23 min, eta 82 min
+[167/761] K=5 [36, 216, 252, 288, 324] solved 60.5463 (35s) best K=5: 47.60692195391267 | elapsed 23 min, eta 81 min
+[168/761] K=5 [72, 108, 144, 180, 288] solved 50.8719 (26s) best K=5: 47.60692195391267 | elapsed 23 min, eta 81 min
+[169/761] K=5 [72, 108, 144, 180, 324] solved 53.6315 (30s) best K=5: 47.60692195391267 | elapsed 23 min, eta 81 min
+[170/761] K=5 [72, 108, 144, 216, 252] solved 58.6807 (37s) best K=5: 47.60692195391267 | elapsed 23 min, eta 81 min
+[171/761] K=5 [72, 108, 144, 216, 288] solved 58.6540 (50s) best K=5: 47.60692195391267 | elapsed 24 min, eta 81 min
+[172/761] K=5 [72, 108, 144, 216, 324] solved 60.4672 (38s) best K=5: 47.60692195391267 | elapsed 24 min, eta 81 min
+[173/761] K=5 [72, 108, 144, 252, 288] solved 59.0572 (39s) best K=5: 47.60692195391267 | elapsed 24 min, eta 81 min
+[174/761] K=5 [72, 108, 144, 252, 324] solved 60.6270 (32s) best K=5: 47.60692195391267 | elapsed 24 min, eta 81 min
+[175/761] K=5 [72, 108, 144, 288, 324] solved 61.1088 (31s) best K=5: 47.60692195391267 | elapsed 24 min, eta 81 min
+[176/761] K=5 [72, 108, 180, 216, 252] solved 50.9525 (30s) best K=5: 47.60692195391267 | elapsed 24 min, eta 80 min
+[177/761] K=5 [72, 108, 180, 216, 288] solved 49.5788 (26s) best K=5: 47.60692195391267 | elapsed 24 min, eta 80 min
+[178/761] K=5 [72, 108, 180, 216, 324] solved 48.4010 (26s) best K=5: 47.60692195391267 | elapsed 24 min, eta 80 min
+[179/761] K=5 [72, 108, 180, 252, 288] solved 50.9817 (24s) best K=5: 47.60692195391267 | elapsed 25 min, eta 80 min
+[180/761] K=5 [72, 108, 180, 252, 324] solved 49.8517 (25s) best K=5: 47.60692195391267 | elapsed 25 min, eta 79 min
+[181/761] K=5 [72, 108, 180, 288, 324] solved 52.5533 (23s) best K=5: 47.60692195391267 | elapsed 25 min, eta 79 min
+[182/761] K=5 [72, 108, 216, 252, 288] solved 59.9449 (36s) best K=5: 47.60692195391267 | elapsed 25 min, eta 79 min
+[183/761] K=5 [72, 108, 216, 288, 324] solved 61.3781 (40s) best K=5: 47.60692195391267 | elapsed 25 min, eta 80 min
+[184/761] K=5 [72, 108, 216, 252, 324] solved 59.9861 (41s) best K=5: 47.60692195391267 | elapsed 25 min, eta 79 min
+[185/761] K=5 [72, 108, 252, 288, 324] solved 61.5000 (40s) best K=5: 47.60692195391267 | elapsed 25 min, eta 79 min
+[186/761] K=5 [72, 144, 180, 216, 252] solved 53.1401 (28s) best K=5: 47.60692195391267 | elapsed 25 min, eta 78 min
+[187/761] K=5 [72, 144, 180, 216, 288] solved 48.2244 (24s) best K=5: 47.60692195391267 | elapsed 26 min, eta 79 min
+[188/761] K=5 [72, 144, 180, 216, 324] solved 55.8021 (29s) best K=5: 47.60692195391267 | elapsed 26 min, eta 78 min
+[189/761] K=5 [72, 144, 180, 252, 324] solved 56.8201 (23s) best K=5: 47.60692195391267 | elapsed 26 min, eta 78 min
+[190/761] K=5 [72, 144, 180, 252, 288] solved 48.3207 (25s) best K=5: 47.60692195391267 | elapsed 26 min, eta 77 min
+[191/761] K=5 [72, 144, 180, 288, 324] solved 53.8606 (25s) best K=5: 47.60692195391267 | elapsed 26 min, eta 78 min
+[192/761] K=5 [72, 144, 216, 252, 324] solved 64.2501 (34s) best K=5: 47.60692195391267 | elapsed 26 min, eta 78 min
+[193/761] K=5 [72, 144, 216, 252, 288] solved 58.1902 (44s) best K=5: 47.60692195391267 | elapsed 26 min, eta 78 min
+[194/761] K=5 [72, 144, 216, 288, 324] solved 61.5826 (41s) best K=5: 47.60692195391267 | elapsed 26 min, eta 77 min
+[195/761] K=5 [72, 144, 252, 288, 324] solved 61.1790 (29s) best K=5: 47.60692195391267 | elapsed 27 min, eta 77 min
+[196/761] K=5 [72, 180, 216, 252, 288] solved 51.0238 (25s) best K=5: 47.60692195391267 | elapsed 27 min, eta 77 min
+[197/761] K=5 [72, 180, 216, 288, 324] solved 49.3382 (22s) best K=5: 47.60692195391267 | elapsed 27 min, eta 77 min
+[198/761] K=5 [72, 180, 216, 252, 324] solved 53.7387 (28s) best K=5: 47.60692195391267 | elapsed 27 min, eta 76 min
+[199/761] K=5 [72, 180, 252, 288, 324] solved 50.3504 (25s) best K=5: 47.60692195391267 | elapsed 27 min, eta 76 min
+[200/761] K=5 [108, 144, 180, 216, 252] solved 47.2050 (26s) best K=5: 47.204994281267524 | elapsed 27 min, eta 76 min
+[201/761] K=5 [108, 144, 180, 216, 288] solved 53.2383 (28s) best K=5: 47.204994281267524 | elapsed 27 min, eta 76 min
+[202/761] K=5 [108, 144, 180, 216, 324] solved 56.8455 (26s) best K=5: 47.204994281267524 | elapsed 27 min, eta 76 min
+[203/761] K=5 [72, 216, 252, 288, 324] solved 60.6586 (37s) best K=5: 47.204994281267524 | elapsed 27 min, eta 75 min
+[204/761] K=5 [108, 144, 180, 252, 288] solved 50.1279 (33s) best K=5: 47.204994281267524 | elapsed 28 min, eta 76 min
+[205/761] K=5 [108, 144, 180, 252, 324] solved 53.4034 (28s) best K=5: 47.204994281267524 | elapsed 28 min, eta 75 min
+[206/761] K=5 [108, 144, 180, 288, 324] solved 62.0768 (32s) best K=5: 47.204994281267524 | elapsed 28 min, eta 75 min
+[207/761] K=5 [108, 144, 216, 252, 288] solved 58.6563 (37s) best K=5: 47.204994281267524 | elapsed 28 min, eta 75 min
+[208/761] K=5 [108, 180, 216, 252, 288] solved 49.6588 (25s) best K=5: 47.204994281267524 | elapsed 28 min, eta 76 min
+[209/761] K=5 [108, 144, 216, 252, 324] solved 61.0888 (39s) best K=5: 47.204994281267524 | elapsed 28 min, eta 75 min
+[210/761] K=5 [108, 144, 216, 288, 324] solved 67.2214 (44s) best K=5: 47.204994281267524 | elapsed 29 min, eta 75 min
+[211/761] K=5 [108, 144, 252, 288, 324] solved 62.2272 (41s) best K=5: 47.204994281267524 | elapsed 29 min, eta 74 min
+[212/761] K=5 [108, 180, 216, 288, 324] solved 54.2532 (27s) best K=5: 47.204994281267524 | elapsed 29 min, eta 75 min
+[213/761] K=5 [108, 180, 216, 252, 324] solved 48.4925 (30s) best K=5: 47.204994281267524 | elapsed 29 min, eta 74 min
+[214/761] K=5 [108, 180, 252, 288, 324] solved 51.9987 (28s) best K=5: 47.204994281267524 | elapsed 29 min, eta 74 min
+[215/761] K=5 [108, 216, 252, 288, 324] solved 61.8254 (36s) best K=5: 47.204994281267524 | elapsed 29 min, eta 74 min
+[216/761] K=5 [144, 180, 216, 252, 288] solved 47.7533 (27s) best K=5: 47.204994281267524 | elapsed 29 min, eta 74 min
+[217/761] K=5 [144, 180, 216, 252, 324] solved 55.8607 (27s) best K=5: 47.204994281267524 | elapsed 29 min, eta 74 min
+[218/761] K=5 [144, 180, 216, 288, 324] solved 57.0141 (26s) best K=5: 47.204994281267524 | elapsed 29 min, eta 73 min
+[219/761] K=5 [144, 180, 252, 288, 324] solved 53.9601 (30s) best K=5: 47.204994281267524 | elapsed 30 min, eta 73 min
+[220/761] K=5 [180, 216, 252, 288, 324] solved 49.3375 (27s) best K=5: 47.204994281267524 | elapsed 30 min, eta 73 min
+[221/761] K=4 [0, 36, 72, 108] solved 63.3515 (25s) best K=4: 63.35149028468969 | elapsed 30 min, eta 73 min
+[222/761] K=5 [144, 216, 252, 288, 324] solved 62.3198 (38s) best K=5: 47.204994281267524 | elapsed 30 min, eta 73 min
+[223/761] K=4 [0, 36, 72, 144] solved 65.2456 (19s) best K=4: 63.35149028468969 | elapsed 30 min, eta 72 min
+[224/761] K=4 [0, 36, 72, 180] solved 66.8118 (20s) best K=4: 63.35149028468969 | elapsed 30 min, eta 72 min
+[225/761] K=4 [0, 36, 72, 216] solved 73.0118 (21s) best K=4: 63.35149028468969 | elapsed 30 min, eta 72 min
+[226/761] K=4 [0, 36, 72, 288] solved 64.0710 (21s) best K=4: 63.35149028468969 | elapsed 30 min, eta 72 min
+[227/761] K=4 [0, 36, 72, 252] solved 70.8662 (26s) best K=4: 63.35149028468969 | elapsed 30 min, eta 72 min
+[228/761] K=4 [0, 36, 72, 324] solved 66.5141 (26s) best K=4: 63.35149028468969 | elapsed 31 min, eta 71 min
+[229/761] K=4 [0, 36, 108, 144] solved 63.4331 (24s) best K=4: 63.35149028468969 | elapsed 31 min, eta 71 min
+[230/761] K=4 [0, 36, 108, 180] solved 63.3023 (21s) best K=4: 63.30227685093786 | elapsed 31 min, eta 71 min
+[231/761] K=4 [0, 36, 108, 216] solved 68.9871 (27s) best K=4: 63.30227685093786 | elapsed 31 min, eta 71 min
+[232/761] K=4 [0, 36, 108, 252] solved 61.9767 (23s) best K=4: 61.97670859130499 | elapsed 31 min, eta 71 min
+[233/761] K=4 [0, 36, 108, 288] solved 65.9987 (22s) best K=4: 61.97670859130499 | elapsed 31 min, eta 70 min
+[234/761] K=4 [0, 36, 108, 324] solved 64.5324 (26s) best K=4: 61.97670859130499 | elapsed 31 min, eta 70 min
+[235/761] K=4 [0, 36, 144, 180] solved 69.6153 (22s) best K=4: 61.97670859130499 | elapsed 31 min, eta 70 min
+[236/761] K=4 [0, 36, 144, 252] solved 62.8024 (24s) best K=4: 61.97670859130499 | elapsed 31 min, eta 70 min
+[237/761] K=4 [0, 36, 144, 216] solved 73.5972 (26s) best K=4: 61.97670859130499 | elapsed 31 min, eta 69 min
+[238/761] K=4 [0, 36, 144, 288] solved 63.8827 (28s) best K=4: 61.97670859130499 | elapsed 32 min, eta 69 min
+[239/761] K=4 [0, 36, 144, 324] solved 74.7058 (26s) best K=4: 61.97670859130499 | elapsed 32 min, eta 69 min
+[240/761] K=4 [0, 36, 180, 216] solved 75.5740 (22s) best K=4: 61.97670859130499 | elapsed 32 min, eta 69 min
+[241/761] K=4 [0, 36, 180, 252] solved 65.5013 (22s) best K=4: 61.97670859130499 | elapsed 32 min, eta 69 min
+[242/761] K=4 [0, 36, 180, 288] solved 64.3476 (24s) best K=4: 61.97670859130499 | elapsed 32 min, eta 69 min
+[243/761] K=4 [0, 36, 180, 324] solved 71.5179 (22s) best K=4: 61.97670859130499 | elapsed 32 min, eta 68 min
+[244/761] K=4 [0, 36, 216, 252] solved 71.8271 (29s) best K=4: 61.97670859130499 | elapsed 32 min, eta 68 min
+[245/761] K=4 [0, 36, 216, 288] solved 68.7384 (28s) best K=4: 61.97670859130499 | elapsed 32 min, eta 68 min
+[246/761] K=4 [0, 36, 216, 324] solved 74.6885 (23s) best K=4: 61.97670859130499 | elapsed 32 min, eta 68 min
+[247/761] K=4 [0, 36, 252, 288] solved 62.3659 (26s) best K=4: 61.97670859130499 | elapsed 32 min, eta 68 min
+[248/761] K=4 [0, 36, 252, 324] solved 64.7015 (23s) best K=4: 61.97670859130499 | elapsed 33 min, eta 67 min
+[249/761] K=4 [0, 36, 288, 324] solved 66.4215 (27s) best K=4: 61.97670859130499 | elapsed 33 min, eta 67 min
+[250/761] K=4 [0, 72, 108, 144] solved 59.8076 (21s) best K=4: 59.807634158205374 | elapsed 33 min, eta 67 min
+[251/761] K=4 [0, 72, 108, 180] solved 59.2954 (23s) best K=4: 59.2954431097336 | elapsed 33 min, eta 67 min
+[252/761] K=4 [0, 72, 108, 216] solved 61.1755 (25s) best K=4: 59.2954431097336 | elapsed 33 min, eta 67 min
+[253/761] K=4 [0, 72, 108, 252] solved 61.2514 (25s) best K=4: 59.2954431097336 | elapsed 33 min, eta 66 min
+[254/761] K=4 [0, 72, 108, 288] solved 62.1100 (28s) best K=4: 59.2954431097336 | elapsed 33 min, eta 66 min
+[255/761] K=4 [0, 72, 108, 324] solved 62.3038 (28s) best K=4: 59.2954431097336 | elapsed 33 min, eta 66 min
+[256/761] K=4 [0, 72, 144, 180] solved 62.8126 (21s) best K=4: 59.2954431097336 | elapsed 33 min, eta 66 min
+[257/761] K=4 [0, 72, 144, 216] solved 62.4296 (27s) best K=4: 59.2954431097336 | elapsed 34 min, eta 66 min
+[258/761] K=4 [0, 72, 144, 252] solved 63.7582 (25s) best K=4: 59.2954431097336 | elapsed 34 min, eta 65 min
+[259/761] K=4 [0, 72, 144, 288] solved 60.8038 (22s) best K=4: 59.2954431097336 | elapsed 34 min, eta 65 min
+[260/761] K=4 [0, 72, 144, 324] solved 68.6666 (22s) best K=4: 59.2954431097336 | elapsed 34 min, eta 65 min
+[261/761] K=4 [0, 72, 180, 252] solved 64.6112 (19s) best K=4: 59.2954431097336 | elapsed 34 min, eta 65 min
+[262/761] K=4 [0, 72, 180, 216] solved 65.7093 (24s) best K=4: 59.2954431097336 | elapsed 34 min, eta 65 min
+[263/761] K=4 [0, 72, 180, 288] solved 60.5562 (25s) best K=4: 59.2954431097336 | elapsed 34 min, eta 65 min
+[264/761] K=4 [0, 72, 180, 324] solved 64.0195 (29s) best K=4: 59.2954431097336 | elapsed 34 min, eta 64 min
+[265/761] K=4 [0, 72, 216, 288] solved 61.9908 (27s) best K=4: 59.2954431097336 | elapsed 34 min, eta 64 min
+[266/761] K=4 [0, 72, 216, 252] solved 68.4487 (32s) best K=4: 59.2954431097336 | elapsed 34 min, eta 64 min
+[267/761] K=4 [0, 72, 252, 288] solved 61.5140 (32s) best K=4: 59.2954431097336 | elapsed 35 min, eta 64 min
+[268/761] K=4 [0, 72, 216, 324] solved 64.5565 (45s) best K=4: 59.2954431097336 | elapsed 35 min, eta 64 min
+[269/761] K=4 [0, 72, 252, 324] solved 65.7314 (32s) best K=4: 59.2954431097336 | elapsed 35 min, eta 64 min
+[270/761] K=4 [0, 72, 288, 324] solved 63.7433 (34s) best K=4: 59.2954431097336 | elapsed 35 min, eta 64 min
+[271/761] K=4 [0, 108, 144, 180] solved 64.6680 (32s) best K=4: 59.2954431097336 | elapsed 35 min, eta 64 min
+[272/761] K=4 [0, 108, 144, 216] solved 60.7823 (30s) best K=4: 59.2954431097336 | elapsed 35 min, eta 64 min
+[273/761] K=4 [0, 108, 144, 252] solved 59.2093 (27s) best K=4: 59.20932834450648 | elapsed 35 min, eta 63 min
+[274/761] K=4 [0, 108, 144, 288] solved 68.1151 (33s) best K=4: 59.20932834450648 | elapsed 36 min, eta 63 min
+[275/761] K=4 [0, 108, 180, 216] solved 62.2785 (21s) best K=4: 59.20932834450648 | elapsed 36 min, eta 63 min
+[276/761] K=4 [0, 108, 144, 324] solved 71.1287 (31s) best K=4: 59.20932834450648 | elapsed 36 min, eta 63 min
+[277/761] K=4 [0, 108, 180, 252] solved 58.8396 (26s) best K=4: 58.8395727698297 | elapsed 36 min, eta 63 min
+[278/761] K=4 [0, 108, 180, 288] solved 64.7337 (22s) best K=4: 58.8395727698297 | elapsed 36 min, eta 62 min
+[279/761] K=4 [0, 108, 180, 324] solved 65.2023 (23s) best K=4: 58.8395727698297 | elapsed 36 min, eta 62 min
+[280/761] K=4 [0, 108, 216, 252] solved 60.5852 (26s) best K=4: 58.8395727698297 | elapsed 36 min, eta 62 min
+[281/761] K=4 [0, 108, 216, 288] solved 64.8067 (26s) best K=4: 58.8395727698297 | elapsed 36 min, eta 62 min
+[282/761] K=4 [0, 108, 216, 324] solved 62.8751 (23s) best K=4: 58.8395727698297 | elapsed 36 min, eta 62 min
+[283/761] K=4 [0, 108, 252, 288] solved 61.4595 (25s) best K=4: 58.8395727698297 | elapsed 37 min, eta 62 min
+[284/761] K=4 [0, 108, 288, 324] solved 70.7347 (22s) best K=4: 58.8395727698297 | elapsed 37 min, eta 62 min
+[285/761] K=4 [0, 108, 252, 324] solved 61.6910 (24s) best K=4: 58.8395727698297 | elapsed 37 min, eta 61 min
+[286/761] K=4 [0, 144, 180, 216] solved 68.9989 (27s) best K=4: 58.8395727698297 | elapsed 37 min, eta 61 min
+[287/761] K=4 [0, 144, 180, 252] solved 62.0239 (18s) best K=4: 58.8395727698297 | elapsed 37 min, eta 61 min
+[288/761] K=4 [0, 144, 180, 288] solved 65.3817 (20s) best K=4: 58.8395727698297 | elapsed 37 min, eta 61 min
+[289/761] K=4 [0, 144, 180, 324] solved 75.5091 (23s) best K=4: 58.8395727698297 | elapsed 37 min, eta 60 min
+[290/761] K=4 [0, 144, 216, 252] solved 61.0697 (29s) best K=4: 58.8395727698297 | elapsed 37 min, eta 60 min
+[291/761] K=4 [0, 144, 216, 288] solved 61.9363 (28s) best K=4: 58.8395727698297 | elapsed 37 min, eta 60 min
+[292/761] K=4 [0, 144, 216, 324] solved 73.8216 (32s) best K=4: 58.8395727698297 | elapsed 37 min, eta 60 min
+[293/761] K=4 [0, 144, 252, 288] solved 60.0230 (31s) best K=4: 58.8395727698297 | elapsed 38 min, eta 60 min
+[294/761] K=4 [0, 144, 252, 324] solved 68.5919 (23s) best K=4: 58.8395727698297 | elapsed 38 min, eta 60 min
+[295/761] K=4 [0, 144, 288, 324] solved 72.8890 (26s) best K=4: 58.8395727698297 | elapsed 38 min, eta 60 min
+[296/761] K=4 [0, 180, 216, 252] solved 65.0219 (20s) best K=4: 58.8395727698297 | elapsed 38 min, eta 59 min
+[297/761] K=4 [0, 180, 216, 288] solved 62.9915 (20s) best K=4: 58.8395727698297 | elapsed 38 min, eta 59 min
+[298/761] K=4 [0, 180, 252, 288] solved 59.2446 (19s) best K=4: 58.8395727698297 | elapsed 38 min, eta 59 min
+[299/761] K=4 [0, 180, 216, 324] solved 69.6399 (25s) best K=4: 58.8395727698297 | elapsed 38 min, eta 59 min
+[300/761] K=4 [0, 180, 288, 324] solved 66.4932 (21s) best K=4: 58.8395727698297 | elapsed 38 min, eta 59 min
+[301/761] K=4 [0, 180, 252, 324] solved 63.1599 (23s) best K=4: 58.8395727698297 | elapsed 38 min, eta 58 min
+[302/761] K=4 [0, 216, 252, 324] solved 63.9039 (22s) best K=4: 58.8395727698297 | elapsed 38 min, eta 58 min
+[303/761] K=4 [0, 216, 252, 288] solved 61.0885 (26s) best K=4: 58.8395727698297 | elapsed 38 min, eta 58 min
+[304/761] K=4 [0, 252, 288, 324] solved 62.8978 (26s) best K=4: 58.8395727698297 | elapsed 39 min, eta 58 min
+[305/761] K=4 [0, 216, 288, 324] solved 65.1501 (29s) best K=4: 58.8395727698297 | elapsed 39 min, eta 58 min
+[306/761] K=4 [36, 72, 108, 180] solved 58.4955 (22s) best K=4: 58.49552752751819 | elapsed 39 min, eta 58 min
+[307/761] K=4 [36, 72, 108, 144] solved 68.6574 (30s) best K=4: 58.49552752751819 | elapsed 39 min, eta 58 min
+[308/761] K=4 [36, 72, 108, 252] solved 68.7017 (24s) best K=4: 58.49552752751819 | elapsed 39 min, eta 58 min
+[309/761] K=4 [36, 72, 108, 216] solved 68.6989 (28s) best K=4: 58.49552752751819 | elapsed 39 min, eta 57 min
+[310/761] K=4 [36, 72, 108, 288] solved 68.2653 (26s) best K=4: 58.49552752751819 | elapsed 39 min, eta 57 min
+[311/761] K=4 [36, 72, 108, 324] solved 68.4588 (26s) best K=4: 58.49552752751819 | elapsed 39 min, eta 57 min
+[312/761] K=4 [36, 72, 144, 180] solved 60.5372 (24s) best K=4: 58.49552752751819 | elapsed 39 min, eta 57 min
+[313/761] K=4 [36, 72, 144, 216] solved 73.7830 (23s) best K=4: 58.49552752751819 | elapsed 39 min, eta 57 min
+[314/761] K=4 [36, 72, 144, 252] solved 72.8753 (25s) best K=4: 58.49552752751819 | elapsed 40 min, eta 56 min
+[315/761] K=4 [36, 72, 144, 288] solved 68.0590 (29s) best K=4: 58.49552752751819 | elapsed 40 min, eta 56 min
+[316/761] K=4 [36, 72, 180, 216] solved 68.1343 (20s) best K=4: 58.49552752751819 | elapsed 40 min, eta 56 min
+[317/761] K=4 [36, 72, 144, 324] solved 72.6058 (25s) best K=4: 58.49552752751819 | elapsed 40 min, eta 56 min
+[318/761] K=4 [36, 72, 180, 252] solved 65.2338 (20s) best K=4: 58.49552752751819 | elapsed 40 min, eta 56 min
+[319/761] K=4 [36, 72, 180, 288] solved 57.8669 (18s) best K=4: 57.86688428580749 | elapsed 40 min, eta 56 min
+[320/761] K=4 [36, 72, 180, 324] solved 59.6070 (23s) best K=4: 57.86688428580749 | elapsed 40 min, eta 55 min
+[321/761] K=4 [36, 72, 216, 288] solved 67.1496 (18s) best K=4: 57.86688428580749 | elapsed 40 min, eta 55 min
+[322/761] K=4 [36, 72, 216, 252] solved 76.4182 (32s) best K=4: 57.86688428580749 | elapsed 40 min, eta 55 min
+[323/761] K=4 [36, 72, 216, 324] solved 73.0367 (20s) best K=4: 57.86688428580749 | elapsed 40 min, eta 55 min
+[324/761] K=4 [36, 72, 252, 324] solved 72.7103 (21s) best K=4: 57.86688428580749 | elapsed 41 min, eta 55 min
+[325/761] K=4 [36, 72, 252, 288] solved 66.6487 (27s) best K=4: 57.86688428580749 | elapsed 41 min, eta 55 min
+[326/761] K=4 [36, 108, 144, 180] solved 59.8435 (22s) best K=4: 57.86688428580749 | elapsed 41 min, eta 54 min
+[327/761] K=4 [36, 72, 288, 324] solved 69.8564 (29s) best K=4: 57.86688428580749 | elapsed 41 min, eta 54 min
+[328/761] K=4 [36, 108, 144, 252] solved 67.3835 (26s) best K=4: 57.86688428580749 | elapsed 41 min, eta 54 min
+[329/761] K=4 [36, 108, 144, 216] solved 71.5387 (30s) best K=4: 57.86688428580749 | elapsed 41 min, eta 54 min
+[330/761] K=4 [36, 108, 144, 288] solved 71.9678 (26s) best K=4: 57.86688428580749 | elapsed 41 min, eta 54 min
+[331/761] K=4 [36, 108, 144, 324] solved 72.1176 (21s) best K=4: 57.86688428580749 | elapsed 41 min, eta 54 min
+[332/761] K=4 [36, 108, 180, 216] solved 64.8521 (22s) best K=4: 57.86688428580749 | elapsed 41 min, eta 54 min
+[333/761] K=4 [36, 108, 180, 252] solved 57.6908 (22s) best K=4: 57.69083511395747 | elapsed 42 min, eta 53 min
+[334/761] K=4 [36, 108, 180, 288] solved 60.1398 (19s) best K=4: 57.69083511395747 | elapsed 42 min, eta 53 min
+[335/761] K=4 [36, 108, 180, 324] solved 58.9812 (21s) best K=4: 57.69083511395747 | elapsed 42 min, eta 53 min
+[336/761] K=4 [36, 108, 216, 252] solved 66.9665 (24s) best K=4: 57.69083511395747 | elapsed 42 min, eta 53 min
+[337/761] K=4 [36, 108, 216, 324] solved 70.7269 (19s) best K=4: 57.69083511395747 | elapsed 42 min, eta 53 min
+[338/761] K=4 [36, 108, 216, 288] solved 71.1246 (22s) best K=4: 57.69083511395747 | elapsed 42 min, eta 52 min
+[339/761] K=4 [36, 108, 252, 288] solved 66.6485 (29s) best K=4: 57.69083511395747 | elapsed 42 min, eta 52 min
+[340/761] K=4 [36, 144, 180, 216] solved 71.1922 (19s) best K=4: 57.69083511395747 | elapsed 42 min, eta 52 min
+[341/761] K=4 [36, 108, 288, 324] solved 73.2731 (23s) best K=4: 57.69083511395747 | elapsed 42 min, eta 52 min
+[342/761] K=4 [36, 108, 252, 324] solved 67.4507 (24s) best K=4: 57.69083511395747 | elapsed 42 min, eta 52 min
+[343/761] K=4 [36, 144, 180, 252] solved 59.4553 (21s) best K=4: 57.69083511395747 | elapsed 42 min, eta 52 min
+[344/761] K=4 [36, 144, 180, 324] solved 70.8951 (20s) best K=4: 57.69083511395747 | elapsed 43 min, eta 52 min
+[345/761] K=4 [36, 144, 180, 288] solved 58.5201 (24s) best K=4: 57.69083511395747 | elapsed 43 min, eta 51 min
+[346/761] K=4 [36, 144, 216, 252] solved 72.0079 (26s) best K=4: 57.69083511395747 | elapsed 43 min, eta 51 min
+[347/761] K=4 [36, 144, 216, 288] solved 69.6164 (28s) best K=4: 57.69083511395747 | elapsed 43 min, eta 51 min
+[348/761] K=4 [36, 144, 216, 324] solved 79.8269 (24s) best K=4: 57.69083511395747 | elapsed 43 min, eta 51 min
+[349/761] K=4 [36, 144, 252, 288] solved 66.3442 (28s) best K=4: 57.69083511395747 | elapsed 43 min, eta 51 min
+[350/761] K=4 [36, 144, 252, 324] solved 70.9989 (23s) best K=4: 57.69083511395747 | elapsed 43 min, eta 51 min
+[351/761] K=4 [36, 144, 288, 324] solved 73.2331 (22s) best K=4: 57.69083511395747 | elapsed 43 min, eta 51 min
+[352/761] K=4 [36, 180, 216, 252] solved 67.2979 (20s) best K=4: 57.69083511395747 | elapsed 43 min, eta 50 min
+[353/761] K=4 [36, 180, 216, 288] solved 64.4851 (19s) best K=4: 57.69083511395747 | elapsed 43 min, eta 50 min
+[354/761] K=4 [36, 180, 216, 324] solved 70.6788 (22s) best K=4: 57.69083511395747 | elapsed 43 min, eta 50 min
+[355/761] K=4 [36, 180, 252, 288] solved 57.0738 (18s) best K=4: 57.07376037113026 | elapsed 44 min, eta 50 min
+[356/761] K=4 [36, 180, 252, 324] solved 59.0385 (21s) best K=4: 57.07376037113026 | elapsed 44 min, eta 50 min
+[357/761] K=4 [36, 180, 288, 324] solved 59.5083 (20s) best K=4: 57.07376037113026 | elapsed 44 min, eta 49 min
+[358/761] K=4 [36, 216, 252, 288] solved 66.1075 (18s) best K=4: 57.07376037113026 | elapsed 44 min, eta 49 min
+[359/761] K=4 [36, 216, 252, 324] solved 72.4183 (24s) best K=4: 57.07376037113026 | elapsed 44 min, eta 49 min
+[360/761] K=4 [36, 216, 288, 324] solved 72.2662 (25s) best K=4: 57.07376037113026 | elapsed 44 min, eta 49 min
+[361/761] K=4 [72, 108, 144, 180] solved 55.6761 (23s) best K=4: 55.67609089821653 | elapsed 44 min, eta 49 min
+[362/761] K=4 [36, 252, 288, 324] solved 67.9541 (28s) best K=4: 55.67609089821653 | elapsed 44 min, eta 49 min
+[363/761] K=4 [72, 108, 144, 216] solved 66.0806 (27s) best K=4: 55.67609089821653 | elapsed 44 min, eta 49 min
+[364/761] K=4 [72, 108, 144, 324] solved 65.9174 (19s) best K=4: 55.67609089821653 | elapsed 44 min, eta 49 min
+[365/761] K=4 [72, 108, 144, 252] solved 65.6124 (30s) best K=4: 55.67609089821653 | elapsed 45 min, eta 48 min
+[366/761] K=4 [72, 108, 144, 288] solved 64.8782 (31s) best K=4: 55.67609089821653 | elapsed 45 min, eta 48 min
+[367/761] K=4 [72, 108, 180, 252] solved 56.1054 (19s) best K=4: 55.67609089821653 | elapsed 45 min, eta 48 min
+[368/761] K=4 [72, 108, 180, 216] solved 56.4444 (22s) best K=4: 55.67609089821653 | elapsed 45 min, eta 48 min
+[369/761] K=4 [72, 108, 180, 288] solved 56.0626 (21s) best K=4: 55.67609089821653 | elapsed 45 min, eta 48 min
+[370/761] K=4 [72, 108, 180, 324] solved 56.8428 (21s) best K=4: 55.67609089821653 | elapsed 45 min, eta 48 min
+[371/761] K=4 [72, 108, 216, 288] solved 66.0531 (26s) best K=4: 55.67609089821653 | elapsed 45 min, eta 48 min
+[372/761] K=4 [72, 108, 216, 252] solved 65.9528 (28s) best K=4: 55.67609089821653 | elapsed 45 min, eta 47 min
+[373/761] K=4 [72, 108, 216, 324] solved 67.1951 (30s) best K=4: 55.67609089821653 | elapsed 45 min, eta 47 min
+[374/761] K=4 [72, 108, 252, 288] solved 65.3751 (25s) best K=4: 55.67609089821653 | elapsed 45 min, eta 47 min
+[375/761] K=4 [72, 108, 252, 324] solved 66.4669 (26s) best K=4: 55.67609089821653 | elapsed 46 min, eta 47 min
+[376/761] K=4 [72, 108, 288, 324] solved 67.2715 (27s) best K=4: 55.67609089821653 | elapsed 46 min, eta 47 min
+[377/761] K=4 [72, 144, 180, 216] solved 58.7594 (19s) best K=4: 55.67609089821653 | elapsed 46 min, eta 47 min
+[378/761] K=4 [72, 144, 180, 252] solved 59.3909 (18s) best K=4: 55.67609089821653 | elapsed 46 min, eta 46 min
+[379/761] K=4 [72, 144, 180, 288] solved 55.5367 (19s) best K=4: 55.53669109008326 | elapsed 46 min, eta 46 min
+[380/761] K=4 [72, 144, 180, 324] solved 64.4877 (23s) best K=4: 55.53669109008326 | elapsed 46 min, eta 46 min
+[381/761] K=4 [72, 144, 216, 252] solved 69.9753 (27s) best K=4: 55.53669109008326 | elapsed 46 min, eta 46 min
+[382/761] K=4 [72, 144, 216, 288] solved 66.0157 (30s) best K=4: 55.53669109008326 | elapsed 46 min, eta 46 min
+[383/761] K=4 [72, 144, 216, 324] solved 70.8741 (25s) best K=4: 55.53669109008326 | elapsed 46 min, eta 46 min
+[384/761] K=4 [72, 144, 252, 324] solved 70.4928 (20s) best K=4: 55.53669109008326 | elapsed 47 min, eta 46 min
+[385/761] K=4 [72, 144, 288, 324] solved 66.5710 (23s) best K=4: 55.53669109008326 | elapsed 47 min, eta 46 min
+[386/761] K=4 [72, 144, 252, 288] solved 64.7097 (32s) best K=4: 55.53669109008326 | elapsed 47 min, eta 45 min
+[387/761] K=4 [72, 180, 216, 252] solved 63.2842 (18s) best K=4: 55.53669109008326 | elapsed 47 min, eta 45 min
+[388/761] K=4 [72, 180, 216, 288] solved 56.1533 (21s) best K=4: 55.53669109008326 | elapsed 47 min, eta 45 min
+[389/761] K=4 [72, 180, 252, 288] solved 55.7360 (19s) best K=4: 55.53669109008326 | elapsed 47 min, eta 45 min
+[390/761] K=4 [72, 180, 216, 324] solved 58.5344 (21s) best K=4: 55.53669109008326 | elapsed 47 min, eta 45 min
+[391/761] K=4 [72, 180, 252, 324] solved 59.6276 (21s) best K=4: 55.53669109008326 | elapsed 47 min, eta 45 min
+[392/761] K=4 [72, 180, 288, 324] solved 57.1897 (17s) best K=4: 55.53669109008326 | elapsed 47 min, eta 44 min
+[393/761] K=4 [72, 216, 252, 288] solved 65.3426 (24s) best K=4: 55.53669109008326 | elapsed 47 min, eta 44 min
+[394/761] K=4 [72, 216, 252, 324] solved 71.8631 (28s) best K=4: 55.53669109008326 | elapsed 47 min, eta 44 min
+[395/761] K=4 [72, 216, 288, 324] solved 68.2544 (28s) best K=4: 55.53669109008326 | elapsed 48 min, eta 44 min
+[396/761] K=4 [72, 252, 288, 324] solved 67.7688 (27s) best K=4: 55.53669109008326 | elapsed 48 min, eta 44 min
+[397/761] K=4 [108, 144, 180, 216] solved 58.7221 (23s) best K=4: 55.53669109008326 | elapsed 48 min, eta 44 min
+[398/761] K=4 [108, 144, 180, 252] solved 55.2976 (19s) best K=4: 55.2976092387842 | elapsed 48 min, eta 44 min
+[399/761] K=4 [108, 144, 180, 324] solved 67.2936 (23s) best K=4: 55.2976092387842 | elapsed 48 min, eta 44 min
+[400/761] K=4 [108, 144, 180, 288] solved 63.2823 (33s) best K=4: 55.2976092387842 | elapsed 48 min, eta 43 min
+[401/761] K=4 [108, 144, 216, 252] solved 66.4579 (33s) best K=4: 55.2976092387842 | elapsed 48 min, eta 43 min
+[402/761] K=4 [108, 144, 216, 288] solved 70.4330 (32s) best K=4: 55.2976092387842 | elapsed 48 min, eta 43 min
+[403/761] K=4 [108, 144, 216, 324] solved 72.5208 (32s) best K=4: 55.2976092387842 | elapsed 49 min, eta 43 min
+[404/761] K=4 [108, 144, 252, 288] solved 65.1652 (30s) best K=4: 55.2976092387842 | elapsed 49 min, eta 43 min
+[405/761] K=4 [108, 144, 252, 324] solved 66.5163 (22s) best K=4: 55.2976092387842 | elapsed 49 min, eta 43 min
+[406/761] K=4 [108, 144, 288, 324] solved 76.1033 (33s) best K=4: 55.2976092387842 | elapsed 49 min, eta 43 min
+[407/761] K=4 [108, 180, 216, 288] solved 60.0236 (21s) best K=4: 55.2976092387842 | elapsed 49 min, eta 43 min
+[408/761] K=4 [108, 180, 216, 252] solved 56.2447 (24s) best K=4: 55.2976092387842 | elapsed 49 min, eta 42 min
+[409/761] K=4 [108, 180, 216, 324] solved 59.2477 (22s) best K=4: 55.2976092387842 | elapsed 49 min, eta 42 min
+[410/761] K=4 [108, 180, 252, 288] solved 56.2379 (25s) best K=4: 55.2976092387842 | elapsed 49 min, eta 42 min
+[411/761] K=4 [108, 180, 252, 324] solved 56.8941 (30s) best K=4: 55.2976092387842 | elapsed 49 min, eta 42 min
+[412/761] K=4 [108, 180, 288, 324] solved 65.0643 (34s) best K=4: 55.2976092387842 | elapsed 49 min, eta 42 min
+[413/761] K=4 [108, 216, 252, 288] solved 66.4939 (34s) best K=4: 55.2976092387842 | elapsed 50 min, eta 42 min
+[414/761] K=4 [108, 216, 252, 324] solved 67.9022 (37s) best K=4: 55.2976092387842 | elapsed 50 min, eta 42 min
+[415/761] K=4 [108, 216, 288, 324] solved 73.7603 (34s) best K=4: 55.2976092387842 | elapsed 50 min, eta 42 min
+[416/761] K=4 [144, 180, 216, 252] solved 58.7611 (28s) best K=4: 55.2976092387842 | elapsed 50 min, eta 42 min
+[417/761] K=4 [108, 252, 288, 324] solved 68.5253 (37s) best K=4: 55.2976092387842 | elapsed 50 min, eta 41 min
+[418/761] K=4 [144, 180, 216, 288] solved 58.4866 (24s) best K=4: 55.2976092387842 | elapsed 50 min, eta 41 min
+[419/761] K=4 [144, 180, 252, 288] solved 55.4658 (25s) best K=4: 55.2976092387842 | elapsed 50 min, eta 41 min
+[420/761] K=4 [144, 180, 216, 324] solved 71.4071 (31s) best K=4: 55.2976092387842 | elapsed 50 min, eta 41 min
+[421/761] K=4 [144, 180, 252, 324] solved 64.2866 (27s) best K=4: 55.2976092387842 | elapsed 51 min, eta 41 min
+[422/761] K=4 [144, 180, 288, 324] solved 68.0130 (21s) best K=4: 55.2976092387842 | elapsed 51 min, eta 41 min
+[423/761] K=4 [144, 216, 252, 288] solved 65.9439 (31s) best K=4: 55.2976092387842 | elapsed 51 min, eta 41 min
+[424/761] K=4 [144, 216, 252, 324] solved 72.1427 (32s) best K=4: 55.2976092387842 | elapsed 51 min, eta 41 min
+[425/761] K=4 [144, 252, 288, 324] solved 67.6631 (26s) best K=4: 55.2976092387842 | elapsed 51 min, eta 40 min
+[426/761] K=4 [144, 216, 288, 324] solved 74.0450 (31s) best K=4: 55.2976092387842 | elapsed 51 min, eta 40 min
+[427/761] K=4 [180, 216, 252, 288] solved 56.5072 (24s) best K=4: 55.2976092387842 | elapsed 51 min, eta 40 min
+[428/761] K=4 [180, 216, 252, 324] solved 59.5666 (26s) best K=4: 55.2976092387842 | elapsed 51 min, eta 40 min
+[429/761] K=4 [180, 216, 288, 324] solved 60.4261 (25s) best K=4: 55.2976092387842 | elapsed 51 min, eta 40 min
+[430/761] K=4 [180, 252, 288, 324] solved 58.0105 (25s) best K=4: 55.2976092387842 | elapsed 51 min, eta 40 min
+[431/761] K=4 [216, 252, 288, 324] solved 68.9179 (31s) best K=4: 55.2976092387842 | elapsed 52 min, eta 40 min
+[432/761] K=6 [0, 36, 72, 108, 144, 180] solved 46.1281 (40s) best K=6: 46.12812686602952 | elapsed 52 min, eta 40 min
+[433/761] K=6 [0, 36, 72, 108, 144, 216] solved 49.8350 (43s) best K=6: 46.12812686602952 | elapsed 52 min, eta 40 min
+[434/761] K=6 [0, 36, 72, 108, 144, 252] solved 48.4796 (48s) best K=6: 46.12812686602952 | elapsed 52 min, eta 39 min
+[435/761] K=6 [0, 36, 72, 108, 144, 288] solved 50.0940 (37s) best K=6: 46.12812686602952 | elapsed 53 min, eta 39 min
+[436/761] K=6 [0, 36, 72, 108, 144, 324] solved 51.7480 (41s) best K=6: 46.12812686602952 | elapsed 53 min, eta 39 min
+[437/761] K=6 [0, 36, 72, 108, 180, 216] solved 51.9581 (42s) best K=6: 46.12812686602952 | elapsed 53 min, eta 39 min
+[438/761] K=6 [0, 36, 72, 108, 180, 252] solved 49.7756 (41s) best K=6: 46.12812686602952 | elapsed 53 min, eta 39 min
+[439/761] K=6 [0, 36, 72, 108, 180, 288] solved 49.0752 (33s) best K=6: 46.12812686602952 | elapsed 53 min, eta 39 min
+[440/761] K=6 [0, 36, 72, 108, 180, 324] solved 47.3439 (41s) best K=6: 46.12812686602952 | elapsed 53 min, eta 39 min
+[441/761] K=6 [0, 36, 72, 108, 216, 252] solved 53.7132 (39s) best K=6: 46.12812686602952 | elapsed 54 min, eta 39 min
+[442/761] K=6 [0, 36, 72, 108, 216, 288] solved 53.3208 (36s) best K=6: 46.12812686602952 | elapsed 54 min, eta 39 min
+[443/761] K=6 [0, 36, 72, 108, 216, 324] solved 51.6354 (46s) best K=6: 46.12812686602952 | elapsed 54 min, eta 39 min
+[444/761] K=6 [0, 36, 72, 108, 252, 288] solved 52.9185 (38s) best K=6: 46.12812686602952 | elapsed 54 min, eta 39 min
+[445/761] K=6 [0, 36, 72, 108, 288, 324] solved 52.1399 (42s) best K=6: 46.12812686602952 | elapsed 54 min, eta 39 min
+[446/761] K=6 [0, 36, 72, 108, 252, 324] solved 50.6450 (53s) best K=6: 46.12812686602952 | elapsed 54 min, eta 38 min
+[447/761] K=6 [0, 36, 72, 144, 180, 216] solved 53.8015 (43s) best K=6: 46.12812686602952 | elapsed 55 min, eta 38 min
+[448/761] K=6 [0, 36, 72, 144, 180, 252] solved 51.0053 (39s) best K=6: 46.12812686602952 | elapsed 55 min, eta 38 min
+[449/761] K=6 [0, 36, 72, 144, 180, 288] solved 47.3331 (42s) best K=6: 46.12812686602952 | elapsed 55 min, eta 38 min
+[450/761] K=6 [0, 36, 72, 144, 180, 324] solved 54.3165 (34s) best K=6: 46.12812686602952 | elapsed 55 min, eta 38 min
+[451/761] K=6 [0, 36, 72, 144, 216, 252] solved 55.4522 (43s) best K=6: 46.12812686602952 | elapsed 55 min, eta 38 min
+[452/761] K=6 [0, 36, 72, 144, 216, 288] solved 50.8298 (47s) best K=6: 46.12812686602952 | elapsed 56 min, eta 38 min
+[453/761] K=6 [0, 36, 72, 144, 216, 324] solved 58.4362 (43s) best K=6: 46.12812686602952 | elapsed 56 min, eta 38 min
+[454/761] K=6 [0, 36, 72, 144, 252, 288] solved 49.3971 (44s) best K=6: 46.12812686602952 | elapsed 56 min, eta 38 min
+[455/761] K=6 [0, 36, 72, 144, 252, 324] solved 56.1662 (54s) best K=6: 46.12812686602952 | elapsed 56 min, eta 38 min
+[456/761] K=6 [0, 36, 72, 144, 288, 324] solved 52.8764 (44s) best K=6: 46.12812686602952 | elapsed 56 min, eta 38 min
+[457/761] K=6 [0, 36, 72, 180, 216, 288] solved 52.4881 (35s) best K=6: 46.12812686602952 | elapsed 56 min, eta 37 min
+[458/761] K=6 [0, 36, 72, 180, 216, 252] solved 58.6202 (46s) best K=6: 46.12812686602952 | elapsed 56 min, eta 37 min
+[459/761] K=6 [0, 36, 72, 180, 216, 324] solved 55.2341 (37s) best K=6: 46.12812686602952 | elapsed 57 min, eta 37 min
+[460/761] K=6 [0, 36, 72, 180, 252, 324] solved 52.3050 (38s) best K=6: 46.12812686602952 | elapsed 57 min, eta 37 min
+[461/761] K=6 [0, 36, 72, 180, 252, 288] solved 50.5956 (41s) best K=6: 46.12812686602952 | elapsed 57 min, eta 37 min
+[462/761] K=6 [0, 36, 72, 180, 288, 324] solved 48.4175 (38s) best K=6: 46.12812686602952 | elapsed 57 min, eta 37 min
+[463/761] K=6 [0, 36, 72, 216, 252, 288] solved 54.4961 (34s) best K=6: 46.12812686602952 | elapsed 57 min, eta 37 min
+[464/761] K=6 [0, 36, 72, 216, 288, 324] solved 52.9111 (36s) best K=6: 46.12812686602952 | elapsed 58 min, eta 37 min
+[465/761] K=6 [0, 36, 72, 216, 252, 324] solved 56.9959 (45s) best K=6: 46.12812686602952 | elapsed 58 min, eta 37 min
+[466/761] K=6 [0, 36, 72, 252, 288, 324] solved 51.8569 (37s) best K=6: 46.12812686602952 | elapsed 58 min, eta 37 min
+[467/761] K=6 [0, 36, 108, 144, 180, 216] solved 52.3721 (37s) best K=6: 46.12812686602952 | elapsed 58 min, eta 36 min
+[468/761] K=6 [0, 36, 108, 144, 180, 252] solved 45.2082 (31s) best K=6: 45.20815320060782 | elapsed 58 min, eta 36 min
+[469/761] K=6 [0, 36, 108, 144, 180, 324] solved 54.5784 (36s) best K=6: 45.20815320060782 | elapsed 58 min, eta 36 min
+[470/761] K=6 [0, 36, 108, 144, 180, 288] solved 51.6035 (38s) best K=6: 45.20815320060782 | elapsed 58 min, eta 36 min
+[471/761] K=6 [0, 36, 108, 144, 216, 252] solved 49.1571 (32s) best K=6: 45.20815320060782 | elapsed 59 min, eta 36 min
+[472/761] K=6 [0, 36, 108, 144, 216, 288] solved 54.4932 (39s) best K=6: 45.20815320060782 | elapsed 59 min, eta 36 min
+[473/761] K=6 [0, 36, 108, 144, 216, 324] solved 56.9004 (35s) best K=6: 45.20815320060782 | elapsed 59 min, eta 36 min
+[474/761] K=6 [0, 36, 108, 144, 252, 288] solved 48.6449 (37s) best K=6: 45.20815320060782 | elapsed 59 min, eta 36 min
+[475/761] K=6 [0, 36, 108, 144, 252, 324] solved 50.7352 (30s) best K=6: 45.20815320060782 | elapsed 59 min, eta 36 min
+[476/761] K=6 [0, 36, 108, 144, 288, 324] solved 57.0373 (40s) best K=6: 45.20815320060782 | elapsed 59 min, eta 36 min
+[477/761] K=6 [0, 36, 108, 180, 216, 252] solved 50.8666 (34s) best K=6: 45.20815320060782 | elapsed 59 min, eta 35 min
+[478/761] K=6 [0, 36, 108, 180, 216, 288] solved 54.3454 (33s) best K=6: 45.20815320060782 | elapsed 60 min, eta 35 min
+[479/761] K=6 [0, 36, 108, 180, 216, 324] solved 53.2176 (38s) best K=6: 45.20815320060782 | elapsed 60 min, eta 35 min
+[480/761] K=6 [0, 36, 108, 180, 252, 288] solved 48.0233 (32s) best K=6: 45.20815320060782 | elapsed 60 min, eta 35 min
+[481/761] K=6 [0, 36, 108, 180, 252, 324] solved 46.4800 (36s) best K=6: 45.20815320060782 | elapsed 60 min, eta 35 min
+[482/761] K=6 [0, 36, 108, 180, 288, 324] solved 52.5629 (39s) best K=6: 45.20815320060782 | elapsed 60 min, eta 35 min
+[483/761] K=6 [0, 36, 108, 216, 252, 288] solved 52.3514 (37s) best K=6: 45.20815320060782 | elapsed 60 min, eta 35 min
+[484/761] K=6 [0, 36, 108, 216, 252, 324] solved 51.0781 (40s) best K=6: 45.20815320060782 | elapsed 61 min, eta 35 min
+[485/761] K=6 [0, 36, 108, 216, 288, 324] solved 56.1631 (49s) best K=6: 45.20815320060782 | elapsed 61 min, eta 35 min
+[486/761] K=6 [0, 36, 108, 252, 288, 324] solved 50.8251 (43s) best K=6: 45.20815320060782 | elapsed 61 min, eta 34 min
+[487/761] K=6 [0, 36, 144, 180, 216, 252] solved 52.8982 (39s) best K=6: 45.20815320060782 | elapsed 61 min, eta 34 min
+[488/761] K=6 [0, 36, 144, 180, 216, 288] solved 53.0017 (41s) best K=6: 45.20815320060782 | elapsed 61 min, eta 34 min
+[489/761] K=6 [0, 36, 144, 180, 252, 288] solved 45.8624 (33s) best K=6: 45.20815320060782 | elapsed 61 min, eta 34 min
+[490/761] K=6 [0, 36, 144, 180, 252, 324] solved 53.4293 (34s) best K=6: 45.20815320060782 | elapsed 61 min, eta 34 min
+[491/761] K=6 [0, 36, 144, 180, 216, 324] solved 64.0115 (37s) best K=6: 45.20815320060782 | elapsed 61 min, eta 34 min
+[492/761] K=6 [0, 36, 144, 180, 288, 324] solved 55.2500 (37s) best K=6: 45.20815320060782 | elapsed 62 min, eta 34 min
+[493/761] K=6 [0, 36, 144, 216, 252, 288] solved 49.8326 (34s) best K=6: 45.20815320060782 | elapsed 62 min, eta 34 min
+[494/761] K=6 [0, 36, 144, 216, 252, 324] solved 57.0212 (32s) best K=6: 45.20815320060782 | elapsed 62 min, eta 34 min
+[495/761] K=6 [0, 36, 144, 216, 288, 324] solved 57.8888 (36s) best K=6: 45.20815320060782 | elapsed 62 min, eta 33 min
+[496/761] K=6 [0, 36, 180, 216, 252, 288] solved 51.2024 (25s) best K=6: 45.20815320060782 | elapsed 62 min, eta 33 min
+[497/761] K=6 [0, 36, 144, 252, 288, 324] solved 51.4293 (32s) best K=6: 45.20815320060782 | elapsed 62 min, eta 33 min
+[498/761] K=6 [0, 36, 180, 216, 252, 324] solved 54.4339 (31s) best K=6: 45.20815320060782 | elapsed 63 min, eta 33 min
+[499/761] K=6 [0, 36, 180, 216, 288, 324] solved 53.7606 (31s) best K=6: 45.20815320060782 | elapsed 63 min, eta 33 min
+[500/761] K=6 [0, 36, 216, 252, 288, 324] solved 51.9591 (30s) best K=6: 45.20815320060782 | elapsed 63 min, eta 33 min
+[501/761] K=6 [0, 72, 108, 144, 180, 216] solved 44.7548 (25s) best K=6: 44.754763139649846 | elapsed 63 min, eta 33 min
+[502/761] K=6 [0, 36, 180, 252, 288, 324] solved 47.0698 (33s) best K=6: 44.754763139649846 | elapsed 63 min, eta 32 min
+[503/761] K=6 [0, 72, 108, 144, 180, 252] solved 45.2834 (26s) best K=6: 44.754763139649846 | elapsed 63 min, eta 32 min
+[504/761] K=6 [0, 72, 108, 144, 180, 288] solved 48.5985 (30s) best K=6: 44.754763139649846 | elapsed 63 min, eta 32 min
+[505/761] K=6 [0, 72, 108, 144, 216, 288] solved 48.5898 (29s) best K=6: 44.754763139649846 | elapsed 63 min, eta 32 min
+[506/761] K=6 [0, 72, 108, 144, 180, 324] solved 50.5934 (35s) best K=6: 44.754763139649846 | elapsed 64 min, eta 32 min
+[507/761] K=6 [0, 72, 108, 144, 216, 252] solved 47.4261 (34s) best K=6: 44.754763139649846 | elapsed 64 min, eta 32 min
+[508/761] K=6 [0, 72, 108, 144, 252, 324] solved 51.4842 (28s) best K=6: 44.754763139649846 | elapsed 64 min, eta 32 min
+[509/761] K=6 [0, 72, 108, 144, 252, 288] solved 49.7393 (34s) best K=6: 44.754763139649846 | elapsed 64 min, eta 32 min
+[510/761] K=6 [0, 72, 108, 144, 216, 324] solved 50.1080 (42s) best K=6: 44.754763139649846 | elapsed 64 min, eta 32 min
+[511/761] K=6 [0, 72, 108, 144, 288, 324] solved 54.2424 (39s) best K=6: 44.754763139649846 | elapsed 64 min, eta 31 min
+[512/761] K=6 [0, 72, 108, 180, 216, 252] solved 48.4703 (34s) best K=6: 44.754763139649846 | elapsed 65 min, eta 31 min
+[513/761] K=6 [0, 72, 108, 180, 216, 288] solved 47.3139 (33s) best K=6: 44.754763139649846 | elapsed 65 min, eta 31 min
+[514/761] K=6 [0, 72, 108, 180, 252, 288] solved 49.0137 (34s) best K=6: 44.754763139649846 | elapsed 65 min, eta 31 min
+[515/761] K=6 [0, 72, 108, 180, 216, 324] solved 45.9047 (40s) best K=6: 44.754763139649846 | elapsed 65 min, eta 31 min
+[516/761] K=6 [0, 72, 108, 180, 252, 324] solved 47.1082 (33s) best K=6: 44.754763139649846 | elapsed 65 min, eta 31 min
+[517/761] K=6 [0, 72, 108, 180, 288, 324] solved 50.3839 (40s) best K=6: 44.754763139649846 | elapsed 65 min, eta 31 min
+[518/761] K=6 [0, 72, 108, 216, 252, 324] solved 49.1910 (41s) best K=6: 44.754763139649846 | elapsed 65 min, eta 31 min
+[519/761] K=6 [0, 72, 108, 216, 252, 288] solved 51.0578 (43s) best K=6: 44.754763139649846 | elapsed 65 min, eta 31 min
+[520/761] K=6 [0, 72, 108, 216, 288, 324] solved 50.2456 (29s) best K=6: 44.754763139649846 | elapsed 66 min, eta 30 min
+[521/761] K=6 [0, 72, 108, 252, 288, 324] solved 52.5182 (30s) best K=6: 44.754763139649846 | elapsed 66 min, eta 30 min
+[522/761] K=6 [0, 72, 144, 180, 216, 252] solved 50.2771 (35s) best K=6: 44.754763139649846 | elapsed 66 min, eta 30 min
+[523/761] K=6 [0, 72, 144, 180, 216, 288] solved 46.0131 (37s) best K=6: 44.754763139649846 | elapsed 66 min, eta 30 min
+[524/761] K=6 [0, 72, 144, 180, 216, 324] solved 53.3917 (39s) best K=6: 44.754763139649846 | elapsed 66 min, eta 30 min
+[525/761] K=6 [0, 72, 144, 180, 252, 288] solved 46.2035 (31s) best K=6: 44.754763139649846 | elapsed 66 min, eta 30 min
+[526/761] K=6 [0, 72, 144, 180, 252, 324] solved 54.0344 (32s) best K=6: 44.754763139649846 | elapsed 67 min, eta 30 min
+[527/761] K=6 [0, 72, 144, 180, 288, 324] solved 51.8340 (39s) best K=6: 44.754763139649846 | elapsed 67 min, eta 30 min
+[528/761] K=6 [0, 72, 144, 216, 252, 288] solved 48.3640 (37s) best K=6: 44.754763139649846 | elapsed 67 min, eta 29 min
+[529/761] K=6 [0, 72, 144, 216, 252, 324] solved 55.0472 (41s) best K=6: 44.754763139649846 | elapsed 67 min, eta 29 min
+[530/761] K=6 [0, 72, 144, 216, 288, 324] solved 51.2726 (34s) best K=6: 44.754763139649846 | elapsed 67 min, eta 29 min
+[531/761] K=6 [0, 72, 144, 252, 288, 324] solved 52.3932 (34s) best K=6: 44.754763139649846 | elapsed 67 min, eta 29 min
+[532/761] K=6 [0, 72, 180, 216, 252, 288] solved 49.0718 (34s) best K=6: 44.754763139649846 | elapsed 67 min, eta 29 min
+[533/761] K=6 [0, 72, 180, 216, 252, 324] solved 51.5123 (36s) best K=6: 44.754763139649846 | elapsed 68 min, eta 29 min
+[534/761] K=6 [0, 72, 180, 216, 288, 324] solved 47.1798 (34s) best K=6: 44.754763139649846 | elapsed 68 min, eta 29 min
+[535/761] K=6 [0, 72, 180, 252, 288, 324] solved 48.2512 (36s) best K=6: 44.754763139649846 | elapsed 68 min, eta 29 min
+[536/761] K=6 [0, 72, 216, 252, 288, 324] solved 50.3467 (38s) best K=6: 44.754763139649846 | elapsed 68 min, eta 29 min
+[537/761] K=6 [0, 108, 144, 180, 216, 252] solved 44.1436 (32s) best K=6: 44.14355849807783 | elapsed 68 min, eta 28 min
+[538/761] K=6 [0, 108, 144, 180, 216, 288] solved 50.0715 (34s) best K=6: 44.14355849807783 | elapsed 68 min, eta 28 min
+[539/761] K=6 [0, 108, 144, 180, 252, 288] solved 47.5094 (33s) best K=6: 44.14355849807783 | elapsed 69 min, eta 28 min
+[540/761] K=6 [0, 108, 144, 180, 216, 324] solved 52.8973 (41s) best K=6: 44.14355849807783 | elapsed 69 min, eta 28 min
+[541/761] K=6 [0, 108, 144, 180, 252, 324] solved 50.3538 (36s) best K=6: 44.14355849807783 | elapsed 69 min, eta 28 min
+[542/761] K=6 [0, 108, 144, 180, 288, 324] solved 58.8600 (36s) best K=6: 44.14355849807783 | elapsed 69 min, eta 28 min
+[543/761] K=6 [0, 108, 144, 216, 252, 324] solved 49.4601 (28s) best K=6: 44.14355849807783 | elapsed 69 min, eta 28 min
+[544/761] K=6 [0, 108, 144, 216, 252, 288] solved 47.5629 (31s) best K=6: 44.14355849807783 | elapsed 69 min, eta 28 min
+[545/761] K=6 [0, 108, 144, 216, 288, 324] solved 55.2739 (41s) best K=6: 44.14355849807783 | elapsed 69 min, eta 27 min
+[546/761] K=6 [0, 108, 144, 252, 288, 324] solved 53.2003 (35s) best K=6: 44.14355849807783 | elapsed 69 min, eta 27 min
+[547/761] K=6 [0, 108, 180, 216, 252, 288] solved 46.5568 (34s) best K=6: 44.14355849807783 | elapsed 70 min, eta 27 min
+[548/761] K=6 [0, 108, 180, 216, 252, 324] solved 45.1198 (35s) best K=6: 44.14355849807783 | elapsed 70 min, eta 27 min
+[549/761] K=6 [0, 108, 180, 252, 288, 324] solved 49.1476 (32s) best K=6: 44.14355849807783 | elapsed 70 min, eta 27 min
+[550/761] K=6 [0, 108, 180, 216, 288, 324] solved 50.8958 (42s) best K=6: 44.14355849807783 | elapsed 70 min, eta 27 min
+[551/761] K=6 [0, 108, 216, 252, 288, 324] solved 49.3142 (30s) best K=6: 44.14355849807783 | elapsed 70 min, eta 27 min
+[552/761] K=6 [0, 144, 180, 216, 252, 288] solved 44.7910 (31s) best K=6: 44.14355849807783 | elapsed 70 min, eta 27 min
+[553/761] K=6 [0, 144, 180, 216, 252, 324] solved 52.2427 (36s) best K=6: 44.14355849807783 | elapsed 71 min, eta 27 min
+[554/761] K=6 [0, 144, 180, 252, 288, 324] solved 51.2291 (35s) best K=6: 44.14355849807783 | elapsed 71 min, eta 26 min
+[555/761] K=6 [0, 144, 180, 216, 288, 324] solved 53.3482 (43s) best K=6: 44.14355849807783 | elapsed 71 min, eta 26 min
+[556/761] K=6 [0, 144, 216, 252, 288, 324] solved 50.3328 (39s) best K=6: 44.14355849807783 | elapsed 71 min, eta 26 min
+[557/761] K=6 [0, 180, 216, 252, 288, 324] solved 46.0012 (30s) best K=6: 44.14355849807783 | elapsed 71 min, eta 26 min
+[558/761] K=6 [36, 72, 108, 144, 180, 216] solved 46.5195 (32s) best K=6: 44.14355849807783 | elapsed 71 min, eta 26 min
+[559/761] K=6 [36, 72, 108, 144, 180, 252] solved 45.0010 (38s) best K=6: 44.14355849807783 | elapsed 71 min, eta 26 min
+[560/761] K=6 [36, 72, 108, 144, 180, 288] solved 45.8694 (37s) best K=6: 44.14355849807783 | elapsed 71 min, eta 26 min
+[561/761] K=6 [36, 72, 108, 144, 180, 324] solved 47.9877 (34s) best K=6: 44.14355849807783 | elapsed 72 min, eta 26 min
+[562/761] K=6 [36, 72, 108, 144, 216, 252] solved 56.5299 (41s) best K=6: 44.14355849807783 | elapsed 72 min, eta 25 min
+[563/761] K=6 [36, 72, 108, 144, 216, 288] solved 55.8933 (40s) best K=6: 44.14355849807783 | elapsed 72 min, eta 25 min
+[564/761] K=6 [36, 72, 108, 144, 216, 324] solved 58.1000 (44s) best K=6: 44.14355849807783 | elapsed 72 min, eta 25 min
+[565/761] K=6 [36, 72, 108, 144, 252, 288] solved 55.0012 (49s) best K=6: 44.14355849807783 | elapsed 72 min, eta 25 min
+[566/761] K=6 [36, 72, 108, 144, 252, 324] solved 56.1815 (41s) best K=6: 44.14355849807783 | elapsed 73 min, eta 25 min
+[567/761] K=6 [36, 72, 108, 180, 216, 252] solved 50.1047 (29s) best K=6: 44.14355849807783 | elapsed 73 min, eta 25 min
+[568/761] K=6 [36, 72, 108, 144, 288, 324] solved 57.0822 (36s) best K=6: 44.14355849807783 | elapsed 73 min, eta 25 min
+[569/761] K=6 [36, 72, 108, 180, 216, 288] solved 48.5710 (31s) best K=6: 44.14355849807783 | elapsed 73 min, eta 25 min
+[570/761] K=6 [36, 72, 108, 180, 252, 324] solved 45.4751 (31s) best K=6: 44.14355849807783 | elapsed 73 min, eta 25 min
+[571/761] K=6 [36, 72, 108, 180, 252, 288] solved 47.8034 (32s) best K=6: 44.14355849807783 | elapsed 73 min, eta 24 min
+[572/761] K=6 [36, 72, 108, 180, 216, 324] solved 47.1255 (34s) best K=6: 44.14355849807783 | elapsed 73 min, eta 24 min
+[573/761] K=6 [36, 72, 108, 180, 288, 324] solved 46.3491 (33s) best K=6: 44.14355849807783 | elapsed 74 min, eta 24 min
+[574/761] K=6 [36, 72, 108, 216, 252, 288] solved 57.5370 (41s) best K=6: 44.14355849807783 | elapsed 74 min, eta 24 min
+[575/761] K=6 [36, 72, 108, 216, 288, 324] solved 57.1332 (42s) best K=6: 44.14355849807783 | elapsed 74 min, eta 24 min
+[576/761] K=6 [36, 72, 108, 216, 252, 324] solved 56.8861 (42s) best K=6: 44.14355849807783 | elapsed 74 min, eta 24 min
+[577/761] K=6 [36, 72, 108, 252, 288, 324] solved 57.5099 (47s) best K=6: 44.14355849807783 | elapsed 74 min, eta 24 min
+[578/761] K=6 [36, 72, 144, 180, 216, 324] solved 54.6614 (29s) best K=6: 44.14355849807783 | elapsed 74 min, eta 24 min
+[579/761] K=6 [36, 72, 144, 180, 216, 252] solved 52.2945 (37s) best K=6: 44.14355849807783 | elapsed 75 min, eta 23 min
+[580/761] K=6 [36, 72, 144, 180, 216, 288] solved 46.9532 (36s) best K=6: 44.14355849807783 | elapsed 75 min, eta 23 min
+[581/761] K=6 [36, 72, 144, 180, 252, 324] solved 52.1197 (28s) best K=6: 44.14355849807783 | elapsed 75 min, eta 23 min
+[582/761] K=6 [36, 72, 144, 180, 252, 288] solved 44.9964 (34s) best K=6: 44.14355849807783 | elapsed 75 min, eta 23 min
+[583/761] K=6 [36, 72, 144, 180, 288, 324] solved 48.2428 (30s) best K=6: 44.14355849807783 | elapsed 75 min, eta 23 min
+[584/761] K=6 [36, 72, 144, 216, 252, 288] solved 55.5358 (39s) best K=6: 44.14355849807783 | elapsed 75 min, eta 23 min
+[585/761] K=6 [36, 72, 144, 216, 252, 324] solved 62.1016 (39s) best K=6: 44.14355849807783 | elapsed 76 min, eta 23 min
+[586/761] K=6 [36, 72, 144, 216, 288, 324] solved 59.0048 (40s) best K=6: 44.14355849807783 | elapsed 76 min, eta 23 min
+[587/761] K=6 [36, 72, 144, 252, 288, 324] solved 56.8818 (39s) best K=6: 44.14355849807783 | elapsed 76 min, eta 22 min
+[588/761] K=6 [36, 72, 180, 216, 252, 288] solved 50.0309 (30s) best K=6: 44.14355849807783 | elapsed 76 min, eta 22 min
+[589/761] K=6 [36, 72, 180, 216, 288, 324] solved 47.9939 (29s) best K=6: 44.14355849807783 | elapsed 76 min, eta 22 min
+[590/761] K=6 [36, 72, 180, 216, 252, 324] solved 52.7601 (35s) best K=6: 44.14355849807783 | elapsed 76 min, eta 22 min
+[591/761] K=6 [36, 72, 180, 252, 288, 324] solved 45.9154 (36s) best K=6: 44.14355849807783 | elapsed 76 min, eta 22 min
+[592/761] K=6 [36, 72, 216, 252, 288, 324] solved 56.7684 (41s) best K=6: 44.14355849807783 | elapsed 76 min, eta 22 min
+[593/761] K=6 [36, 108, 144, 180, 216, 252] solved 46.2261 (35s) best K=6: 44.14355849807783 | elapsed 77 min, eta 22 min
+[594/761] K=6 [36, 108, 144, 180, 216, 288] solved 51.4750 (35s) best K=6: 44.14355849807783 | elapsed 77 min, eta 22 min
+[595/761] K=6 [36, 108, 144, 180, 216, 324] solved 54.4114 (31s) best K=6: 44.14355849807783 | elapsed 77 min, eta 21 min
+[596/761] K=6 [36, 108, 144, 180, 252, 288] solved 45.0463 (29s) best K=6: 44.14355849807783 | elapsed 77 min, eta 21 min
+[597/761] K=6 [36, 108, 144, 180, 252, 324] solved 47.4086 (34s) best K=6: 44.14355849807783 | elapsed 77 min, eta 21 min
+[598/761] K=6 [36, 108, 144, 180, 288, 324] solved 52.7091 (38s) best K=6: 44.14355849807783 | elapsed 77 min, eta 21 min
+[599/761] K=6 [36, 108, 144, 216, 252, 288] solved 55.0535 (40s) best K=6: 44.14355849807783 | elapsed 77 min, eta 21 min
+[600/761] K=6 [36, 108, 144, 216, 252, 324] solved 57.9066 (46s) best K=6: 44.14355849807783 | elapsed 78 min, eta 21 min
+[601/761] K=6 [36, 108, 144, 216, 288, 324] solved 62.1391 (41s) best K=6: 44.14355849807783 | elapsed 78 min, eta 21 min
+[602/761] K=6 [36, 108, 180, 216, 252, 288] solved 48.1855 (30s) best K=6: 44.14355849807783 | elapsed 78 min, eta 21 min
+[603/761] K=6 [36, 108, 144, 252, 288, 324] solved 56.9637 (38s) best K=6: 44.14355849807783 | elapsed 78 min, eta 20 min
+[604/761] K=6 [36, 108, 180, 216, 252, 324] solved 47.0495 (28s) best K=6: 44.14355849807783 | elapsed 78 min, eta 20 min
+[605/761] K=6 [36, 108, 180, 216, 288, 324] solved 52.2604 (34s) best K=6: 44.14355849807783 | elapsed 78 min, eta 20 min
+[606/761] K=6 [36, 108, 180, 252, 288, 324] solved 45.6717 (39s) best K=6: 44.14355849807783 | elapsed 79 min, eta 20 min
+[607/761] K=6 [36, 144, 180, 216, 252, 288] solved 46.2896 (32s) best K=6: 44.14355849807783 | elapsed 79 min, eta 20 min
+[608/761] K=6 [36, 108, 216, 252, 288, 324] solved 56.2146 (41s) best K=6: 44.14355849807783 | elapsed 79 min, eta 20 min
+[609/761] K=6 [36, 144, 180, 216, 252, 324] solved 54.3339 (37s) best K=6: 44.14355849807783 | elapsed 79 min, eta 20 min
+[610/761] K=6 [36, 144, 180, 252, 288, 324] solved 47.2544 (33s) best K=6: 44.14355849807783 | elapsed 79 min, eta 20 min
+[611/761] K=6 [36, 144, 180, 216, 288, 324] solved 54.4680 (35s) best K=6: 44.14355849807783 | elapsed 79 min, eta 19 min
+[612/761] K=6 [36, 144, 216, 252, 288, 324] solved 57.9091 (40s) best K=6: 44.14355849807783 | elapsed 79 min, eta 19 min
+[613/761] K=6 [36, 180, 216, 252, 288, 324] solved 47.6974 (33s) best K=6: 44.14355849807783 | elapsed 80 min, eta 19 min
+[614/761] K=6 [72, 108, 144, 180, 216, 252] solved 44.0657 (28s) best K=6: 44.065704366010834 | elapsed 80 min, eta 19 min
+[615/761] K=6 [72, 108, 144, 180, 216, 288] solved 44.5757 (32s) best K=6: 44.065704366010834 | elapsed 80 min, eta 19 min
+[616/761] K=6 [72, 108, 144, 180, 216, 324] solved 46.2509 (27s) best K=6: 44.065704366010834 | elapsed 80 min, eta 19 min
+[617/761] K=6 [72, 108, 144, 180, 252, 288] solved 45.3908 (28s) best K=6: 44.065704366010834 | elapsed 80 min, eta 19 min
+[618/761] K=6 [72, 108, 144, 180, 288, 324] solved 50.0400 (27s) best K=6: 44.065704366010834 | elapsed 80 min, eta 19 min
+[619/761] K=6 [72, 108, 144, 180, 252, 324] solved 47.4196 (33s) best K=6: 44.065704366010834 | elapsed 80 min, eta 18 min
+[620/761] K=6 [72, 108, 144, 216, 252, 288] solved 53.2669 (49s) best K=6: 44.065704366010834 | elapsed 81 min, eta 18 min
+[621/761] K=6 [72, 108, 144, 252, 288, 324] solved 57.0696 (37s) best K=6: 44.065704366010834 | elapsed 81 min, eta 18 min
+[622/761] K=6 [72, 108, 144, 216, 252, 324] solved 55.4443 (45s) best K=6: 44.065704366010834 | elapsed 81 min, eta 18 min
+[623/761] K=6 [72, 108, 144, 216, 288, 324] solved 56.1826 (41s) best K=6: 44.065704366010834 | elapsed 81 min, eta 18 min
+[624/761] K=6 [72, 108, 180, 216, 252, 288] solved 46.3482 (34s) best K=6: 44.065704366010834 | elapsed 81 min, eta 18 min
+[625/761] K=6 [72, 108, 180, 216, 288, 324] solved 45.1209 (27s) best K=6: 44.065704366010834 | elapsed 81 min, eta 18 min
+[626/761] K=6 [72, 108, 180, 252, 288, 324] solved 46.7638 (36s) best K=6: 44.065704366010834 | elapsed 81 min, eta 18 min
+[627/761] K=6 [72, 108, 180, 216, 252, 324] solved 44.7185 (39s) best K=6: 44.065704366010834 | elapsed 81 min, eta 17 min
+[628/761] K=6 [72, 144, 180, 216, 252, 288] solved 44.3563 (30s) best K=6: 44.065704366010834 | elapsed 82 min, eta 17 min
+[629/761] K=6 [72, 144, 180, 216, 252, 324] solved 51.3742 (33s) best K=6: 44.065704366010834 | elapsed 82 min, eta 17 min
+[630/761] K=6 [72, 108, 216, 252, 288, 324] solved 55.6779 (53s) best K=6: 44.065704366010834 | elapsed 82 min, eta 17 min
+[631/761] K=6 [72, 144, 180, 216, 288, 324] solved 46.9069 (34s) best K=6: 44.065704366010834 | elapsed 82 min, eta 17 min
+[632/761] K=6 [72, 144, 180, 252, 288, 324] solved 47.7266 (29s) best K=6: 44.065704366010834 | elapsed 82 min, eta 17 min
+[633/761] K=6 [72, 180, 216, 252, 288, 324] solved 45.4054 (27s) best K=6: 44.065704366010834 | elapsed 82 min, eta 17 min
+[634/761] K=6 [108, 144, 180, 216, 252, 288] solved 44.1228 (35s) best K=6: 44.065704366010834 | elapsed 83 min, eta 17 min
+[635/761] K=6 [72, 144, 216, 252, 288, 324] solved 55.9284 (39s) best K=6: 44.065704366010834 | elapsed 83 min, eta 16 min
+[636/761] K=6 [108, 144, 180, 216, 252, 324] solved 46.1670 (30s) best K=6: 44.065704366010834 | elapsed 83 min, eta 16 min
+[637/761] K=6 [108, 144, 180, 216, 288, 324] solved 52.1927 (35s) best K=6: 44.065704366010834 | elapsed 83 min, eta 16 min
+[638/761] K=6 [108, 144, 180, 252, 288, 324] solved 49.5790 (32s) best K=6: 44.065704366010834 | elapsed 83 min, eta 16 min
+[639/761] K=6 [108, 180, 216, 252, 288, 324] solved 44.8991 (32s) best K=6: 44.065704366010834 | elapsed 83 min, eta 16 min
+[640/761] K=6 [108, 144, 216, 252, 288, 324] solved 56.9634 (40s) best K=6: 44.065704366010834 | elapsed 83 min, eta 16 min
+[641/761] K=3 [0, 36, 72] solved 82.1340 (17s) best K=3: 82.13404201844158 | elapsed 83 min, eta 16 min
+[642/761] K=3 [0, 36, 144] solved 81.4836 (15s) best K=3: 81.48359616427125 | elapsed 84 min, eta 15 min
+[643/761] K=3 [0, 36, 108] solved 78.0351 (17s) best K=3: 78.0350630027498 | elapsed 84 min, eta 15 min
+[644/761] K=6 [144, 180, 216, 252, 288, 324] solved 46.2749 (35s) best K=6: 44.065704366010834 | elapsed 84 min, eta 15 min
+[645/761] K=3 [0, 36, 180] solved 80.2780 (15s) best K=3: 78.0350630027498 | elapsed 84 min, eta 15 min
+[646/761] K=3 [0, 36, 216] solved 87.1690 (16s) best K=3: 78.0350630027498 | elapsed 84 min, eta 15 min
+[647/761] K=3 [0, 36, 288] solved 74.6234 (12s) best K=3: 74.62343246205435 | elapsed 84 min, eta 15 min
+[648/761] K=3 [0, 36, 252] solved 77.5833 (17s) best K=3: 74.62343246205435 | elapsed 84 min, eta 15 min
+[649/761] K=3 [0, 36, 324] solved 83.0805 (13s) best K=3: 74.62343246205435 | elapsed 84 min, eta 14 min
+[650/761] K=3 [0, 72, 108] solved 70.4370 (12s) best K=3: 70.43701934252934 | elapsed 84 min, eta 14 min
+[651/761] K=3 [0, 72, 144] solved 73.7709 (15s) best K=3: 70.43701934252934 | elapsed 84 min, eta 14 min
+[652/761] K=3 [0, 72, 180] solved 71.5225 (13s) best K=3: 70.43701934252934 | elapsed 84 min, eta 14 min
+[653/761] K=3 [0, 72, 216] solved 76.5290 (14s) best K=3: 70.43701934252934 | elapsed 84 min, eta 14 min
+[654/761] K=3 [0, 72, 252] solved 76.0646 (13s) best K=3: 70.43701934252934 | elapsed 84 min, eta 14 min
+[655/761] K=3 [0, 72, 288] solved 70.3311 (12s) best K=3: 70.33112312597876 | elapsed 84 min, eta 14 min
+[656/761] K=3 [0, 72, 324] solved 74.5644 (12s) best K=3: 70.33112312597876 | elapsed 84 min, eta 13 min
+[657/761] K=3 [0, 108, 144] solved 75.0716 (13s) best K=3: 70.33112312597876 | elapsed 84 min, eta 13 min
+[658/761] K=3 [0, 108, 252] solved 69.0469 (11s) best K=3: 69.04694257256075 | elapsed 84 min, eta 13 min
+[659/761] K=3 [0, 108, 180] solved 70.6651 (16s) best K=3: 69.04694257256075 | elapsed 84 min, eta 13 min
+[660/761] K=3 [0, 108, 216] solved 74.3093 (15s) best K=3: 69.04694257256075 | elapsed 85 min, eta 13 min
+[661/761] K=3 [0, 108, 288] solved 76.2040 (12s) best K=3: 69.04694257256075 | elapsed 85 min, eta 13 min
+[662/761] K=3 [0, 144, 180] solved 79.0924 (13s) best K=3: 69.04694257256075 | elapsed 85 min, eta 13 min
+[663/761] K=3 [0, 108, 324] solved 77.7630 (15s) best K=3: 69.04694257256075 | elapsed 85 min, eta 13 min
+[664/761] K=3 [0, 144, 252] solved 73.4557 (14s) best K=3: 69.04694257256075 | elapsed 85 min, eta 12 min
+[665/761] K=3 [0, 144, 216] solved 79.7803 (17s) best K=3: 69.04694257256075 | elapsed 85 min, eta 12 min
+[666/761] K=3 [0, 144, 324] solved 86.9583 (12s) best K=3: 69.04694257256075 | elapsed 85 min, eta 12 min
+[667/761] K=3 [0, 144, 288] solved 75.9216 (14s) best K=3: 69.04694257256075 | elapsed 85 min, eta 12 min
+[668/761] K=3 [0, 180, 216] solved 79.2557 (15s) best K=3: 69.04694257256075 | elapsed 85 min, eta 12 min
+[669/761] K=3 [0, 180, 252] solved 70.9739 (16s) best K=3: 69.04694257256075 | elapsed 85 min, eta 12 min
+[670/761] K=3 [0, 180, 288] solved 71.4674 (12s) best K=3: 69.04694257256075 | elapsed 85 min, eta 12 min
+[671/761] K=3 [0, 180, 324] solved 79.9690 (14s) best K=3: 69.04694257256075 | elapsed 85 min, eta 11 min
+[672/761] K=3 [0, 216, 252] solved 76.2027 (12s) best K=3: 69.04694257256075 | elapsed 85 min, eta 11 min
+[673/761] K=3 [0, 216, 288] solved 74.2197 (11s) best K=3: 69.04694257256075 | elapsed 85 min, eta 11 min
+[674/761] K=3 [0, 252, 288] solved 70.2670 (12s) best K=3: 69.04694257256075 | elapsed 85 min, eta 11 min
+[675/761] K=3 [0, 216, 324] solved 81.5598 (19s) best K=3: 69.04694257256075 | elapsed 85 min, eta 11 min
+[676/761] K=3 [0, 252, 324] solved 76.9688 (18s) best K=3: 69.04694257256075 | elapsed 86 min, eta 11 min
+[677/761] K=3 [0, 288, 324] solved 81.7765 (18s) best K=3: 69.04694257256075 | elapsed 86 min, eta 11 min
+[678/761] K=3 [36, 72, 144] solved 83.9934 (14s) best K=3: 69.04694257256075 | elapsed 86 min, eta 10 min
+[679/761] K=3 [36, 72, 180] solved 73.0193 (12s) best K=3: 69.04694257256075 | elapsed 86 min, eta 10 min
+[680/761] K=3 [36, 72, 216] solved 86.1921 (17s) best K=3: 69.04694257256075 | elapsed 86 min, eta 10 min
+[681/761] K=3 [36, 72, 288] solved 76.5309 (14s) best K=3: 69.04694257256075 | elapsed 86 min, eta 10 min
+[682/761] K=3 [36, 72, 108] infeasible nan (34s) best K=3: 69.04694257256075 | elapsed 86 min, eta 10 min
+[683/761] K=3 [36, 72, 252] solved 85.7672 (18s) best K=3: 69.04694257256075 | elapsed 86 min, eta 10 min
+[684/761] K=3 [36, 72, 324] solved 83.5908 (16s) best K=3: 69.04694257256075 | elapsed 86 min, eta 10 min
+[685/761] K=3 [36, 108, 180] solved 70.1015 (13s) best K=3: 69.04694257256075 | elapsed 86 min, eta 10 min
+[686/761] K=3 [36, 108, 144] solved 83.4882 (16s) best K=3: 69.04694257256075 | elapsed 86 min, eta 9 min
+[687/761] K=3 [36, 108, 216] solved 80.6789 (17s) best K=3: 69.04694257256075 | elapsed 86 min, eta 9 min
+[688/761] K=3 [36, 108, 252] solved 76.9185 (17s) best K=3: 69.04694257256075 | elapsed 86 min, eta 9 min
+[689/761] K=3 [36, 108, 324] solved 81.4563 (16s) best K=3: 69.04694257256075 | elapsed 86 min, eta 9 min
+[690/761] K=3 [36, 108, 288] solved 81.9223 (19s) best K=3: 69.04694257256075 | elapsed 86 min, eta 9 min
+[691/761] K=3 [36, 144, 180] solved 78.4546 (17s) best K=3: 69.04694257256075 | elapsed 87 min, eta 9 min
+[692/761] K=3 [36, 144, 216] solved 88.8009 (14s) best K=3: 69.04694257256075 | elapsed 87 min, eta 9 min
+[693/761] K=3 [36, 144, 252] solved 80.7160 (15s) best K=3: 69.04694257256075 | elapsed 87 min, eta 9 min
+[694/761] K=3 [36, 144, 288] solved 80.2157 (16s) best K=3: 69.04694257256075 | elapsed 87 min, eta 8 min
+[695/761] K=3 [36, 180, 216] solved 82.5860 (12s) best K=3: 69.04694257256075 | elapsed 87 min, eta 8 min
+[696/761] K=3 [36, 144, 324] solved 88.3787 (16s) best K=3: 69.04694257256075 | elapsed 87 min, eta 8 min
+[697/761] K=3 [36, 180, 288] solved 68.3084 (11s) best K=3: 68.30844998477316 | elapsed 87 min, eta 8 min
+[698/761] K=3 [36, 180, 252] solved 71.0845 (13s) best K=3: 68.30844998477316 | elapsed 87 min, eta 8 min
+[699/761] K=3 [36, 216, 252] solved 83.5800 (16s) best K=3: 68.30844998477316 | elapsed 87 min, eta 8 min
+[700/761] K=3 [36, 180, 324] solved 75.9213 (17s) best K=3: 68.30844998477316 | elapsed 87 min, eta 8 min
+[701/761] K=3 [36, 216, 288] solved 78.2166 (15s) best K=3: 68.30844998477316 | elapsed 87 min, eta 7 min
+[702/761] K=3 [36, 216, 324] solved 88.1039 (15s) best K=3: 68.30844998477316 | elapsed 87 min, eta 7 min
+[703/761] K=3 [36, 252, 288] solved 73.9835 (14s) best K=3: 68.30844998477316 | elapsed 87 min, eta 7 min
+[704/761] K=3 [36, 252, 324] solved 80.9391 (16s) best K=3: 68.30844998477316 | elapsed 87 min, eta 7 min
+[705/761] K=3 [72, 108, 144] solved 76.2314 (15s) best K=3: 68.30844998477316 | elapsed 87 min, eta 7 min
+[706/761] K=3 [36, 288, 324] solved 83.6385 (17s) best K=3: 68.30844998477316 | elapsed 87 min, eta 7 min
+[707/761] K=3 [72, 108, 252] infeasible nan (3s) best K=3: 68.30844998477316 | elapsed 87 min, eta 7 min
+[708/761] K=3 [72, 108, 180] solved 64.2936 (13s) best K=3: 64.29364257924907 | elapsed 88 min, eta 7 min
+[709/761] K=3 [72, 108, 288] infeasible nan (5s) best K=3: 64.29364257924907 | elapsed 88 min, eta 6 min
+[710/761] K=3 [72, 108, 216] solved 75.6223 (17s) best K=3: 64.29364257924907 | elapsed 88 min, eta 6 min
+[711/761] K=3 [72, 144, 180] solved 68.6026 (12s) best K=3: 64.29364257924907 | elapsed 88 min, eta 6 min
+[712/761] K=3 [72, 108, 324] solved 74.6437 (15s) best K=3: 64.29364257924907 | elapsed 88 min, eta 6 min
+[713/761] K=3 [72, 144, 216] solved 78.7484 (15s) best K=3: 64.29364257924907 | elapsed 88 min, eta 6 min
+[714/761] K=3 [72, 144, 252] solved 78.8803 (12s) best K=3: 64.29364257924907 | elapsed 88 min, eta 6 min
+[715/761] K=3 [72, 144, 288] solved 72.6594 (16s) best K=3: 64.29364257924907 | elapsed 88 min, eta 6 min
+[716/761] K=3 [72, 144, 324] solved 78.1708 (14s) best K=3: 64.29364257924907 | elapsed 88 min, eta 6 min
+[717/761] K=3 [72, 180, 216] solved 70.2712 (12s) best K=3: 64.29364257924907 | elapsed 88 min, eta 5 min
+[718/761] K=3 [72, 180, 252] solved 69.3479 (12s) best K=3: 64.29364257924907 | elapsed 88 min, eta 5 min
+[719/761] K=3 [72, 180, 288] solved 63.1642 (11s) best K=3: 63.16423646703944 | elapsed 88 min, eta 5 min
+[720/761] K=3 [72, 180, 324] solved 67.9168 (12s) best K=3: 63.16423646703944 | elapsed 88 min, eta 5 min
+[721/761] K=3 [72, 216, 252] solved 81.9609 (16s) best K=3: 63.16423646703944 | elapsed 88 min, eta 5 min
+[722/761] K=3 [72, 216, 288] solved 73.3590 (14s) best K=3: 63.16423646703944 | elapsed 88 min, eta 5 min
+[723/761] K=3 [72, 252, 288] infeasible nan (7s) best K=3: 63.16423646703944 | elapsed 88 min, eta 5 min
+[724/761] K=3 [72, 216, 324] solved 80.3703 (16s) best K=3: 63.16423646703944 | elapsed 88 min, eta 5 min
+[725/761] K=3 [72, 288, 324] solved 76.6783 (15s) best K=3: 63.16423646703944 | elapsed 89 min, eta 4 min
+[726/761] K=3 [108, 144, 180] solved 71.9782 (14s) best K=3: 63.16423646703944 | elapsed 89 min, eta 4 min
+[727/761] K=3 [72, 252, 324] solved 81.7019 (16s) best K=3: 63.16423646703944 | elapsed 89 min, eta 4 min
+[728/761] K=3 [108, 144, 216] solved 80.9309 (14s) best K=3: 63.16423646703944 | elapsed 89 min, eta 4 min
+[729/761] K=3 [108, 144, 252] solved 74.4359 (15s) best K=3: 63.16423646703944 | elapsed 89 min, eta 4 min
+[730/761] K=3 [108, 144, 324] solved 82.5965 (18s) best K=3: 63.16423646703944 | elapsed 89 min, eta 4 min
+[731/761] K=3 [108, 144, 288] solved 81.6392 (18s) best K=3: 63.16423646703944 | elapsed 89 min, eta 4 min
+[732/761] K=3 [108, 180, 216] solved 68.8725 (12s) best K=3: 63.16423646703944 | elapsed 89 min, eta 4 min
+[733/761] K=3 [108, 180, 252] solved 64.7462 (12s) best K=3: 63.16423646703944 | elapsed 89 min, eta 3 min
+[734/761] K=3 [108, 180, 324] solved 70.3857 (11s) best K=3: 63.16423646703944 | elapsed 89 min, eta 3 min
+[735/761] K=3 [108, 180, 288] solved 69.3427 (12s) best K=3: 63.16423646703944 | elapsed 89 min, eta 3 min
+[736/761] K=3 [108, 252, 288] infeasible nan (3s) best K=3: 63.16423646703944 | elapsed 89 min, eta 3 min
+[737/761] K=3 [108, 216, 252] solved 75.3947 (13s) best K=3: 63.16423646703944 | elapsed 89 min, eta 3 min
+[738/761] K=3 [108, 216, 288] solved 79.7141 (15s) best K=3: 63.16423646703944 | elapsed 89 min, eta 3 min
+[739/761] K=3 [108, 216, 324] solved 80.6162 (15s) best K=3: 63.16423646703944 | elapsed 89 min, eta 3 min
+[740/761] K=3 [108, 252, 324] solved 76.0810 (14s) best K=3: 63.16423646703944 | elapsed 89 min, eta 3 min
+[741/761] K=3 [108, 288, 324] solved 85.5625 (20s) best K=3: 63.16423646703944 | elapsed 89 min, eta 2 min
+[742/761] K=3 [144, 180, 252] solved 68.4709 (11s) best K=3: 63.16423646703944 | elapsed 89 min, eta 2 min
+[743/761] K=3 [144, 180, 216] solved 79.5956 (16s) best K=3: 63.16423646703944 | elapsed 89 min, eta 2 min
+[744/761] K=3 [144, 180, 288] solved 69.8795 (11s) best K=3: 63.16423646703944 | elapsed 90 min, eta 2 min
+[745/761] K=3 [144, 180, 324] solved 82.4731 (13s) best K=3: 63.16423646703944 | elapsed 90 min, eta 2 min
+[746/761] K=3 [144, 216, 252] solved 81.0194 (17s) best K=3: 63.16423646703944 | elapsed 90 min, eta 2 min
+[747/761] K=3 [144, 216, 288] solved 78.4731 (17s) best K=3: 63.16423646703944 | elapsed 90 min, eta 2 min
+[748/761] K=3 [144, 216, 324] solved 89.4551 (16s) best K=3: 63.16423646703944 | elapsed 90 min, eta 2 min
+[749/761] K=3 [144, 252, 288] solved 73.9757 (16s) best K=3: 63.16423646703944 | elapsed 90 min, eta 1 min
+[750/761] K=3 [144, 252, 324] solved 79.8862 (12s) best K=3: 63.16423646703944 | elapsed 90 min, eta 1 min
+[751/761] K=3 [180, 216, 252] solved 72.7163 (16s) best K=3: 63.16423646703944 | elapsed 90 min, eta 1 min
+[752/761] K=3 [144, 288, 324] solved 85.8682 (19s) best K=3: 63.16423646703944 | elapsed 90 min, eta 1 min
+[753/761] K=3 [180, 216, 288] solved 69.1413 (12s) best K=3: 63.16423646703944 | elapsed 90 min, eta 1 min
+[754/761] K=3 [180, 216, 324] solved 78.6411 (16s) best K=3: 63.16423646703944 | elapsed 90 min, eta 1 min
+[755/761] K=3 [180, 252, 288] solved 64.2256 (14s) best K=3: 63.16423646703944 | elapsed 90 min, eta 1 min
+[756/761] K=3 [180, 252, 324] solved 69.5030 (13s) best K=3: 63.16423646703944 | elapsed 90 min, eta 1 min
+[757/761] K=3 [180, 288, 324] solved 72.8448 (13s) best K=3: 63.16423646703944 | elapsed 90 min, eta 0 min
+[758/761] K=3 [216, 252, 288] solved 77.6298 (14s) best K=3: 63.16423646703944 | elapsed 90 min, eta 0 min
+[759/761] K=3 [216, 252, 324] solved 83.8200 (14s) best K=3: 63.16423646703944 | elapsed 91 min, eta 0 min
+[760/761] K=3 [216, 288, 324] solved 83.7918 (14s) best K=3: 63.16423646703944 | elapsed 91 min, eta 0 min
+[761/761] K=3 [252, 288, 324] infeasible nan (16s) best K=3: 63.16423646703944 | elapsed 91 min, eta 0 min
+done
