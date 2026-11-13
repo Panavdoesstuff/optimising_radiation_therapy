@@ -76,3 +76,23 @@ Includes third-party software components, see THIRD_PARTY_NOTICES.md for full de
     swap: [54, 90, 180, 270, 288] -> 45.8451
     swap: [54, 90, 180, 198, 288] -> 45.5709
    K=5: MILP on every 3rd row, 1800s limit, start 45.5709
+     MILP: Time limit reached  incumbent 41.704552710924204  bound 31.85318749938064  nodes 87  rows 26153  (1803s)
+   exact LP on MILP beams [18, 90, 126, 180, 252]
+      rowgen 1: obj 44.3318  body rows 28094  violated 6300  max rel viol 8.1e-01
+      rowgen 2: obj 45.4502  body rows 34637  violated 3  max rel viol 1.4e-02
+      rowgen 3: obj 45.4514  body rows 34645  violated 0  max rel viol 3.8e-12
+   exact LP on heuristic start beams [54, 90, 180, 198, 288]
+      rowgen 1: obj 45.5709  body rows 34645  violated 364  max rel viol 2.0e-01
+      rowgen 2: obj 45.7128  body rows 35105  violated 7  max rel viol 1.2e-02
+      rowgen 3: obj 45.7134  body rows 35120  violated 0  max rel viol 4.7e-14
+--- verify: BAO K=5: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 1.25e-10 (rel 1.8e-12)
+    [ok] T56 d>=rx56: max viol 4.81e-11 (rel 8.6e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 9.70e-11 (rel 1.3e-12)
+    [ok] d<=d_cap on all BODY voxels outside targets: max viol 2.83e-10 (rel 3.8e-12)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 45.451392  solver 45.45139244629263  rel diff 9.379814753966574e-16
+    key vars: {'n_nonzero': 381, 'n_at_upper_bound': 0, 'max_intensity': 5328.949625690415, 'mean_intensity': 1297.8622535676795}
+   K=5: upper 45.4514 (MILP) beams [18, 90, 126, 180, 252]  lower 32.6716  gap 28.1%

@@ -66,3 +66,9 @@ BODY_ROWGEN_MARGIN = 0.5      # Gy: also add body voxels within this of the cap
 BODY_ROWGEN_TOL = 1e-6        # relative: stop when max body violation is below this
 BAO_MILP_STRIDE = 3           # beam-selection MILP built on every 3rd constraint row
 BAO_TIME_LIMITS = {5: 1800.0} # seconds; other K use BAO_TIME_LIMIT
+
+# Exact beam selection by enumeration on a coarser grid (replaces the MILP as the headline method).
+# 36-degree spacing keeps 10 candidates and still contains the easy plan's beams.
+ENUM_CANDIDATES = list(range(0, 360, 36))
+ENUM_K_VALUES = [5, 4, 6, 3]          # processing order (most important first)
+ENUM_WORKERS = 4                      # ~0.7 GB RAM each

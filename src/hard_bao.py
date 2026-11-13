@@ -29,6 +29,7 @@ class Reduced:
     beam_of_column: np.ndarray
     n_base: int = 0                                     # rows before any body rows were added
     body: np.ndarray = field(default_factory=lambda: np.zeros(0, np.int64))  # local positions of body rows
+    beam_cache: dict = None             # optional {angle: full CSR dose matrix} to avoid reloading
 
     def __post_init__(self):
         if not self.n_base:
@@ -75,13 +76,22 @@ def add_rows(red, voxels):
     new = np.setdiff1d(np.asarray(voxels, np.int64), red.rows)
     if len(new) == 0:
         return 0
-    blocks = [io_cort.load_D("prostate", g)[new] for g in red.angles]
+    blocks = [beam_D(red, g)[new] for g in red.angles]
     red.D = sp.vstack([red.D, sp.hstack(blocks, format="csr")], format="csr")
     start = len(red.rows)
     red.rows = np.concatenate([red.rows, new])
     red.body = np.concatenate([red.body, start + np.arange(len(new))])
     red.loc["cap"] = np.arange(len(red.rows))
     return len(new)
+
+
+def beam_D(red, g):
+    """Full dose matrix of one beam, from red.beam_cache when it is enabled."""
+    if red.beam_cache is None:
+        return io_cort.load_D("prostate", g)
+    if g not in red.beam_cache:
+        red.beam_cache[g] = io_cort.load_D("prostate", g)
+    return red.beam_cache[g]
 
 
 def full_dose(red, x):
@@ -91,7 +101,7 @@ def full_dose(red, x):
         xb = x[red.beam_of_column == b]
         if not np.any(xb > 0):
             continue
-        db = io_cort.load_D("prostate", g) @ xb
+        db = beam_D(red, g) @ xb
         d = db if d is None else d + db
     return d
 

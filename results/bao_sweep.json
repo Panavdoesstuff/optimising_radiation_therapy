@@ -369,5 +369,179 @@
         ]
       }
     }
+  },
+  "5": {
+    "K": 5,
+    "lower_bound": 32.67161012710508,
+    "best_bound": 32.67161012710508,
+    "lower_source": "all-20-beam LP",
+    "milp": {
+      "status": "Time limit reached",
+      "best_bound": 31.85318749938064,
+      "mip_gap": 0.23621798032048125,
+      "incumbent_subsampled": 41.704552710924204,
+      "nodes": 87,
+      "time": 1802.6301519870758,
+      "time_limit": 1800.0,
+      "n_vars": 2854,
+      "n_constraints": 26153,
+      "n_binaries": 20,
+      "nnz": 9997404,
+      "stride": 3,
+      "angles": [
+        18,
+        90,
+        126,
+        180,
+        252
+      ]
+    },
+    "heuristic_objective_pool_rows": 45.5709482850796,
+    "total_time": 2221.6544048786163,
+    "objective": 45.45139244629259,
+    "angles": [
+      18,
+      90,
+      126,
+      180,
+      252
+    ],
+    "gap": 0.28117471503845937,
+    "source": "MILP",
+    "verification": {
+      "checks": {
+        "x >= 0": {
+          "max_violation": -0.0,
+          "relative": -0.0,
+          "ok": true
+        },
+        "x <= x_max": {
+          "max_violation": 0.0,
+          "relative": 0.0,
+          "ok": true
+        },
+        "T68 d>=rx68": {
+          "max_violation": 1.248139369636192e-10,
+          "relative": 1.8354990729944e-12,
+          "ok": true
+        },
+        "T56 d>=rx56": {
+          "max_violation": 4.8110848638316384e-11,
+          "relative": 8.591222971127926e-13,
+          "ok": true
+        },
+        "d<=d_cap on T68,T56,R,B": {
+          "max_violation": 9.703171599539928e-11,
+          "relative": 1.2972154544839474e-12,
+          "ok": true
+        },
+        "d<=d_cap on all BODY voxels outside targets": {
+          "max_violation": 2.829239065249567e-10,
+          "relative": 3.7824051674459446e-12,
+          "ok": true
+        },
+        "x = 0 on unselected beams": {
+          "max_violation": 0.0,
+          "relative": 0.0,
+          "ok": true
+        }
+      },
+      "all_ok": true,
+      "objective_recomputed": 45.45139244629259,
+      "objective_terms_mean_dose": {
+        "Rectum": 25.441065202420177,
+        "Bladder": 24.245407073585834,
+        "BODY": 9.10513833286818
+      },
+      "objective_terms_weighted": {
+        "Rectum": 25.441065202420177,
+        "Bladder": 14.5472442441515,
+        "BODY": 5.463082999720908
+      },
+      "slack_penalty": 0.0,
+      "solver_objective": 45.45139244629263,
+      "objective_rel_diff": 9.379814753966574e-16,
+      "dvc": {},
+      "key_variables": {
+        "n_nonzero": 381,
+        "n_beamlets": 690,
+        "n_at_upper_bound": 0,
+        "max_intensity": 5328.949625690415,
+        "mean_intensity": 1297.8622535676795,
+        "mean_nonzero_intensity": 2350.4591993745375,
+        "total_intensity_per_beam": {
+          "18": 114316.20726708534,
+          "90": 220674.65108578344,
+          "126": 175075.237630493,
+          "180": 196586.14024799792,
+          "252": 188872.71873033914
+        }
+      },
+      "dose_stats": {
+        "PTV_68": {
+          "n": 6770,
+          "min": 67.99999999987519,
+          "mean": 71.52946044062438,
+          "max": 74.80000000009704,
+          "D95": 68.60486457116443,
+          "frac_below_rx": 0.0
+        },
+        "PTV_56": {
+          "n": 8483,
+          "min": 55.99999999995189,
+          "mean": 65.55077233697658,
+          "max": 74.80000000008097,
+          "D95": 57.25940467006275,
+          "frac_below_rx": 0.0
+        },
+        "Rectum": {
+          "n": 1643,
+          "min": 0.02140700774259395,
+          "mean": 25.441065202420177,
+          "max": 70.20943719136399
+        },
+        "Bladder": {
+          "n": 9708,
+          "min": 0.16766268407996565,
+          "mean": 24.245407073585834,
+          "max": 74.19392276023181
+        },
+        "BODY": {
+          "n": 675120,
+          "min": 0.0,
+          "mean": 9.10513833286818,
+          "max": 74.80000000028294
+        }
+      },
+      "solver": {
+        "source": "MILP",
+        "rowgen": [
+          {
+            "iter": 1,
+            "objective": 44.33179784640477,
+            "body_rows": 28094,
+            "n_violated": 6300,
+            "max_rel_violation": 0.8137687658613849,
+            "time": 30.96658706665039
+          },
+          {
+            "iter": 2,
+            "objective": 45.45022251391819,
+            "body_rows": 34637,
+            "n_violated": 3,
+            "max_rel_violation": 0.01418988359284947,
+            "time": 30.233255863189697
+          },
+          {
+            "iter": 3,
+            "objective": 45.45139244629263,
+            "body_rows": 34645,
+            "n_violated": 0,
+            "max_rel_violation": 3.782215182757239e-12,
+            "time": 28.41087508201599
+          }
+        ]
+      }
+    }
   }
 }
