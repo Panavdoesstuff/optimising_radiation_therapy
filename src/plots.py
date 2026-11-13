@@ -174,3 +174,56 @@ def fig_sweep(path, Ks, objs, bounds, lb_all, easy_point):
     ax.legend(loc="lower left", fontsize=9)
     ax.set_title("Beam angle selection: objective vs number of beams")
     fig.tight_layout(); fig.savefig(path, dpi=200); plt.close(fig)
+
+
+def fig_rectum_distance(path, dist_proj, ptv_proj, dist_r, dose_plans, t, alpha):
+    """Why the rectum V_t limit cannot go much lower.
+    dist_proj: 2D [si, ap] min distance (mm) of rectum voxels to the PTV along the left-right axis
+    (NaN where no rectum); ptv_proj: 2D bool PTV projection; dist_r: per-voxel distances (mm);
+    dose_plans: list of (label, per-voxel rectum dose)."""
+    fig, axes = plt.subplots(1, 3, figsize=(15, 4.8), constrained_layout=True,
+                             gridspec_kw=dict(width_ratios=[1.0, 1.25, 1.1]))
+    # (a) where the rectum is, coloured by distance to the PTV
+    ax = axes[0]; ax.grid(False)
+    rows = np.where(np.isfinite(dist_proj).any(1) | ptv_proj.any(1))[0]
+    cols = np.where(np.isfinite(dist_proj).any(0) | ptv_proj.any(0))[0]
+    r0, r1 = max(rows.min() - 3, 0), rows.max() + 4
+    c0, c1 = max(cols.min() - 3, 0), cols.max() + 4
+    im = ax.imshow(dist_proj[r0:r1, c0:c1], cmap=SEQ.reversed(), vmin=0, vmax=np.nanpercentile(dist_r, 98),
+                   origin="upper", interpolation="nearest")
+    ax.contour(ptv_proj[r0:r1, c0:c1].astype(float), levels=[0.5], colors=[STRUCT_COLOR["PTV_68"]], linewidths=1.5)
+    ax.set_xticks([]); ax.set_yticks([])
+    for sp_ in ax.spines.values():
+        sp_.set_visible(False)
+    ax.set_title("Rectum (sagittal projection), coloured by\ndistance to the PTV; blue outline = PTV")
+    ax.set_xlabel("anterior ←   → posterior"); ax.set_ylabel("superior ↑")
+    fig.colorbar(im, ax=ax, shrink=0.8, label="Distance to PTV (mm)")
+    # (b) dose vs distance
+    ax = axes[1]
+    styles = ["o", "s"]
+    for (label, dr), mk in zip(dose_plans, styles):
+        jit = np.random.default_rng(0).uniform(-0.6, 0.6, size=len(dist_r))
+        ax.scatter(dist_r + jit, dr, s=9, marker=mk, alpha=0.45, color="#2a78d6" if mk == "o" else "#eb6834",
+                   edgecolors="none", label=label)
+    ax.axhline(t, color=INK, lw=1.2, ls="--")
+    ax.annotate(f"{t:g} Gy threshold", (np.percentile(dist_r, 97), t),
+                xytext=(0, 5), textcoords="offset points", ha="right", fontsize=9, color=INK)
+    ax.set_xlabel("Distance to PTV (mm, small jitter added)"); ax.set_ylabel("Rectum voxel dose (Gy)")
+    ax.set_title("Dose falls with distance; voxels near the PTV stay hot")
+    ax.legend(loc="upper right", fontsize=9, markerscale=2)
+    # (c) cumulative share of the rectum within a distance
+    ax = axes[2]
+    ds = np.sort(dist_r); frac = 100 * np.arange(1, len(ds) + 1) / len(ds)
+    ax.step(ds, frac, where="post", color="#1baf7a", lw=2)
+    r_a = float(np.percentile(dist_r, 100 * alpha))
+    ax.axhline(100 * alpha, color=INK2, lw=1, ls=":")
+    ax.axvline(r_a, color=INK2, lw=1, ls=":")
+    ax.plot([r_a], [100 * alpha], "o", color="#1baf7a", ms=9, markeredgecolor=SURFACE, markeredgewidth=2)
+    ax.annotate(f"{alpha:.0%} of the rectum lies within\n{r_a:.1f} mm of the PTV", (r_a, 100 * alpha),
+                xytext=(r_a + 12, 100 * alpha + 6), textcoords="data", fontsize=9, color=INK, va="bottom",
+                arrowprops=dict(arrowstyle="-", color=INK2, lw=0.8))
+    ax.set_xlabel("Distance to PTV (mm)"); ax.set_ylabel("Rectum volume within this distance (%)")
+    ax.set_ylim(0, 102); ax.set_xlim(0, np.percentile(dist_r, 99))
+    ax.set_title(f"Share of the rectum close to the PTV")
+    fig.suptitle(f"Why the rectal limit (≤{alpha:.0%} above {t:g} Gy) cannot be pushed much lower")
+    fig.savefig(path, dpi=200); plt.close(fig)

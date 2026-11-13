@@ -24,6 +24,7 @@ class Spec:
     rho: float = config.RHO_SLACK
     slack56: bool = False
     slack68: bool = False
+    body_cap: bool = config.BODY_CAP     # d_i <= d_cap on BODY voxels outside the targets
 
     @property
     def d_cap(self):
@@ -52,7 +53,9 @@ class Model:
         return len(self.c)
 
 
-def build_model(P, spec: Spec, sets=None):
+def build_model(P, spec: Spec, sets=None, extra_cap=None, extra_ub=()):
+    """extra_cap: additional voxels (e.g. generated body rows) that get d_i <= d_cap.
+    extra_ub: list of (voxel_idx, t) adding d_i <= t (used by fix-and-resolve)."""
     sets = sets if sets is not None else P.sets("disjoint")
     D = P.D
     T68, T56, R, B, N = (sets[k] for k in ("PTV_68", "PTV_56", "Rectum", "Bladder", "BODY"))
@@ -89,9 +92,12 @@ def build_model(P, spec: Spec, sets=None):
     lower("T68_lo", T68, spec.rx68, 0, n_s68)
     lower("T56_lo", T56, spec.rx56, n_s68, n_s56)
 
-    cap_idx = np.unique(np.concatenate([T68, T56, R, B]))
+    parts = [T68, T56, R, B] + ([np.asarray(extra_cap, np.int64)] if extra_cap is not None else [])
+    cap_idx = np.unique(np.concatenate(parts))
     Acap = sp.hstack([D[cap_idx], sp.csr_matrix((len(cap_idx), n_s))], format="csr")
     add("cap", Acap, spec.d_cap * np.ones(len(cap_idx)))
+    for k, (idx, t) in enumerate(extra_ub):
+        add(f"ub{k}", sp.hstack([D[idx], sp.csr_matrix((len(idx), n_s))], format="csr"), t * np.ones(len(idx)))
 
     A_ub = sp.vstack(blocks, format="csr")
     lb = np.zeros(n_x + n_s)
@@ -118,6 +124,48 @@ def solve_lp(m: Model):
     return out
 
 
+def body_violations(d, N, spec):
+    """Body voxels above the cap (relative tolerance) and the max relative violation."""
+    dN = d[N]
+    over = N[dN > spec.d_cap * (1 + config.BODY_ROWGEN_TOL)]
+    return over, max(float(dN.max()) - spec.d_cap, 0.0) / spec.d_cap
+
+
+def solve_lp_rowgen(P, spec: Spec, sets=None, extra_ub=(), body0=None, max_iter=30, verbose=True):
+    """Solve the LP with the body cap enforced by row generation.
+
+    Each round solves with the current body rows, recomputes d = D x on the full grid, and adds
+    every violated body voxel plus those within BODY_ROWGEN_MARGIN Gy of the cap. A reduced LP is
+    a relaxation, so when its solution has no violation it is optimal for the full problem.
+    """
+    sets = sets if sets is not None else P.sets("disjoint")
+    N = sets["BODY"]
+    rows = np.asarray(body0 if body0 is not None else [], np.int64)
+    hist = []
+    for it in range(1, max_iter + 1):
+        m = build_model(P, spec, sets, extra_cap=rows if spec.body_cap else None, extra_ub=extra_ub)
+        r = solve_lp(m)
+        rec = dict(iter=it, body_rows=int(len(rows)), rows=int(m.A_ub.shape[0]),
+                   status=r["message"], time=r["solve_time"], objective=r.get("objective"))
+        if not r["success"]:
+            hist.append(rec)
+            r.update(model=m, rowgen=hist, body_rows=rows, converged=False)
+            return r
+        d = P.dose(r["x"][:m.n_x])
+        over, rel = body_violations(d, N, spec)
+        rec.update(n_violated=int(len(over)), max_rel_violation=rel)
+        hist.append(rec)
+        if verbose:
+            print(f"    rowgen {it}: obj {r['objective']:.4f}  body rows {len(rows)}  "
+                  f"violated {len(over)}  max rel viol {rel:.1e}  ({r['solve_time']:.0f}s)")
+        if not spec.body_cap or len(over) == 0:
+            r.update(model=m, rowgen=hist, body_rows=rows, converged=True)
+            return r
+        rows = np.union1d(rows, N[d[N] > spec.d_cap - config.BODY_ROWGEN_MARGIN])
+    r.update(model=m, rowgen=hist, body_rows=rows, converged=False)
+    return r
+
+
 def solve_easy(P, spec: Spec = None, sets=None, ladder=True, verbose=True):
     """Solve the easy LP, walking the feasibility ladder if the full model is infeasible."""
     spec = spec or Spec()
@@ -129,12 +177,12 @@ def solve_easy(P, spec: Spec = None, sets=None, ladder=True, verbose=True):
     ]
     log = []
     for level, desc, sp_ in rungs:
-        m = build_model(P, sp_, sets)
-        res = solve_lp(m)
+        res = solve_lp_rowgen(P, sp_, sets, verbose=verbose)
+        m = res["model"]
         log.append(dict(level=level, desc=desc, status=res["status"], message=res["message"]))
         if verbose:
             print(f"  ladder level {level} ({desc}): {res['message']}")
-        if res["success"] or not ladder:
+        if (res["success"] and res["converged"]) or not ladder:
             res.update(model=m, level=level, level_desc=desc, ladder_log=log)
             return res
     res.update(model=m, level=None, level_desc="infeasible at all levels", ladder_log=log)

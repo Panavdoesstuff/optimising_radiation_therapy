@@ -58,3 +58,11 @@ BAO_TIME_LIMIT = 600.0
 # the exact MILP stalled at the root for every tighter limit tried; rectum <=17% above 50 Gy
 # is the tightest limit for which a feasible plan was found (fix-and-resolve).
 DVC_FINAL = [("Rectum", 50.0, 0.17)]
+
+# Normal-tissue dose cap: d_i <= d_cap for every BODY voxel outside the targets.
+# Enforced by row generation (only violated / near-binding body voxels become rows).
+BODY_CAP = True
+BODY_ROWGEN_MARGIN = 0.5      # Gy: also add body voxels within this of the cap
+BODY_ROWGEN_TOL = 1e-6        # relative: stop when max body violation is below this
+BAO_MILP_STRIDE = 3           # beam-selection MILP built on every 3rd constraint row
+BAO_TIME_LIMITS = {5: 1800.0} # seconds; other K use BAO_TIME_LIMIT

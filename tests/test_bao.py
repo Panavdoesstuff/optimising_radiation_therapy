@@ -60,3 +60,16 @@ def test_drop_one():
     import itertools
     objs = [hard_bao.restricted_lp(red, spec, list(c))["objective"] for c in itertools.combinations(range(4), 3)]
     assert r["objective"] == pytest.approx(min(objs))
+
+
+def test_stride_is_a_relaxation():
+    """MILP on every 2nd row: its optimum is a valid lower bound for the full-row MILP."""
+    red = _toy(nb=4, per=3, seed=3)
+    spec = easy_lp.Spec(rx68=1.0, rx56=0.8, d_cap_factor=1.6, x_max=1e3, body_cap=False)
+    full = hard_bao.solve_bao(red, spec, 2, time_limit=30)
+    sub = hard_bao.solve_bao(red, spec, 2, time_limit=30, stride=2)
+    assert full["success"] and sub["success"]
+    assert sub["objective"] <= full["objective"] + 1e-7
+    assert sub["n_constraints"] < full["n_constraints"]
+    # caps are really in the model (n_base defaults to all rows)
+    assert len(hard_bao._row_selection(red)["cap"]) == red.D.shape[0]

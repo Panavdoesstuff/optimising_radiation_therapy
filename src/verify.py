@@ -36,6 +36,9 @@ def verify(P, sets, spec, x, solver_objective=None, dvcs=(), extra=None):
     _viol("T56 d>=rx56" + (" (slack allowed)" if spec.slack56 else ""),
           0 if spec.slack56 else s56.max(), spec.rx56, checks)
     _viol("d<=d_cap on T68,T56,R,B", (d[cap] - spec.d_cap).max(), spec.d_cap, checks)
+    if getattr(spec, "body_cap", False):
+        # every BODY voxel outside the targets, on the full grid (not just generated rows)
+        _viol("d<=d_cap on all BODY voxels outside targets", (d[N] - spec.d_cap).max(), spec.d_cap, checks)
 
     dv = {}
     for name, t, alpha in dvcs:

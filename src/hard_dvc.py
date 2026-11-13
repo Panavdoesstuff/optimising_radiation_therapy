@@ -105,33 +105,37 @@ def _solve_with_rows(m, A_extra, b_extra, extra_cols=0, c_extra=None, lb_extra=N
     return r, time.time() - t0, A.shape
 
 
-def fix_and_resolve(P, m, dvcs, x0, n_iter=4, verbose=True):
+def fix_and_resolve(P, spec, sets, dvcs, x0, n_iter=4, body0=None, verbose=True):
     """APPROXIMATION (upper bound): free the floor(alpha|S|) hottest voxels, cap the rest at t,
-    solve the LP, repeat. Every iterate is feasible for the exact (full-organ) MILP."""
+    solve the LP (body cap by row generation), repeat from the new plan. Every iterate is
+    feasible for the exact full-organ problem, so its objective is an upper bound."""
     x = np.asarray(x0, float)
-    history = []
-    best = None
+    history, best = [], None
+    rows = body0
     for it in range(n_iter):
         d = P.dose(x)
-        rows, rhs = [], []
+        extra = []
         for dv in dvcs:
-            S = m.idx[_key(dv.organ)]
+            S = sets[dv.organ]
             K = int(np.floor(dv.alpha * len(S)))
-            order = np.argsort(-d[S])
-            fixed = S[order[K:]]                  # everything but the K hottest
-            rows.append(_D_rows(P, fixed, m)); rhs.append(dv.t * np.ones(len(fixed)))
-        r, tt, shape = _solve_with_rows(m, rows, rhs)
-        rec = dict(iter=it + 1, success=bool(r.success), message=r.message, time=tt)
-        if r.success:
-            rec["objective"] = float(r.fun)
+            fixed = S[np.argsort(-d[S])[K:]]           # everything but the K hottest
+            extra.append((fixed, dv.t))
+        r = easy_lp.solve_lp_rowgen(P, spec, sets, extra_ub=extra, body0=rows, verbose=verbose)
+        rec = dict(iter=it + 1, success=bool(r["success"] and r.get("converged")), message=r["message"],
+                   time=sum(h["time"] for h in r["rowgen"]), rowgen_rounds=len(r["rowgen"]),
+                   n_rows=int(r["model"].A_ub.shape[0]))
+        if r["success"]:
+            rec["objective"] = float(r["objective"])
         history.append(rec)
         if verbose:
-            print(f"  fix-and-resolve iter {it+1}: {r.message} obj={rec.get('objective')} ({tt:.0f}s)")
-        if not r.success:
+            print(f"  fix-and-resolve iter {it+1}: {r['message'].split('(')[0].strip()} "
+                  f"obj={rec.get('objective')} ({rec['time']:.0f}s)")
+        if not rec["success"]:
             break
-        x = r.x[:m.n_x]
-        best = dict(x=x, objective=float(r.fun), x_full=r.x)
-        if it > 0 and abs(history[-2].get("objective", np.inf) - r.fun) < 1e-7 * abs(r.fun):
+        rows = r["body_rows"]
+        x = r["x"][:P.n_beamlets]
+        best = dict(x=x, objective=float(r["objective"]), body_rows=rows)
+        if it > 0 and abs(history[-2].get("objective", np.inf) - r["objective"]) < 1e-7 * abs(r["objective"]):
             break
     return dict(best=best, history=history)
 
