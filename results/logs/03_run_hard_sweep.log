@@ -1,0 +1,107 @@
+== (b) dose-volume constraint (fix-and-resolve, approximation)
+   easy plan vs DVC: {'Rectum': {'t': 50.0, 'alpha': 0.17, 'easy_frac_over': 0.18381010346926355, 'easy_n_over': 302, 'allowed': 279}}
+  fix-and-resolve iter 1: Optimization terminated successfully. (HiGHS Status 7: Optimal) obj=52.21695887370142 (23s)
+  fix-and-resolve iter 2: Optimization terminated successfully. (HiGHS Status 7: Optimal) obj=52.21695887370169 (22s)
+--- verify: hard DVC (fix-and-resolve): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 5.36e-11 (rel 7.9e-13)
+    [ok] T56 d>=rx56: max viol 2.31e-12 (rel 4.1e-14)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 4.01e-11 (rel 5.4e-13)
+    [ok] DVC Rectum: <= 17% above 50.0 Gy: over=279 allowed=279
+    objective recomputed 52.216959  solver 52.21695887370169  rel diff 1.0886007168340918e-15
+    key vars: {'n_nonzero': 383, 'n_at_upper_bound': 0, 'max_intensity': 8604.39682414222, 'mean_intensity': 1295.7657614322486}
+== (a) beam angle selection
+   all 20 candidates LP (lower bound for every K): 32.4545
+    heuristic K=3: top-K [90, 180, 270] -> 48.99529635328227
+    swap: [90, 180, 270] -> 48.9953
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+--- verify: BAO K=3: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 1.30e-11 (rel 1.9e-13)
+    [ok] T56 d>=rx56: max viol 1.31e-12 (rel 2.3e-14)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 5.88e-12 (rel 7.9e-14)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 48.995296  solver 48.995296353282264  rel diff 1.450226427118041e-15
+    key vars: {'n_nonzero': 226, 'n_at_upper_bound': 0, 'max_intensity': 7675.196667918258, 'mean_intensity': 2371.4549702233726}
+   K=3: obj 48.9953 beams [90, 180, 270] bound 33.3746 gap 31.9% (631s)
+    heuristic K=4: top-K [90, 180, 198, 270] -> 46.49640420301237
+    swap: [54, 90, 180, 270] -> 45.9333
+    swap: [54, 90, 180, 270] -> 45.9333
+--- verify: BAO K=4: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 3.00e-11 (rel 4.4e-13)
+    [ok] T56 d>=rx56: max viol 6.48e-12 (rel 1.2e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 1.79e-10 (rel 2.4e-12)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 45.933265  solver 45.93326484373944  rel diff 1.3922120806338707e-15
+    key vars: {'n_nonzero': 270, 'n_at_upper_bound': 0, 'max_intensity': 10372.226980006608, 'mean_intensity': 1690.35343662313}
+   K=4: obj 45.9333 beams [54, 90, 180, 270] bound 32.7902 gap 28.6% (681s)
+    heuristic K=5: top-K [90, 180, 198, 270, 288] -> 44.557767378509546
+    swap: [54, 90, 180, 270, 288] -> 44.1175
+    swap: [54, 90, 180, 270, 288] -> 44.1175
+--- verify: BAO K=5: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 1.52e-12 (rel 2.2e-14)
+    [ok] T56 d>=rx56: max viol 6.37e-12 (rel 1.1e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 2.46e-11 (rel 3.3e-13)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 44.117518  solver 44.11751811782536  rel diff 1.2884545932297338e-15
+    key vars: {'n_nonzero': 318, 'n_at_upper_bound': 0, 'max_intensity': 10101.797619151897, 'mean_intensity': 1352.2357476751677}
+   K=5: obj 44.1175 beams [54, 90, 180, 270, 288] bound 32.5463 gap 26.2% (732s)
+    heuristic K=6: top-K [90, 162, 180, 198, 270, 288] -> 42.41123102116226
+    swap: [90, 162, 180, 252, 270, 288] -> 41.7734
+    swap: [90, 180, 198, 252, 270, 288] -> 41.7414
+--- verify: BAO K=6: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 1.32e-09 (rel 1.9e-11)
+    [ok] T56 d>=rx56: max viol 3.41e-10 (rel 6.1e-12)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 4.33e-10 (rel 5.8e-12)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 40.630504  solver 40.63050421635088  rel diff 1.0492747990178643e-15
+    key vars: {'n_nonzero': 358, 'n_at_upper_bound': 0, 'max_intensity': 11327.581205664523, 'mean_intensity': 1039.1580691212375}
+   K=6: obj 40.6305 beams [72, 90, 108, 162, 180, 198] bound 32.4605 gap 20.1% (767s)
+    heuristic K=7: top-K [54, 90, 162, 180, 198, 270, 288] -> 39.47448973851925
+    swap: [54, 90, 180, 198, 270, 288, 306] -> 39.2685
+    swap: [54, 90, 180, 198, 270, 288, 306] -> 39.2685
+--- verify: BAO K=7: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 8.61e-12 (rel 1.3e-13)
+    [ok] T56 d>=rx56: max viol 6.49e-12 (rel 1.2e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 1.11e-11 (rel 1.5e-13)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 38.561859  solver 38.56185860426129  rel diff 1.289823501860742e-15
+    key vars: {'n_nonzero': 382, 'n_at_upper_bound': 0, 'max_intensity': 11269.243063246766, 'mean_intensity': 885.2501049774563}
+   K=7: obj 38.5619 beams [54, 72, 90, 108, 162, 180, 198] bound 32.4545 gap 15.8% (800s)
+    heuristic K=8: top-K [54, 72, 90, 162, 180, 198, 270, 288] -> 37.744395844425426
+    swap: [54, 72, 90, 162, 180, 198, 270, 288] -> 37.7444
+--- verify: BAO K=8: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 1.51e-09 (rel 2.2e-11)
+    [ok] T56 d>=rx56: max viol 3.94e-10 (rel 7.0e-12)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 3.34e-10 (rel 4.5e-12)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 37.604690  solver 37.60469007391026  rel diff 7.558022516484643e-16
+    key vars: {'n_nonzero': 413, 'n_at_upper_bound': 0, 'max_intensity': 9488.536594217738, 'mean_intensity': 790.3548295837063}
+   K=8: obj 37.6047 beams [54, 72, 90, 108, 162, 180, 198, 270] bound 32.4545 gap 13.7% (749s)
+    heuristic K=9: top-K [54, 72, 90, 162, 180, 198, 252, 270, 288] -> 37.04587906940781
+    swap: [54, 90, 162, 180, 198, 252, 270, 288, 306] -> 35.5576
+    swap: [54, 90, 162, 180, 198, 252, 270, 288, 306] -> 35.5576
+--- verify: BAO K=9: PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 2.77e-11 (rel 4.1e-13)
+    [ok] T56 d>=rx56: max viol 1.27e-11 (rel 2.3e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 8.75e-12 (rel 1.2e-13)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 35.557642  solver 35.55764193905315  rel diff 7.993136743746866e-16
+    key vars: {'n_nonzero': 451, 'n_at_upper_bound': 0, 'max_intensity': 9000.781215503752, 'mean_intensity': 684.8054679664473}
+   K=9: obj 35.5576 beams [54, 90, 162, 180, 198, 252, 270, 288, 306] bound 32.4545 gap 8.7% (906s)
+done

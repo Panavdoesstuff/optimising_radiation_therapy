@@ -110,6 +110,29 @@ for K in config.BAO_K_VALUES:
     print(f"   K={K}: obj {v['objective_recomputed']:.4f} beams {sweep[str(K)]['angles']} "
           f"bound {lb:.4f} gap {sweep[str(K)]['gap']:.1%} ({time.time()-t0:.0f}s)")
 
+# Post-pass: the MILP found one-sided beam sets at larger K that the swap heuristic missed.
+# Dropping one beam from the best (K+1)-plan gives a cheap extra candidate for K; keep it if better.
+Ks_done = sorted(int(k) for k in sweep if k.isdigit())
+for K in sorted(Ks_done, reverse=True)[1:]:
+    if sweep[str(K)].get("drop_one_checked"):
+        continue
+    up = [red.angles.index(a) for a in sweep[str(K + 1)]["angles"]]
+    cand = hard_bao.drop_one(red, spec, up)
+    cur = sweep[str(K)]["objective"]
+    print(f"   drop-one K={K}: best {cand['objective']:.4f} vs current {cur:.4f}")
+    if cand["objective"] < cur - 1e-7:
+        v, _, x_sel = verify_bao_plan(red, cand["x"], cand["beams"], cand["objective"],
+                                      extra=dict(source="drop-one from K+1 plan"))
+        verify.print_report(f"BAO K={K} (drop-one)", v)
+        assert v["all_ok"]
+        s = sweep[str(K)]
+        s.update(objective=v["objective_recomputed"], angles=[red.angles[b] for b in cand["beams"]],
+                 gap=(v["objective_recomputed"] - s["best_bound"]) / v["objective_recomputed"],
+                 verification=v, source="drop-one from K+1 plan", replaced_objective=cur)
+        np.savez(R / f"bao_K{K}_solution.npz", x=x_sel, angles=np.array(sorted(s["angles"])))
+    sweep[str(K)]["drop_one_checked"] = True
+    sweep_path.write_text(json.dumps(sweep, indent=2, default=verify._enc))
+
 verify.update_results("hard_bao", dict(candidates=config.BAO_CANDIDATES, time_limit=config.BAO_TIME_LIMIT,
                                        sweep=sweep, params=asdict(spec)))
 print("done")

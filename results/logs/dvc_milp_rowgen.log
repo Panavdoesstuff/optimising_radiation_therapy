@@ -1,0 +1,2 @@
+  CG iter 1: Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None) rows=5618 bin=669 (900s)
+{'lower_bound': None, 'total_time': 900.2054920196533}

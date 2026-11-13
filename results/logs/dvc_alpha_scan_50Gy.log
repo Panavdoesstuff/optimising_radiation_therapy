@@ -1,0 +1,14 @@
+alpha 0.17
+  fix-and-resolve iter 1: Optimization terminated successfully. (HiGHS Status 7: Optimal) obj=52.21695887370142 (22s)
+  CVaR LP: The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible) obj=None (50s) shape=(43501, 2365)
+alpha 0.15
+  fix-and-resolve iter 1: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (376s)
+  CVaR LP: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (14s) shape=(43501, 2365)
+alpha 0.13
+  fix-and-resolve iter 1: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (12s)
+  CVaR LP: The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible) obj=None (444s) shape=(43501, 2365)
+alpha 0.11
+  fix-and-resolve iter 1: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (16s)
+  CVaR LP: The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Infeasible) obj=None (42s) shape=(43501, 2365)
+
+[exited with code 0]

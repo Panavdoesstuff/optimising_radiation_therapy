@@ -1,0 +1,10 @@
+t=40 alpha=0.25: easy frac above = 0.294
+  fix-and-resolve iter 1: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (157s)
+t=40 alpha=0.2: easy frac above = 0.294
+  fix-and-resolve iter 1: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (33s)
+t=30 alpha=0.3: easy frac above = 0.407
+  fix-and-resolve iter 1: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (19s)
+t=30 alpha=0.25: easy frac above = 0.407
+  fix-and-resolve iter 1: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (47s)
+t=50 alpha=0.16: easy frac above = 0.184
+  fix-and-resolve iter 1: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None) obj=None (74s)

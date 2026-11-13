@@ -1,0 +1,65 @@
+== (b) dose-volume constraint (fix-and-resolve, approximation)
+   easy plan vs DVC: {'Rectum': {'t': 50.0, 'alpha': 0.17, 'easy_frac_over': 0.18381010346926355, 'easy_n_over': 302, 'allowed': 279}}
+  fix-and-resolve iter 1: Optimization terminated successfully. (HiGHS Status 7: Optimal) obj=52.21695887370142 (23s)
+  fix-and-resolve iter 2: Optimization terminated successfully. (HiGHS Status 7: Optimal) obj=52.21695887370169 (23s)
+--- verify: hard DVC (fix-and-resolve): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 5.36e-11 (rel 7.9e-13)
+    [ok] T56 d>=rx56: max viol 2.31e-12 (rel 4.1e-14)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 4.01e-11 (rel 5.4e-13)
+    [ok] DVC Rectum: <= 17% above 50.0 Gy: over=279 allowed=279
+    objective recomputed 52.216959  solver 52.21695887370169  rel diff 1.0886007168340918e-15
+    key vars: {'n_nonzero': 383, 'n_at_upper_bound': 0, 'max_intensity': 8604.39682414222, 'mean_intensity': 1295.7657614322486}
+== (a) beam angle selection
+   all 20 candidates LP (lower bound for every K): 32.4545
+   K=3: done (48.9953), skipping
+   K=4: done (45.9333), skipping
+   K=5: done (44.1175), skipping
+   K=6: done (40.6305), skipping
+   K=7: done (38.5619), skipping
+   K=8: done (37.6047), skipping
+   K=9: done (35.5576), skipping
+   drop-one K=8: best 35.7055 vs current 37.6047
+--- verify: BAO K=8 (drop-one): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 2.78e-11 (rel 4.1e-13)
+    [ok] T56 d>=rx56: max viol 1.08e-11 (rel 1.9e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 2.88e-11 (rel 3.8e-13)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 35.705548  solver 35.70554819956802  rel diff 1.9900065160425033e-16
+    key vars: {'n_nonzero': 411, 'n_at_upper_bound': 0, 'max_intensity': 11512.02591233055, 'mean_intensity': 755.3420177160657}
+   drop-one K=7: best 37.2589 vs current 38.5619
+--- verify: BAO K=7 (drop-one): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 2.96e-11 (rel 4.4e-13)
+    [ok] T56 d>=rx56: max viol 9.15e-12 (rel 1.6e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 1.22e-11 (rel 1.6e-13)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 37.258914  solver 37.25891378401242  rel diff 7.628163718127396e-16
+    key vars: {'n_nonzero': 377, 'n_at_upper_bound': 0, 'max_intensity': 11483.402736751219, 'mean_intensity': 893.3731657866829}
+   drop-one K=6: best 39.6150 vs current 40.6305
+--- verify: BAO K=6 (drop-one): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 4.63e-12 (rel 6.8e-14)
+    [ok] T56 d>=rx56: max viol 1.04e-11 (rel 1.9e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 8.98e-12 (rel 1.2e-13)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 39.614984  solver 39.61498354541064  rel diff 1.0761727086605089e-15
+    key vars: {'n_nonzero': 350, 'n_at_upper_bound': 0, 'max_intensity': 11470.520335862895, 'mean_intensity': 1040.7674978466032}
+   drop-one K=5: best 42.3262 vs current 44.1175
+--- verify: BAO K=5 (drop-one): PASS
+    [ok] x >= 0: max viol -0.00e+00 (rel -0.0e+00)
+    [ok] x <= x_max: max viol 0.00e+00 (rel 0.0e+00)
+    [ok] T68 d>=rx68: max viol 1.28e-11 (rel 1.9e-13)
+    [ok] T56 d>=rx56: max viol 9.79e-12 (rel 1.7e-13)
+    [ok] d<=d_cap on T68,T56,R,B: max viol 4.60e-11 (rel 6.2e-13)
+    [ok] x = 0 on unselected beams: max viol 0.00e+00 (rel 0.0e+00)
+    objective recomputed 42.326247  solver 42.32624725787386  rel diff 8.393642028208869e-16
+    key vars: {'n_nonzero': 334, 'n_at_upper_bound': 0, 'max_intensity': 11559.376110410434, 'mean_intensity': 1234.7219801768836}
+   drop-one K=4: best 48.0185 vs current 45.9333
+   drop-one K=3: best 48.9953 vs current 48.9953
+done

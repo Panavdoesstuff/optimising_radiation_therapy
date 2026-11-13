@@ -3,7 +3,7 @@ import csv, json, sys, warnings
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import numpy as np
-from src import config, problem, io_cort, hard_bao, plots
+from src import config, problem, io_cort, hard_bao, plots, verify
 
 warnings.simplefilter("ignore")
 R = config.RESULTS_DIR
@@ -68,7 +68,7 @@ v_easy, v_dvc, v_bao = res["easy"]["verification"], res["hard_dvc"]["verificatio
 plots.fig_price(R / "fig4_price_of_realism.png", [
     ("Easy LP\n5 equispaced beams", terms(v_easy), ""),
     ("Hard: rectum DVC\n(fix-and-resolve)", terms(v_dvc), "approximation, feasible"),
-    ("Hard: best 5 of 20\nbeams (MILP)", terms(v_bao), f"MILP gap {sweep['5']['gap']:.0%}"),
+    ("Hard: best 5 of 20 beams\n(MILP + heuristics)", terms(v_bao), f"gap to proven bound {sweep['5']['gap']:.0%}"),
     ("All 20 beams (LP)\nno beam limit", t_all, "lower bound for any K"),
 ], ref_label="Easy LP\n5 equispaced beams")
 
@@ -85,7 +85,7 @@ rows.append(dict(model="Easy LP (5 equispaced beams)", kind="LP", n_vars=e["mode
                  n_constraints=e["model"]["n_constraints"], n_binaries=0, nnz=e["model"]["nnz"],
                  solve_time_s=round(e["verification"]["solver"]["solve_time"], 1), status="optimal",
                  gap=f"duality gap {e['verification']['solver']['duality_gap']:.1e}",
-                 objective=round(e["verification"]["objective_recomputed"], 4)))
+                 objective=round(e["verification"]["objective_recomputed"], 4), plan_source="LP optimum"))
 for h in res["hard_dvc"]["verification"]["solver"]["history"]:
     rows.append(dict(model=f"Rectum DVC: fix-and-resolve LP, iter {h['iter']}", kind="LP (approximation)",
                      n_vars=e["model"]["n_vars"],
@@ -93,28 +93,31 @@ for h in res["hard_dvc"]["verification"]["solver"]["history"]:
                          v["n_voxels"] - v["allowed"] for v in res["hard_dvc"]["verification"]["dvc"].values()),
                      n_binaries=0, nnz="", solve_time_s=round(h["time"], 1), status="optimal" if h["success"] else h["message"],
                      gap=f"bracket [{res['hard_dvc']['bracket']['lower']:.3f}, {res['hard_dvc']['bracket']['upper']:.3f}]",
-                     objective=round(h.get("objective", float("nan")), 4)))
+                     objective=round(h.get("objective", float("nan")), 4), plan_source="fix-and-resolve (approximation)"))
 for name, nv, nc, nb, nnz, t in [
         ("Rectum DVC exact MILP (≤14% > 50 Gy), scipy.milp, full organ", 2364, 43501, 1643, 7167210, 904.7),
         ("Rectum DVC exact MILP (≤14% > 50 Gy), highspy, every 3rd voxel, warm start", 1269, 42406, 548, 6982905, 651.2),
         ("Rectum DVC exact MILP (≤14% > 50 Gy), row generation, iter 1", 1390, 5618, 669, "", 900.2)]:
         # sizes copied from results/logs/dvc_milp_*.log (these runs predate 03_run_hard.py)
     rows.append(dict(model=name, kind="MILP", n_vars=nv, n_constraints=nc, n_binaries=nb, nnz=nnz,
-                     solve_time_s=t, status="time limit, no incumbent", gap="inf (no feasible point)", objective=""))
+                     solve_time_s=t, status="time limit, no incumbent", gap="inf (no feasible point)", objective="",
+                     plan_source="none"))
 for K in Ks:
     s = sweep[str(K)]; m = s["milp"]
     rows.append(dict(model=f"Beam selection MILP, K={K} of 20", kind="MILP", n_vars=m["n_vars"],
                      n_constraints=m["n_constraints"], n_binaries=m["n_binaries"], nnz=m["nnz"],
                      solve_time_s=round(m["time"], 1), status=m["status"],
                      gap=f"{s['gap']:.1%} (bound {s['best_bound']:.3f}; nodes {m['nodes']})",
-                     objective=round(s["objective"], 4)))
+                     objective=round(s["objective"], 4),
+                     plan_source=s.get("source") or ("MILP incumbent" if m["improved_on_start"] else "heuristic warm start (MILP did not improve)")))
 with open(R / "model_summary.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
 
 # 7. per-structure dose table
 def organ_fracs(d, S):
     v = d[S]
-    return {f"V{t}": round(100 * float((v > t).mean()), 1) for t in (30, 50, 60, 70)}
+    # same tolerance as verify.py: voxels at the threshold up to solver round-off (~1e-11 Gy) are not "above"
+    return {f"V{t}": round(100 * float((v > t * (1 + verify.REL_TOL)).mean()), 1) for t in (30, 50, 60, 70)}
 drows = []
 for plan, d in (("easy", d_easy), ("hard_bao_K5", d_bao), ("hard_dvc", d_dvc)):
     for s in STRUCTS:

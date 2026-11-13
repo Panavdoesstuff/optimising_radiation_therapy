@@ -1,0 +1,14 @@
+model,kind,n_vars,n_constraints,n_binaries,nnz,solve_time_s,status,gap,objective,plan_source
+Easy LP (5 equispaced beams),LP,721,41857,0,6890922,19.1,optimal,duality gap -8.7e-13,51.824,LP optimum
+"Rectum DVC: fix-and-resolve LP, iter 1",LP (approximation),721,43221,0,,22.7,optimal,"bracket [51.824, 52.217]",52.217,fix-and-resolve (approximation)
+"Rectum DVC: fix-and-resolve LP, iter 2",LP (approximation),721,43221,0,,22.8,optimal,"bracket [51.824, 52.217]",52.217,fix-and-resolve (approximation)
+"Rectum DVC exact MILP (≤14% > 50 Gy), scipy.milp, full organ",MILP,2364,43501,1643,7167210,904.7,"time limit, no incumbent",inf (no feasible point),,none
+"Rectum DVC exact MILP (≤14% > 50 Gy), highspy, every 3rd voxel, warm start",MILP,1269,42406,548,6982905,651.2,"time limit, no incumbent",inf (no feasible point),,none
+"Rectum DVC exact MILP (≤14% > 50 Gy), row generation, iter 1",MILP,1390,5618,669,,900.2,"time limit, no incumbent",inf (no feasible point),,none
+"Beam selection MILP, K=3 of 20",MILP,2854,44692,20,27254112,604.0,Time limit reached,31.9% (bound 33.375; nodes 0),48.9953,heuristic warm start (MILP did not improve)
+"Beam selection MILP, K=4 of 20",MILP,2854,44692,20,27254112,605.0,Time limit reached,28.6% (bound 32.790; nodes 0),45.9333,heuristic warm start (MILP did not improve)
+"Beam selection MILP, K=5 of 20",MILP,2854,44692,20,27254112,604.0,Time limit reached,23.1% (bound 32.546; nodes 0),42.3262,drop-one from K+1 plan
+"Beam selection MILP, K=6 of 20",MILP,2854,44692,20,27254112,614.1,Time limit reached,18.1% (bound 32.461; nodes 0),39.615,drop-one from K+1 plan
+"Beam selection MILP, K=7 of 20",MILP,2854,44692,20,27254112,604.0,Time limit reached,12.9% (bound 32.455; nodes 0),37.2589,drop-one from K+1 plan
+"Beam selection MILP, K=8 of 20",MILP,2854,44692,20,27254112,604.5,Time limit reached,9.1% (bound 32.455; nodes 0),35.7055,drop-one from K+1 plan
+"Beam selection MILP, K=9 of 20",MILP,2854,44692,20,27254112,605.2,Time limit reached,8.7% (bound 32.455; nodes 0),35.5576,heuristic warm start (MILP did not improve)

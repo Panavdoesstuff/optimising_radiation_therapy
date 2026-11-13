@@ -1,0 +1,48 @@
+Running HiGHS 1.12.0 (git hash: 4f96ee8): Copyright (c) 2025 HiGHS under MIT licence terms
+MIP has 43501 rows; 2364 cols; 7167210 nonzeros; 1643 integer variables (1643 binary)
+Coefficient ranges:
+  Matrix  [2e-06, 2e+01]
+  Cost    [5e-06, 6e-04]
+  Bound   [1e+00, 1e+04]
+  RHS     [5e+01, 2e+02]
+WARNING: Problem has some excessively small costs
+Presolving model
+43330 rows, 2284 cols, 7160517 nonzeros  0s
+28077 rows, 2284 cols, 4487378 nonzeros  1s
+28077 rows, 2284 cols, 4487378 nonzeros  2s
+Presolve reductions: rows 28077(-15424); columns 2284(-80); nonzeros 4487378(-2679832) 
+
+Solving MIP model with:
+   28077 rows
+   2284 cols (1563 binary, 0 integer, 0 implied int., 721 continuous, 0 domain fixed)
+   4487378 nonzeros
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   0               inf                  inf        0      0      0         0     8.8s
+         0       0         0   0.00%   51.82402404     inf                  inf        0      0      0      4175    29.4s
+         0       0         0   0.00%   51.82402404     inf                  inf        0      0      0      4175   407.0s
+         0       0         0   0.00%   51.82402404     inf                  inf        0      0      0      4175   904.0s
+
+Solving report
+  Status            Time limit reached
+  Primal bound      inf
+  Dual bound        51.8240240416
+  Gap               inf
+  P-D integral      0
+  Solution status   -
+  Timing            903.96
+  Max sub-MIP depth 1
+  Nodes             0
+  Repair LPs        0
+  LP iterations     4175
+                    0 (strong br.)
+                    0 (separation)
+                    0 (heuristics)
+{'status': 1, 'message': 'Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)', 'solve_time': 904.6653308868408, 'success': False, 'n_vars': 2364, 'n_constraints': 43501, 'n_binaries': 1643, 'nnz': 7167210, 'mip_gap': None, 'best_bound': None, 'node_count': None}

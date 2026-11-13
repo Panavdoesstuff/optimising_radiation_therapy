@@ -125,6 +125,16 @@ def heuristic(red, spec, K, x_ref, n_swaps=2, verbose=True):
     return best
 
 
+def drop_one(red, spec, beams):
+    """Best plan obtained by removing one beam from `beams` (positions in red.angles)."""
+    best = None
+    for b in beams:
+        r = restricted_lp(red, spec, [c for c in beams if c != b])
+        if r["success"] and (best is None or r["objective"] < best["objective"]):
+            best = r
+    return best
+
+
 def solve_bao(red, spec, K, time_limit=config.BAO_TIME_LIMIT, start=None, mip_rel_gap=1e-4, verbose=False):
     """Exact MILP. start: a feasible plan dict with 'x' and 'beams' (warm start, optional)."""
     nb = len(red.angles); n_x = red.n_beamlets

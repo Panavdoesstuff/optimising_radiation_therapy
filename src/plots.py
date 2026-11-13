@@ -31,8 +31,12 @@ def dvh_curve(doses, n=600, dmax=None):
     return grid, 100 * frac
 
 
-def fig_dvh(path, plans, sets, structures, constraints=(), title=None):
-    """plans: list of (key, label, dose_vector)."""
+LABEL_AT = {"PTV_68": (60, (6, 0)), "PTV_56": (75, (-52, -4)), "Rectum": (30, (6, 2)),
+            "Bladder": (50, (6, 2)), "BODY": (12, (6, 2))}   # (volume %, text offset)
+
+
+def fig_dvh(path, plans, sets, structures, constraints=(), title=None, xmax=100.0):
+    """plans: list of (key, label, dose_vector). Doses beyond xmax are noted, not drawn."""
     fig, ax = plt.subplots(figsize=(9, 5.6))
     dmax = max(d[sets[s]].max() for _, _, d in plans for s in structures) * 1.02
     for key, label, d in plans:
@@ -43,8 +47,9 @@ def fig_dvh(path, plans, sets, structures, constraints=(), title=None):
     key0, _, d0 = plans[0]
     for s in structures:
         g, v = dvh_curve(d0[sets[s]], dmax=dmax)
-        i = np.argmin(np.abs(v - (88 if s.startswith("PTV") else 55)))
-        ax.annotate(s.replace("_", " "), (g[i], v[i]), xytext=(4, 4), textcoords="offset points",
+        vol_at, off = LABEL_AT.get(s, (50, (6, 2)))
+        i = np.argmin(np.abs(v - vol_at))
+        ax.annotate(s.replace("_", " "), (g[i], v[i]), xytext=off, textcoords="offset points",
                     color=INK, fontsize=9, fontweight="bold")
     for (organ, t, alpha) in constraints:
         ax.plot([t], [100 * alpha], marker="v", ms=10, color=STRUCT_COLOR[organ],
@@ -59,46 +64,40 @@ def fig_dvh(path, plans, sets, structures, constraints=(), title=None):
     ax.add_artist(leg1)
     ax.legend(handles=h2, loc="center right", title="Structure", fontsize=9)
     ax.set_xlabel("Dose (Gy)"); ax.set_ylabel("Volume receiving ≥ dose (%)")
-    ax.set_xlim(0, dmax); ax.set_ylim(0, 102)
+    over = [f"{l.split(':')[0]}: {d[sets['BODY']].max():.0f} Gy" for _, l, d in plans] if "BODY" in structures else []
+    if over and dmax > xmax:
+        fig.text(0.99, 0.01, "BODY maximum dose (beyond the axis) — " + ";  ".join(over),
+                 ha="right", va="bottom", fontsize=8.5, color=INK2)
+    ax.set_xlim(0, min(dmax, xmax)); ax.set_ylim(0, 102)
     ax.set_title(title or "Dose-volume histograms")
-    fig.tight_layout(); fig.savefig(path, dpi=200); plt.close(fig)
+    fig.tight_layout(rect=(0, 0.03, 1, 1)); fig.savefig(path, dpi=200); plt.close(fig)
 
 
 def fig_dose_maps(path, vols, masks, z, diffs, crop, vmax):
-    """vols: list of (label, 3D dose [ap, rl, si]); diffs: list of (label, 3D diff).
-    masks: dict name -> 3D bool. Same colour scale for all plans; symmetric scale for diffs."""
-    from matplotlib.gridspec import GridSpec
-    n_top, n_bot = len(vols), len(diffs)
-    ncol = max(n_top, n_bot)
-    fig = plt.figure(figsize=(4.1 * ncol, 8.2))
-    gs = GridSpec(2, ncol * 2, figure=fig)
+    """vols: 3 x (label, 3D dose [ap, rl, si]); diffs: 2 x (label, 3D diff); masks: name -> 3D bool.
+    Same colour scale for all plans; symmetric diverging scale for differences."""
     (a0, a1), (b0, b1) = crop
-    def show(ax, img, cmap, norm=None, vmin=None, vmax_=None):
-        im = ax.imshow(img[a0:a1, b0:b1], cmap=cmap, norm=norm, vmin=vmin, vmax=vmax_,
-                       origin="upper", interpolation="nearest")
+    fig, axes = plt.subplots(2, 3, figsize=(12, 6.4), constrained_layout=True)
+    def show(ax, img, **kw):
+        im = ax.imshow(img[a0:a1, b0:b1], origin="upper", interpolation="nearest", **kw)
         for nm, mk in masks.items():
             m2 = mk[a0:a1, b0:b1, z]
             if m2.any():
                 ax.contour(m2.astype(float), levels=[0.5], colors=[STRUCT_COLOR[nm]], linewidths=1.3)
-        ax.set_xticks([]); ax.set_yticks([]); ax.grid(False)
+        ax.set_axis_off()
         return im
-    for i, (label, vol) in enumerate(vols):
-        ax = fig.add_subplot(gs[0, 2 * i:2 * i + 2])
-        im = show(ax, vol[:, :, z], SEQ, vmin=0, vmax_=vmax)
-        ax.set_title(label)
-    fig.colorbar(im, ax=fig.axes[:n_top], shrink=0.8, label="Dose (Gy)")
+    for ax, (label, vol) in zip(axes[0], vols):
+        im = show(ax, vol[:, :, z], cmap=SEQ, vmin=0, vmax=vmax); ax.set_title(label)
+    fig.colorbar(im, ax=list(axes[0]), shrink=0.85, label="Dose (Gy)")
     lim = max(np.abs(d[a0:a1, b0:b1, z]).max() for _, d in diffs) or 1.0
-    off = ncol - n_bot
-    axs = []
-    for i, (label, dif) in enumerate(diffs):
-        ax = fig.add_subplot(gs[1, off + 2 * i:off + 2 * i + 2])
-        im2 = show(ax, dif[:, :, z], DIV, norm=TwoSlopeNorm(0, -lim, lim))
-        ax.set_title(label); axs.append(ax)
-    fig.colorbar(im2, ax=axs, shrink=0.8, label="Dose difference (Gy)")
+    for ax, (label, dif) in zip(axes[1, 1:], diffs):
+        im2 = show(ax, dif[:, :, z], cmap=DIV, norm=TwoSlopeNorm(0, -lim, lim)); ax.set_title(label)
+    fig.colorbar(im2, ax=list(axes[1, 1:]), shrink=0.85, label="Dose difference (Gy)")
     from matplotlib.lines import Line2D
-    fig.legend(handles=[Line2D([], [], color=STRUCT_COLOR[n], label=n.replace("_", " ")) for n in masks],
-               loc="lower left", ncol=1, fontsize=9, title="Outlines")
-    fig.suptitle(f"Axial dose, slice {z} (through the centre of PTV 68); anterior at top")
+    axes[1, 0].set_axis_off()
+    axes[1, 0].legend(handles=[Line2D([], [], color=STRUCT_COLOR[n], label=n.replace("_", " ")) for n in masks],
+                      loc="center", fontsize=10, title="Outlines")
+    fig.suptitle(f"Axial dose, slice {z} (centre of PTV 68); anterior at top, patient right on the left")
     fig.savefig(path, dpi=200); plt.close(fig)
 
 
@@ -126,6 +125,8 @@ def fig_fluence(path, rows, vmax):
                            extent=[xs.min() - .25, xs.max() + .25, ys.min() - .25, ys.max() + .25])
             ax.set_title(f"{ang}°  (Σ={xb.sum()/1e3:.0f}k)", fontsize=9)
             ax.set_xticks([]); ax.set_yticks([])
+            for sp_ in ax.spines.values():
+                sp_.set_visible(False)
             if c == 0:
                 ax.set_ylabel(label)
     fig.colorbar(im, ax=axes, shrink=0.7, label="Beamlet intensity")
@@ -151,7 +152,7 @@ def fig_price(path, rows, ref_label):
     ax.invert_yaxis(); ax.grid(axis="y", visible=False)
     ax.set_xlabel("Weighted objective = 1·mean(Rectum) + 0.6·mean(Bladder) + 0.6·mean(BODY)   [Gy]")
     ax.set_xlim(0, max(sum(t.values()) for _, t, _ in rows) * 1.75)
-    ax.legend(loc="lower right", title="Objective term", ncol=3, fontsize=9)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.16), title="Objective term", ncol=3, fontsize=9)
     ax.set_title("Price of realism: objective by plan, split into its three terms")
     fig.tight_layout(); fig.savefig(path, dpi=200); plt.close(fig)
 

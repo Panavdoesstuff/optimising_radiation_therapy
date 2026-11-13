@@ -49,3 +49,14 @@ def test_heuristic_returns_K_beams():
     for K in (2, 3):
         h = hard_bao.heuristic(red, spec, K, ref["x"], verbose=False)
         assert len(h["beams"]) == K
+
+
+def test_drop_one():
+    red = _toy(nb=5)
+    spec = easy_lp.Spec(rx68=1.0, rx56=0.8, d_cap_factor=3.0, x_max=1e3)
+    r = hard_bao.drop_one(red, spec, [0, 1, 2, 3])
+    assert len(r["beams"]) == 3 and set(r["beams"]) <= {0, 1, 2, 3}
+    # it is the best 3-subset of those 4 beams
+    import itertools
+    objs = [hard_bao.restricted_lp(red, spec, list(c))["objective"] for c in itertools.combinations(range(4), 3)]
+    assert r["objective"] == pytest.approx(min(objs))
