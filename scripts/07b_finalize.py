@@ -1,0 +1,25 @@
+"""Verify best plan per K over old+new caches on the full grid. Usage: 07b_finalize.py K..."""
+import json, sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import numpy as np
+from src import config, fine_search
+R = config.RESULTS_DIR; OUT = R / "improve" / "fine2"
+rows = [json.loads(l) for f in (R/"improve"/"fine"/"evals.jsonl", OUT/"evals.jsonl") if f.exists() for l in f.read_text().splitlines()]
+pool = np.union1d(np.load(R / "bao_body_pool.npy"), np.load(R / "enum" / "pool_added.npy"))
+fine_search.init_worker(pool)
+res = {}
+for K in [int(k) for k in sys.argv[1:]]:
+    cand = {tuple(r["angles"]): r["objective"] for r in rows if len(r["angles"]) == K and r.get("objective") is not None}
+    a, f = min(cand.items(), key=lambda kv: kv[1])
+    o, x = fine_search.evaluate(list(a), verify_full=True)
+    P = o.pop("P"); d = P.dose(x); sets = fine_search._W["sets"]
+    Rm = sets["Rectum"]
+    o["rectum_mean"] = float(d[Rm].mean()); o["rectum_V50"] = float((d[Rm] > 50).mean())
+    o["bladder_mean"] = float(d[sets["Bladder"]].mean()); o["body_mean"] = float(d[sets["BODY"]].mean())
+    ks = [k for k in sets if "68" in k]
+    if ks: o["ptv68_D95"] = float(np.percentile(d[sets[ks[0]]], 5))
+    o["n_distinct_K"] = len(cand)
+    np.savez(OUT / f"best_K{K}.npz", x=x, angles=np.array(a)); res[K] = o
+    print(K, a, o["objective_verified"], o["verified"], o["max_rel_violation"], o["rectum_mean"], o["rectum_V50"], o["bladder_mean"], o["body_mean"], o.get("ptv68_D95"), flush=True)
+json.dump(res, open(OUT / ("final_" + "_".join(sys.argv[1:]) + ".json"), "w"), indent=1)

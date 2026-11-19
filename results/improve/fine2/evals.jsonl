@@ -1,0 +1,678 @@
+{"angles": [20, 90, 126, 172, 190, 240], "success": true, "converged": true, "objective": 40.18114410051106, "time": 34.96468472480774}
+{"angles": [0, 90, 126, 172, 190, 240], "success": true, "converged": true, "objective": 40.77345421718628, "time": 35.18483304977417}
+{"angles": [40, 90, 126, 172, 190, 240], "success": true, "converged": true, "objective": 40.39227543371093, "time": 36.81704926490784}
+{"angles": [60, 90, 126, 172, 190, 240], "success": true, "converged": true, "objective": 40.02856269344934, "time": 38.21539306640625}
+{"angles": [80, 90, 126, 172, 190, 240], "success": true, "converged": true, "objective": 39.82693581475714, "time": 41.54621505737305}
+{"angles": [90, 100, 126, 172, 190, 240], "success": true, "converged": true, "objective": 39.010714617754246, "time": 41.880414962768555}
+{"angles": [90, 126, 160, 172, 190, 240], "success": true, "converged": true, "objective": 40.29659688017043, "time": 30.485034942626953}
+{"angles": [90, 126, 140, 172, 190, 240], "success": true, "converged": true, "objective": 39.609069345785976, "time": 34.19263410568237}
+{"angles": [90, 126, 172, 180, 190, 240], "success": true, "converged": true, "objective": 40.742534579197695, "time": 43.2845721244812}
+{"angles": [90, 126, 172, 190, 220, 240], "success": true, "converged": true, "objective": 40.17877346067766, "time": 32.62447500228882}
+{"angles": [90, 126, 172, 190, 200, 240], "success": true, "converged": true, "objective": 40.76007155794287, "time": 38.179951667785645}
+{"angles": [90, 126, 172, 190, 240, 260], "success": true, "converged": true, "objective": 39.21609903654464, "time": 38.76695394515991}
+{"angles": [90, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.560014126623926, "time": 41.10033297538757}
+{"angles": [90, 126, 172, 190, 240, 300], "success": true, "converged": true, "objective": 38.73818550011954, "time": 43.300291776657104}
+{"angles": [90, 126, 172, 190, 240, 320], "success": true, "converged": true, "objective": 39.77671232734798, "time": 33.97743511199951}
+{"angles": [90, 126, 172, 190, 240, 340], "success": true, "converged": true, "objective": 40.72086127565696, "time": 37.87168216705322}
+{"angles": [82, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.42708955308869, "time": 51.43621301651001}
+{"angles": [80, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.59276608839364, "time": 53.01908087730408}
+{"angles": [76, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.90085291712159, "time": 64.44795536994934}
+{"angles": [84, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.25947823683027, "time": 53.59469819068909}
+{"angles": [86, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.35955649273446, "time": 54.63610911369324}
+{"angles": [88, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.398483202840666, "time": 50.11606788635254}
+{"angles": [92, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.93032018761338, "time": 72.07228469848633}
+{"angles": [94, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 39.20934914023086, "time": 76.1640887260437}
+{"angles": [96, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 39.55155252733017, "time": 74.08308911323547}
+{"angles": [98, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 40.0580472579073, "time": 74.0481698513031}
+{"angles": [100, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 40.451429939823825, "time": 82.58046817779541}
+{"angles": [104, 126, 172, 190, 240, 280], "success": true, "converged": true, "objective": 41.54362021684223, "time": 80.93231582641602}
+{"angles": [90, 112, 172, 190, 240, 280], "success": true, "converged": true, "objective": 40.196804515449074, "time": 82.32948994636536}
+{"angles": [90, 118, 172, 190, 240, 280], "success": true, "converged": true, "objective": 39.54280517238207, "time": 69.73954391479492}
+{"angles": [90, 116, 172, 190, 240, 280], "success": true, "converged": true, "objective": 39.720502331008674, "time": 80.97698783874512}
+{"angles": [90, 120, 172, 190, 240, 280], "success": true, "converged": true, "objective": 39.40281675016383, "time": 83.006600856781}
+{"angles": [90, 124, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.91301443719306, "time": 69.37763810157776}
+{"angles": [90, 122, 172, 190, 240, 280], "success": true, "converged": true, "objective": 39.225379571943975, "time": 82.82150506973267}
+{"angles": [90, 128, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.50120638603921, "time": 58.7578911781311}
+{"angles": [90, 130, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.44391755805853, "time": 59.16184425354004}
+{"angles": [90, 132, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.55400738282725, "time": 61.75860905647278}
+{"angles": [90, 136, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.90085456132565, "time": 44.06086492538452}
+{"angles": [90, 134, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.62758597239572, "time": 48.495924949645996}
+{"angles": [90, 140, 172, 190, 240, 280], "success": true, "converged": true, "objective": 39.44683441467089, "time": 49.46196103096008}
+{"angles": [90, 126, 162, 190, 240, 280], "success": true, "converged": true, "objective": 40.85457289855054, "time": 59.86795616149902}
+{"angles": [90, 126, 158, 190, 240, 280], "success": true, "converged": true, "objective": 41.38050544902173, "time": 70.34015107154846}
+{"angles": [90, 126, 164, 190, 240, 280], "success": true, "converged": true, "objective": 40.59211788818693, "time": 85.0003809928894}
+{"angles": [90, 126, 166, 190, 240, 280], "success": true, "converged": true, "objective": 40.06957863391467, "time": 70.11590504646301}
+{"angles": [90, 126, 168, 190, 240, 280], "success": true, "converged": true, "objective": 39.2475527147125, "time": 67.51057887077332}
+{"angles": [90, 126, 170, 190, 240, 280], "success": true, "converged": true, "objective": 38.876335844595715, "time": 59.128807067871094}
+{"angles": [90, 126, 174, 190, 240, 280], "success": true, "converged": true, "objective": 38.78777238540902, "time": 69.05213713645935}
+{"angles": [90, 126, 176, 190, 240, 280], "success": true, "converged": true, "objective": 39.310701795018765, "time": 65.26134991645813}
+{"angles": [90, 126, 178, 190, 240, 280], "success": true, "converged": true, "objective": 39.89974082917281, "time": 70.67693495750427}
+{"angles": [90, 126, 182, 190, 240, 280], "success": true, "converged": true, "objective": 41.257644939734895, "time": 58.81676912307739}
+{"angles": [90, 126, 180, 190, 240, 280], "success": true, "converged": true, "objective": 40.51580253092221, "time": 67.18518495559692}
+{"angles": [90, 126, 186, 190, 240, 280], "success": true, "converged": true, "objective": 42.35591316219532, "time": 62.29459500312805}
+{"angles": [90, 126, 172, 176, 240, 280], "success": true, "converged": true, "objective": 42.11379567641141, "time": 64.16749095916748}
+{"angles": [90, 126, 172, 180, 240, 280], "success": true, "converged": true, "objective": 40.962323455962256, "time": 67.24396705627441}
+{"angles": [90, 126, 172, 182, 240, 280], "success": true, "converged": true, "objective": 40.46890576516304, "time": 60.24219989776611}
+{"angles": [90, 126, 172, 184, 240, 280], "success": true, "converged": true, "objective": 39.98634452877003, "time": 62.109965801239014}
+{"angles": [90, 126, 172, 188, 240, 280], "success": true, "converged": true, "objective": 38.957390547741866, "time": 56.05640888214111}
+{"angles": [90, 126, 172, 186, 240, 280], "success": true, "converged": true, "objective": 39.532087776899765, "time": 70.57895398139954}
+{"angles": [90, 126, 172, 192, 240, 280], "success": true, "converged": true, "objective": 38.618736439446636, "time": 73.27934312820435}
+{"angles": [90, 126, 172, 196, 240, 280], "success": true, "converged": true, "objective": 39.654458625321396, "time": 66.9346911907196}
+{"angles": [90, 126, 172, 194, 240, 280], "success": true, "converged": true, "objective": 38.884912887924536, "time": 70.6823160648346}
+{"angles": [90, 126, 172, 198, 240, 280], "success": true, "converged": true, "objective": 40.74376468740947, "time": 76.27266883850098}
+{"angles": [90, 126, 172, 200, 240, 280], "success": true, "converged": true, "objective": 41.33262920563417, "time": 77.49742317199707}
+{"angles": [90, 126, 172, 204, 240, 280], "success": true, "converged": true, "objective": 41.62507004590733, "time": 74.72938323020935}
+{"angles": [90, 126, 172, 190, 226, 280], "success": true, "converged": true, "objective": 39.634958657806806, "time": 74.56653428077698}
+{"angles": [90, 126, 172, 190, 230, 280], "success": true, "converged": true, "objective": 39.25308300959727, "time": 80.96428394317627}
+{"angles": [90, 126, 172, 190, 232, 280], "success": true, "converged": true, "objective": 39.0540224911512, "time": 82.57066488265991}
+{"angles": [90, 126, 172, 190, 234, 280], "success": true, "converged": true, "objective": 38.84114597587478, "time": 67.4734399318695}
+{"angles": [90, 126, 172, 190, 238, 280], "success": true, "converged": true, "objective": 38.54708301689929, "time": 53.37934374809265}
+{"angles": [90, 126, 172, 190, 236, 280], "success": true, "converged": true, "objective": 38.624994870203736, "time": 67.61247491836548}
+{"angles": [90, 126, 172, 190, 242, 280], "success": true, "converged": true, "objective": 38.72049305136118, "time": 76.4912588596344}
+{"angles": [90, 126, 172, 190, 244, 280], "success": true, "converged": true, "objective": 38.8739965948941, "time": 70.6499330997467}
+{"angles": [90, 126, 172, 190, 246, 280], "success": true, "converged": true, "objective": 39.07127275072102, "time": 65.33148503303528}
+{"angles": [90, 126, 172, 190, 250, 280], "success": true, "converged": true, "objective": 39.48645551076903, "time": 72.3661859035492}
+{"angles": [90, 126, 172, 190, 254, 280], "success": true, "converged": true, "objective": 39.9498685880894, "time": 74.29877400398254}
+{"angles": [90, 126, 172, 190, 248, 280], "success": true, "converged": true, "objective": 39.260324140783986, "time": 91.31979179382324}
+{"angles": [90, 126, 172, 190, 240, 266], "success": true, "converged": true, "objective": 39.15754480811217, "time": 109.49879884719849}
+{"angles": [90, 126, 172, 190, 240, 270], "success": true, "converged": true, "objective": 38.97707026006444, "time": 100.75781297683716}
+{"angles": [90, 126, 172, 190, 240, 272], "success": true, "converged": true, "objective": 38.85377103889288, "time": 113.29191136360168}
+{"angles": [90, 126, 172, 190, 240, 274], "success": true, "converged": true, "objective": 38.83458541961931, "time": 71.20425295829773}
+{"angles": [90, 126, 172, 190, 240, 276], "success": true, "converged": true, "objective": 38.73383172666816, "time": 75.83908200263977}
+{"angles": [90, 126, 172, 190, 240, 278], "success": true, "converged": true, "objective": 38.55688284034771, "time": 67.3941879272461}
+{"angles": [90, 126, 172, 190, 240, 282], "success": true, "converged": true, "objective": 38.43706090029097, "time": 78.10222005844116}
+{"angles": [90, 126, 172, 190, 240, 284], "success": true, "converged": true, "objective": 38.40002055414867, "time": 88.57726001739502}
+{"angles": [90, 126, 172, 190, 240, 286], "success": true, "converged": true, "objective": 38.30619356613278, "time": 118.13670897483826}
+{"angles": [90, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.25361214970299, "time": 72.29239177703857}
+{"angles": [90, 126, 172, 190, 240, 290], "success": true, "converged": true, "objective": 38.26689640965956, "time": 74.89165377616882}
+{"angles": [90, 126, 172, 190, 240, 294], "success": true, "converged": true, "objective": 38.33700178298574, "time": 79.77978181838989}
+{"angles": [82, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.18555198716115, "time": 74.3556637763977}
+{"angles": [80, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.48318759915412, "time": 77.379154920578}
+{"angles": [76, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.21222256291252, "time": 87.94845390319824}
+{"angles": [84, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 37.9619236118105, "time": 76.64261984825134}
+{"angles": [86, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.02630129772051, "time": 76.97738480567932}
+{"angles": [88, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.061712143120474, "time": 77.68286108970642}
+{"angles": [92, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.67905754237739, "time": 80.04113817214966}
+{"angles": [94, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.08018759260477, "time": 90.84305596351624}
+{"angles": [96, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.46048877125897, "time": 83.80601501464844}
+{"angles": [98, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 40.13219109611827, "time": 86.56101107597351}
+{"angles": [104, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 42.36053717138946, "time": 81.71521496772766}
+{"angles": [100, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 40.757108499980156, "time": 105.54001903533936}
+{"angles": [90, 112, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.95782535459938, "time": 99.24349904060364}
+{"angles": [90, 116, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.65585066849517, "time": 95.55144715309143}
+{"angles": [90, 118, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.501428701404286, "time": 95.93162393569946}
+{"angles": [90, 122, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.07868302221246, "time": 70.8451418876648}
+{"angles": [90, 120, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.29020006552811, "time": 100.68776893615723}
+{"angles": [90, 124, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.72428572465922, "time": 73.71115207672119}
+{"angles": [90, 128, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.084230440337286, "time": 82.86899495124817}
+{"angles": [90, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.02434561832124, "time": 82.72748327255249}
+{"angles": [90, 132, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.06358775057885, "time": 83.14986610412598}
+{"angles": [90, 134, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.08363515994233, "time": 79.90004825592041}
+{"angles": [90, 136, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.22915941889909, "time": 78.29720878601074}
+{"angles": [90, 140, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.43104315114927, "time": 94.33265709877014}
+{"angles": [90, 126, 158, 190, 240, 288], "success": true, "converged": true, "objective": 41.141189698932465, "time": 88.00667905807495}
+{"angles": [90, 126, 162, 190, 240, 288], "success": true, "converged": true, "objective": 40.56688858507685, "time": 92.7116448879242}
+{"angles": [90, 126, 164, 190, 240, 288], "success": true, "converged": true, "objective": 40.30097599576395, "time": 91.91653203964233}
+{"angles": [90, 126, 166, 190, 240, 288], "success": true, "converged": true, "objective": 39.6914737699924, "time": 77.7291567325592}
+{"angles": [90, 126, 168, 190, 240, 288], "success": true, "converged": true, "objective": 38.913593111441656, "time": 65.2340338230133}
+{"angles": [90, 126, 170, 190, 240, 288], "success": true, "converged": true, "objective": 38.55523021236208, "time": 59.7630980014801}
+{"angles": [90, 126, 174, 190, 240, 288], "success": true, "converged": true, "objective": 38.460259878480365, "time": 69.24501895904541}
+{"angles": [90, 126, 178, 190, 240, 288], "success": true, "converged": true, "objective": 39.55627315751353, "time": 70.01922273635864}
+{"angles": [90, 126, 176, 190, 240, 288], "success": true, "converged": true, "objective": 38.96645230932821, "time": 101.22178411483765}
+{"angles": [90, 126, 180, 190, 240, 288], "success": true, "converged": true, "objective": 40.15073626224805, "time": 70.76371192932129}
+{"angles": [90, 126, 182, 190, 240, 288], "success": true, "converged": true, "objective": 40.85388436188168, "time": 67.67398500442505}
+{"angles": [90, 126, 186, 190, 240, 288], "success": true, "converged": true, "objective": 41.95071943509319, "time": 63.815436124801636}
+{"angles": [90, 126, 172, 176, 240, 288], "success": true, "converged": true, "objective": 41.77024803172289, "time": 73.94363903999329}
+{"angles": [90, 126, 172, 180, 240, 288], "success": true, "converged": true, "objective": 40.62998882039009, "time": 79.89400506019592}
+{"angles": [90, 126, 172, 182, 240, 288], "success": true, "converged": true, "objective": 40.1366719200104, "time": 82.75909399986267}
+{"angles": [90, 126, 172, 184, 240, 288], "success": true, "converged": true, "objective": 39.62564284032274, "time": 78.98531007766724}
+{"angles": [90, 126, 172, 186, 240, 288], "success": true, "converged": true, "objective": 39.10869884741466, "time": 73.31569528579712}
+{"angles": [90, 126, 172, 188, 240, 288], "success": true, "converged": true, "objective": 38.5975438703958, "time": 84.82691407203674}
+{"angles": [90, 126, 172, 192, 240, 288], "success": true, "converged": true, "objective": 38.317987978644766, "time": 76.51288104057312}
+{"angles": [90, 126, 172, 194, 240, 288], "success": true, "converged": true, "objective": 38.605486720643306, "time": 84.94923377037048}
+{"angles": [90, 126, 172, 196, 240, 288], "success": true, "converged": true, "objective": 39.35353247427577, "time": 83.90187811851501}
+{"angles": [90, 126, 172, 198, 240, 288], "success": true, "converged": true, "objective": 40.42765097783109, "time": 84.45103430747986}
+{"angles": [90, 126, 172, 200, 240, 288], "success": true, "converged": true, "objective": 40.990424879339855, "time": 77.31205201148987}
+{"angles": [90, 126, 172, 204, 240, 288], "success": true, "converged": true, "objective": 41.23008792488392, "time": 81.33955192565918}
+{"angles": [90, 126, 172, 190, 226, 288], "success": true, "converged": true, "objective": 39.44494769253118, "time": 79.0058102607727}
+{"angles": [90, 126, 172, 190, 230, 288], "success": true, "converged": true, "objective": 39.01191431924834, "time": 86.07326889038086}
+{"angles": [90, 126, 172, 190, 232, 288], "success": true, "converged": true, "objective": 38.74391178780618, "time": 86.65628123283386}
+{"angles": [90, 126, 172, 190, 234, 288], "success": true, "converged": true, "objective": 38.55466253910718, "time": 81.16432189941406}
+{"angles": [90, 126, 172, 190, 236, 288], "success": true, "converged": true, "objective": 38.36225748020464, "time": 71.87502408027649}
+{"angles": [90, 126, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.23181711110434, "time": 85.53107786178589}
+{"angles": [90, 126, 172, 190, 242, 288], "success": true, "converged": true, "objective": 38.41380487645953, "time": 85.37983417510986}
+{"angles": [90, 126, 172, 190, 244, 288], "success": true, "converged": true, "objective": 38.56041129393987, "time": 75.69992208480835}
+{"angles": [90, 126, 172, 190, 246, 288], "success": true, "converged": true, "objective": 38.76945561848637, "time": 74.79388523101807}
+{"angles": [90, 126, 172, 190, 248, 288], "success": true, "converged": true, "objective": 39.001545024847104, "time": 84.96662282943726}
+{"angles": [90, 126, 172, 190, 250, 288], "success": true, "converged": true, "objective": 39.29713826225641, "time": 74.12434124946594}
+{"angles": [90, 126, 172, 190, 254, 288], "success": true, "converged": true, "objective": 39.84720601884165, "time": 79.94726395606995}
+{"angles": [90, 126, 172, 190, 240, 292], "success": true, "converged": true, "objective": 38.242897542608944, "time": 93.02709722518921}
+{"angles": [90, 126, 172, 190, 240, 296], "success": true, "converged": true, "objective": 38.41858087404054, "time": 101.26616096496582}
+{"angles": [90, 126, 172, 190, 240, 298], "success": true, "converged": true, "objective": 38.58542673575393, "time": 98.11269998550415}
+{"angles": [90, 126, 172, 190, 240, 302], "success": true, "converged": true, "objective": 39.03143913807187, "time": 95.28076815605164}
+{"angles": [70, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 40.446951564181504, "time": 116.68075180053711}
+{"angles": [78, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.90258180923527, "time": 124.42791414260864}
+{"angles": [74, 126, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.56792395157165, "time": 133.43473935127258}
+{"angles": [84, 112, 172, 190, 240, 288], "success": true, "converged": true, "objective": 40.085159817255565, "time": 82.5745837688446}
+{"angles": [84, 116, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.54587309504435, "time": 84.25733304023743}
+{"angles": [84, 118, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.318963000767994, "time": 83.11305689811707}
+{"angles": [84, 120, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.05321171002068, "time": 117.3522481918335}
+{"angles": [84, 124, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.43138523535008, "time": 104.07943296432495}
+{"angles": [84, 122, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.74595970502576, "time": 116.72851371765137}
+{"angles": [84, 128, 172, 190, 240, 288], "success": true, "converged": true, "objective": 37.79079446457241, "time": 104.93661785125732}
+{"angles": [84, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 37.78904668024785, "time": 114.22616314888}
+{"angles": [84, 132, 172, 190, 240, 288], "success": true, "converged": true, "objective": 37.91628906992146, "time": 123.82131600379944}
+{"angles": [84, 134, 172, 190, 240, 288], "success": true, "converged": true, "objective": 37.97856526726393, "time": 117.71252512931824}
+{"angles": [84, 136, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.110487302457706, "time": 118.55169916152954}
+{"angles": [84, 140, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.392218632568564, "time": 112.06252527236938}
+{"angles": [84, 126, 158, 190, 240, 288], "success": true, "converged": true, "objective": 40.80714578391864, "time": 117.47348999977112}
+{"angles": [84, 126, 164, 190, 240, 288], "success": true, "converged": true, "objective": 40.086602958389236, "time": 116.51980113983154}
+{"angles": [84, 126, 162, 190, 240, 288], "success": true, "converged": true, "objective": 40.34429974951014, "time": 126.93043184280396}
+{"angles": [84, 126, 166, 190, 240, 288], "success": true, "converged": true, "objective": 39.489994920958, "time": 84.6215431690216}
+{"angles": [84, 126, 168, 190, 240, 288], "success": true, "converged": true, "objective": 38.685062466806585, "time": 70.45401501655579}
+{"angles": [84, 126, 170, 190, 240, 288], "success": true, "converged": true, "objective": 38.310588983439075, "time": 83.87139892578125}
+{"angles": [84, 126, 174, 190, 240, 288], "success": true, "converged": true, "objective": 38.134305813433386, "time": 88.84883713722229}
+{"angles": [84, 126, 176, 190, 240, 288], "success": true, "converged": true, "objective": 38.59065088990241, "time": 96.8654100894928}
+{"angles": [84, 126, 178, 190, 240, 288], "success": true, "converged": true, "objective": 39.24286530570883, "time": 86.23234820365906}
+{"angles": [84, 126, 180, 190, 240, 288], "success": true, "converged": true, "objective": 39.8789430268701, "time": 77.17862200737}
+{"angles": [84, 126, 182, 190, 240, 288], "success": true, "converged": true, "objective": 40.63693850671448, "time": 80.81153202056885}
+{"angles": [84, 126, 186, 190, 240, 288], "success": true, "converged": true, "objective": 41.87646804133977, "time": 84.20339894294739}
+{"angles": [84, 126, 172, 176, 240, 288], "success": true, "converged": true, "objective": 41.51253234637467, "time": 96.22131896018982}
+{"angles": [84, 126, 172, 180, 240, 288], "success": true, "converged": true, "objective": 40.3898632659673, "time": 86.56503176689148}
+{"angles": [84, 126, 172, 182, 240, 288], "success": true, "converged": true, "objective": 39.873800413569384, "time": 102.37845396995544}
+{"angles": [84, 126, 172, 186, 240, 288], "success": true, "converged": true, "objective": 38.875918820759665, "time": 78.82628583908081}
+{"angles": [84, 126, 172, 184, 240, 288], "success": true, "converged": true, "objective": 39.37736732413741, "time": 98.23458099365234}
+{"angles": [84, 126, 172, 188, 240, 288], "success": true, "converged": true, "objective": 38.3038820319582, "time": 78.14761590957642}
+{"angles": [84, 126, 172, 192, 240, 288], "success": true, "converged": true, "objective": 37.95815757275828, "time": 76.48918581008911}
+{"angles": [84, 126, 172, 196, 240, 288], "success": true, "converged": true, "objective": 38.92836314475776, "time": 87.71913599967957}
+{"angles": [84, 126, 172, 194, 240, 288], "success": true, "converged": true, "objective": 38.174347116502, "time": 105.48331689834595}
+{"angles": [84, 126, 172, 198, 240, 288], "success": true, "converged": true, "objective": 39.94272059067359, "time": 108.30492186546326}
+{"angles": [84, 126, 172, 200, 240, 288], "success": true, "converged": true, "objective": 40.55859772500628, "time": 86.02988624572754}
+{"angles": [84, 126, 172, 204, 240, 288], "success": true, "converged": true, "objective": 40.91656622421677, "time": 95.91338896751404}
+{"angles": [84, 126, 172, 190, 226, 288], "success": true, "converged": true, "objective": 38.64888565872952, "time": 94.50612688064575}
+{"angles": [84, 126, 172, 190, 230, 288], "success": true, "converged": true, "objective": 38.40715892574091, "time": 94.01906418800354}
+{"angles": [84, 126, 172, 190, 232, 288], "success": true, "converged": true, "objective": 38.25559103184752, "time": 86.87069487571716}
+{"angles": [84, 126, 172, 190, 234, 288], "success": true, "converged": true, "objective": 38.171970476278396, "time": 83.9900450706482}
+{"angles": [84, 126, 172, 190, 238, 288], "success": true, "converged": true, "objective": 37.93092356433082, "time": 90.37636089324951}
+{"angles": [84, 126, 172, 190, 236, 288], "success": true, "converged": true, "objective": 38.0455278888309, "time": 106.75161004066467}
+{"angles": [84, 126, 172, 190, 242, 288], "success": true, "converged": true, "objective": 38.096595835106285, "time": 104.07881903648376}
+{"angles": [84, 126, 172, 190, 244, 288], "success": true, "converged": true, "objective": 38.35216326002876, "time": 116.90105962753296}
+{"angles": [84, 126, 172, 190, 246, 288], "success": true, "converged": true, "objective": 38.667778741406565, "time": 108.44184803962708}
+{"angles": [84, 126, 172, 190, 248, 288], "success": true, "converged": true, "objective": 39.154653989566455, "time": 105.9621229171753}
+{"angles": [84, 126, 172, 190, 254, 288], "success": true, "converged": true, "objective": 40.660040572977074, "time": 117.12374091148376}
+{"angles": [84, 126, 172, 190, 250, 288], "success": true, "converged": true, "objective": 39.663548847743485, "time": 150.03178763389587}
+{"angles": [84, 126, 172, 190, 240, 274], "success": true, "converged": true, "objective": 38.59408207403387, "time": 118.50657820701599}
+{"angles": [84, 126, 172, 190, 240, 278], "success": true, "converged": true, "objective": 38.23817249951966, "time": 117.7667760848999}
+{"angles": [84, 126, 172, 190, 240, 282], "success": true, "converged": true, "objective": 38.19386031881205, "time": 117.0603711605072}
+{"angles": [84, 126, 172, 190, 240, 284], "success": true, "converged": true, "objective": 38.2290965618447, "time": 112.43378806114197}
+{"angles": [84, 126, 172, 190, 240, 286], "success": true, "converged": true, "objective": 38.12015627540499, "time": 94.6062638759613}
+{"angles": [84, 126, 172, 190, 240, 290], "success": true, "converged": true, "objective": 37.96981118460947, "time": 112.37448596954346}
+{"angles": [84, 126, 172, 190, 240, 292], "success": true, "converged": true, "objective": 38.11996728482137, "time": 98.03764200210571}
+{"angles": [84, 126, 172, 190, 240, 294], "success": true, "converged": true, "objective": 38.37411329090433, "time": 95.0910131931305}
+{"angles": [84, 126, 172, 190, 240, 296], "success": true, "converged": true, "objective": 38.59082871499401, "time": 83.61994814872742}
+{"angles": [84, 126, 172, 190, 240, 298], "success": true, "converged": true, "objective": 38.879346462185964, "time": 97.70418310165405}
+{"angles": [84, 126, 172, 190, 240, 302], "success": true, "converged": true, "objective": 39.55016662910958, "time": 94.27595901489258}
+{"angles": [76, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.048458746249146, "time": 116.2428081035614}
+{"angles": [70, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 40.20397957685668, "time": 116.52517986297607}
+{"angles": [74, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.33447663952379, "time": 125.3184928894043}
+{"angles": [82, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.02066406468889, "time": 102.79766488075256}
+{"angles": [78, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.780351323680364, "time": 111.89071798324585}
+{"angles": [80, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.33828675623925, "time": 115.24080681800842}
+{"angles": [88, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 37.887548244939744, "time": 105.562175989151}
+{"angles": [86, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 37.822827572041255, "time": 111.39001607894897}
+{"angles": [92, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.43378437922538, "time": 117.74600195884705}
+{"angles": [94, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.83441867327996, "time": 115.96752381324768}
+{"angles": [84, 138, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.2174317235836, "time": 102.87200212478638}
+{"angles": [98, 130, 172, 190, 240, 288], "success": true, "converged": true, "objective": 39.968940414330746, "time": 144.31538891792297}
+{"angles": [84, 144, 172, 190, 240, 288], "success": true, "converged": true, "objective": 38.69296038333788, "time": 95.62592005729675}
+{"angles": [84, 130, 158, 190, 240, 288], "success": true, "converged": true, "objective": 40.86620673074552, "time": 107.12064480781555}
+{"angles": [84, 130, 162, 190, 240, 288], "success": true, "converged": true, "objective": 40.24027585362937, "time": 104.01330804824829}
+{"angles": [84, 130, 164, 190, 240, 288], "success": true, "converged": true, "objective": 39.897110408079115, "time": 118.00978207588196}
+{"angles": [84, 130, 166, 190, 240, 288], "success": true, "converged": true, "objective": 39.26216035646893, "time": 117.96895718574524}
+{"angles": [84, 130, 168, 190, 240, 288], "success": true, "converged": true, "objective": 38.50408017557921, "time": 127.23532795906067}
+{"angles": [84, 130, 174, 190, 240, 288], "success": true, "converged": true, "objective": 37.96477199312953, "time": 112.72859907150269}
+{"angles": [84, 130, 170, 190, 240, 288], "success": true, "converged": true, "objective": 38.193548266339526, "time": 135.19805192947388}
+{"angles": [84, 130, 176, 190, 240, 288], "success": true, "converged": true, "objective": 38.404092390614885, "time": 103.01172089576721}
+{"angles": [84, 130, 178, 190, 240, 288], "success": true, "converged": true, "objective": 38.945407312210726, "time": 92.57358527183533}
+{"angles": [84, 130, 180, 190, 240, 288], "success": true, "converged": true, "objective": 39.59189061487775, "time": 103.35639381408691}
+{"angles": [84, 130, 182, 190, 240, 288], "success": true, "converged": true, "objective": 40.37756248988965, "time": 112.2266731262207}
+{"angles": [84, 130, 186, 190, 240, 288], "success": true, "converged": true, "objective": 41.626275248124664, "time": 109.84623098373413}
+{"angles": [84, 130, 172, 176, 240, 288], "success": true, "converged": true, "objective": 41.15920527866054, "time": 108.22190809249878}
+{"angles": [84, 130, 172, 180, 240, 288], "success": true, "converged": true, "objective": 40.009998600056434, "time": 117.0779767036438}
+{"angles": [84, 130, 172, 182, 240, 288], "success": true, "converged": true, "objective": 39.53190574987988, "time": 113.25463509559631}
+{"angles": [84, 130, 172, 184, 240, 288], "success": true, "converged": true, "objective": 38.9401580144845, "time": 112.07678985595703}
+{"angles": [84, 130, 172, 186, 240, 288], "success": true, "converged": true, "objective": 38.42976966937428, "time": 130.68430376052856}
+{"angles": [84, 130, 172, 188, 240, 288], "success": true, "converged": true, "objective": 38.01394488152265, "time": 108.78855085372925}
+{"angles": [84, 130, 172, 192, 240, 288], "success": true, "converged": true, "objective": 37.816919069360715, "time": 115.91045188903809}
+{"angles": [84, 130, 172, 194, 240, 288], "success": true, "converged": true, "objective": 38.04513456120287, "time": 84.93063879013062}
+{"angles": [84, 130, 172, 196, 240, 288], "success": true, "converged": true, "objective": 38.688451524762904, "time": 95.67875695228577}
+{"angles": [84, 130, 172, 198, 240, 288], "success": true, "converged": true, "objective": 39.71986799511166, "time": 94.25680112838745}
+{"angles": [84, 130, 172, 200, 240, 288], "success": true, "converged": true, "objective": 40.276668797050036, "time": 106.39739894866943}
+{"angles": [84, 130, 172, 204, 240, 288], "success": true, "converged": true, "objective": 40.594900117047665, "time": 111.58549308776855}
+{"angles": [84, 130, 172, 190, 226, 288], "success": true, "converged": true, "objective": 38.62020533939292, "time": 116.70771813392639}
+{"angles": [84, 130, 172, 190, 230, 288], "success": true, "converged": true, "objective": 38.314314292659624, "time": 110.79043221473694}
+{"angles": [84, 130, 172, 190, 232, 288], "success": true, "converged": true, "objective": 38.11922350909612, "time": 86.92974090576172}
+{"angles": [84, 130, 172, 190, 234, 288], "success": true, "converged": true, "objective": 38.00492936174278, "time": 134.22603392601013}
+{"angles": [84, 130, 172, 190, 236, 288], "success": true, "converged": true, "objective": 37.86832045623064, "time": 139.09930086135864}
+{"angles": [84, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 37.752850656779714, "time": 130.238755941391}
+{"angles": [84, 130, 172, 190, 242, 288], "success": true, "converged": true, "objective": 37.91530323872495, "time": 137.5990662574768}
+{"angles": [84, 130, 172, 190, 244, 288], "success": true, "converged": true, "objective": 38.16163311512273, "time": 139.56576013565063}
+{"angles": [84, 130, 172, 190, 246, 288], "success": true, "converged": true, "objective": 38.54634975046328, "time": 148.60357093811035}
+{"angles": [84, 130, 172, 190, 248, 288], "success": true, "converged": true, "objective": 39.05371303793673, "time": 132.22684812545776}
+{"angles": [84, 130, 172, 190, 250, 288], "success": true, "converged": true, "objective": 39.56524914716424, "time": 135.94106030464172}
+{"angles": [84, 130, 172, 190, 254, 288], "success": true, "converged": true, "objective": 40.595561402479056, "time": 132.603129863739}
+{"angles": [84, 130, 172, 190, 240, 274], "success": true, "converged": true, "objective": 38.52972867947941, "time": 124.41881203651428}
+{"angles": [84, 130, 172, 190, 240, 278], "success": true, "converged": true, "objective": 38.054263857344615, "time": 102.0236828327179}
+{"angles": [84, 130, 172, 190, 240, 280], "success": true, "converged": true, "objective": 38.06896553822955, "time": 113.7549660205841}
+{"angles": [84, 130, 172, 190, 240, 282], "success": true, "converged": true, "objective": 38.0088070444039, "time": 99.80699610710144}
+{"angles": [84, 130, 172, 190, 240, 284], "success": true, "converged": true, "objective": 38.04321931806906, "time": 103.38102602958679}
+{"angles": [84, 130, 172, 190, 240, 290], "success": true, "converged": true, "objective": 37.762757581157544, "time": 96.99986505508423}
+{"angles": [84, 130, 172, 190, 240, 286], "success": true, "converged": true, "objective": 37.946265431439684, "time": 145.34025692939758}
+{"angles": [84, 130, 172, 190, 240, 292], "success": true, "converged": true, "objective": 37.87290301521448, "time": 91.44132590293884}
+{"angles": [84, 130, 172, 190, 240, 296], "success": true, "converged": true, "objective": 38.330736288796835, "time": 68.72795486450195}
+{"angles": [84, 130, 172, 190, 240, 294], "success": true, "converged": true, "objective": 38.107590365831165, "time": 75.76944208145142}
+{"angles": [84, 130, 172, 190, 240, 298], "success": true, "converged": true, "objective": 38.616060168373565, "time": 70.83396291732788}
+{"angles": [84, 130, 172, 190, 240, 302], "success": true, "converged": true, "objective": 39.47497466070728, "time": 57.78970193862915}
+{"angles": [52, 122, 174, 270], "success": true, "converged": true, "objective": 49.039505991725754, "time": 38.18098735809326}
+{"angles": [54, 122, 174, 270], "success": true, "converged": true, "objective": 48.60886580641006, "time": 42.080329179763794}
+{"angles": [48, 122, 174, 270], "success": true, "converged": true, "objective": 49.826356813883095, "time": 44.53105688095093}
+{"angles": [56, 122, 174, 270], "success": true, "converged": true, "objective": 48.243423968800975, "time": 35.73103404045105}
+{"angles": [58, 122, 174, 270], "success": true, "converged": true, "objective": 48.03060219629319, "time": 32.35451793670654}
+{"angles": [60, 122, 174, 270], "success": true, "converged": true, "objective": 47.880644853333315, "time": 37.040483236312866}
+{"angles": [66, 122, 174, 270], "success": true, "converged": true, "objective": 47.94562522468106, "time": 37.41726803779602}
+{"angles": [64, 122, 174, 270], "success": true, "converged": true, "objective": 47.80962811271134, "time": 43.54616093635559}
+{"angles": [68, 122, 174, 270], "success": true, "converged": true, "objective": 48.06127719359468, "time": 39.61098074913025}
+{"angles": [70, 122, 174, 270], "success": true, "converged": true, "objective": 48.1495345448644, "time": 35.18381214141846}
+{"angles": [72, 122, 174, 270], "success": true, "converged": true, "objective": 48.565831512848995, "time": 40.790297746658325}
+{"angles": [76, 122, 174, 270], "success": true, "converged": true, "objective": 50.06136331953736, "time": 38.82111716270447}
+{"angles": [62, 108, 174, 270], "success": true, "converged": true, "objective": 49.552598015214635, "time": 34.985804080963135}
+{"angles": [62, 122, 160, 270], "success": true, "converged": true, "objective": 53.06799530984706, "time": 42.304056882858276}
+{"angles": [62, 114, 174, 270], "success": true, "converged": true, "objective": 48.27031793548716, "time": 43.83294177055359}
+{"angles": [62, 122, 164, 270], "success": true, "converged": true, "objective": 51.43814078327907, "time": 33.305469036102295}
+{"angles": [62, 122, 168, 270], "success": true, "converged": true, "objective": 49.966991153881665, "time": 31.82052516937256}
+{"angles": [62, 122, 166, 270], "success": true, "converged": true, "objective": 50.783462558719826, "time": 32.52452301979065}
+{"angles": [62, 122, 170, 270], "success": true, "converged": true, "objective": 48.95869881672285, "time": 31.431121826171875}
+{"angles": [62, 122, 172, 270], "success": true, "converged": true, "objective": 48.01006794170744, "time": 27.89696478843689}
+{"angles": [62, 122, 176, 270], "success": true, "converged": true, "objective": 47.76166820268299, "time": 30.509970903396606}
+{"angles": [62, 122, 178, 270], "success": true, "converged": true, "objective": 47.87476431828576, "time": 30.154194116592407}
+{"angles": [62, 122, 182, 270], "success": true, "converged": true, "objective": 48.20395379113095, "time": 30.35395121574402}
+{"angles": [62, 122, 184, 270], "success": true, "converged": true, "objective": 48.26882600448224, "time": 32.95842409133911}
+{"angles": [62, 122, 188, 270], "success": true, "converged": true, "objective": 48.37650603876986, "time": 38.54789996147156}
+{"angles": [62, 122, 174, 256], "success": true, "converged": true, "objective": 53.39455998371928, "time": 30.999181985855103}
+{"angles": [62, 122, 174, 260], "success": true, "converged": true, "objective": 50.70566106220584, "time": 32.555999994277954}
+{"angles": [62, 122, 174, 262], "success": true, "converged": true, "objective": 49.59092689073959, "time": 32.6617169380188}
+{"angles": [62, 122, 174, 264], "success": true, "converged": true, "objective": 48.68984091734292, "time": 31.327677965164185}
+{"angles": [62, 122, 174, 266], "success": true, "converged": true, "objective": 48.07926717184002, "time": 40.54827690124512}
+{"angles": [62, 122, 174, 268], "success": true, "converged": true, "objective": 47.73228284390608, "time": 32.29200267791748}
+{"angles": [62, 122, 174, 272], "success": true, "converged": true, "objective": 48.074613445403166, "time": 31.9508798122406}
+{"angles": [62, 122, 174, 274], "success": true, "converged": true, "objective": 48.74061274325578, "time": 32.38527488708496}
+{"angles": [62, 122, 174, 276], "success": true, "converged": true, "objective": 49.622964104029954, "time": 37.979289054870605}
+{"angles": [62, 122, 174, 278], "success": true, "converged": true, "objective": 50.32436304707174, "time": 35.34167003631592}
+{"angles": [62, 122, 174, 280], "success": true, "converged": true, "objective": 51.167646015540534, "time": 33.67192602157593}
+{"angles": [62, 122, 174, 284], "success": true, "converged": true, "objective": 52.874828828619, "time": 27.780086994171143}
+{"angles": [72, 182, 270], "success": true, "converged": true, "objective": 61.50814108643522, "time": 23.54557728767395}
+{"angles": [76, 182, 270], "success": true, "converged": true, "objective": 61.5790687072921, "time": 27.685590028762817}
+{"angles": [78, 182, 270], "success": true, "converged": true, "objective": 61.315234523500216, "time": 27.707966089248657}
+{"angles": [84, 182, 270], "success": true, "converged": true, "objective": 60.52672931004111, "time": 18.25813102722168}
+{"angles": [82, 182, 270], "success": true, "converged": true, "objective": 60.93120314838368, "time": 18.801034927368164}
+{"angles": [80, 182, 270], "success": true, "converged": true, "objective": 61.21505175932532, "time": 24.419356107711792}
+{"angles": [92, 182, 270], "success": true, "converged": true, "objective": 61.06387692371263, "time": 15.959837913513184}
+{"angles": [88, 182, 270], "success": true, "converged": true, "objective": 60.48834086180076, "time": 18.470385789871216}
+{"angles": [94, 182, 270], "success": true, "converged": true, "objective": 61.40078436146419, "time": 21.771574020385742}
+{"angles": [96, 182, 270], "success": true, "converged": true, "objective": 61.6125716817438, "time": 21.236661911010742}
+{"angles": [100, 182, 270], "success": true, "converged": true, "objective": 62.02802275659116, "time": 20.568242073059082}
+{"angles": [86, 168, 270], "success": true, "converged": true, "objective": 63.52120284951192, "time": 17.56559991836548}
+{"angles": [86, 184, 270], "success": true, "converged": true, "objective": 60.37048167186627, "time": 16.907276153564453}
+{"angles": [86, 188, 270], "success": true, "converged": true, "objective": 60.38472796960216, "time": 16.015406847000122}
+{"angles": [86, 186, 270], "success": true, "converged": true, "objective": 60.28032581197578, "time": 18.723111867904663}
+{"angles": [86, 190, 270], "success": true, "converged": true, "objective": 60.5974324647835, "time": 15.619582176208496}
+{"angles": [86, 192, 270], "success": true, "converged": true, "objective": 60.97235379349047, "time": 15.736818075180054}
+{"angles": [86, 196, 270], "success": true, "converged": true, "objective": 62.39129341080013, "time": 16.07872700691223}
+{"angles": [86, 182, 256], "success": true, "converged": true, "objective": 63.15195118173852, "time": 17.5816068649292}
+{"angles": [86, 182, 260], "success": true, "converged": true, "objective": 62.56877807187718, "time": 19.809993982315063}
+{"angles": [86, 182, 262], "success": true, "converged": true, "objective": 62.34730882194779, "time": 19.7138090133667}
+{"angles": [86, 182, 264], "success": true, "converged": true, "objective": 61.81913731371577, "time": 17.687804222106934}
+{"angles": [86, 182, 266], "success": true, "converged": true, "objective": 61.190242217515554, "time": 14.476255178451538}
+{"angles": [86, 182, 268], "success": true, "converged": true, "objective": 60.61416909059747, "time": 14.382977724075317}
+{"angles": [86, 182, 272], "success": true, "converged": true, "objective": 60.22345975936731, "time": 14.363083124160767}
+{"angles": [86, 182, 274], "success": true, "converged": true, "objective": 60.242456215328545, "time": 15.935647010803223}
+{"angles": [86, 182, 276], "success": true, "converged": true, "objective": 60.4370025594846, "time": 18.527546882629395}
+{"angles": [86, 182, 278], "success": true, "converged": true, "objective": 60.57878447262337, "time": 19.889158964157104}
+{"angles": [86, 182, 280], "success": true, "converged": true, "objective": 60.59640683489774, "time": 17.183289289474487}
+{"angles": [86, 182, 284], "success": true, "converged": true, "objective": 60.524944798922704, "time": 18.01491093635559}
+{"angles": [76, 182, 272], "success": true, "converged": true, "objective": 61.44007695690409, "time": 13.374348878860474}
+{"angles": [78, 182, 272], "success": true, "converged": true, "objective": 61.18051429840414, "time": 15.643045902252197}
+{"angles": [72, 182, 272], "success": true, "converged": true, "objective": 61.204702994841796, "time": 16.682077884674072}
+{"angles": [80, 182, 272], "success": true, "converged": true, "objective": 60.95328491394464, "time": 16.68239998817444}
+{"angles": [82, 182, 272], "success": true, "converged": true, "objective": 60.65820375546053, "time": 15.943381071090698}
+{"angles": [84, 182, 272], "success": true, "converged": true, "objective": 60.378620779076414, "time": 17.77120304107666}
+{"angles": [90, 182, 272], "success": true, "converged": true, "objective": 60.73591455460971, "time": 15.471980094909668}
+{"angles": [88, 182, 272], "success": true, "converged": true, "objective": 60.41994414387376, "time": 17.547738075256348}
+{"angles": [92, 182, 272], "success": true, "converged": true, "objective": 61.232563381673735, "time": 18.48711085319519}
+{"angles": [96, 182, 272], "success": true, "converged": true, "objective": 62.42444893671326, "time": 14.262144088745117}
+{"angles": [94, 182, 272], "success": true, "converged": true, "objective": 61.87681711678443, "time": 16.602578163146973}
+{"angles": [100, 182, 272], "success": true, "converged": true, "objective": 62.92373655683629, "time": 18.524962663650513}
+{"angles": [86, 172, 272], "success": true, "converged": true, "objective": 61.2703263146125, "time": 15.147044897079468}
+{"angles": [86, 168, 272], "success": true, "converged": true, "objective": 63.53956561523422, "time": 17.19521403312683}
+{"angles": [86, 174, 272], "success": true, "converged": true, "objective": 60.552581698784515, "time": 15.39863109588623}
+{"angles": [86, 178, 272], "success": true, "converged": true, "objective": 60.32716894072849, "time": 13.911923170089722}
+{"angles": [86, 176, 272], "success": true, "converged": true, "objective": 60.35232654624438, "time": 15.737690925598145}
+{"angles": [86, 180, 272], "success": true, "converged": true, "objective": 60.343611519888526, "time": 15.048632860183716}
+{"angles": [86, 184, 272], "success": true, "converged": true, "objective": 60.228670548105114, "time": 16.437398195266724}
+{"angles": [86, 186, 272], "success": true, "converged": true, "objective": 60.180608515686906, "time": 16.614187002182007}
+{"angles": [86, 188, 272], "success": true, "converged": true, "objective": 60.302667489448304, "time": 16.07628893852234}
+{"angles": [86, 190, 272], "success": true, "converged": true, "objective": 60.53726584179552, "time": 12.119161128997803}
+{"angles": [86, 192, 272], "success": true, "converged": true, "objective": 60.9353721326468, "time": 16.068902015686035}
+{"angles": [86, 196, 272], "success": true, "converged": true, "objective": 62.48792481121949, "time": 15.920125007629395}
+{"angles": [86, 182, 258], "success": true, "converged": true, "objective": 62.93220216751211, "time": 18.503075122833252}
+{"angles": [86, 182, 282], "success": true, "converged": true, "objective": 60.67425171617127, "time": 16.35812520980835}
+{"angles": [86, 182, 286], "success": true, "converged": true, "objective": 60.444028813289044, "time": 12.618316173553467}
+{"angles": [78, 186, 272], "success": true, "converged": true, "objective": 61.13114920225374, "time": 17.098992109298706}
+{"angles": [76, 186, 272], "success": true, "converged": true, "objective": 61.4115901572878, "time": 17.278334856033325}
+{"angles": [72, 186, 272], "success": true, "converged": true, "objective": 61.24810314743624, "time": 17.60338306427002}
+{"angles": [82, 186, 272], "success": true, "converged": true, "objective": 60.629981136207356, "time": 14.886835813522339}
+{"angles": [84, 186, 272], "success": true, "converged": true, "objective": 60.3142603765142, "time": 15.924456119537354}
+{"angles": [80, 186, 272], "success": true, "converged": true, "objective": 60.91154873622461, "time": 20.179677963256836}
+{"angles": [90, 186, 272], "success": true, "converged": true, "objective": 60.52861910128257, "time": 12.892111778259277}
+{"angles": [88, 186, 272], "success": true, "converged": true, "objective": 60.27479965761456, "time": 15.024402141571045}
+{"angles": [92, 186, 272], "success": true, "converged": true, "objective": 61.032237579437876, "time": 18.10806679725647}
+{"angles": [94, 186, 272], "success": true, "converged": true, "objective": 61.71709259152825, "time": 13.738400936126709}
+{"angles": [96, 186, 272], "success": true, "converged": true, "objective": 62.24893040896412, "time": 17.048234939575195}
+{"angles": [100, 186, 272], "success": true, "converged": true, "objective": 62.8122838455983, "time": 17.404484748840332}
+{"angles": [86, 194, 272], "success": true, "converged": true, "objective": 61.439849596737425, "time": 17.452033042907715}
+{"angles": [86, 200, 272], "success": true, "converged": true, "objective": 64.82870019369473, "time": 17.534658193588257}
+{"angles": [86, 186, 258], "success": true, "converged": true, "objective": 62.87924610488504, "time": 21.051164150238037}
+{"angles": [86, 186, 262], "success": true, "converged": true, "objective": 62.2964586969161, "time": 18.93949580192566}
+{"angles": [86, 186, 264], "success": true, "converged": true, "objective": 61.7249220218072, "time": 19.860347032546997}
+{"angles": [86, 186, 266], "success": true, "converged": true, "objective": 61.12775256000041, "time": 16.900341033935547}
+{"angles": [86, 186, 268], "success": true, "converged": true, "objective": 60.59339894509711, "time": 16.417109966278076}
+{"angles": [86, 186, 274], "success": true, "converged": true, "objective": 60.256309861041885, "time": 14.410655975341797}
+{"angles": [86, 186, 276], "success": true, "converged": true, "objective": 60.36966150663924, "time": 17.064181089401245}
+{"angles": [86, 186, 278], "success": true, "converged": true, "objective": 60.506609087952874, "time": 16.514216899871826}
+{"angles": [86, 186, 280], "success": true, "converged": true, "objective": 60.598539644404376, "time": 14.569218158721924}
+{"angles": [86, 186, 286], "success": true, "converged": true, "objective": 60.48563730148974, "time": 16.121434211730957}
+{"angles": [86, 186, 282], "success": true, "converged": true, "objective": 60.594852551712876, "time": 17.79636311531067}
+{"angles": [126, 180, 198, 234, 270], "success": true, "converged": true, "objective": 44.277922602030614, "time": 45.27531981468201}
+{"angles": [118, 180, 198, 234, 270], "success": true, "converged": true, "objective": 43.78021737750328, "time": 52.33245086669922}
+{"angles": [112, 180, 198, 234, 270], "success": true, "converged": true, "objective": 44.499710296523105, "time": 52.9809672832489}
+{"angles": [116, 180, 198, 234, 270], "success": true, "converged": true, "objective": 43.89256849282123, "time": 53.67917275428772}
+{"angles": [120, 180, 198, 234, 270], "success": true, "converged": true, "objective": 43.85871557055893, "time": 41.33536219596863}
+{"angles": [122, 180, 198, 234, 270], "success": true, "converged": true, "objective": 44.025032290678496, "time": 45.2852509021759}
+{"angles": [124, 180, 198, 234, 270], "success": true, "converged": true, "objective": 44.116804074488606, "time": 46.193641901016235}
+{"angles": [128, 180, 198, 234, 270], "success": true, "converged": true, "objective": 44.42026585935626, "time": 45.50887107849121}
+{"angles": [132, 180, 198, 234, 270], "success": true, "converged": true, "objective": 44.75732140495445, "time": 52.297873735427856}
+{"angles": [130, 180, 198, 234, 270], "success": true, "converged": true, "objective": 44.437623400487965, "time": 57.750558853149414}
+{"angles": [134, 180, 198, 234, 270], "success": true, "converged": true, "objective": 44.7943950036712, "time": 47.45237994194031}
+{"angles": [136, 180, 198, 234, 270], "success": true, "converged": true, "objective": 45.14803704656118, "time": 42.5950927734375}
+{"angles": [140, 180, 198, 234, 270], "success": true, "converged": true, "objective": 45.84000497765534, "time": 46.346014976501465}
+{"angles": [126, 170, 198, 234, 270], "success": true, "converged": true, "objective": 44.52776334652664, "time": 60.6238169670105}
+{"angles": [126, 166, 198, 234, 270], "success": true, "converged": true, "objective": 45.430008974040994, "time": 69.62204599380493}
+{"angles": [126, 172, 198, 234, 270], "success": true, "converged": true, "objective": 43.97222936172767, "time": 67.45083403587341}
+{"angles": [126, 174, 198, 234, 270], "success": true, "converged": true, "objective": 43.81210164548516, "time": 56.64085030555725}
+{"angles": [126, 176, 198, 234, 270], "success": true, "converged": true, "objective": 43.81063806698145, "time": 68.14293098449707}
+{"angles": [126, 178, 198, 234, 270], "success": true, "converged": true, "objective": 43.98782498986107, "time": 56.81910824775696}
+{"angles": [126, 182, 198, 234, 270], "success": true, "converged": true, "objective": 44.769087824197435, "time": 44.729154109954834}
+{"angles": [126, 184, 198, 234, 270], "success": true, "converged": true, "objective": 45.21768775501028, "time": 42.896862745285034}
+{"angles": [126, 186, 198, 234, 270], "success": true, "converged": true, "objective": 45.61054619728402, "time": 48.07483911514282}
+{"angles": [126, 188, 198, 234, 270], "success": true, "converged": true, "objective": 46.08391583065998, "time": 55.06138801574707}
+{"angles": [126, 190, 198, 234, 270], "success": true, "converged": true, "objective": 46.71176581681466, "time": 51.8246169090271}
+{"angles": [126, 194, 198, 234, 270], "success": true, "converged": true, "objective": 48.94459159571816, "time": 65.4361629486084}
+{"angles": [126, 180, 184, 234, 270], "success": true, "converged": true, "objective": 46.9307332393765, "time": 48.362266063690186}
+{"angles": [126, 180, 188, 234, 270], "success": true, "converged": true, "objective": 45.10100329057273, "time": 49.47778606414795}
+{"angles": [126, 180, 190, 234, 270], "success": true, "converged": true, "objective": 44.15493792612514, "time": 39.63596200942993}
+{"angles": [126, 180, 192, 234, 270], "success": true, "converged": true, "objective": 43.69031519971499, "time": 42.810128927230835}
+{"angles": [126, 180, 194, 234, 270], "success": true, "converged": true, "objective": 43.63258211782284, "time": 42.78958296775818}
+{"angles": [126, 180, 196, 234, 270], "success": true, "converged": true, "objective": 43.89950605725371, "time": 39.13520121574402}
+{"angles": [126, 180, 200, 234, 270], "success": true, "converged": true, "objective": 44.82938815370233, "time": 40.18425703048706}
+{"angles": [126, 180, 202, 234, 270], "success": true, "converged": true, "objective": 45.31999407827991, "time": 41.005043029785156}
+{"angles": [126, 180, 204, 234, 270], "success": true, "converged": true, "objective": 45.75820170925903, "time": 39.612314224243164}
+{"angles": [126, 180, 206, 234, 270], "success": true, "converged": true, "objective": 45.89238463546597, "time": 46.20000100135803}
+{"angles": [126, 180, 212, 234, 270], "success": true, "converged": true, "objective": 45.90093196781589, "time": 32.12114191055298}
+{"angles": [126, 180, 208, 234, 270], "success": true, "converged": true, "objective": 45.80602526020085, "time": 40.13148307800293}
+{"angles": [126, 180, 198, 220, 270], "success": true, "converged": true, "objective": 47.07974125314967, "time": 39.939188957214355}
+{"angles": [126, 180, 198, 224, 270], "success": true, "converged": true, "objective": 45.82048361096183, "time": 51.38106298446655}
+{"angles": [126, 180, 198, 226, 270], "success": true, "converged": true, "objective": 45.22870835670956, "time": 54.130736112594604}
+{"angles": [126, 180, 198, 228, 270], "success": true, "converged": true, "objective": 44.78919394976192, "time": 43.841875076293945}
+{"angles": [126, 180, 198, 230, 270], "success": true, "converged": true, "objective": 44.57485642430468, "time": 42.815759897232056}
+{"angles": [126, 180, 198, 232, 270], "success": true, "converged": true, "objective": 44.363157348237785, "time": 38.50658106803894}
+{"angles": [126, 180, 198, 236, 270], "success": true, "converged": true, "objective": 44.17594845615621, "time": 37.37926721572876}
+{"angles": [126, 180, 198, 238, 270], "success": true, "converged": true, "objective": 44.28467130666995, "time": 44.71049904823303}
+{"angles": [126, 180, 198, 240, 270], "success": true, "converged": true, "objective": 44.49696498878437, "time": 48.56988978385925}
+{"angles": [126, 180, 198, 242, 270], "success": true, "converged": true, "objective": 44.77041979304254, "time": 44.632493019104004}
+{"angles": [126, 180, 198, 248, 270], "success": true, "converged": true, "objective": 45.27338441685825, "time": 43.41794490814209}
+{"angles": [126, 180, 198, 244, 270], "success": true, "converged": true, "objective": 44.81236761708726, "time": 50.31063389778137}
+{"angles": [126, 180, 198, 234, 256], "success": true, "converged": true, "objective": 48.40050975938342, "time": 61.463407039642334}
+{"angles": [126, 180, 198, 234, 262], "success": true, "converged": true, "objective": 45.82994061702031, "time": 45.48084211349487}
+{"angles": [126, 180, 198, 234, 260], "success": true, "converged": true, "objective": 46.44487815351723, "time": 49.350082874298096}
+{"angles": [126, 180, 198, 234, 264], "success": true, "converged": true, "objective": 45.2864469559567, "time": 45.65239500999451}
+{"angles": [126, 180, 198, 234, 268], "success": true, "converged": true, "objective": 44.5403023724454, "time": 40.18085694313049}
+{"angles": [126, 180, 198, 234, 266], "success": true, "converged": true, "objective": 44.81696077093449, "time": 42.040472984313965}
+{"angles": [126, 180, 198, 234, 272], "success": true, "converged": true, "objective": 44.23195291273098, "time": 40.335187911987305}
+{"angles": [126, 180, 198, 234, 274], "success": true, "converged": true, "objective": 44.59385499669133, "time": 48.380455017089844}
+{"angles": [126, 180, 198, 234, 276], "success": true, "converged": true, "objective": 45.14822685004186, "time": 48.79648184776306}
+{"angles": [126, 180, 198, 234, 278], "success": true, "converged": true, "objective": 45.86671381826964, "time": 44.85838603973389}
+{"angles": [126, 180, 198, 234, 280], "success": true, "converged": true, "objective": 46.66053637320045, "time": 45.93942618370056}
+{"angles": [126, 180, 198, 234, 284], "success": true, "converged": true, "objective": 48.1813807756859, "time": 47.15043902397156}
+{"angles": [112, 180, 194, 234, 270], "success": true, "converged": true, "objective": 44.08631059401806, "time": 41.305083990097046}
+{"angles": [116, 180, 194, 234, 270], "success": true, "converged": true, "objective": 43.339536847703755, "time": 46.08778190612793}
+{"angles": [118, 180, 194, 234, 270], "success": true, "converged": true, "objective": 43.16749182630804, "time": 50.827080965042114}
+{"angles": [120, 180, 194, 234, 270], "success": true, "converged": true, "objective": 43.18275828204203, "time": 42.15834712982178}
+{"angles": [122, 180, 194, 234, 270], "success": true, "converged": true, "objective": 43.32831239099742, "time": 38.16245198249817}
+{"angles": [124, 180, 194, 234, 270], "success": true, "converged": true, "objective": 43.42743955628778, "time": 44.93143129348755}
+{"angles": [128, 180, 194, 234, 270], "success": true, "converged": true, "objective": 43.748543384679586, "time": 47.393726110458374}
+{"angles": [130, 180, 194, 234, 270], "success": true, "converged": true, "objective": 43.7639158928919, "time": 48.58001375198364}
+{"angles": [132, 180, 194, 234, 270], "success": true, "converged": true, "objective": 44.11636103368451, "time": 41.92331790924072}
+{"angles": [134, 180, 194, 234, 270], "success": true, "converged": true, "objective": 44.192441637904004, "time": 39.19578790664673}
+{"angles": [136, 180, 194, 234, 270], "success": true, "converged": true, "objective": 44.53508876390264, "time": 40.93652606010437}
+{"angles": [140, 180, 194, 234, 270], "success": true, "converged": true, "objective": 45.35261075145786, "time": 40.1552197933197}
+{"angles": [126, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.368745701659, "time": 42.3931040763855}
+{"angles": [126, 166, 194, 234, 270], "success": true, "converged": true, "objective": 44.297774471431275, "time": 52.86926794052124}
+{"angles": [126, 170, 194, 234, 270], "success": true, "converged": true, "objective": 42.95024221180881, "time": 59.911492109298706}
+{"angles": [126, 174, 194, 234, 270], "success": true, "converged": true, "objective": 42.56327785223145, "time": 37.55758714675903}
+{"angles": [126, 176, 194, 234, 270], "success": true, "converged": true, "objective": 42.79857885453475, "time": 43.02039909362793}
+{"angles": [126, 178, 194, 234, 270], "success": true, "converged": true, "objective": 43.145131081807186, "time": 56.47530698776245}
+{"angles": [126, 182, 194, 234, 270], "success": true, "converged": true, "objective": 44.348566446656605, "time": 58.596943855285645}
+{"angles": [126, 184, 194, 234, 270], "success": true, "converged": true, "objective": 45.13683873406768, "time": 59.343656063079834}
+{"angles": [126, 186, 194, 234, 270], "success": true, "converged": true, "objective": 45.85356764904389, "time": 47.21976900100708}
+{"angles": [126, 188, 194, 234, 270], "success": true, "converged": true, "objective": 46.54361304041766, "time": 55.95668315887451}
+{"angles": [126, 190, 194, 234, 270], "success": true, "converged": true, "objective": 47.446667996657915, "time": 49.85492396354675}
+{"angles": [126, 180, 186, 234, 270], "success": true, "converged": true, "objective": 46.0414392155155, "time": 44.642906188964844}
+{"angles": [126, 180, 194, 220, 270], "success": true, "converged": true, "objective": 46.124607600617836, "time": 47.77555012702942}
+{"angles": [126, 180, 194, 224, 270], "success": true, "converged": true, "objective": 44.96984605635219, "time": 52.634602069854736}
+{"angles": [126, 180, 194, 226, 270], "success": true, "converged": true, "objective": 44.410751158240004, "time": 51.793341875076294}
+{"angles": [126, 180, 194, 228, 270], "success": true, "converged": true, "objective": 43.977838505573665, "time": 42.24600100517273}
+{"angles": [126, 180, 194, 230, 270], "success": true, "converged": true, "objective": 43.82982681771777, "time": 44.36449885368347}
+{"angles": [126, 180, 194, 232, 270], "success": true, "converged": true, "objective": 43.679076541192345, "time": 44.131171226501465}
+{"angles": [126, 180, 194, 236, 270], "success": true, "converged": true, "objective": 43.59159672847995, "time": 41.77976202964783}
+{"angles": [126, 180, 194, 238, 270], "success": true, "converged": true, "objective": 43.72916445004804, "time": 41.529046058654785}
+{"angles": [126, 180, 194, 240, 270], "success": true, "converged": true, "objective": 44.03285372479392, "time": 46.568670988082886}
+{"angles": [126, 180, 194, 242, 270], "success": true, "converged": true, "objective": 44.45467514123068, "time": 48.47540831565857}
+{"angles": [126, 180, 194, 244, 270], "success": true, "converged": true, "objective": 44.516714359751326, "time": 44.28620195388794}
+{"angles": [126, 180, 194, 248, 270], "success": true, "converged": true, "objective": 45.055324857862146, "time": 47.1049690246582}
+{"angles": [126, 180, 194, 234, 256], "success": true, "converged": true, "objective": 47.70409691126914, "time": 49.37016296386719}
+{"angles": [126, 180, 194, 234, 260], "success": true, "converged": true, "objective": 45.764812040219034, "time": 48.953359842300415}
+{"angles": [126, 180, 194, 234, 262], "success": true, "converged": true, "objective": 45.046200756885845, "time": 43.32447695732117}
+{"angles": [126, 180, 194, 234, 264], "success": true, "converged": true, "objective": 44.530443946721846, "time": 45.979597091674805}
+{"angles": [126, 180, 194, 234, 266], "success": true, "converged": true, "objective": 44.13056794497392, "time": 44.627387046813965}
+{"angles": [126, 180, 194, 234, 268], "success": true, "converged": true, "objective": 43.84979255308646, "time": 43.044496059417725}
+{"angles": [126, 180, 194, 234, 274], "success": true, "converged": true, "objective": 43.960530197893675, "time": 44.01702284812927}
+{"angles": [126, 180, 194, 234, 272], "success": true, "converged": true, "objective": 43.61850516971387, "time": 50.24818801879883}
+{"angles": [126, 180, 194, 234, 276], "success": true, "converged": true, "objective": 44.55089820106227, "time": 53.98522186279297}
+{"angles": [126, 180, 194, 234, 278], "success": true, "converged": true, "objective": 45.27531579086995, "time": 46.341092109680176}
+{"angles": [126, 180, 194, 234, 280], "success": true, "converged": true, "objective": 46.05187015167592, "time": 48.763715982437134}
+{"angles": [126, 180, 194, 234, 284], "success": true, "converged": true, "objective": 47.62693265893728, "time": 43.99425005912781}
+{"angles": [118, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.46531950112356, "time": 49.71756100654602}
+{"angles": [112, 172, 194, 234, 270], "success": true, "converged": true, "objective": 43.588195086514524, "time": 50.01300621032715}
+{"angles": [116, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.82077929510326, "time": 59.03956198692322}
+{"angles": [120, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.3570862251764, "time": 46.36182498931885}
+{"angles": [124, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.2298766836871, "time": 42.168051958084106}
+{"angles": [122, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.29310943635926, "time": 55.08268690109253}
+{"angles": [128, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.461517273471465, "time": 48.76587915420532}
+{"angles": [130, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.45629412483556, "time": 46.3076491355896}
+{"angles": [132, 172, 194, 234, 270], "success": true, "converged": true, "objective": 42.8782557701284, "time": 45.517418384552}
+{"angles": [136, 172, 194, 234, 270], "success": true, "converged": true, "objective": 43.50893588244512, "time": 32.1740300655365}
+{"angles": [134, 172, 194, 234, 270], "success": true, "converged": true, "objective": 43.02798172112033, "time": 36.5525438785553}
+{"angles": [140, 172, 194, 234, 270], "success": true, "converged": true, "objective": 44.54372815321585, "time": 36.63194513320923}
+{"angles": [126, 158, 194, 234, 270], "success": true, "converged": true, "objective": 45.25663584440036, "time": 31.701868057250977}
+{"angles": [126, 162, 194, 234, 270], "success": true, "converged": true, "objective": 44.757910106629225, "time": 33.65451192855835}
+{"angles": [126, 164, 194, 234, 270], "success": true, "converged": true, "objective": 44.520372508925746, "time": 32.71172499656677}
+{"angles": [126, 168, 194, 234, 270], "success": true, "converged": true, "objective": 43.79676620041895, "time": 31.977219104766846}
+{"angles": [126, 172, 180, 234, 270], "success": true, "converged": true, "objective": 44.87681196436482, "time": 30.65612006187439}
+{"angles": [126, 172, 184, 234, 270], "success": true, "converged": true, "objective": 43.65101681908479, "time": 30.627256870269775}
+{"angles": [126, 172, 186, 234, 270], "success": true, "converged": true, "objective": 43.10294588972889, "time": 30.24440097808838}
+{"angles": [126, 172, 188, 234, 270], "success": true, "converged": true, "objective": 42.527029133469924, "time": 29.347816228866577}
+{"angles": [126, 172, 190, 234, 270], "success": true, "converged": true, "objective": 42.25086612223711, "time": 30.59297490119934}
+{"angles": [126, 172, 192, 234, 270], "success": true, "converged": true, "objective": 42.2223416472796, "time": 27.29545283317566}
+{"angles": [126, 172, 196, 234, 270], "success": true, "converged": true, "objective": 43.027652494337495, "time": 30.642010927200317}
+{"angles": [126, 172, 200, 234, 270], "success": true, "converged": true, "objective": 44.763538228407356, "time": 32.23616814613342}
+{"angles": [126, 172, 202, 234, 270], "success": true, "converged": true, "objective": 45.28005560842353, "time": 32.361926794052124}
+{"angles": [126, 172, 204, 234, 270], "success": true, "converged": true, "objective": 45.53008630234228, "time": 33.14052700996399}
+{"angles": [126, 172, 208, 234, 270], "success": true, "converged": true, "objective": 45.77112974690022, "time": 32.56444191932678}
+{"angles": [126, 172, 194, 220, 270], "success": true, "converged": true, "objective": 44.91903414717978, "time": 30.816580772399902}
+{"angles": [126, 172, 194, 224, 270], "success": true, "converged": true, "objective": 43.90167599599293, "time": 26.592576026916504}
+{"angles": [126, 172, 194, 226, 270], "success": true, "converged": true, "objective": 43.42433812994922, "time": 30.1486599445343}
+{"angles": [126, 172, 194, 228, 270], "success": true, "converged": true, "objective": 42.99181818257634, "time": 30.03594422340393}
+{"angles": [126, 172, 194, 230, 270], "success": true, "converged": true, "objective": 42.748422496626176, "time": 29.914339780807495}
+{"angles": [126, 172, 194, 232, 270], "success": true, "converged": true, "objective": 42.52783802504096, "time": 30.050065755844116}
+{"angles": [126, 172, 194, 236, 270], "success": true, "converged": true, "objective": 42.145997351235756, "time": 21.956931114196777}
+{"angles": [126, 172, 194, 238, 270], "success": true, "converged": true, "objective": 42.174361050471006, "time": 31.233142852783203}
+{"angles": [126, 172, 194, 240, 270], "success": true, "converged": true, "objective": 42.386460838535534, "time": 31.169169187545776}
+{"angles": [126, 172, 194, 242, 270], "success": true, "converged": true, "objective": 42.666697501518556, "time": 34.90078520774841}
+{"angles": [126, 172, 194, 244, 270], "success": true, "converged": true, "objective": 42.83911687061241, "time": 31.82304096221924}
+{"angles": [126, 172, 194, 248, 270], "success": true, "converged": true, "objective": 43.30603703769018, "time": 29.250412940979004}
+{"angles": [126, 172, 194, 234, 256], "success": true, "converged": true, "objective": 46.333482996457995, "time": 30.617578983306885}
+{"angles": [126, 172, 194, 234, 260], "success": true, "converged": true, "objective": 44.487228530849954, "time": 27.920305967330933}
+{"angles": [126, 172, 194, 234, 262], "success": true, "converged": true, "objective": 43.95335080383653, "time": 32.13972306251526}
+{"angles": [126, 172, 194, 234, 264], "success": true, "converged": true, "objective": 43.41389717014318, "time": 29.97911238670349}
+{"angles": [126, 172, 194, 234, 266], "success": true, "converged": true, "objective": 42.95675457751342, "time": 31.657500982284546}
+{"angles": [126, 172, 194, 234, 268], "success": true, "converged": true, "objective": 42.71526416238009, "time": 28.858755826950073}
+{"angles": [126, 172, 194, 234, 272], "success": true, "converged": true, "objective": 42.28670048144998, "time": 26.084303855895996}
+{"angles": [126, 172, 194, 234, 274], "success": true, "converged": true, "objective": 42.538352103706565, "time": 27.099812746047974}
+{"angles": [126, 172, 194, 234, 276], "success": true, "converged": true, "objective": 42.99425788819649, "time": 30.96745014190674}
+{"angles": [126, 172, 194, 234, 278], "success": true, "converged": true, "objective": 43.50099016879893, "time": 33.2148118019104}
+{"angles": [126, 172, 194, 234, 280], "success": true, "converged": true, "objective": 44.3543811050837, "time": 32.57884216308594}
+{"angles": [126, 172, 194, 234, 284], "success": true, "converged": true, "objective": 45.87328106365566, "time": 31.322447061538696}
+{"angles": [70, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 40.09036828000783, "time": 52.829633951187134}
+{"angles": [76, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.98889842121194, "time": 58.47754716873169}
+{"angles": [74, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 39.252913779855525, "time": 60.13802480697632}
+{"angles": [78, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.68736584252494, "time": 46.10749006271362}
+{"angles": [82, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.01281889145017, "time": 39.369940996170044}
+{"angles": [80, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.36396494168981, "time": 53.21948981285095}
+{"angles": [86, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 37.80852772127527, "time": 46.734291076660156}
+{"angles": [88, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 37.92369585252966, "time": 51.86062574386597}
+{"angles": [90, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.01734677345816, "time": 53.08070230484009}
+{"angles": [92, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.44184545808371, "time": 47.735029220581055}
+{"angles": [94, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.85118673275337, "time": 45.734843730926514}
+{"angles": [98, 130, 172, 190, 238, 288], "success": true, "converged": true, "objective": 40.00417529447973, "time": 57.27367806434631}
+{"angles": [84, 116, 172, 190, 238, 288], "success": true, "converged": true, "objective": 39.56181735875807, "time": 61.05032181739807}
+{"angles": [84, 120, 172, 190, 238, 288], "success": true, "converged": true, "objective": 39.0495273657771, "time": 61.82731008529663}
+{"angles": [84, 122, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.75761110232476, "time": 52.66006803512573}
+{"angles": [84, 124, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.395238370616305, "time": 46.459376096725464}
+{"angles": [84, 128, 172, 190, 238, 288], "success": true, "converged": true, "objective": 37.77243924283285, "time": 51.029168128967285}
+{"angles": [84, 132, 172, 190, 238, 288], "success": true, "converged": true, "objective": 37.87143861856953, "time": 50.0919451713562}
+{"angles": [84, 134, 172, 190, 238, 288], "success": true, "converged": true, "objective": 37.897977609256706, "time": 50.881824016571045}
+{"angles": [84, 136, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.07285579800444, "time": 49.74819993972778}
+{"angles": [84, 138, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.21302481708124, "time": 49.25008416175842}
+{"angles": [84, 140, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.38323687720996, "time": 48.90613603591919}
+{"angles": [84, 144, 172, 190, 238, 288], "success": true, "converged": true, "objective": 38.77092539253857, "time": 54.99177813529968}
+{"angles": [84, 130, 158, 190, 238, 288], "success": true, "converged": true, "objective": 40.87158366523604, "time": 51.750638008117676}
+{"angles": [84, 130, 162, 190, 238, 288], "success": true, "converged": true, "objective": 40.16891930676328, "time": 46.64952278137207}
+{"angles": [84, 130, 164, 190, 238, 288], "success": true, "converged": true, "objective": 39.84682294642727, "time": 49.868732929229736}
+{"angles": [84, 130, 166, 190, 238, 288], "success": true, "converged": true, "objective": 39.195082499517476, "time": 46.20166301727295}
+{"angles": [84, 130, 168, 190, 238, 288], "success": true, "converged": true, "objective": 38.45319830369333, "time": 45.77860903739929}
+{"angles": [84, 130, 170, 190, 238, 288], "success": true, "converged": true, "objective": 38.15623109689992, "time": 43.61597180366516}
+{"angles": [84, 130, 174, 190, 238, 288], "success": true, "converged": true, "objective": 37.875038033172444, "time": 42.69837427139282}
+{"angles": [84, 130, 176, 190, 238, 288], "success": true, "converged": true, "objective": 38.30852347460751, "time": 44.669411182403564}
+{"angles": [84, 130, 178, 190, 238, 288], "success": true, "converged": true, "objective": 38.85090500002473, "time": 44.889485120773315}
+{"angles": [84, 130, 180, 190, 238, 288], "success": true, "converged": true, "objective": 39.48204478429887, "time": 45.07341122627258}
+{"angles": [84, 130, 182, 190, 238, 288], "success": true, "converged": true, "objective": 40.26356547138157, "time": 46.54500603675842}
+{"angles": [84, 130, 186, 190, 238, 288], "success": true, "converged": true, "objective": 41.544216570537905, "time": 42.07162690162659}
+{"angles": [84, 130, 172, 176, 238, 288], "success": true, "converged": true, "objective": 41.12745086533479, "time": 38.926175117492676}
+{"angles": [84, 130, 172, 182, 238, 288], "success": true, "converged": true, "objective": 39.506747229537964, "time": 40.02380418777466}
+{"angles": [84, 130, 172, 180, 238, 288], "success": true, "converged": true, "objective": 40.00881973619435, "time": 55.6747190952301}
+{"angles": [84, 130, 172, 184, 238, 288], "success": true, "converged": true, "objective": 38.950076021260706, "time": 43.431751012802124}
+{"angles": [84, 130, 172, 186, 238, 288], "success": true, "converged": true, "objective": 38.42852008884164, "time": 39.804004192352295}
+{"angles": [84, 130, 172, 188, 238, 288], "success": true, "converged": true, "objective": 38.02067505358583, "time": 46.316558837890625}
+{"angles": [84, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 37.73592844702328, "time": 49.04356575012207}
+{"angles": [84, 130, 172, 194, 238, 288], "success": true, "converged": true, "objective": 37.937279728975206, "time": 55.13064098358154}
+{"angles": [84, 130, 172, 196, 238, 288], "success": true, "converged": true, "objective": 38.59094094117673, "time": 58.17558407783508}
+{"angles": [84, 130, 172, 198, 238, 288], "success": true, "converged": true, "objective": 39.681405517441235, "time": 58.69333600997925}
+{"angles": [84, 130, 172, 200, 238, 288], "success": true, "converged": true, "objective": 40.23381661687292, "time": 57.05011701583862}
+{"angles": [84, 130, 172, 204, 238, 288], "success": true, "converged": true, "objective": 40.6226292988892, "time": 62.039929151535034}
+{"angles": [84, 130, 172, 190, 224, 288], "success": true, "converged": true, "objective": 38.843099052076134, "time": 62.67616605758667}
+{"angles": [84, 130, 172, 190, 228, 288], "success": true, "converged": true, "objective": 38.425592574010224, "time": 63.85688495635986}
+{"angles": [84, 130, 172, 190, 252, 288], "success": true, "converged": true, "objective": 40.105670381395115, "time": 63.745307207107544}
+{"angles": [84, 130, 172, 190, 238, 274], "success": true, "converged": true, "objective": 38.45438741790097, "time": 62.349076986312866}
+{"angles": [84, 130, 172, 190, 238, 278], "success": true, "converged": true, "objective": 38.015471265939176, "time": 42.4195339679718}
+{"angles": [84, 130, 172, 190, 238, 282], "success": true, "converged": true, "objective": 38.0269491462453, "time": 39.532559871673584}
+{"angles": [84, 130, 172, 190, 238, 280], "success": true, "converged": true, "objective": 38.03949210096594, "time": 48.58509707450867}
+{"angles": [84, 130, 172, 190, 238, 284], "success": true, "converged": true, "objective": 38.04105676252098, "time": 39.60613512992859}
+{"angles": [84, 130, 172, 190, 238, 286], "success": true, "converged": true, "objective": 37.94249148220901, "time": 38.92542290687561}
+{"angles": [84, 130, 172, 190, 238, 290], "success": true, "converged": true, "objective": 37.75422770620504, "time": 37.55391788482666}
+{"angles": [84, 130, 172, 190, 238, 292], "success": true, "converged": true, "objective": 37.81295329505535, "time": 41.44809913635254}
+{"angles": [84, 130, 172, 190, 238, 294], "success": true, "converged": true, "objective": 38.00755084297263, "time": 38.36006307601929}
+{"angles": [84, 130, 172, 190, 238, 296], "success": true, "converged": true, "objective": 38.233463192868015, "time": 40.4414439201355}
+{"angles": [84, 130, 172, 190, 238, 298], "success": true, "converged": true, "objective": 38.479226629477814, "time": 34.33692693710327}
+{"angles": [84, 130, 172, 190, 238, 302], "success": true, "converged": true, "objective": 39.38613622939237, "time": 31.80802083015442}
+{"angles": [76, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.9564557567056, "time": 37.203603982925415}
+{"angles": [74, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 39.23109884831243, "time": 39.37563109397888}
+{"angles": [70, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 40.17121409316119, "time": 42.48077702522278}
+{"angles": [80, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.33528455121368, "time": 40.995595932006836}
+{"angles": [78, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.6278513260396, "time": 44.21220564842224}
+{"angles": [82, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 37.94739384105813, "time": 47.63798809051514}
+{"angles": [86, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 37.78869703761592, "time": 39.508606910705566}
+{"angles": [88, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 37.93103104474768, "time": 40.2248260974884}
+{"angles": [90, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.080272487264196, "time": 45.06196904182434}
+{"angles": [92, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.51712171663285, "time": 47.99509811401367}
+{"angles": [94, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.92211100528672, "time": 49.82525873184204}
+{"angles": [98, 130, 172, 192, 238, 288], "success": true, "converged": true, "objective": 40.07968009383818, "time": 49.99422907829285}
+{"angles": [84, 116, 172, 192, 238, 288], "success": true, "converged": true, "objective": 39.42635988274295, "time": 50.01880121231079}
+{"angles": [84, 120, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.87567532343749, "time": 51.771950244903564}
+{"angles": [84, 122, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.5686494848619, "time": 41.591734886169434}
+{"angles": [84, 124, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.23781485293164, "time": 39.03712582588196}
+{"angles": [84, 126, 172, 192, 238, 288], "success": true, "converged": true, "objective": 37.891412022048904, "time": 42.04731607437134}
+{"angles": [84, 128, 172, 192, 238, 288], "success": true, "converged": true, "objective": 37.77780196044263, "time": 40.2938551902771}
+{"angles": [84, 132, 172, 192, 238, 288], "success": true, "converged": true, "objective": 37.82062819632079, "time": 34.35813522338867}
+{"angles": [84, 134, 172, 192, 238, 288], "success": true, "converged": true, "objective": 37.879282056456105, "time": 33.129782915115356}
+{"angles": [84, 136, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.06551630817271, "time": 48.14110207557678}
+{"angles": [84, 138, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.18241624947541, "time": 41.62985801696777}
+{"angles": [84, 140, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.27513834449018, "time": 38.57170510292053}
+{"angles": [84, 144, 172, 192, 238, 288], "success": true, "converged": true, "objective": 38.73758757960092, "time": 40.70201110839844}
+{"angles": [84, 130, 158, 192, 238, 288], "success": true, "converged": true, "objective": 41.081580052802394, "time": 35.69457674026489}
+{"angles": [84, 130, 162, 192, 238, 288], "success": true, "converged": true, "objective": 40.44725396808993, "time": 35.1302490234375}
+{"angles": [84, 130, 164, 192, 238, 288], "success": true, "converged": true, "objective": 40.081910149442606, "time": 45.703012228012085}
+{"angles": [84, 130, 166, 192, 238, 288], "success": true, "converged": true, "objective": 39.63518867813449, "time": 37.244619607925415}
+{"angles": [84, 130, 168, 192, 238, 288], "success": true, "converged": true, "objective": 38.95612412793173, "time": 33.82144784927368}
+{"angles": [84, 130, 170, 192, 238, 288], "success": true, "converged": true, "objective": 38.0815495097102, "time": 35.80446529388428}
+{"angles": [84, 130, 174, 192, 238, 288], "success": true, "converged": true, "objective": 37.841122297449004, "time": 34.4241578578949}
+{"angles": [84, 130, 176, 192, 238, 288], "success": true, "converged": true, "objective": 38.25699806746148, "time": 38.30227017402649}
+{"angles": [84, 130, 178, 192, 238, 288], "success": true, "converged": true, "objective": 38.74306368033792, "time": 40.909343242645264}
+{"angles": [84, 130, 180, 192, 238, 288], "success": true, "converged": true, "objective": 39.20804867048424, "time": 40.907609939575195}
+{"angles": [84, 130, 182, 192, 238, 288], "success": true, "converged": true, "objective": 39.85613066558456, "time": 43.016128063201904}
+{"angles": [84, 130, 186, 192, 238, 288], "success": true, "converged": true, "objective": 41.00512759610378, "time": 33.87328386306763}
+{"angles": [84, 130, 172, 202, 238, 288], "success": true, "converged": true, "objective": 40.51196077002389, "time": 29.95733332633972}
+{"angles": [84, 130, 172, 178, 238, 288], "success": true, "converged": true, "objective": 40.45265758263733, "time": 39.29425883293152}
+{"angles": [84, 130, 172, 206, 238, 288], "success": true, "converged": true, "objective": 40.72107821248022, "time": 35.7621488571167}
+{"angles": [84, 130, 172, 192, 228, 288], "success": true, "converged": true, "objective": 38.449142012646405, "time": 29.297114849090576}
+{"angles": [84, 130, 172, 192, 224, 288], "success": true, "converged": true, "objective": 39.02623481675365, "time": 37.84338188171387}
+{"angles": [84, 130, 172, 192, 230, 288], "success": true, "converged": true, "objective": 38.26836320540362, "time": 33.98843717575073}
+{"angles": [84, 130, 172, 192, 232, 288], "success": true, "converged": true, "objective": 38.05945617828322, "time": 37.28796601295471}
+{"angles": [84, 130, 172, 192, 234, 288], "success": true, "converged": true, "objective": 37.97028650964707, "time": 33.332190990448}
+{"angles": [84, 130, 172, 192, 236, 288], "success": true, "converged": true, "objective": 37.84134106379262, "time": 33.20166778564453}
+{"angles": [84, 130, 172, 192, 242, 288], "success": true, "converged": true, "objective": 37.98316067675334, "time": 42.99875783920288}
+{"angles": [84, 130, 172, 192, 244, 288], "success": true, "converged": true, "objective": 38.26314390988047, "time": 43.641724824905396}
+{"angles": [84, 130, 172, 192, 246, 288], "success": true, "converged": true, "objective": 38.601846238191456, "time": 37.97600603103638}
+{"angles": [84, 130, 172, 192, 252, 288], "success": true, "converged": true, "objective": 40.06314808077689, "time": 35.12609791755676}
+{"angles": [84, 130, 172, 192, 248, 288], "success": true, "converged": true, "objective": 39.08540313987773, "time": 39.19749402999878}
+{"angles": [84, 130, 172, 192, 238, 274], "success": true, "converged": true, "objective": 38.475330176472774, "time": 38.23442101478577}
+{"angles": [84, 130, 172, 192, 238, 278], "success": true, "converged": true, "objective": 38.08297932103934, "time": 39.12648820877075}
+{"angles": [84, 130, 172, 192, 238, 280], "success": true, "converged": true, "objective": 38.110572961929016, "time": 37.73982286453247}
+{"angles": [84, 130, 172, 192, 238, 282], "success": true, "converged": true, "objective": 38.108361456478605, "time": 32.82024693489075}
+{"angles": [84, 130, 172, 192, 238, 284], "success": true, "converged": true, "objective": 38.0648787339083, "time": 39.27271509170532}
+{"angles": [84, 130, 172, 192, 238, 286], "success": true, "converged": true, "objective": 37.95465068751269, "time": 42.431825160980225}
+{"angles": [84, 130, 172, 192, 238, 290], "success": true, "converged": true, "objective": 37.75089433064088, "time": 31.592179775238037}
+{"angles": [84, 130, 172, 192, 238, 292], "success": true, "converged": true, "objective": 37.815228842604576, "time": 32.471144914627075}
+{"angles": [84, 130, 172, 192, 238, 296], "success": true, "converged": true, "objective": 38.29910787496876, "time": 28.567163944244385}
+{"angles": [84, 130, 172, 192, 238, 294], "success": true, "converged": true, "objective": 38.03553291485876, "time": 37.56438684463501}
+{"angles": [84, 130, 172, 192, 238, 298], "success": true, "converged": true, "objective": 38.53764973948927, "time": 31.720744371414185}
+{"angles": [84, 130, 172, 192, 238, 302], "success": true, "converged": true, "objective": 39.47975638434202, "time": 33.06282901763916}
