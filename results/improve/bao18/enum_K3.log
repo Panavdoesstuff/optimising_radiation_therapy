@@ -1,0 +1,964 @@
+K=3: cutoff 60.789001; 0 done, 1140 to go
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[1/1140] [0, 18, 36] infeasible nan (2s) best None | 0 min, eta 93 min
+[2/1140] [0, 18, 72] pruned 74.5323 (2s) best None | 0 min, eta 51 min
+[3/1140] [0, 18, 90] pruned 66.5471 (1s) best None | 0 min, eta 34 min
+[4/1140] [0, 18, 54] infeasible nan (3s) best None | 0 min, eta 30 min
+[5/1140] [0, 18, 108] pruned 73.5043 (2s) best None | 0 min, eta 24 min
+[6/1140] [0, 18, 126] pruned 76.3913 (2s) best None | 0 min, eta 22 min
+[7/1140] [0, 18, 144] pruned 79.1922 (2s) best None | 0 min, eta 19 min
+[8/1140] [0, 18, 162] pruned 76.5561 (1s) best None | 0 min, eta 18 min
+[9/1140] [0, 18, 180] pruned 79.5246 (1s) best None | 0 min, eta 16 min
+[10/1140] [0, 18, 198] pruned 81.1082 (1s) best None | 0 min, eta 16 min
+[11/1140] [0, 18, 216] pruned 80.4609 (2s) best None | 0 min, eta 15 min
+[12/1140] [0, 18, 234] pruned 75.3230 (2s) best None | 0 min, eta 14 min
+[13/1140] [0, 18, 252] pruned 72.5247 (2s) best None | 0 min, eta 14 min
+[14/1140] [0, 18, 270] pruned 65.3211 (1s) best None | 0 min, eta 13 min
+[15/1140] [0, 18, 288] pruned 71.0726 (1s) best None | 0 min, eta 12 min
+[16/1140] [0, 18, 306] pruned 75.3966 (1s) best None | 0 min, eta 12 min
+[17/1140] [0, 18, 342] infeasible nan (1s) best None | 0 min, eta 12 min
+[18/1140] [0, 18, 324] pruned 82.8370 (2s) best None | 0 min, eta 12 min
+[19/1140] [0, 36, 72] pruned 75.1369 (1s) best None | 0 min, eta 12 min
+[20/1140] [0, 36, 90] pruned 66.1351 (1s) best None | 0 min, eta 11 min
+[21/1140] [0, 36, 108] pruned 71.1173 (1s) best None | 0 min, eta 11 min
+[22/1140] [0, 36, 126] pruned 73.2102 (2s) best None | 0 min, eta 11 min
+[23/1140] [0, 36, 144] pruned 76.3118 (2s) best None | 0 min, eta 11 min
+[24/1140] [0, 36, 162] pruned 74.2290 (2s) best None | 0 min, eta 11 min
+[25/1140] [0, 36, 54] infeasible nan (5s) best None | 0 min, eta 11 min
+[26/1140] [0, 36, 180] pruned 76.1222 (2s) best None | 0 min, eta 11 min
+[27/1140] [0, 36, 198] pruned 77.0575 (1s) best None | 0 min, eta 11 min
+[28/1140] [0, 36, 216] pruned 81.9966 (1s) best None | 0 min, eta 10 min
+[29/1140] [0, 36, 234] pruned 76.1349 (1s) best None | 0 min, eta 10 min
+[30/1140] [0, 36, 252] pruned 71.1936 (2s) best None | 0 min, eta 10 min
+[31/1140] [0, 36, 270] pruned 63.1520 (1s) best None | 0 min, eta 10 min
+[32/1140] [0, 36, 288] pruned 68.0264 (1s) best None | 0 min, eta 10 min
+[33/1140] [0, 36, 306] pruned 71.4648 (1s) best None | 0 min, eta 10 min
+[34/1140] [0, 36, 324] pruned 77.4450 (2s) best None | 0 min, eta 10 min
+[35/1140] [0, 36, 342] pruned 81.7935 (2s) best None | 0 min, eta 10 min
+[36/1140] [0, 54, 72] pruned 75.8680 (2s) best None | 0 min, eta 10 min
+[37/1140] [0, 54, 90] pruned 62.8948 (1s) best None | 0 min, eta 9 min
+[38/1140] [0, 54, 108] pruned 64.7589 (1s) best None | 0 min, eta 9 min
+[39/1140] [0, 54, 126] pruned 67.6366 (2s) best None | 0 min, eta 9 min
+[40/1140] [0, 54, 144] pruned 72.1752 (2s) best None | 0 min, eta 9 min
+[41/1140] [0, 54, 162] pruned 70.6033 (2s) best None | 0 min, eta 9 min
+[42/1140] [0, 54, 180] pruned 70.0599 (1s) best None | 0 min, eta 9 min
+[43/1140] [0, 54, 198] pruned 69.8203 (2s) best None | 0 min, eta 9 min
+[44/1140] [0, 54, 234] pruned 77.4710 (1s) best None | 0 min, eta 9 min
+[45/1140] [0, 54, 216] pruned 76.9031 (2s) best None | 0 min, eta 9 min
+[46/1140] [0, 54, 252] pruned 70.4950 (1s) best None | 0 min, eta 9 min
+[47/1140] [0, 54, 270] pruned 61.6208 (1s) best None | 0 min, eta 9 min
+[48/1140] [0, 54, 288] pruned 64.2382 (1s) best None | 0 min, eta 9 min
+[49/1140] [0, 54, 306] pruned 68.6191 (1s) best None | 0 min, eta 9 min
+[50/1140] [0, 54, 324] pruned 73.3987 (2s) best None | 0 min, eta 9 min
+[51/1140] [0, 54, 342] pruned 75.8883 (1s) best None | 0 min, eta 9 min
+[52/1140] [0, 72, 90] pruned 62.5752 (1s) best None | 0 min, eta 9 min
+[53/1140] [0, 72, 108] pruned 62.7020 (1s) best None | 0 min, eta 9 min
+[54/1140] [0, 72, 126] pruned 63.7216 (1s) best None | 0 min, eta 9 min
+[55/1140] [0, 72, 144] pruned 67.5113 (2s) best None | 0 min, eta 9 min
+[56/1140] [0, 72, 162] pruned 66.1143 (2s) best None | 0 min, eta 8 min
+[57/1140] [0, 72, 180] pruned 66.0342 (1s) best None | 0 min, eta 8 min
+[58/1140] [0, 72, 198] pruned 64.8782 (2s) best None | 0 min, eta 8 min
+[59/1140] [0, 72, 216] pruned 68.9299 (2s) best None | 0 min, eta 8 min
+[60/1140] [0, 72, 252] pruned 70.5170 (2s) best None | 0 min, eta 8 min
+[61/1140] [0, 72, 234] pruned 72.2836 (2s) best None | 0 min, eta 8 min
+[62/1140] [0, 72, 270] pruned 61.3987 (1s) best None | 0 min, eta 8 min
+[63/1140] [0, 72, 288] pruned 63.3726 (1s) best None | 0 min, eta 8 min
+[64/1140] [0, 72, 324] pruned 68.9047 (1s) best None | 0 min, eta 8 min
+[65/1140] [0, 72, 306] pruned 64.5274 (1s) best None | 0 min, eta 8 min
+[66/1140] [0, 72, 342] pruned 71.1057 (1s) best None | 0 min, eta 8 min
+[67/1140] [0, 90, 108] pruned 63.6797 (1s) best None | 1 min, eta 8 min
+[68/1140] [0, 90, 126] pruned 62.9640 (1s) best None | 1 min, eta 8 min
+[69/1140] [0, 90, 144] pruned 64.4429 (1s) best None | 1 min, eta 8 min
+[70/1140] [0, 90, 162] pruned 62.9588 (2s) best None | 1 min, eta 8 min
+[71/1140] [0, 90, 180] pruned 62.2188 (2s) best None | 1 min, eta 8 min
+[72/1140] [0, 90, 198] pruned 61.2359 (1s) best None | 1 min, eta 8 min
+[73/1140] [0, 90, 216] pruned 64.2875 (2s) best None | 1 min, eta 8 min
+[74/1140] [0, 90, 234] pruned 62.3526 (2s) best None | 1 min, eta 8 min
+[75/1140] [0, 90, 252] pruned 61.5490 (2s) best None | 1 min, eta 8 min
+[76/1140] [0, 90, 306] pruned 62.2004 (1s) best None | 1 min, eta 8 min
+[77/1140] [0, 90, 324] pruned 64.9996 (1s) best None | 1 min, eta 8 min
+[78/1140] [0, 90, 342] pruned 66.0110 (1s) best None | 1 min, eta 8 min
+[79/1140] [0, 90, 270] pruned 65.4180 (4s) best None | 1 min, eta 8 min
+[80/1140] [0, 108, 126] pruned 72.8714 (2s) best None | 1 min, eta 8 min
+[81/1140] [0, 90, 288] pruned 67.4335 (4s) best None | 1 min, eta 8 min
+[82/1140] [0, 108, 144] pruned 69.4941 (2s) best None | 1 min, eta 8 min
+[83/1140] [0, 108, 162] pruned 66.1958 (2s) best None | 1 min, eta 8 min
+[84/1140] [0, 108, 180] pruned 64.8912 (2s) best None | 1 min, eta 8 min
+[85/1140] [0, 108, 198] pruned 64.0965 (2s) best None | 1 min, eta 8 min
+[86/1140] [0, 108, 216] pruned 66.4612 (2s) best None | 1 min, eta 8 min
+[87/1140] [0, 108, 234] pruned 61.5681 (1s) best None | 1 min, eta 8 min
+[88/1140] [0, 108, 270] pruned 61.3460 (1s) best None | 1 min, eta 8 min
+[89/1140] [0, 108, 288] pruned 69.3225 (2s) best None | 1 min, eta 8 min
+[90/1140] [0, 108, 306] pruned 69.7348 (2s) best None | 1 min, eta 8 min
+[91/1140] [0, 108, 324] pruned 71.2397 (2s) best None | 1 min, eta 8 min
+[92/1140] [0, 108, 342] pruned 72.2458 (2s) best None | 1 min, eta 8 min
+[93/1140] [0, 126, 144] pruned 77.7149 (2s) best None | 1 min, eta 8 min
+[94/1140] [0, 108, 252] pruned 68.7924 (5s) best None | 1 min, eta 8 min
+[95/1140] [0, 126, 162] pruned 70.8481 (2s) best None | 1 min, eta 8 min
+[96/1140] [0, 126, 180] pruned 69.8783 (1s) best None | 1 min, eta 8 min
+[97/1140] [0, 126, 198] pruned 67.8464 (2s) best None | 1 min, eta 8 min
+[98/1140] [0, 126, 216] pruned 70.4408 (2s) best None | 1 min, eta 8 min
+[99/1140] [0, 126, 234] pruned 64.2011 (2s) best None | 1 min, eta 8 min
+[100/1140] [0, 126, 252] pruned 61.9510 (2s) best None | 1 min, eta 8 min
+[101/1140] [0, 126, 270] pruned 62.1835 (2s) best None | 1 min, eta 8 min
+[102/1140] [0, 126, 288] pruned 72.4585 (2s) best None | 1 min, eta 8 min
+[103/1140] [0, 126, 306] pruned 77.0232 (2s) best None | 1 min, eta 8 min
+[104/1140] [0, 126, 324] pruned 76.8194 (2s) best None | 1 min, eta 8 min
+[105/1140] [0, 126, 342] pruned 77.1342 (2s) best None | 1 min, eta 8 min
+[106/1140] [0, 144, 180] pruned 75.1638 (2s) best None | 1 min, eta 8 min
+[107/1140] [0, 144, 162] pruned 78.1669 (2s) best None | 1 min, eta 8 min
+[108/1140] [0, 144, 198] pruned 71.6106 (2s) best None | 1 min, eta 8 min
+[109/1140] [0, 144, 216] pruned 74.1685 (2s) best None | 1 min, eta 8 min
+[110/1140] [0, 144, 234] pruned 70.0546 (2s) best None | 1 min, eta 8 min
+[111/1140] [0, 144, 252] pruned 67.3791 (2s) best None | 1 min, eta 8 min
+[112/1140] [0, 144, 270] pruned 64.0525 (2s) best None | 1 min, eta 8 min
+[113/1140] [0, 144, 324] pruned 82.7452 (2s) best None | 1 min, eta 8 min
+[114/1140] [0, 144, 306] pruned 77.5883 (2s) best None | 1 min, eta 8 min
+[115/1140] [0, 144, 288] pruned 70.0217 (2s) best None | 1 min, eta 8 min
+[116/1140] [0, 144, 342] pruned 80.7455 (2s) best None | 1 min, eta 8 min
+[117/1140] [0, 162, 180] pruned 77.9527 (2s) best None | 1 min, eta 8 min
+[118/1140] [0, 162, 216] pruned 72.7172 (2s) best None | 1 min, eta 8 min
+[119/1140] [0, 162, 198] pruned 73.6511 (2s) best None | 1 min, eta 8 min
+[120/1140] [0, 162, 234] pruned 67.6723 (2s) best None | 1 min, eta 8 min
+[121/1140] [0, 162, 270] pruned 62.5849 (2s) best None | 1 min, eta 8 min
+[122/1140] [0, 162, 252] pruned 64.9424 (2s) best None | 1 min, eta 8 min
+[123/1140] [0, 162, 288] pruned 66.5244 (2s) best None | 1 min, eta 8 min
+[124/1140] [0, 162, 306] pruned 70.7915 (2s) best None | 1 min, eta 8 min
+[125/1140] [0, 162, 342] pruned 82.0867 (2s) best None | 1 min, eta 8 min
+[126/1140] [0, 162, 324] pruned 78.3580 (2s) best None | 1 min, eta 8 min
+[127/1140] [0, 180, 198] pruned 78.1892 (2s) best None | 1 min, eta 8 min
+[128/1140] [0, 180, 216] pruned 74.4727 (2s) best None | 1 min, eta 8 min
+[129/1140] [0, 180, 234] pruned 67.8513 (2s) best None | 1 min, eta 8 min
+[130/1140] [0, 180, 270] pruned 62.1379 (1s) best None | 1 min, eta 8 min
+[131/1140] [0, 180, 252] pruned 65.1222 (2s) best None | 1 min, eta 8 min
+[132/1140] [0, 180, 288] pruned 65.9955 (2s) best None | 1 min, eta 8 min
+[133/1140] [0, 180, 306] pruned 69.3623 (2s) best None | 1 min, eta 8 min
+[134/1140] [0, 180, 324] pruned 75.8125 (2s) best None | 1 min, eta 8 min
+[135/1140] [0, 180, 342] pruned 79.4292 (2s) best None | 1 min, eta 8 min
+[136/1140] [0, 198, 216] pruned 76.2790 (2s) best None | 1 min, eta 8 min
+[137/1140] [0, 198, 234] pruned 67.9276 (2s) best None | 1 min, eta 8 min
+[138/1140] [0, 198, 252] pruned 64.1293 (2s) best None | 1 min, eta 8 min
+[139/1140] [0, 198, 270] pruned 60.8730 (2s) best None | 1 min, eta 7 min
+[140/1140] [0, 198, 288] pruned 65.2750 (2s) best None | 1 min, eta 7 min
+[141/1140] [0, 198, 306] pruned 68.4070 (2s) best None | 1 min, eta 8 min
+[142/1140] [0, 198, 324] pruned 73.3676 (2s) best None | 1 min, eta 8 min
+[143/1140] [0, 198, 342] pruned 76.4199 (2s) best None | 1 min, eta 7 min
+[144/1140] [0, 216, 234] pruned 76.1120 (2s) best None | 1 min, eta 7 min
+[145/1140] [0, 216, 252] pruned 69.0160 (2s) best None | 1 min, eta 7 min
+[146/1140] [0, 216, 270] pruned 63.1915 (2s) best None | 1 min, eta 7 min
+[147/1140] [0, 216, 288] pruned 67.5092 (2s) best None | 1 min, eta 7 min
+[148/1140] [0, 216, 306] pruned 71.2115 (2s) best None | 1 min, eta 7 min
+[149/1140] [0, 216, 324] pruned 75.8738 (2s) best None | 1 min, eta 7 min
+[150/1140] [0, 216, 342] pruned 78.1619 (2s) best None | 1 min, eta 7 min
+[151/1140] [0, 234, 252] pruned 72.8205 (2s) best None | 1 min, eta 7 min
+[152/1140] [0, 234, 270] pruned 62.8906 (2s) best None | 1 min, eta 7 min
+[153/1140] [0, 234, 288] pruned 63.5855 (2s) best None | 1 min, eta 7 min
+[154/1140] [0, 234, 306] pruned 68.0031 (2s) best None | 1 min, eta 7 min
+[155/1140] [0, 234, 324] pruned 72.6661 (2s) best None | 1 min, eta 7 min
+[156/1140] [0, 234, 342] pruned 74.9664 (2s) best None | 1 min, eta 7 min
+[157/1140] [0, 252, 270] pruned 64.1670 (1s) best None | 1 min, eta 7 min
+[158/1140] [0, 252, 288] pruned 62.3144 (2s) best None | 1 min, eta 7 min
+[159/1140] [0, 252, 306] pruned 64.5678 (2s) best None | 1 min, eta 7 min
+[160/1140] [0, 252, 324] pruned 70.4402 (2s) best None | 1 min, eta 7 min
+[161/1140] [0, 252, 342] pruned 73.4967 (2s) best None | 1 min, eta 7 min
+[162/1140] [0, 270, 288] pruned 63.1400 (2s) best None | 1 min, eta 7 min
+[163/1140] [0, 270, 306] pruned 63.6678 (2s) best None | 1 min, eta 7 min
+[164/1140] [0, 270, 324] pruned 66.8614 (2s) best None | 1 min, eta 7 min
+[165/1140] [0, 270, 342] pruned 68.0623 (2s) best None | 1 min, eta 7 min
+[166/1140] [0, 288, 306] pruned 75.0430 (2s) best None | 1 min, eta 7 min
+[167/1140] [0, 288, 324] pruned 75.3545 (2s) best None | 1 min, eta 7 min
+[168/1140] [0, 288, 342] pruned 74.7482 (2s) best None | 1 min, eta 7 min
+[169/1140] [0, 324, 342] infeasible nan (2s) best None | 1 min, eta 7 min
+[170/1140] [18, 36, 54] infeasible nan (2s) best None | 1 min, eta 7 min
+[171/1140] [18, 36, 90] pruned 73.0629 (2s) best None | 1 min, eta 7 min
+[172/1140] [18, 36, 72] pruned 86.0730 (2s) best None | 1 min, eta 7 min
+[173/1140] [0, 306, 324] infeasible nan (6s) best None | 1 min, eta 7 min
+[174/1140] [0, 306, 342] infeasible nan (6s) best None | 1 min, eta 7 min
+[175/1140] [18, 36, 108] pruned 80.1046 (2s) best None | 1 min, eta 7 min
+[176/1140] [18, 36, 126] pruned 81.3687 (2s) best None | 1 min, eta 7 min
+[177/1140] [18, 36, 144] pruned 82.3157 (2s) best None | 1 min, eta 7 min
+[178/1140] [18, 36, 162] pruned 78.0938 (2s) best None | 1 min, eta 7 min
+[179/1140] [18, 36, 180] pruned 76.4770 (2s) best None | 1 min, eta 7 min
+[180/1140] [18, 36, 198] pruned 84.0502 (2s) best None | 1 min, eta 7 min
+[181/1140] [18, 36, 216] pruned 88.9070 (2s) best None | 1 min, eta 7 min
+[182/1140] [18, 36, 234] pruned 83.4325 (2s) best None | 1 min, eta 7 min
+[183/1140] [18, 36, 270] pruned 69.3606 (2s) best None | 1 min, eta 7 min
+[184/1140] [18, 36, 252] pruned 77.7216 (2s) best None | 1 min, eta 7 min
+[185/1140] [18, 36, 288] pruned 75.3028 (2s) best None | 1 min, eta 7 min
+[186/1140] [18, 36, 306] pruned 79.0525 (2s) best None | 1 min, eta 7 min
+[187/1140] [18, 36, 324] pruned 82.1833 (2s) best None | 1 min, eta 7 min
+[188/1140] [18, 36, 342] pruned 81.8220 (2s) best None | 1 min, eta 7 min
+[189/1140] [18, 54, 90] pruned 67.2255 (1s) best None | 1 min, eta 7 min
+[190/1140] [18, 54, 72] pruned 82.4839 (2s) best None | 1 min, eta 7 min
+[191/1140] [18, 54, 108] pruned 69.9253 (2s) best None | 1 min, eta 7 min
+[192/1140] [18, 54, 126] pruned 72.7964 (2s) best None | 1 min, eta 7 min
+[193/1140] [18, 54, 162] pruned 72.2464 (2s) best None | 1 min, eta 7 min
+[194/1140] [18, 54, 144] pruned 74.6160 (2s) best None | 1 min, eta 7 min
+[195/1140] [18, 54, 180] pruned 70.1380 (2s) best None | 1 min, eta 7 min
+[196/1140] [18, 54, 198] pruned 75.4367 (2s) best None | 2 min, eta 7 min
+[197/1140] [18, 54, 216] pruned 81.8858 (2s) best None | 2 min, eta 7 min
+[198/1140] [18, 54, 234] pruned 81.8905 (2s) best None | 2 min, eta 7 min
+[199/1140] [18, 54, 252] pruned 73.8872 (2s) best None | 2 min, eta 7 min
+[200/1140] [18, 54, 270] pruned 64.9370 (1s) best None | 2 min, eta 7 min
+[201/1140] [18, 54, 288] pruned 67.4805 (2s) best None | 2 min, eta 7 min
+[202/1140] [18, 54, 306] pruned 71.4732 (2s) best None | 2 min, eta 7 min
+[203/1140] [18, 54, 324] pruned 74.2600 (2s) best None | 2 min, eta 7 min
+[204/1140] [18, 54, 342] pruned 73.3553 (2s) best None | 2 min, eta 7 min
+[205/1140] [18, 72, 90] pruned 66.5407 (2s) best None | 2 min, eta 7 min
+[206/1140] [18, 72, 108] pruned 67.2786 (2s) best None | 2 min, eta 7 min
+[207/1140] [18, 72, 126] pruned 68.3819 (2s) best None | 2 min, eta 7 min
+[208/1140] [18, 72, 144] pruned 69.9365 (2s) best None | 2 min, eta 7 min
+[209/1140] [18, 72, 162] pruned 66.9993 (2s) best None | 2 min, eta 7 min
+[210/1140] [18, 72, 180] pruned 65.1647 (2s) best None | 2 min, eta 7 min
+[211/1140] [18, 72, 198] pruned 69.0163 (2s) best None | 2 min, eta 7 min
+[212/1140] [18, 72, 216] pruned 72.6553 (2s) best None | 2 min, eta 7 min
+[213/1140] [18, 72, 252] pruned 72.3451 (2s) best None | 2 min, eta 7 min
+[214/1140] [18, 72, 234] pruned 75.8081 (2s) best None | 2 min, eta 7 min
+[215/1140] [18, 72, 270] pruned 63.2756 (2s) best None | 2 min, eta 7 min
+[216/1140] [18, 72, 288] pruned 64.8582 (2s) best None | 2 min, eta 7 min
+[217/1140] [18, 72, 306] pruned 66.7510 (2s) best None | 2 min, eta 7 min
+[218/1140] [18, 72, 324] pruned 69.6078 (2s) best None | 2 min, eta 7 min
+[219/1140] [18, 72, 342] pruned 68.4386 (2s) best None | 2 min, eta 7 min
+[220/1140] [18, 90, 108] pruned 66.9156 (2s) best None | 2 min, eta 7 min
+[221/1140] [18, 90, 126] pruned 66.5571 (2s) best None | 2 min, eta 7 min
+[222/1140] [18, 90, 144] pruned 66.1597 (2s) best None | 2 min, eta 7 min
+[223/1140] [18, 90, 162] pruned 62.6482 (2s) best None | 2 min, eta 7 min
+[224/1140] [18, 90, 198] pruned 62.9414 (2s) best None | 2 min, eta 7 min
+[225/1140] [18, 90, 216] pruned 65.7612 (2s) best None | 2 min, eta 7 min
+[226/1140] [18, 90, 234] pruned 64.4266 (2s) best None | 2 min, eta 7 min
+[227/1140] [18, 90, 270] pruned 61.6066 (2s) best None | 2 min, eta 7 min
+[228/1140] [18, 90, 252] pruned 62.9010 (2s) best None | 2 min, eta 7 min
+[229/1140] [18, 90, 288] pruned 62.2430 (2s) best None | 2 min, eta 7 min
+[230/1140] [18, 90, 306] pruned 63.6747 (2s) best None | 2 min, eta 7 min
+[231/1140] [18, 90, 180] pruned 66.2360 (6s) best None | 2 min, eta 7 min
+[232/1140] [18, 90, 324] pruned 65.2294 (2s) best None | 2 min, eta 7 min
+[233/1140] [18, 90, 342] pruned 62.3494 (2s) best None | 2 min, eta 7 min
+[234/1140] [18, 108, 126] pruned 75.3545 (2s) best None | 2 min, eta 7 min
+[235/1140] [18, 108, 144] pruned 70.8191 (2s) best None | 2 min, eta 7 min
+[236/1140] [18, 108, 162] pruned 65.0856 (2s) best None | 2 min, eta 7 min
+[237/1140] [18, 108, 180] pruned 62.6462 (2s) best None | 2 min, eta 7 min
+[238/1140] [18, 108, 198] pruned 66.2788 (2s) best None | 2 min, eta 7 min
+[239/1140] [18, 108, 216] pruned 69.5736 (2s) best None | 2 min, eta 7 min
+[240/1140] [18, 108, 234] pruned 64.0008 (2s) best None | 2 min, eta 7 min
+[241/1140] [18, 108, 252] pruned 62.8600 (2s) best None | 2 min, eta 7 min
+[242/1140] [18, 108, 270] pruned 62.8708 (2s) best None | 2 min, eta 7 min
+[243/1140] [18, 108, 288] pruned 70.8693 (2s) best None | 2 min, eta 7 min
+[244/1140] [18, 108, 306] pruned 71.1906 (2s) best None | 2 min, eta 7 min
+[245/1140] [18, 108, 324] pruned 70.6978 (2s) best None | 2 min, eta 7 min
+[246/1140] [18, 108, 342] pruned 67.8420 (2s) best None | 2 min, eta 7 min
+[247/1140] [18, 126, 144] pruned 78.1327 (2s) best None | 2 min, eta 7 min
+[248/1140] [18, 126, 162] pruned 69.0122 (2s) best None | 2 min, eta 7 min
+[249/1140] [18, 126, 180] pruned 67.2596 (2s) best None | 2 min, eta 7 min
+[250/1140] [18, 126, 198] pruned 70.9352 (2s) best None | 2 min, eta 7 min
+[251/1140] [18, 126, 216] pruned 73.7248 (2s) best None | 2 min, eta 7 min
+[252/1140] [18, 126, 234] pruned 67.6824 (2s) best None | 2 min, eta 7 min
+[253/1140] [18, 126, 252] pruned 65.0530 (2s) best None | 2 min, eta 7 min
+[254/1140] [18, 126, 270] pruned 63.6088 (2s) best None | 2 min, eta 7 min
+[255/1140] [18, 126, 288] pruned 73.7026 (2s) best None | 2 min, eta 7 min
+[256/1140] [18, 126, 306] pruned 77.9896 (2s) best None | 2 min, eta 7 min
+[257/1140] [18, 126, 324] pruned 76.4988 (2s) best None | 2 min, eta 7 min
+[258/1140] [18, 126, 342] pruned 71.4005 (2s) best None | 2 min, eta 7 min
+[259/1140] [18, 144, 162] pruned 76.0439 (2s) best None | 2 min, eta 7 min
+[260/1140] [18, 144, 180] pruned 71.6932 (2s) best None | 2 min, eta 7 min
+[261/1140] [18, 144, 198] pruned 74.2721 (2s) best None | 2 min, eta 7 min
+[262/1140] [18, 144, 216] pruned 75.6274 (3s) best None | 2 min, eta 7 min
+[263/1140] [18, 144, 252] pruned 68.2409 (3s) best None | 2 min, eta 7 min
+[264/1140] [18, 144, 270] pruned 64.3499 (2s) best None | 2 min, eta 7 min
+[265/1140] [18, 144, 234] pruned 70.8531 (3s) best None | 2 min, eta 7 min
+[266/1140] [18, 144, 288] pruned 69.8636 (3s) best None | 2 min, eta 7 min
+[267/1140] [18, 144, 324] pruned 80.7433 (2s) best None | 2 min, eta 7 min
+[268/1140] [18, 144, 342] pruned 75.6721 (2s) best None | 2 min, eta 7 min
+[269/1140] [18, 144, 306] pruned 77.0079 (3s) best None | 2 min, eta 7 min
+[270/1140] [18, 162, 180] pruned 74.1224 (3s) best None | 2 min, eta 7 min
+[271/1140] [18, 162, 198] pruned 74.3057 (2s) best None | 2 min, eta 7 min
+[272/1140] [18, 162, 216] pruned 73.1614 (3s) best None | 2 min, eta 7 min
+[273/1140] [18, 162, 234] pruned 67.8606 (3s) best None | 2 min, eta 7 min
+[274/1140] [18, 162, 252] pruned 65.0719 (2s) best None | 2 min, eta 7 min
+[275/1140] [18, 162, 270] pruned 61.0589 (2s) best None | 2 min, eta 7 min
+[276/1140] [18, 162, 288] pruned 64.0356 (2s) best None | 2 min, eta 7 min
+[277/1140] [18, 162, 306] pruned 67.5966 (2s) best None | 2 min, eta 7 min
+[278/1140] [18, 162, 342] pruned 76.5648 (2s) best None | 2 min, eta 7 min
+[279/1140] [18, 162, 324] pruned 75.3688 (2s) best None | 2 min, eta 7 min
+[280/1140] [18, 180, 198] pruned 77.7745 (2s) best None | 2 min, eta 7 min
+[281/1140] [18, 180, 216] pruned 73.8821 (2s) best None | 2 min, eta 7 min
+[282/1140] [18, 180, 234] pruned 66.5146 (2s) best None | 2 min, eta 7 min
+[283/1140] [18, 180, 252] pruned 63.2174 (2s) best None | 2 min, eta 7 min
+[284/1140] [18, 180, 288] pruned 62.1742 (2s) best None | 2 min, eta 7 min
+[285/1140] [18, 180, 306] pruned 65.3819 (2s) best None | 2 min, eta 7 min
+[286/1140] [18, 180, 324] pruned 71.2240 (2s) best None | 2 min, eta 7 min
+[287/1140] [18, 180, 342] pruned 73.8302 (2s) best None | 2 min, eta 7 min
+[288/1140] [18, 198, 216] pruned 82.7147 (2s) best None | 2 min, eta 7 min
+[289/1140] [18, 198, 234] pruned 72.7175 (2s) best None | 2 min, eta 7 min
+[290/1140] [18, 198, 252] pruned 67.9620 (2s) best None | 2 min, eta 7 min
+[291/1140] [18, 180, 270] pruned 65.3409 (6s) best None | 2 min, eta 7 min
+[292/1140] [18, 198, 270] pruned 62.6518 (2s) best None | 2 min, eta 7 min
+[293/1140] [18, 198, 288] pruned 66.4113 (2s) best None | 2 min, eta 7 min
+[294/1140] [18, 198, 324] pruned 74.2888 (2s) best None | 2 min, eta 7 min
+[295/1140] [18, 198, 306] pruned 69.8350 (2s) best None | 2 min, eta 7 min
+[296/1140] [18, 198, 342] pruned 75.2847 (2s) best None | 2 min, eta 7 min
+[297/1140] [18, 216, 234] pruned 80.5893 (2s) best None | 2 min, eta 7 min
+[298/1140] [18, 216, 270] pruned 64.9208 (2s) best None | 2 min, eta 7 min
+[299/1140] [18, 216, 252] pruned 71.9501 (2s) best None | 2 min, eta 7 min
+[300/1140] [18, 216, 288] pruned 69.8202 (2s) best None | 2 min, eta 7 min
+[301/1140] [18, 216, 306] pruned 74.2294 (2s) best None | 2 min, eta 7 min
+[302/1140] [18, 216, 342] pruned 75.6610 (2s) best None | 2 min, eta 7 min
+[303/1140] [18, 216, 324] pruned 77.2530 (2s) best None | 2 min, eta 7 min
+[304/1140] [18, 234, 252] pruned 74.8452 (2s) best None | 2 min, eta 7 min
+[305/1140] [18, 234, 270] pruned 63.3984 (2s) best None | 2 min, eta 7 min
+[306/1140] [18, 234, 288] pruned 63.8079 (2s) best None | 2 min, eta 7 min
+[307/1140] [18, 234, 306] pruned 69.3473 (2s) best None | 2 min, eta 7 min
+[308/1140] [18, 234, 324] pruned 72.6016 (2s) best None | 2 min, eta 7 min
+[309/1140] [18, 234, 342] pruned 70.9252 (2s) best None | 2 min, eta 7 min
+[310/1140] [18, 252, 270] pruned 64.6091 (2s) best None | 2 min, eta 7 min
+[311/1140] [18, 252, 288] pruned 62.4121 (2s) best None | 2 min, eta 7 min
+[312/1140] [18, 252, 306] pruned 65.0199 (2s) best None | 3 min, eta 7 min
+[313/1140] [18, 252, 324] pruned 68.8509 (2s) best None | 3 min, eta 7 min
+[314/1140] [18, 252, 342] pruned 67.5781 (2s) best None | 3 min, eta 7 min
+[315/1140] [18, 270, 288] pruned 63.5340 (2s) best None | 3 min, eta 7 min
+[316/1140] [18, 270, 306] pruned 63.7283 (2s) best None | 3 min, eta 7 min
+[317/1140] [18, 270, 324] pruned 65.5969 (2s) best None | 3 min, eta 7 min
+[318/1140] [18, 270, 342] pruned 62.9391 (2s) best None | 3 min, eta 7 min
+[319/1140] [18, 288, 306] pruned 74.1515 (2s) best None | 3 min, eta 7 min
+[320/1140] [18, 288, 342] pruned 68.3956 (2s) best None | 3 min, eta 7 min
+[321/1140] [18, 288, 324] pruned 73.1443 (2s) best None | 3 min, eta 7 min
+[322/1140] [18, 306, 324] pruned 81.8609 (2s) best None | 3 min, eta 7 min
+[323/1140] [18, 306, 342] pruned 72.9555 (2s) best None | 3 min, eta 7 min
+[324/1140] [36, 54, 72] infeasible nan (1s) best None | 3 min, eta 7 min
+[325/1140] [18, 324, 342] pruned 84.3058 (2s) best None | 3 min, eta 7 min
+[326/1140] [36, 54, 126] pruned 86.4084 (2s) best None | 3 min, eta 7 min
+[327/1140] [36, 54, 144] pruned 87.4288 (2s) best None | 3 min, eta 7 min
+[328/1140] [36, 54, 90] infeasible nan (4s) best None | 3 min, eta 7 min
+[329/1140] [36, 54, 108] infeasible nan (4s) best None | 3 min, eta 7 min
+[330/1140] [36, 54, 162] pruned 79.3638 (2s) best None | 3 min, eta 7 min
+[331/1140] [36, 54, 180] pruned 74.9993 (2s) best None | 3 min, eta 7 min
+[332/1140] [36, 54, 198] pruned 79.7891 (2s) best None | 3 min, eta 7 min
+[333/1140] [36, 54, 252] pruned 87.4249 (2s) best None | 3 min, eta 7 min
+[334/1140] [36, 54, 270] pruned 73.6279 (2s) best None | 3 min, eta 7 min
+[335/1140] [36, 54, 234] infeasible nan (3s) best None | 3 min, eta 7 min
+[336/1140] [36, 54, 288] pruned 78.0482 (3s) best None | 3 min, eta 7 min
+[337/1140] [36, 54, 306] pruned 83.9216 (3s) best None | 3 min, eta 7 min
+[338/1140] [36, 54, 216] infeasible nan (7s) best None | 3 min, eta 7 min
+[339/1140] [36, 54, 324] pruned 87.6463 (3s) best None | 3 min, eta 7 min
+[340/1140] [36, 54, 342] pruned 83.5574 (3s) best None | 3 min, eta 7 min
+[341/1140] [36, 72, 126] pruned 76.4306 (3s) best None | 3 min, eta 7 min
+[342/1140] [36, 72, 108] pruned 78.3890 (3s) best None | 3 min, eta 7 min
+[343/1140] [36, 72, 144] pruned 78.7723 (3s) best None | 3 min, eta 7 min
+[344/1140] [36, 72, 162] pruned 71.4482 (3s) best None | 3 min, eta 7 min
+[345/1140] [36, 72, 180] pruned 66.5916 (3s) best None | 3 min, eta 7 min
+[346/1140] [36, 72, 90] infeasible nan (7s) best None | 3 min, eta 7 min
+[347/1140] [36, 72, 198] pruned 70.0262 (3s) best None | 3 min, eta 7 min
+[348/1140] [36, 72, 216] pruned 80.7303 (3s) best None | 3 min, eta 7 min
+[349/1140] [36, 72, 234] pruned 85.3295 (4s) best None | 3 min, eta 7 min
+[350/1140] [36, 72, 270] pruned 69.1896 (3s) best None | 3 min, eta 7 min
+[351/1140] [36, 72, 252] pruned 80.1489 (3s) best None | 3 min, eta 7 min
+[352/1140] [36, 72, 288] pruned 70.3494 (3s) best None | 3 min, eta 7 min
+[353/1140] [36, 72, 306] pruned 74.2285 (3s) best None | 3 min, eta 7 min
+[354/1140] [36, 72, 324] pruned 77.8981 (3s) best None | 3 min, eta 7 min
+[355/1140] [36, 72, 342] pruned 73.8705 (3s) best None | 3 min, eta 7 min
+[356/1140] [36, 90, 108] pruned 75.8187 (3s) best None | 3 min, eta 7 min
+[357/1140] [36, 90, 126] pruned 72.8629 (3s) best None | 3 min, eta 7 min
+[358/1140] [36, 90, 144] pruned 73.2860 (3s) best None | 3 min, eta 7 min
+[359/1140] [36, 90, 162] pruned 65.5578 (3s) best None | 3 min, eta 7 min
+[360/1140] [36, 90, 198] pruned 62.3178 (3s) best None | 3 min, eta 7 min
+[361/1140] [36, 90, 216] pruned 70.8775 (2s) best None | 3 min, eta 7 min
+[362/1140] [36, 90, 234] pruned 71.4779 (3s) best None | 3 min, eta 7 min
+[363/1140] [36, 90, 252] pruned 68.5383 (3s) best None | 3 min, eta 7 min
+[364/1140] [36, 90, 270] pruned 65.2051 (3s) best None | 3 min, eta 7 min
+[365/1140] [36, 90, 288] pruned 66.4549 (3s) best None | 3 min, eta 7 min
+[366/1140] [36, 90, 180] pruned 66.3154 (8s) best None | 3 min, eta 7 min
+[367/1140] [36, 90, 324] pruned 69.1658 (3s) best None | 3 min, eta 7 min
+[368/1140] [36, 90, 306] pruned 67.8287 (3s) best None | 3 min, eta 7 min
+[369/1140] [36, 90, 342] pruned 64.9142 (2s) best None | 3 min, eta 7 min
+[370/1140] [36, 108, 126] pruned 82.7448 (3s) best None | 3 min, eta 7 min
+[371/1140] [36, 108, 162] pruned 67.7928 (3s) best None | 3 min, eta 7 min
+[372/1140] [36, 108, 144] pruned 77.8294 (3s) best None | 3 min, eta 7 min
+[373/1140] [36, 108, 180] pruned 62.9361 (3s) best None | 3 min, eta 7 min
+[374/1140] [36, 108, 198] pruned 67.3501 (3s) best None | 3 min, eta 7 min
+[375/1140] [36, 108, 216] pruned 75.3147 (3s) best None | 3 min, eta 7 min
+[376/1140] [36, 108, 234] pruned 73.6174 (3s) best None | 3 min, eta 7 min
+[377/1140] [36, 108, 252] pruned 69.4408 (3s) best None | 3 min, eta 7 min
+[378/1140] [36, 108, 270] pruned 68.2251 (3s) best None | 3 min, eta 7 min
+[379/1140] [36, 108, 306] pruned 77.0121 (3s) best None | 3 min, eta 7 min
+[380/1140] [36, 108, 288] pruned 75.8450 (3s) best None | 3 min, eta 7 min
+[381/1140] [36, 108, 324] pruned 75.5881 (3s) best None | 3 min, eta 7 min
+[382/1140] [36, 108, 342] pruned 68.6553 (3s) best None | 3 min, eta 7 min
+[383/1140] [36, 126, 144] pruned 84.9627 (3s) best None | 3 min, eta 7 min
+[384/1140] [36, 126, 162] pruned 72.6700 (3s) best None | 3 min, eta 7 min
+[385/1140] [36, 126, 180] pruned 68.1445 (3s) best None | 3 min, eta 7 min
+[386/1140] [36, 126, 198] pruned 72.5461 (3s) best None | 3 min, eta 7 min
+[387/1140] [36, 126, 216] pruned 80.6074 (3s) best None | 3 min, eta 7 min
+[388/1140] [36, 126, 234] pruned 76.6374 (3s) best None | 3 min, eta 7 min
+[389/1140] [36, 126, 252] pruned 71.3821 (3s) best None | 3 min, eta 7 min
+[390/1140] [36, 126, 270] pruned 68.6195 (3s) best None | 3 min, eta 7 min
+[391/1140] [36, 126, 288] pruned 79.3004 (4s) best None | 3 min, eta 7 min
+[392/1140] [36, 126, 306] pruned 83.4224 (3s) best None | 3 min, eta 7 min
+[393/1140] [36, 126, 324] pruned 81.4926 (3s) best None | 3 min, eta 7 min
+[394/1140] [36, 126, 342] pruned 72.9353 (3s) best None | 4 min, eta 7 min
+[395/1140] [36, 144, 162] pruned 80.5540 (4s) best None | 4 min, eta 7 min
+[396/1140] [36, 144, 180] pruned 73.1766 (3s) best None | 4 min, eta 7 min
+[397/1140] [36, 144, 198] pruned 75.4722 (3s) best None | 4 min, eta 7 min
+[398/1140] [36, 144, 216] pruned 84.7740 (3s) best None | 4 min, eta 7 min
+[399/1140] [36, 144, 234] pruned 79.8744 (3s) best None | 4 min, eta 7 min
+[400/1140] [36, 144, 252] pruned 75.2981 (3s) best None | 4 min, eta 7 min
+[401/1140] [36, 144, 270] pruned 69.4546 (3s) best None | 4 min, eta 7 min
+[402/1140] [36, 144, 288] pruned 74.4666 (3s) best None | 4 min, eta 7 min
+[403/1140] [36, 144, 324] pruned 84.4385 (3s) best None | 4 min, eta 7 min
+[404/1140] [36, 144, 306] pruned 81.6816 (3s) best None | 4 min, eta 7 min
+[405/1140] [36, 144, 342] pruned 78.4705 (4s) best None | 4 min, eta 7 min
+[406/1140] [36, 162, 180] pruned 74.0300 (3s) best None | 4 min, eta 7 min
+[407/1140] [36, 162, 216] pruned 79.6221 (3s) best None | 4 min, eta 7 min
+[408/1140] [36, 162, 198] pruned 74.0074 (3s) best None | 4 min, eta 7 min
+[409/1140] [36, 162, 234] pruned 73.8083 (3s) best None | 4 min, eta 7 min
+[410/1140] [36, 162, 252] pruned 68.8708 (3s) best None | 4 min, eta 7 min
+[411/1140] [36, 162, 270] pruned 61.7616 (3s) best None | 4 min, eta 7 min
+[412/1140] [36, 162, 288] pruned 64.8675 (3s) best None | 4 min, eta 7 min
+[413/1140] [36, 162, 306] pruned 68.7534 (3s) best None | 4 min, eta 7 min
+[414/1140] [36, 162, 324] pruned 76.0699 (3s) best None | 4 min, eta 7 min
+[415/1140] [36, 162, 342] pruned 77.2119 (3s) best None | 4 min, eta 7 min
+[416/1140] [36, 180, 198] pruned 74.9524 (3s) best None | 4 min, eta 7 min
+[417/1140] [36, 180, 216] pruned 77.7705 (3s) best None | 4 min, eta 7 min
+[418/1140] [36, 180, 234] pruned 69.9195 (3s) best None | 4 min, eta 7 min
+[419/1140] [36, 180, 252] pruned 64.3010 (3s) best None | 4 min, eta 7 min
+[420/1140] [36, 180, 288] pruned 61.5688 (3s) best None | 4 min, eta 7 min
+[421/1140] [36, 180, 306] pruned 65.2937 (3s) best None | 4 min, eta 7 min
+[422/1140] [36, 180, 324] pruned 70.3585 (3s) best None | 4 min, eta 7 min
+[423/1140] [36, 180, 342] pruned 71.1504 (3s) best None | 4 min, eta 7 min
+[424/1140] [36, 198, 216] pruned 86.0820 (3s) best None | 4 min, eta 7 min
+[425/1140] [36, 198, 234] pruned 75.6844 (3s) best None | 4 min, eta 7 min
+[426/1140] [36, 180, 270] pruned 64.7164 (8s) best None | 4 min, eta 7 min
+[427/1140] [36, 198, 270] pruned 61.3417 (2s) best None | 4 min, eta 7 min
+[428/1140] [36, 198, 252] pruned 68.6494 (3s) best None | 4 min, eta 7 min
+[429/1140] [36, 198, 288] pruned 66.3830 (2s) best None | 4 min, eta 7 min
+[430/1140] [36, 198, 306] pruned 70.7363 (3s) best None | 4 min, eta 7 min
+[431/1140] [36, 198, 324] pruned 74.1863 (3s) best None | 4 min, eta 7 min
+[432/1140] [36, 198, 342] pruned 73.9980 (3s) best None | 4 min, eta 7 min
+[433/1140] [36, 216, 234] pruned 91.2710 (3s) best None | 4 min, eta 7 min
+[434/1140] [36, 216, 252] pruned 78.2013 (3s) best None | 4 min, eta 7 min
+[435/1140] [36, 216, 270] pruned 69.8459 (2s) best None | 4 min, eta 7 min
+[436/1140] [36, 216, 288] pruned 73.8578 (2s) best None | 4 min, eta 7 min
+[437/1140] [36, 216, 306] pruned 79.4054 (2s) best None | 4 min, eta 7 min
+[438/1140] [36, 216, 324] pruned 83.7702 (3s) best None | 4 min, eta 7 min
+[439/1140] [36, 216, 342] pruned 81.6727 (3s) best None | 4 min, eta 7 min
+[440/1140] [36, 234, 252] pruned 84.0265 (3s) best None | 4 min, eta 7 min
+[441/1140] [36, 234, 270] pruned 69.3854 (3s) best None | 4 min, eta 6 min
+[442/1140] [36, 234, 288] pruned 71.0755 (3s) best None | 4 min, eta 6 min
+[443/1140] [36, 234, 306] pruned 76.7213 (3s) best None | 4 min, eta 6 min
+[444/1140] [36, 234, 342] pruned 76.9745 (3s) best None | 4 min, eta 6 min
+[445/1140] [36, 234, 324] pruned 80.9973 (3s) best None | 4 min, eta 6 min
+[446/1140] [36, 252, 270] pruned 70.2283 (3s) best None | 4 min, eta 6 min
+[447/1140] [36, 252, 288] pruned 67.5104 (3s) best None | 4 min, eta 6 min
+[448/1140] [36, 252, 306] pruned 70.6119 (3s) best None | 4 min, eta 6 min
+[449/1140] [36, 252, 324] pruned 75.0865 (3s) best None | 4 min, eta 6 min
+[450/1140] [36, 252, 342] pruned 71.7250 (3s) best None | 4 min, eta 6 min
+[451/1140] [36, 270, 288] pruned 67.9672 (3s) best None | 4 min, eta 6 min
+[452/1140] [36, 270, 306] pruned 68.0162 (3s) best None | 4 min, eta 6 min
+[453/1140] [36, 270, 324] pruned 68.7216 (3s) best None | 4 min, eta 6 min
+[454/1140] [36, 270, 342] pruned 64.4772 (3s) best None | 4 min, eta 6 min
+[455/1140] [36, 288, 306] pruned 79.7375 (4s) best None | 4 min, eta 6 min
+[456/1140] [36, 288, 342] pruned 69.3789 (3s) best None | 4 min, eta 6 min
+[457/1140] [36, 288, 324] pruned 77.2491 (3s) best None | 4 min, eta 6 min
+[458/1140] [36, 306, 324] pruned 87.0035 (3s) best None | 4 min, eta 6 min
+[459/1140] [54, 72, 90] infeasible nan (2s) best None | 4 min, eta 6 min
+[460/1140] [36, 306, 342] pruned 73.4110 (3s) best None | 4 min, eta 6 min
+[461/1140] [36, 324, 342] pruned 84.0704 (3s) best None | 4 min, eta 6 min
+[462/1140] [54, 72, 108] infeasible nan (3s) best None | 4 min, eta 6 min
+[463/1140] [54, 72, 126] pruned 81.2743 (3s) best None | 4 min, eta 6 min
+[464/1140] [54, 72, 144] pruned 83.3656 (3s) best None | 4 min, eta 6 min
+[465/1140] [54, 72, 162] pruned 74.4378 (3s) best None | 4 min, eta 6 min
+[466/1140] [54, 72, 180] pruned 68.5329 (3s) best None | 4 min, eta 6 min
+[467/1140] [54, 72, 198] pruned 70.5122 (3s) best None | 4 min, eta 6 min
+[468/1140] [54, 72, 216] pruned 82.4441 (4s) best None | 4 min, eta 6 min
+[469/1140] [54, 72, 234] infeasible nan (4s) best None | 4 min, eta 6 min
+[470/1140] [54, 72, 252] infeasible nan (3s) best None | 4 min, eta 6 min
+[471/1140] [54, 72, 270] pruned 71.2566 (3s) best None | 4 min, eta 6 min
+[472/1140] [54, 72, 288] pruned 71.4486 (3s) best None | 4 min, eta 6 min
+[473/1140] [54, 72, 306] pruned 75.9651 (3s) best None | 5 min, eta 6 min
+[474/1140] [54, 72, 324] pruned 81.4868 (3s) best None | 5 min, eta 6 min
+[475/1140] [54, 72, 342] pruned 76.9247 (3s) best None | 5 min, eta 6 min
+[476/1140] [54, 90, 126] pruned 71.0643 (3s) best None | 5 min, eta 6 min
+[477/1140] [54, 90, 108] infeasible nan (4s) best None | 5 min, eta 6 min
+[478/1140] [54, 90, 144] pruned 72.6513 (3s) best None | 5 min, eta 6 min
+[479/1140] [54, 90, 162] pruned 64.3756 (3s) best None | 5 min, eta 6 min
+[480/1140] [54, 90, 216] pruned 69.9754 (3s) best None | 5 min, eta 6 min
+[481/1140] [54, 90, 234] pruned 73.0079 (3s) best None | 5 min, eta 6 min
+[482/1140] [54, 90, 252] pruned 69.6847 (3s) best None | 5 min, eta 6 min
+[483/1140] [54, 90, 270] pruned 63.0889 (3s) best None | 5 min, eta 6 min
+[484/1140] [54, 90, 180] pruned 64.8977 (8s) best None | 5 min, eta 6 min
+[485/1140] [54, 90, 198] pruned 67.9922 (9s) best None | 5 min, eta 6 min
+[486/1140] [54, 90, 306] pruned 63.9578 (2s) best None | 5 min, eta 6 min
+[487/1140] [54, 90, 288] pruned 61.9121 (3s) best None | 5 min, eta 6 min
+[488/1140] [54, 90, 324] pruned 68.7019 (3s) best None | 5 min, eta 6 min
+[489/1140] [54, 90, 342] pruned 64.5131 (2s) best None | 5 min, eta 6 min
+[490/1140] [54, 108, 126] pruned 78.7850 (3s) best None | 5 min, eta 6 min
+[491/1140] [54, 108, 144] pruned 74.8062 (2s) best None | 5 min, eta 6 min
+[492/1140] [54, 108, 162] pruned 64.3525 (3s) best None | 5 min, eta 6 min
+[493/1140] [54, 108, 216] pruned 72.6233 (3s) best None | 5 min, eta 6 min
+[494/1140] [54, 108, 234] pruned 74.2651 (3s) best None | 5 min, eta 6 min
+[495/1140] [54, 108, 252] pruned 68.9132 (3s) best None | 5 min, eta 6 min
+[496/1140] [54, 108, 180] pruned 66.0586 (8s) best None | 5 min, eta 6 min
+[497/1140] [54, 108, 270] pruned 63.9750 (3s) best None | 5 min, eta 6 min
+[498/1140] [54, 108, 198] pruned 69.2357 (8s) best None | 5 min, eta 6 min
+[499/1140] [54, 108, 288] pruned 70.1857 (3s) best None | 5 min, eta 6 min
+[500/1140] [54, 108, 306] pruned 72.0262 (3s) best None | 5 min, eta 6 min
+[501/1140] [54, 108, 324] pruned 71.9519 (3s) best None | 5 min, eta 6 min
+[502/1140] [54, 108, 342] pruned 65.6158 (3s) best None | 5 min, eta 6 min
+[503/1140] [54, 126, 144] pruned 81.0713 (3s) best None | 5 min, eta 6 min
+[504/1140] [54, 126, 162] pruned 67.9117 (3s) best None | 5 min, eta 6 min
+[505/1140] [54, 126, 180] pruned 62.8019 (3s) best None | 5 min, eta 6 min
+[506/1140] [54, 126, 198] pruned 66.2543 (3s) best None | 5 min, eta 6 min
+[507/1140] [54, 126, 216] pruned 77.5927 (3s) best None | 5 min, eta 6 min
+[508/1140] [54, 126, 234] pruned 78.8907 (3s) best None | 5 min, eta 6 min
+[509/1140] [54, 126, 252] pruned 71.4484 (3s) best None | 5 min, eta 6 min
+[510/1140] [54, 126, 270] pruned 65.2438 (3s) best None | 5 min, eta 6 min
+[511/1140] [54, 126, 306] pruned 78.4564 (2s) best None | 5 min, eta 6 min
+[512/1140] [54, 126, 288] pruned 74.1289 (3s) best None | 5 min, eta 6 min
+[513/1140] [54, 126, 324] pruned 76.5743 (3s) best None | 5 min, eta 6 min
+[514/1140] [54, 126, 342] pruned 68.8954 (3s) best None | 5 min, eta 6 min
+[515/1140] [54, 144, 162] pruned 75.9775 (3s) best None | 5 min, eta 6 min
+[516/1140] [54, 144, 180] pruned 68.7889 (3s) best None | 5 min, eta 6 min
+[517/1140] [54, 144, 198] pruned 70.1919 (3s) best None | 5 min, eta 6 min
+[518/1140] [54, 144, 234] pruned 83.4843 (3s) best None | 5 min, eta 6 min
+[519/1140] [54, 144, 216] pruned 81.2039 (3s) best None | 5 min, eta 6 min
+[520/1140] [54, 144, 252] pruned 76.4587 (3s) best None | 5 min, eta 6 min
+[521/1140] [54, 144, 270] pruned 67.9093 (3s) best None | 5 min, eta 6 min
+[522/1140] [54, 144, 288] pruned 70.8416 (3s) best None | 5 min, eta 6 min
+[523/1140] [54, 144, 324] pruned 80.6596 (2s) best None | 5 min, eta 6 min
+[524/1140] [54, 144, 306] pruned 78.0755 (3s) best None | 5 min, eta 6 min
+[525/1140] [54, 144, 342] pruned 74.9751 (3s) best None | 5 min, eta 6 min
+[526/1140] [54, 162, 180] pruned 69.8212 (3s) best None | 5 min, eta 6 min
+[527/1140] [54, 162, 198] pruned 70.0707 (3s) best None | 5 min, eta 6 min
+[528/1140] [54, 162, 216] pruned 75.3119 (3s) best None | 5 min, eta 6 min
+[529/1140] [54, 162, 234] pruned 76.1423 (3s) best None | 5 min, eta 6 min
+[530/1140] [54, 162, 270] pruned 60.8603 (2s) best None | 5 min, eta 6 min
+[531/1140] [54, 162, 252] pruned 69.6234 (3s) best None | 5 min, eta 6 min
+[532/1140] [54, 162, 288] pruned 61.5286 (3s) best None | 5 min, eta 6 min
+[533/1140] [54, 162, 306] pruned 65.5044 (3s) best None | 5 min, eta 6 min
+[534/1140] [54, 162, 342] pruned 73.5963 (2s) best None | 5 min, eta 6 min
+[535/1140] [54, 162, 324] pruned 73.2084 (2s) best None | 5 min, eta 6 min
+[536/1140] [54, 180, 198] pruned 68.6529 (2s) best None | 5 min, eta 6 min
+[537/1140] [54, 180, 216] pruned 71.4869 (3s) best None | 5 min, eta 6 min
+[538/1140] [54, 180, 234] pruned 71.0985 (2s) best None | 5 min, eta 6 min
+[539/1140] [54, 180, 252] pruned 63.8213 (3s) best None | 5 min, eta 6 min
+[540/1140] [54, 180, 324] pruned 66.3498 (2s) best None | 5 min, eta 6 min
+[541/1140] [54, 180, 270] pruned 62.2141 (7s) best None | 5 min, eta 6 min
+[542/1140] [54, 180, 342] pruned 66.2645 (2s) best None | 5 min, eta 6 min
+[543/1140] [54, 180, 288] pruned 64.4662 (7s) best None | 5 min, eta 6 min
+[544/1140] [54, 198, 234] pruned 75.4523 (3s) best None | 5 min, eta 6 min
+[545/1140] [54, 198, 216] pruned 77.6334 (3s) best None | 5 min, eta 6 min
+[546/1140] [54, 180, 306] pruned 66.9123 (8s) best None | 5 min, eta 6 min
+[547/1140] [54, 198, 252] pruned 66.8046 (3s) best None | 5 min, eta 6 min
+[548/1140] [54, 198, 306] pruned 65.0043 (3s) best None | 6 min, eta 6 min
+[549/1140] [54, 198, 324] pruned 69.1300 (3s) best None | 6 min, eta 6 min
+[550/1140] [54, 198, 342] pruned 68.3915 (3s) best None | 6 min, eta 6 min
+[551/1140] [54, 198, 270] pruned 64.8896 (7s) best None | 6 min, eta 6 min
+[552/1140] [54, 198, 288] pruned 66.8264 (8s) best None | 6 min, eta 6 min
+[553/1140] [54, 216, 234] infeasible nan (5s) best None | 6 min, eta 6 min
+[554/1140] [54, 216, 252] pruned 78.7697 (3s) best None | 6 min, eta 6 min
+[555/1140] [54, 216, 270] pruned 67.2098 (3s) best None | 6 min, eta 6 min
+[556/1140] [54, 216, 288] pruned 70.6923 (3s) best None | 6 min, eta 6 min
+[557/1140] [54, 216, 306] pruned 76.9273 (3s) best None | 6 min, eta 6 min
+[558/1140] [54, 216, 324] pruned 81.5688 (3s) best None | 6 min, eta 6 min
+[559/1140] [54, 216, 342] pruned 77.6683 (3s) best None | 6 min, eta 6 min
+[560/1140] [54, 234, 270] pruned 70.9970 (3s) best None | 6 min, eta 6 min
+[561/1140] [54, 234, 288] pruned 72.4213 (3s) best None | 6 min, eta 6 min
+[562/1140] [54, 234, 252] infeasible nan (4s) best None | 6 min, eta 6 min
+[563/1140] [54, 234, 306] pruned 78.5570 (3s) best None | 6 min, eta 6 min
+[564/1140] [54, 234, 324] pruned 84.1132 (3s) best None | 6 min, eta 6 min
+[565/1140] [54, 252, 270] pruned 71.1552 (3s) best None | 6 min, eta 6 min
+[566/1140] [54, 234, 342] pruned 79.8871 (3s) best None | 6 min, eta 6 min
+[567/1140] [54, 252, 288] pruned 67.0341 (3s) best None | 6 min, eta 6 min
+[568/1140] [54, 252, 306] pruned 72.0961 (3s) best None | 6 min, eta 6 min
+[569/1140] [54, 252, 324] pruned 78.5448 (3s) best None | 6 min, eta 6 min
+[570/1140] [54, 252, 342] pruned 74.4525 (3s) best None | 6 min, eta 6 min
+[571/1140] [54, 270, 288] pruned 63.6716 (3s) best None | 6 min, eta 6 min
+[572/1140] [54, 270, 306] pruned 64.6134 (2s) best None | 6 min, eta 6 min
+[573/1140] [54, 270, 324] pruned 68.2169 (2s) best None | 6 min, eta 6 min
+[574/1140] [54, 270, 342] pruned 64.7044 (2s) best None | 6 min, eta 6 min
+[575/1140] [54, 288, 306] pruned 75.6138 (3s) best None | 6 min, eta 6 min
+[576/1140] [54, 288, 324] pruned 74.8909 (3s) best None | 6 min, eta 6 min
+[577/1140] [54, 288, 342] pruned 67.8916 (3s) best None | 6 min, eta 6 min
+[578/1140] [54, 306, 324] pruned 84.1299 (3s) best None | 6 min, eta 6 min
+[579/1140] [54, 306, 342] pruned 73.1184 (3s) best None | 6 min, eta 6 min
+[580/1140] [72, 90, 108] infeasible nan (1s) best None | 6 min, eta 6 min
+[581/1140] [54, 324, 342] pruned 81.8579 (3s) best None | 6 min, eta 6 min
+[582/1140] [72, 90, 126] infeasible nan (3s) best None | 6 min, eta 6 min
+[583/1140] [72, 90, 162] pruned 63.1799 (2s) best None | 6 min, eta 6 min
+[584/1140] [72, 90, 144] pruned 71.3863 (2s) best None | 6 min, eta 6 min
+[585/1140] [72, 90, 216] pruned 69.6364 (3s) best None | 6 min, eta 6 min
+[586/1140] [72, 90, 234] infeasible nan (5s) best None | 6 min, eta 6 min
+[587/1140] [72, 90, 252] infeasible nan (2s) best None | 6 min, eta 6 min
+[588/1140] [72, 90, 180] pruned 64.5446 (7s) best None | 6 min, eta 6 min
+[589/1140] [72, 90, 270] infeasible nan (2s) best None | 6 min, eta 6 min
+[590/1140] [72, 90, 198] pruned 67.0350 (8s) best None | 6 min, eta 6 min
+[591/1140] [72, 90, 306] pruned 62.7923 (3s) best None | 6 min, eta 6 min
+[592/1140] [72, 90, 288] infeasible nan (4s) best None | 6 min, eta 6 min
+[593/1140] [72, 90, 324] pruned 68.3852 (2s) best None | 6 min, eta 6 min
+[594/1140] [72, 90, 342] pruned 63.4705 (2s) best None | 6 min, eta 6 min
+[595/1140] [72, 108, 126] infeasible nan (2s) best None | 6 min, eta 6 min
+[596/1140] [72, 108, 144] pruned 69.8026 (3s) best None | 6 min, eta 6 min
+[597/1140] [72, 108, 216] pruned 67.2835 (3s) best None | 6 min, eta 6 min
+[598/1140] [72, 108, 162] pruned 67.6787 (8s) best None | 6 min, eta 6 min
+[599/1140] [72, 108, 180] pruned 64.0850 (9s) best None | 6 min, eta 6 min
+[600/1140] [72, 108, 198] pruned 66.7985 (9s) best None | 6 min, eta 6 min
+[601/1140] [72, 108, 252] infeasible nan (4s) best None | 6 min, eta 6 min
+[602/1140] [72, 108, 270] pruned 62.5448 (3s) best None | 6 min, eta 6 min
+[603/1140] [72, 108, 234] infeasible nan (10s) best None | 6 min, eta 6 min
+[604/1140] [72, 108, 306] pruned 69.3443 (3s) best None | 6 min, eta 6 min
+[605/1140] [72, 108, 324] pruned 68.1199 (3s) best None | 6 min, eta 6 min
+[606/1140] [72, 108, 288] infeasible nan (7s) best None | 6 min, eta 6 min
+[607/1140] [72, 126, 162] pruned 61.3603 (3s) best None | 6 min, eta 6 min
+[608/1140] [72, 108, 342] pruned 62.3926 (3s) best None | 6 min, eta 6 min
+[609/1140] [72, 126, 144] pruned 76.2852 (3s) best None | 6 min, eta 6 min
+[610/1140] [72, 126, 216] pruned 68.8952 (3s) best None | 6 min, eta 6 min
+[611/1140] [72, 126, 234] pruned 72.1449 (3s) best None | 6 min, eta 6 min
+[612/1140] [72, 126, 270] pruned 61.7901 (3s) best None | 7 min, eta 6 min
+[613/1140] [72, 126, 180] pruned 65.5370 (8s) best None | 7 min, eta 6 min
+[614/1140] [72, 126, 198] pruned 68.4781 (8s) best None | 7 min, eta 6 min
+[615/1140] [72, 126, 288] pruned 67.0591 (2s) best None | 7 min, eta 6 min
+[616/1140] [72, 126, 306] pruned 70.9750 (2s) best None | 7 min, eta 6 min
+[617/1140] [72, 126, 324] pruned 70.7708 (3s) best None | 7 min, eta 6 min
+[618/1140] [72, 144, 162] pruned 69.5841 (2s) best None | 7 min, eta 6 min
+[619/1140] [72, 126, 342] pruned 63.0836 (3s) best None | 7 min, eta 6 min
+[620/1140] [72, 144, 180] pruned 62.3269 (3s) best None | 7 min, eta 6 min
+[621/1140] [72, 144, 198] pruned 64.4258 (2s) best None | 7 min, eta 6 min
+[622/1140] [72, 144, 216] pruned 73.1405 (3s) best None | 7 min, eta 6 min
+[623/1140] [72, 126, 252] infeasible nan (13s) best None | 7 min, eta 6 min
+[624/1140] [72, 144, 234] pruned 76.7416 (3s) best None | 7 min, eta 6 min
+[625/1140] [72, 144, 252] pruned 74.7327 (3s) best None | 7 min, eta 6 min
+[626/1140] [72, 144, 270] pruned 65.7090 (3s) best None | 7 min, eta 5 min
+[627/1140] [72, 144, 288] pruned 66.2492 (3s) best None | 7 min, eta 6 min
+[628/1140] [72, 144, 324] pruned 74.2728 (2s) best None | 7 min, eta 5 min
+[629/1140] [72, 144, 306] pruned 71.1115 (3s) best None | 7 min, eta 5 min
+[630/1140] [72, 144, 342] pruned 69.3775 (3s) best None | 7 min, eta 5 min
+[631/1140] [72, 162, 180] pruned 63.2384 (3s) best None | 7 min, eta 5 min
+[632/1140] [72, 162, 198] pruned 63.7866 (3s) best None | 7 min, eta 5 min
+[633/1140] [72, 162, 216] pruned 67.5751 (3s) best None | 7 min, eta 5 min
+[634/1140] [72, 162, 234] pruned 69.9938 (3s) best None | 7 min, eta 5 min
+[635/1140] [72, 162, 252] pruned 68.4848 (3s) best None | 7 min, eta 5 min
+[636/1140] [72, 162, 324] pruned 67.4599 (3s) best None | 7 min, eta 5 min
+[637/1140] [72, 162, 342] pruned 68.7722 (2s) best None | 7 min, eta 5 min
+[638/1140] [72, 162, 270] pruned 65.6485 (8s) best None | 7 min, eta 5 min
+[639/1140] [72, 162, 306] pruned 66.5467 (8s) best None | 7 min, eta 5 min
+[640/1140] [72, 162, 288] pruned 66.2869 (9s) best None | 7 min, eta 5 min
+[641/1140] [72, 180, 198] pruned 62.5710 (3s) best None | 7 min, eta 5 min
+[642/1140] [72, 180, 216] pruned 63.0121 (3s) best None | 7 min, eta 5 min
+[643/1140] [72, 180, 234] pruned 64.5779 (2s) best None | 7 min, eta 5 min
+[644/1140] [72, 180, 252] pruned 63.5685 (3s) best None | 7 min, eta 5 min
+[645/1140] [72, 180, 324] pruned 61.3267 (2s) best None | 7 min, eta 5 min
+[646/1140] [72, 180, 342] pruned 61.8220 (3s) best None | 7 min, eta 5 min
+[647/1140] [72, 180, 270] pruned 61.3131 (7s) best None | 7 min, eta 5 min
+[648/1140] [72, 180, 288] pruned 62.8969 (8s) best None | 7 min, eta 5 min
+[649/1140] [72, 180, 306] pruned 64.0701 (8s) best None | 7 min, eta 5 min
+[650/1140] [72, 198, 216] pruned 68.1499 (3s) best None | 7 min, eta 5 min
+[651/1140] [72, 198, 234] pruned 67.5878 (3s) best None | 7 min, eta 5 min
+[652/1140] [72, 198, 252] pruned 66.2268 (3s) best None | 7 min, eta 5 min
+[653/1140] [72, 198, 306] pruned 61.0128 (2s) best None | 7 min, eta 5 min
+[654/1140] [72, 198, 324] pruned 64.4261 (2s) best None | 7 min, eta 5 min
+[655/1140] [72, 198, 342] pruned 63.1681 (2s) best None | 7 min, eta 5 min
+[656/1140] [72, 198, 270] pruned 63.7738 (7s) best None | 7 min, eta 5 min
+[657/1140] [72, 216, 234] pruned 82.6024 (3s) best None | 7 min, eta 5 min
+[658/1140] [72, 198, 288] pruned 65.9102 (7s) best None | 7 min, eta 5 min
+[659/1140] [72, 216, 252] pruned 76.8447 (3s) best None | 7 min, eta 5 min
+[660/1140] [72, 216, 270] pruned 65.2474 (3s) best None | 7 min, eta 5 min
+[661/1140] [72, 216, 288] pruned 66.1015 (3s) best None | 7 min, eta 5 min
+[662/1140] [72, 216, 306] pruned 70.5964 (3s) best None | 7 min, eta 5 min
+[663/1140] [72, 216, 324] pruned 74.4034 (3s) best None | 7 min, eta 5 min
+[664/1140] [72, 216, 342] pruned 70.0624 (3s) best None | 7 min, eta 5 min
+[665/1140] [72, 234, 252] infeasible nan (3s) best None | 7 min, eta 5 min
+[666/1140] [72, 234, 270] pruned 69.2757 (3s) best None | 7 min, eta 5 min
+[667/1140] [72, 234, 288] pruned 68.5011 (3s) best None | 7 min, eta 5 min
+[668/1140] [72, 234, 306] pruned 74.2711 (3s) best None | 7 min, eta 5 min
+[669/1140] [72, 234, 324] pruned 79.8256 (3s) best None | 7 min, eta 5 min
+[670/1140] [72, 252, 270] infeasible nan (2s) best None | 7 min, eta 5 min
+[671/1140] [72, 234, 342] pruned 74.9857 (3s) best None | 7 min, eta 5 min
+[672/1140] [72, 252, 306] pruned 70.6385 (3s) best None | 7 min, eta 5 min
+[673/1140] [72, 252, 324] pruned 77.2360 (3s) best None | 7 min, eta 5 min
+[674/1140] [72, 252, 342] pruned 73.2696 (3s) best None | 7 min, eta 5 min
+[675/1140] [72, 252, 288] infeasible nan (6s) best None | 7 min, eta 5 min
+[676/1140] [72, 270, 306] pruned 62.9786 (3s) best None | 7 min, eta 5 min
+[677/1140] [72, 270, 324] pruned 67.8853 (3s) best None | 7 min, eta 5 min
+[678/1140] [72, 270, 288] infeasible nan (4s) best None | 7 min, eta 5 min
+[679/1140] [72, 270, 342] pruned 63.6801 (2s) best None | 7 min, eta 5 min
+[680/1140] [72, 288, 306] pruned 70.2785 (3s) best None | 7 min, eta 5 min
+[681/1140] [72, 288, 324] pruned 70.2862 (3s) best None | 7 min, eta 5 min
+[682/1140] [72, 288, 342] pruned 64.8799 (2s) best None | 8 min, eta 5 min
+[683/1140] [72, 306, 324] pruned 78.3038 (3s) best None | 8 min, eta 5 min
+[684/1140] [72, 306, 342] pruned 68.1910 (2s) best None | 8 min, eta 5 min
+[685/1140] [72, 324, 342] pruned 76.6772 (2s) best None | 8 min, eta 5 min
+[686/1140] [90, 108, 126] infeasible nan (2s) best None | 8 min, eta 5 min
+[687/1140] [90, 108, 180] pruned 63.0097 (7s) best None | 8 min, eta 5 min
+[688/1140] [90, 108, 162] pruned 67.4735 (8s) best None | 8 min, eta 5 min
+[689/1140] [90, 108, 198] pruned 66.2274 (8s) best None | 8 min, eta 5 min
+[690/1140] [90, 108, 252] infeasible nan (2s) best None | 8 min, eta 5 min
+[691/1140] [90, 108, 216] infeasible nan (5s) best None | 8 min, eta 5 min
+[692/1140] [90, 108, 270] infeasible nan (2s) best None | 8 min, eta 5 min
+[693/1140] [90, 108, 288] infeasible nan (2s) best None | 8 min, eta 5 min
+[694/1140] [90, 108, 234] infeasible nan (7s) best None | 8 min, eta 5 min
+[695/1140] [90, 108, 144] infeasible nan (17s) best None | 8 min, eta 5 min
+[696/1140] [90, 108, 324] pruned 69.5756 (3s) best None | 8 min, eta 5 min
+[697/1140] [90, 108, 306] infeasible nan (5s) best None | 8 min, eta 5 min
+[698/1140] [90, 108, 342] pruned 64.7523 (3s) best None | 8 min, eta 5 min
+[699/1140] [90, 126, 144] infeasible nan (3s) best None | 8 min, eta 5 min
+[700/1140] [90, 126, 216] pruned 66.5880 (3s) best None | 8 min, eta 5 min
+[701/1140] [90, 126, 180] pruned 63.6586 (7s) best None | 8 min, eta 5 min
+[702/1140] [90, 126, 162] pruned 68.3684 (7s) best None | 8 min, eta 5 min
+[703/1140] [90, 126, 234] pruned 63.2913 (3s) best None | 8 min, eta 5 min
+[704/1140] [90, 126, 198] pruned 66.1697 (8s) best None | 8 min, eta 5 min
+[705/1140] [90, 126, 288] pruned 68.1059 (3s) best None | 8 min, eta 5 min
+[706/1140] [90, 126, 270] infeasible nan (3s) best None | 8 min, eta 5 min
+[707/1140] [90, 126, 306] pruned 69.8497 (2s) best None | 8 min, eta 5 min
+[708/1140] [90, 126, 324] pruned 68.6445 (3s) best None | 8 min, eta 5 min
+[709/1140] [90, 126, 342] pruned 63.4454 (3s) best None | 8 min, eta 5 min
+[710/1140] [90, 144, 162] pruned 65.4334 (2s) best None | 8 min, eta 5 min
+[711/1140] [90, 126, 252] infeasible nan (7s) best None | 8 min, eta 5 min
+[712/1140] [90, 144, 216] pruned 67.7243 (3s) best None | 8 min, eta 5 min
+[713/1140] [90, 144, 234] pruned 66.8487 (3s) best None | 8 min, eta 5 min
+[714/1140] [90, 144, 252] pruned 65.9620 (3s) best None | 8 min, eta 5 min
+[715/1140] [90, 144, 270] pruned 63.3022 (3s) best None | 8 min, eta 5 min
+[716/1140] [90, 144, 180] pruned 64.7410 (7s) best None | 8 min, eta 5 min
+[717/1140] [90, 144, 198] pruned 66.2461 (7s) best None | 8 min, eta 5 min
+[718/1140] [90, 144, 288] pruned 64.6434 (3s) best None | 8 min, eta 5 min
+[719/1140] [90, 144, 306] pruned 67.1690 (3s) best None | 8 min, eta 5 min
+[720/1140] [90, 144, 324] pruned 70.3679 (2s) best None | 8 min, eta 5 min
+[721/1140] [90, 144, 342] pruned 65.4984 (3s) best None | 8 min, eta 5 min
+[722/1140] [90, 162, 216] pruned 62.3601 (2s) best None | 8 min, eta 5 min
+[723/1140] [90, 162, 180] pruned 66.4759 (7s) best None | 8 min, eta 5 min
+[724/1140] [90, 162, 198] pruned 65.5986 (8s) best None | 8 min, eta 5 min
+[725/1140] [90, 162, 234] pruned 67.1969 (9s) best None | 8 min, eta 5 min
+[726/1140] [90, 162, 252] pruned 66.5473 (8s) best None | 8 min, eta 5 min
+[727/1140] [90, 162, 324] pruned 64.0797 (2s) best None | 8 min, eta 5 min
+[728/1140] [90, 162, 270] pruned 64.7614 (8s) best None | 8 min, eta 5 min
+[729/1140] [90, 162, 342] pruned 66.0088 (2s) best None | 8 min, eta 5 min
+[730/1140] [90, 162, 288] pruned 65.5005 (8s) best None | 8 min, eta 5 min
+[731/1140] [90, 162, 306] pruned 65.8311 (8s) best None | 8 min, eta 5 min
+[732/1140] [90, 180, 198] pruned 65.3432 (7s) best None | 9 min, eta 5 min
+[733/1140] [90, 180, 216] pruned 64.7253 (8s) best None | 9 min, eta 5 min
+[734/1140] [90, 180, 234] pruned 62.4713 (7s) best None | 9 min, eta 5 min
+[735/1140] [90, 180, 252] pruned 62.1846 (7s) best None | 9 min, eta 5 min
+[736/1140] [90, 180, 288] pruned 61.2016 (8s) best None | 9 min, eta 5 min
+[737/1140] [90, 180, 306] pruned 62.3243 (7s) best None | 9 min, eta 5 min
+[738/1140] [90, 180, 324] pruned 64.4905 (8s) best None | 9 min, eta 5 min
+[739/1140] [90, 198, 216] pruned 61.9894 (2s) best None | 9 min, eta 5 min
+[740/1140] [90, 180, 270] pruned 60.7891 (12s) best None | 9 min, eta 5 min
+[741/1140] [90, 180, 342] pruned 65.7298 (8s) best None | 9 min, eta 5 min
+[742/1140] [90, 198, 234] pruned 65.9888 (7s) best None | 9 min, eta 5 min
+[743/1140] [90, 198, 252] pruned 65.0816 (7s) best None | 9 min, eta 5 min
+[744/1140] [90, 198, 270] pruned 63.5469 (8s) best None | 9 min, eta 5 min
+[745/1140] [90, 198, 324] pruned 60.9713 (3s) best None | 9 min, eta 5 min
+[746/1140] [90, 198, 288] pruned 64.4429 (8s) best None | 9 min, eta 5 min
+[747/1140] [90, 216, 234] pruned 70.5611 (3s) best None | 9 min, eta 5 min
+[748/1140] [90, 198, 306] pruned 65.1411 (8s) best None | 9 min, eta 5 min
+[749/1140] [90, 216, 270] pruned 63.8333 (3s) best None | 9 min, eta 5 min
+[750/1140] [90, 216, 252] pruned 66.5429 (3s) best None | 9 min, eta 5 min
+[751/1140] [90, 216, 288] pruned 65.0897 (3s) best None | 9 min, eta 5 min
+[752/1140] [90, 198, 342] pruned 66.2885 (8s) best None | 9 min, eta 5 min
+[753/1140] [90, 216, 306] pruned 67.3492 (3s) best None | 9 min, eta 5 min
+[754/1140] [90, 216, 324] pruned 69.8351 (3s) best None | 9 min, eta 5 min
+[755/1140] [90, 216, 342] pruned 65.9422 (3s) best None | 9 min, eta 5 min
+[756/1140] [90, 234, 288] pruned 62.2764 (3s) best None | 9 min, eta 5 min
+[757/1140] [90, 234, 270] pruned 63.5221 (3s) best None | 9 min, eta 5 min
+[758/1140] [90, 234, 252] infeasible nan (4s) best None | 9 min, eta 5 min
+[759/1140] [90, 234, 306] pruned 66.1223 (3s) best None | 9 min, eta 5 min
+[760/1140] [90, 252, 270] infeasible nan (2s) best None | 9 min, eta 5 min
+[761/1140] [90, 234, 324] pruned 69.8367 (3s) best None | 9 min, eta 5 min
+[762/1140] [90, 234, 342] pruned 65.3900 (3s) best None | 9 min, eta 5 min
+[763/1140] [90, 252, 306] pruned 63.3542 (3s) best None | 9 min, eta 5 min
+[764/1140] [90, 252, 342] pruned 64.1181 (3s) best None | 9 min, eta 5 min
+[765/1140] [90, 252, 324] pruned 68.3980 (3s) best None | 9 min, eta 4 min
+[766/1140] [90, 270, 288] infeasible nan (2s) best None | 9 min, eta 4 min
+[767/1140] [90, 270, 324] pruned 65.5303 (3s) best None | 9 min, eta 4 min
+[768/1140] [90, 270, 306] pruned 62.9618 (3s) best None | 9 min, eta 4 min
+[769/1140] [90, 252, 288] infeasible nan (7s) best None | 9 min, eta 4 min
+[770/1140] [90, 270, 342] pruned 62.9572 (3s) best None | 9 min, eta 4 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[771/1140] [90, 306, 342] pruned 65.4363 (2s) best None | 9 min, eta 4 min
+[772/1140] [90, 324, 342] pruned 71.5597 (2s) best None | 9 min, eta 4 min
+[773/1140] [108, 126, 144] infeasible nan (2s) best None | 9 min, eta 4 min
+[774/1140] [108, 126, 162] pruned 72.5918 (2s) best None | 9 min, eta 4 min
+[775/1140] [108, 126, 180] pruned 67.1560 (2s) best None | 9 min, eta 4 min
+[776/1140] [108, 126, 198] pruned 69.3342 (2s) best None | 9 min, eta 4 min
+[777/1140] [108, 126, 270] infeasible nan (2s) best None | 9 min, eta 4 min
+Process SpawnPoolWorker-7:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+    ~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-6:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+    ~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-5:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+    ~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-8:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+    ~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/queues.py", line 397, in put
+    self._writer.send_bytes(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 210, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 448, in _send_bytes
+    self._send(header + buf)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/connection.py", line 404, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/mp-jzmohmig', '/mp-8jtw1ahj', '/mp-g4er3ssl', '/mp-auptsd42', '/mp-aitaryzy', '/mp-cu11gn10'}
+  warnings.warn(

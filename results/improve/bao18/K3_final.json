@@ -1,0 +1,16 @@
+{
+ "angles": [
+  90,
+  180,
+  270
+ ],
+ "K": 3,
+ "rounds": 4,
+ "status": "Optimal",
+ "outcome": "solved",
+ "objective": 60.78907003378154,
+ "max_body_dose": 74.80000000005442,
+ "verified": true,
+ "max_rel_violation": 2.596145520783466e-12,
+ "time": 10.195819854736328
+}
