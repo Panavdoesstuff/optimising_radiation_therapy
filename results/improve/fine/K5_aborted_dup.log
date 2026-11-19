@@ -1,0 +1,36 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+   [90, 126, 180, 198, 234]: 44.20323776987374 (39s)
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+   [82, 126, 180, 198, 234]: 45.721981293403864 (35s)
+   [76, 126, 180, 198, 234]: 47.97713784229024 (42s)
+   [80, 126, 180, 198, 234]: 46.416014940377885 (45s)
+   [84, 126, 180, 198, 234]: 44.95805142224596 (41s)
+   [88, 126, 180, 198, 234]: 44.24038273900917 (35s)
+   [86, 126, 180, 198, 234]: 44.48330039239418 (44s)
+   [92, 126, 180, 198, 234]: 44.504239968579114 (48s)
+   [94, 126, 180, 198, 234]: 44.786144679043126 (46s)
+   [96, 126, 180, 198, 234]: 45.008544843728096 (45s)
+   [98, 126, 180, 198, 234]: 45.2843512109701 (43s)
+   [104, 126, 180, 198, 234]: 47.74207906772597 (49s)
+   [100, 126, 180, 198, 234]: 45.805369030370095 (59s)
+   [90, 112, 180, 198, 234]: 44.8631450597023 (36s)
+   [90, 118, 180, 198, 234]: 44.202428438670026 (44s)
+   [90, 116, 180, 198, 234]: 44.3618682853601 (55s)
+   [90, 120, 180, 198, 234]: 44.21061289830208 (42s)
+   [90, 122, 180, 198, 234]: 44.235429322803405 (37s)
+   [90, 124, 180, 198, 234]: 44.207804507736256 (38s)
+   [90, 128, 180, 198, 234]: 44.23462025161618 (33s)
+   [90, 130, 180, 198, 234]: 44.24183534244092 (35s)
+   [90, 132, 180, 198, 234]: 44.50961046400677 (37s)
+   [90, 134, 180, 198, 234]: 44.54109785583929 (39s)
+   [90, 136, 180, 198, 234]: 44.889872042505246 (37s)
+   [90, 140, 180, 198, 234]: 45.73879542324169 (35s)
+   [90, 126, 166, 198, 234]: 45.60795401997301 (45s)
+   [90, 126, 172, 198, 234]: 44.22810158435017 (35s)
+   [90, 126, 170, 198, 234]: 44.66940532065477 (42s)
+/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/mp-rviolyed', '/mp-j6rb3ip4', '/mp-1aid454_', '/mp-7qlnl5m6', '/mp-7w080qne', '/mp-gw3860gl'}
+  warnings.warn(
