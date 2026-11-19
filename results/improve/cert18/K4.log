@@ -1,0 +1,228 @@
+K=4 cutoff=49.262601 total=4845 todo=4845
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 25/4845] [0, 18, 54, 198] pruned best=None 0.8 min
+[main 50/4845] [0, 18, 90, 126] pruned best=None 1.3 min
+[main 75/4845] [0, 18, 108, 342] pruned best=None 1.8 min
+[main 100/4845] [0, 18, 162, 198] pruned best=None 2.4 min
+[main 125/4845] [0, 18, 198, 342] pruned best=None 3.0 min
+[main 150/4845] [0, 18, 288, 342] pruned best=None 3.5 min
+[main 175/4845] [0, 36, 72, 180] pruned best=None 4.1 min
+[main 200/4845] [0, 36, 108, 144] pruned best=None 4.7 min
+[main 225/4845] [0, 36, 144, 180] pruned best=None 5.3 min
+[main 250/4845] [0, 36, 180, 288] pruned best=None 5.8 min
+[main 275/4845] [0, 36, 252, 270] pruned best=None 6.4 min
+[main 300/4845] [0, 54, 72, 270] pruned best=None 7.0 min
+[main 325/4845] [0, 54, 108, 234] pruned best=None 7.8 min
+[main 350/4845] [0, 54, 144, 288] pruned best=None 8.5 min
+[main 375/4845] [0, 54, 198, 234] pruned best=None 9.1 min
+[main 400/4845] [0, 54, 270, 324] pruned best=None 9.8 min
+[main 425/4845] [0, 72, 90, 288] pruned best=None 10.6 min
+[main 450/4845] [0, 72, 126, 270] pruned best=None 11.3 min
+[main 475/4845] [0, 72, 180, 288] pruned best=None 11.9 min
+[main 500/4845] [0, 72, 252, 270] pruned best=None 12.4 min
+[main 525/4845] [0, 90, 108, 234] pruned best=None 13.3 min
+[main 550/4845] [0, 90, 162, 180] pruned best=None 14.5 min
+[main 575/4845] [0, 90, 198, 324] pruned best=None 15.3 min
+[main 600/4845] [0, 90, 288, 306] pruned best=None 16.1 min
+[main 625/4845] [0, 108, 144, 306] pruned best=None 16.9 min
+[main 650/4845] [0, 108, 198, 306] pruned best=None 17.9 min
+[main 675/4845] [0, 108, 270, 324] pruned best=None 18.9 min
+[main 700/4845] [0, 126, 162, 270] pruned best=None 19.5 min
+[main 725/4845] [0, 126, 216, 324] pruned best=None 20.4 min
+[main 750/4845] [0, 144, 162, 198] pruned best=None 21.4 min
+[main 775/4845] [0, 144, 198, 306] pruned best=None 22.0 min
+[main 800/4845] [0, 144, 288, 324] pruned best=None 22.9 min
+[main 825/4845] [0, 162, 216, 288] pruned best=None 23.6 min
+[main 850/4845] [0, 180, 198, 216] pruned best=None 24.3 min
+[main 875/4845] [0, 180, 252, 342] pruned best=None 24.9 min
+[main 900/4845] [0, 198, 234, 270] pruned best=None 25.7 min
+[main 925/4845] [0, 216, 270, 288] pruned best=None 26.4 min
+[main 950/4845] [0, 234, 324, 342] pruned best=None 27.4 min
+[main 975/4845] [18, 36, 54, 144] pruned best=None 28.2 min
+[main 1000/4845] [18, 36, 72, 342] pruned best=None 28.8 min
+[main 1025/4845] [18, 36, 108, 306] pruned best=None 29.5 min
+[main 1050/4845] [18, 36, 144, 342] pruned best=None 30.3 min
+[main 1075/4845] [18, 36, 198, 306] pruned best=None 31.1 min
+[main 1100/4845] [18, 36, 288, 306] pruned best=None 31.8 min
+[main 1125/4845] [18, 54, 90, 180] pruned best=None 32.5 min
+[main 1150/4845] [18, 54, 126, 198] pruned best=None 33.2 min
+[main 1175/4845] [18, 54, 162, 252] pruned best=None 34.0 min
+[main 1200/4845] [18, 54, 216, 288] pruned best=None 34.6 min
+[main 1225/4845] [18, 54, 324, 342] pruned best=None 35.3 min
+[main 1250/4845] [18, 72, 108, 324] pruned best=None 36.0 min
+[main 1275/4845] [18, 72, 144, 342] pruned best=None 36.8 min
+[main 1300/4845] [18, 72, 198, 306] pruned best=None 37.6 min
+[main 1325/4845] [18, 72, 288, 324] pruned best=None 38.4 min
+[main 1350/4845] [18, 90, 126, 270] pruned best=None 39.5 min
+[main 1375/4845] [18, 90, 162, 342] pruned best=None 40.2 min
+[main 1400/4845] [18, 90, 216, 324] pruned best=None 41.1 min
+[main 1425/4845] [18, 108, 126, 198] pruned best=None 42.0 min
+[main 1450/4845] [18, 108, 162, 288] pruned best=None 42.8 min
+[main 1475/4845] [18, 108, 216, 288] pruned best=None 43.8 min
+[main 1500/4845] [18, 126, 144, 162] pruned best=None 44.6 min
+[main 1525/4845] [18, 126, 180, 306] pruned best=None 45.5 min
+[main 1550/4845] [18, 126, 252, 288] pruned best=None 46.3 min
+[main 1575/4845] [18, 144, 162, 342] pruned best=None 47.1 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 1600/4845] [18, 144, 216, 342] pruned best=None 47.9 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 1625/4845] [18, 162, 180, 270] pruned best=None 49.1 min
+[main 1650/4845] [18, 162, 234, 270] pruned best=None 50.1 min
+[main 1675/4845] [18, 180, 216, 270] pruned best=None 51.4 min
+[main 1700/4845] [18, 180, 306, 342] pruned best=None 52.6 min
+[main 1725/4845] [18, 198, 288, 324] pruned best=None 53.2 min
+[main 1750/4845] [18, 216, 324, 342] pruned best=None 54.0 min
+[main 1775/4845] [18, 252, 324, 342] pruned best=None 55.3 min
+[main 1800/4845] [36, 54, 72, 324] pruned best=None 56.3 min
+[main 1825/4845] [36, 54, 108, 306] pruned best=None 57.4 min
+[main 1850/4845] [36, 54, 144, 342] pruned best=None 58.6 min
+[main 1875/4845] [36, 54, 198, 306] pruned best=None 59.6 min
+[main 1900/4845] [36, 54, 288, 306] pruned best=None 60.9 min
+[main 1925/4845] [36, 72, 108, 234] pruned best=None 61.8 min
+[main 1950/4845] [36, 72, 144, 252] pruned best=None 62.7 min
+[main 1975/4845] [36, 72, 180, 306] pruned best=None 63.8 min
+[main 2000/4845] [36, 72, 252, 342] pruned best=None 64.6 min
+[main 2025/4845] [36, 90, 126, 216] pruned best=None 65.6 min
+[main 2050/4845] [36, 90, 162, 234] pruned best=None 66.6 min
+[main 2075/4845] [36, 90, 198, 288] pruned best=None 67.8 min
+[main 2100/4845] [36, 90, 306, 342] pruned best=None 68.6 min
+[main 2125/4845] [36, 108, 162, 180] pruned best=None 69.5 min
+[main 2150/4845] [36, 108, 198, 342] pruned best=None 70.7 min
+[main 2175/4845] [36, 108, 288, 324] pruned best=None 71.6 min
+[main 2200/4845] [36, 126, 180, 198] pruned best=None 72.5 min
+[main 2225/4845] [36, 126, 234, 252] pruned best=None 73.4 min
+[main 2250/4845] [36, 144, 162, 252] pruned best=None 74.3 min
+[main 2275/4845] [36, 144, 216, 270] pruned best=None 75.4 min
+[main 2300/4845] [36, 162, 180, 198] pruned best=None 76.5 min
+[main 2325/4845] [36, 162, 234, 252] pruned best=None 77.5 min
+[main 2350/4845] [36, 180, 198, 288] pruned best=None 78.6 min
+[main 2375/4845] [36, 180, 270, 324] pruned best=None 80.1 min
+[main 2400/4845] [36, 198, 270, 288] pruned best=None 81.0 min
+[main 2425/4845] [36, 216, 288, 306] pruned best=None 81.8 min
+[main 2450/4845] [36, 252, 288, 306] pruned best=None 82.9 min
+[main 2475/4845] [54, 72, 90, 270] pruned best=None 83.9 min
+[main 2500/4845] [54, 72, 126, 288] pruned best=None 85.0 min
+[main 2525/4845] [54, 72, 162, 342] pruned best=None 86.0 min
+[main 2550/4845] [54, 72, 234, 270] pruned best=None 87.2 min
+[main 2575/4845] [54, 90, 108, 162] pruned best=None 88.5 min
+[main 2600/4845] [54, 90, 144, 198] pruned best=None 89.9 min
+[main 2625/4845] [54, 90, 198, 216] pruned best=None 91.6 min
+[main 2650/4845] [54, 90, 252, 324] pruned best=None 93.0 min
+[main 2675/4845] [54, 108, 144, 198] pruned best=None 94.1 min
+[main 2700/4845] [54, 108, 180, 288] pruned best=None 95.4 min
+[main 2725/4845] [54, 108, 252, 270] pruned best=None 96.7 min
+[main 2750/4845] [54, 126, 144, 342] pruned best=None 97.7 min
+[main 2772/4845] [54, 126, 180, 270] solved best=49.262593099161236 99.1 min
+[main 2775/4845] [54, 126, 198, 252] pruned best=49.262593099161236 99.3 min
+[main 2800/4845] [54, 126, 288, 324] pruned best=49.262593099161236 100.3 min
+[main 2825/4845] [54, 144, 180, 288] pruned best=49.262593099161236 101.5 min
+[main 2850/4845] [54, 144, 252, 342] pruned best=49.262593099161236 102.7 min
+[main 2875/4845] [54, 162, 198, 324] pruned best=49.262593099161236 104.2 min
+[main 2900/4845] [54, 162, 270, 288] pruned best=49.262593099161236 105.5 min
+[main 2925/4845] [54, 180, 234, 324] pruned best=49.262593099161236 106.6 min
+[main 2950/4845] [54, 198, 234, 270] pruned best=49.262593099161236 108.2 min
+[main 2975/4845] [54, 216, 252, 270] pruned best=49.262593099161236 109.6 min
+[main 3000/4845] [54, 234, 288, 306] pruned best=49.262593099161236 110.7 min
+[main 3025/4845] [72, 90, 108, 126] pruned best=49.262593099161236 111.9 min
+[main 3050/4845] [72, 90, 144, 162] pruned best=49.262593099161236 113.6 min
+[main 3075/4845] [72, 90, 180, 216] pruned best=49.262593099161236 115.8 min
+[main 3100/4845] [72, 90, 234, 324] pruned best=49.262593099161236 117.7 min
+[main 3125/4845] [72, 108, 126, 288] pruned best=49.262593099161236 118.9 min
+[main 3150/4845] [72, 108, 180, 216] pruned best=49.262593099161236 120.7 min
+[main 3175/4845] [72, 108, 234, 270] pruned best=49.262593099161236 122.2 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 3200/4845] [72, 126, 144, 252] pruned best=49.262593099161236 123.0 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 3225/4845] [72, 126, 180, 342] pruned best=49.262593099161236 124.0 min
+[main 3250/4845] [72, 126, 252, 342] pruned best=49.262593099161236 124.8 min
+[main 3275/4845] [72, 144, 180, 306] pruned best=49.262593099161236 125.4 min
+[main 3300/4845] [72, 144, 234, 342] pruned best=49.262593099161236 126.2 min
+[main 3325/4845] [72, 162, 180, 306] pruned best=49.262593099161236 127.0 min
+[main 3350/4845] [72, 162, 252, 342] pruned best=49.262593099161236 127.6 min
+[main 3375/4845] [72, 180, 216, 288] pruned best=49.262593099161236 128.5 min
+[main 3400/4845] [72, 198, 216, 306] pruned best=49.262593099161236 129.5 min
+[main 3425/4845] [72, 216, 234, 252] pruned best=49.262593099161236 130.2 min
+[main 3450/4845] [72, 234, 252, 342] pruned best=49.262593099161236 130.8 min
+[main 3475/4845] [72, 270, 306, 342] pruned best=49.262593099161236 131.3 min
+[main 3500/4845] [90, 108, 144, 180] pruned best=49.262593099161236 132.0 min
+[main 3525/4845] [90, 108, 198, 306] pruned best=49.262593099161236 133.1 min
+[main 3550/4845] [90, 108, 270, 324] pruned best=49.262593099161236 133.7 min
+[main 3575/4845] [90, 126, 162, 306] pruned best=49.262593099161236 134.3 min
+[main 3600/4845] [90, 126, 216, 306] pruned best=49.262593099161236 135.1 min
+[main 3625/4845] [90, 144, 162, 180] pruned best=49.262593099161236 135.6 min
+[main 3650/4845] [90, 144, 198, 270] pruned best=49.262593099161236 136.4 min
+[main 3675/4845] [90, 144, 288, 306] pruned best=49.262593099161236 136.8 min
+[main 3700/4845] [90, 162, 216, 324] pruned best=49.262593099161236 137.6 min
+[main 3725/4845] [90, 180, 198, 216] pruned best=49.262593099161236 138.3 min
+[main 3750/4845] [90, 180, 252, 342] pruned best=49.262593099161236 139.6 min
+[main 3775/4845] [90, 198, 252, 288] pruned best=49.262593099161236 140.5 min
+[main 3800/4845] [90, 216, 270, 288] pruned best=49.262593099161236 141.2 min
+[main 3825/4845] [90, 252, 270, 288] pruned best=49.262593099161236 141.8 min
+[main 3850/4845] [108, 126, 144, 252] pruned best=49.262593099161236 142.4 min
+[main 3875/4845] [108, 126, 198, 216] pruned best=49.262593099161236 143.2 min
+[main 3900/4845] [108, 126, 252, 342] pruned best=49.262593099161236 143.8 min
+[main 3925/4845] [108, 144, 180, 234] pruned best=49.262593099161236 144.7 min
+[main 3950/4845] [108, 144, 234, 342] pruned best=49.262593099161236 145.4 min
+[main 3975/4845] [108, 162, 198, 216] pruned best=49.262593099161236 146.3 min
+[main 4000/4845] [108, 162, 270, 288] pruned best=49.262593099161236 147.2 min
+[main 4025/4845] [108, 180, 216, 252] pruned best=49.262593099161236 148.1 min
+[main 4050/4845] [108, 198, 216, 324] pruned best=49.262593099161236 149.3 min
+[main 4075/4845] [108, 216, 234, 252] pruned best=49.262593099161236 150.1 min
+[main 4100/4845] [108, 234, 252, 342] pruned best=49.262593099161236 150.7 min
+[main 4125/4845] [108, 270, 306, 342] pruned best=49.262593099161236 151.2 min
+[main 4150/4845] [126, 144, 198, 234] pruned best=49.262593099161236 151.8 min
+[main 4175/4845] [126, 144, 252, 342] pruned best=49.262593099161236 152.3 min
+[main 4200/4845] [126, 162, 198, 324] pruned best=49.262593099161236 153.0 min
+[main 4225/4845] [126, 162, 288, 306] pruned best=49.262593099161236 153.7 min
+[main 4250/4845] [126, 180, 234, 288] pruned best=49.262593099161236 154.5 min
+[main 4275/4845] [126, 198, 234, 288] pruned best=49.262593099161236 155.2 min
+[main 4300/4845] [126, 216, 234, 342] pruned best=49.262593099161236 155.9 min
+[main 4325/4845] [126, 234, 288, 324] pruned best=49.262593099161236 156.5 min
+[main 4350/4845] [126, 288, 324, 342] pruned best=49.262593099161236 157.1 min
+[main 4375/4845] [144, 162, 234, 252] pruned best=49.262593099161236 157.8 min
+[main 4400/4845] [144, 180, 198, 306] pruned best=49.262593099161236 158.4 min
+[main 4425/4845] [144, 180, 288, 306] pruned best=49.262593099161236 159.2 min
+[main 4450/4845] [144, 198, 270, 288] pruned best=49.262593099161236 159.9 min
+[main 4475/4845] [144, 216, 288, 306] pruned best=49.262593099161236 160.5 min
+[main 4500/4845] [144, 252, 288, 324] pruned best=49.262593099161236 161.2 min
+[main 4525/4845] [162, 180, 216, 252] pruned best=49.262593099161236 162.0 min
+[main 4550/4845] [162, 180, 306, 342] pruned best=49.262593099161236 163.0 min
+[main 4575/4845] [162, 198, 270, 306] pruned best=49.262593099161236 163.8 min
+[main 4600/4845] [162, 216, 324, 342] pruned best=49.262593099161236 164.4 min
+[main 4625/4845] [162, 252, 324, 342] pruned best=49.262593099161236 165.1 min
+[main 4650/4845] [180, 198, 252, 270] pruned best=49.262593099161236 165.9 min
+[main 4675/4845] [180, 216, 270, 342] pruned best=49.262593099161236 166.7 min
+[main 4700/4845] [180, 252, 270, 288] pruned best=49.262593099161236 167.7 min
+[main 4725/4845] [198, 216, 234, 324] pruned best=49.262593099161236 168.5 min
+[main 4750/4845] [198, 234, 288, 324] pruned best=49.262593099161236 169.2 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 4775/4845] [216, 234, 252, 270] pruned best=49.262593099161236 169.9 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 4800/4845] [216, 252, 324, 342] pruned best=49.262593099161236 170.4 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 4825/4845] [234, 270, 306, 342] pruned best=49.262593099161236 171.0 min
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+COUNTS {'pruned': 4844, 'solved': 1} cpu_s 41016.95538568497 wall_min 171.45348720153171

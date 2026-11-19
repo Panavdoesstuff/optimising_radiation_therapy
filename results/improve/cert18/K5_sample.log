@@ -1,0 +1,23 @@
+K=5 cutoff=44.203201 total=300 todo=300
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[main 25/300] [18, 54, 72, 234, 288] pruned best=None 0.7 min
+[main 50/300] [0, 108, 126, 162, 270] pruned best=None 1.2 min
+[main 75/300] [36, 234, 270, 306, 324] pruned best=None 1.8 min
+[main 100/300] [54, 180, 198, 252, 306] pruned best=None 2.5 min
+[main 125/300] [162, 180, 198, 252, 288] pruned best=None 3.3 min
+[main 150/300] [0, 54, 90, 162, 342] pruned best=None 4.3 min
+[main 175/300] [0, 90, 126, 144, 324] pruned best=None 5.4 min
+[main 200/300] [0, 36, 108, 180, 270] pruned best=None 6.5 min
+[main 225/300] [72, 180, 216, 288, 342] pruned best=None 7.8 min
+[main 250/300] [72, 90, 108, 216, 342] pruned best=None 9.2 min
+[main 275/300] [72, 180, 198, 216, 306] pruned best=None 10.5 min
+[main 300/300] [0, 54, 198, 216, 306] pruned best=None 11.6 min
+COUNTS {'pruned': 300} cpu_s 2764.545580148697 wall_min 11.600096015135447
+sample est: cpu/subset 9.22s
