@@ -1,0 +1,16 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[   239s] easy LP cost 41.63216786035325 V50 n 226 0.13755325623858794
+[   239s] saved plan cost 42.61171272049236 V50 n 209
+[   524s]  a=0.1270 K=208 it0: cost 42.1067 viol 6 hot 214
+[   688s]  a=0.1270 K=208 it1: cost 42.2301 viol 4 hot 212
+[  1003s]  a=0.1270 K=208 it2: cost 42.1519 viol 5 hot 213
+[  1111s]  a=0.1270 K=208 it3: cost 42.4498 viol 5 hot 212
+[  1204s]  a=0.1270 K=208 it4: cost 42.1873 viol 4 hot 212
+[  1266s]  a=0.1270 K=208 it5: cost 42.1667 viol 4 hot 212
+[  1378s]  a=0.1270 K=208 it6: cost 42.2729 viol 4 hot 212
+[  1514s]  a=0.1270 K=208 it7: cost 42.5375 viol 5 hot 213
+[  1586s]  a=0.1270 K=208 it8: cost 42.4346 viol 3 hot 211
+[  1679s]  a=0.1270 K=208 it9: cost 42.4097 viol 2 hot 210
+[  1679s] FAIL {'alpha': 0.127, 'result': 'no plan found (heuristic failure, not a proof)', 'step': 0.0005, 'time_s': 1440.1464228630066}
+[  1679s] finished

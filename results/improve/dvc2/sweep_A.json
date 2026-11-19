@@ -1,0 +1,66 @@
+[
+  {
+    "alpha": 0.14,
+    "objective": 47.20642658706064,
+    "price_pct": 0.0030342251125858866,
+    "n_over": 230,
+    "V50": 0.13998782714546562,
+    "allowed": 230,
+    "verified_ok": true,
+    "failed_checks": [],
+    "method": "elastic swap + polish",
+    "time_s": 146.8588309288025,
+    "file": "plan_A_a140.npz"
+  },
+  {
+    "alpha": 0.135,
+    "objective": 47.58991527046926,
+    "price_pct": 0.8154242894426789,
+    "n_over": 221,
+    "V50": 0.13451004260499086,
+    "allowed": 221,
+    "verified_ok": true,
+    "failed_checks": [],
+    "method": "elastic swap + polish",
+    "time_s": 248.02102303504944,
+    "file": "plan_A_a135.npz"
+  },
+  {
+    "alpha": 0.13,
+    "objective": 47.99075529568885,
+    "price_pct": 1.66457178182704,
+    "n_over": 213,
+    "V50": 0.12964090079123555,
+    "allowed": 213,
+    "verified_ok": true,
+    "failed_checks": [],
+    "method": "elastic swap + polish",
+    "time_s": 265.75074195861816,
+    "file": "plan_A_a130.npz"
+  },
+  {
+    "alpha": 0.125,
+    "result": "no plan found (heuristic failure, not a proof)",
+    "step": 0.005,
+    "time_s": 2117.460654735565
+  },
+  {
+    "alpha": 0.1275,
+    "objective": 48.86440978250977,
+    "price_pct": 3.5153388460390955,
+    "n_over": 209,
+    "V50": 0.12720632988435787,
+    "allowed": 209,
+    "verified_ok": true,
+    "failed_checks": [],
+    "method": "elastic swap + polish",
+    "time_s": 626.2813639640808,
+    "file": "plan_A_a128.npz"
+  },
+  {
+    "alpha": 0.125,
+    "result": "no plan found (heuristic failure, not a proof)",
+    "step": 0.0025,
+    "time_s": 2791.5845317840576
+  }
+]

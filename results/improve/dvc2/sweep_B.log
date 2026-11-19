@@ -1,0 +1,37 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[    91s] easy LP cost 41.63216786035325 V50 n 226 0.13755325623858794
+[    91s] saved plan cost 41.632167860372434 V50 n 226
+[   199s]  a=0.1350 K=221 it0: cost 41.6438 viol 0 hot 221
+[   200s]    polish 0: cost 41.6438 hot 221
+[   200s] DONE {'alpha': 0.135, 'objective': 41.64375174569397, 'price_pct': 0.027824362592832053, 'n_over': 221, 'V50': 0.13451004260499086, 'allowed': 221, 'verified_ok': True, 'failed_checks': [], 'method': 'elastic swap + polish', 'time_s': 109.27057218551636, 'file': 'plan_B_a135.npz'}
+[   478s]  a=0.1300 K=213 it0: cost 42.0495 viol 0 hot 213
+[   478s]    polish 0: cost 42.0495 hot 213
+[   478s] DONE {'alpha': 0.13, 'objective': 42.04951422691312, 'price_pct': 1.0024612889719675, 'n_over': 213, 'V50': 0.12964090079123555, 'allowed': 213, 'verified_ok': True, 'failed_checks': [], 'method': 'elastic swap + polish', 'time_s': 278.5251109600067, 'file': 'plan_B_a130.npz'}
+[   609s]  a=0.1250 K=205 it0: cost 43.4512 viol 7 hot 210
+[   713s]  a=0.1250 K=205 it1: cost 43.3219 viol 5 hot 210
+[   849s]  a=0.1250 K=205 it2: cost 43.5248 viol 5 hot 209
+[   975s]  a=0.1250 K=205 it3: cost 43.4263 viol 6 hot 210
+[  1063s]  a=0.1250 K=205 it4: cost 43.4311 viol 5 hot 209
+[  1196s]  a=0.1250 K=205 it5: cost 43.1734 viol 5 hot 210
+[  1269s]  a=0.1250 K=205 it6: cost 43.6228 viol 6 hot 209
+[  1366s]  a=0.1250 K=205 it7: cost 43.3219 viol 5 hot 210
+[  1674s]  a=0.1250 K=205 it8: cost 43.5248 viol 5 hot 209
+[  1944s]  a=0.1250 K=205 it9: cost 43.4263 viol 6 hot 210
+[  1944s] FAIL {'alpha': 0.125, 'result': 'no plan found (heuristic failure, not a proof)', 'step': 0.005, 'time_s': 1465.7682769298553}
+[  2135s]  a=0.1275 K=209 it0: cost 43.0079 viol 2 hot 211
+[  2354s]  a=0.1275 K=209 it1: cost 42.6117 viol 0 hot 209
+[  2355s]    polish 0: cost 42.6117 hot 209
+[  2355s] DONE {'alpha': 0.1275, 'objective': 42.611712720492314, 'price_pct': 2.352855761498529, 'n_over': 209, 'V50': 0.12720632988435787, 'allowed': 209, 'verified_ok': True, 'failed_checks': [], 'method': 'elastic swap + polish', 'time_s': 410.3367540836334, 'file': 'plan_B_a128.npz'}
+[  2542s]  a=0.1250 K=205 it0: cost 43.2537 viol 4 hot 209
+[  2772s]  a=0.1250 K=205 it1: cost 43.3314 viol 5 hot 210
+[  3059s]  a=0.1250 K=205 it2: cost 43.5031 viol 4 hot 208
+[  3307s]  a=0.1250 K=205 it3: cost 43.3670 viol 4 hot 209
+[  3411s]  a=0.1250 K=205 it4: cost 43.5031 viol 4 hot 208
+[  3641s]  a=0.1250 K=205 it5: cost 43.3670 viol 4 hot 209
+[  3959s]  a=0.1250 K=205 it6: cost 43.5031 viol 4 hot 208
+[  4211s]  a=0.1250 K=205 it7: cost 43.3670 viol 4 hot 209
+[  4458s]  a=0.1250 K=205 it8: cost 43.5031 viol 4 hot 208
+[  4720s]  a=0.1250 K=205 it9: cost 43.3670 viol 4 hot 209
+[  4720s] FAIL {'alpha': 0.125, 'result': 'no plan found (heuristic failure, not a proof)', 'step': 0.0025, 'time_s': 2365.030348777771}
+[  4720s] finished
