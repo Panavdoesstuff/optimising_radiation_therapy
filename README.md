@@ -11,10 +11,13 @@ Course project (Optimisation). Choose beamlet intensities `x` so the tumour gets
   K-subset is solved as an exact LP and verified, so the optimum is certified with zero gap.
   A big-M MILP was tried first; its relaxation collapses to the all-beam LP, so it never closed the
   gap (kept as evidence: `results/logs/`, `results/bao_sweep.json`).
+- **Second round (`results/improve/`):** pruned enumeration certifies the best 3 and 4 beams on a finer
+  18° grid; a fine-angle (2°) local search finds uncertified plans at **−20.8%** (5 beams) and
+  **−28.2%** (6 beams) against the easy plan; the rectal limit is pushed to 12.75% on the good beams.
 - **Realism on fixed beams:** a rectal dose-volume limit (≤17% of the rectum above 50 Gy) by
   fix-and-resolve, bracketed by the LP, plus a provable floor on how far that limit can go.
 
-Findings and numbers: `results/SUMMARY.md`. Original brief: `BUILDMAP.md`.
+Findings and numbers: `results/SUMMARY.md` (first-round version: `results/SUMMARY_v1.md`).
 
 ## Install
     python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
@@ -38,6 +41,9 @@ Paths, prescriptions, weights and candidate grids are in `src/config.py`.
 | `scripts/03b_enumerate.py` | Exact beam selection: all 792 subsets for K=3..6 on the 36° grid, 4 workers, resumable | ~1.5 h |
 | `scripts/03c_dvc_floor.py` | Provable floor on the rectal V50 + limit sweep | ~2 h (budgeted) |
 | `scripts/03d_swap_final.py` | Swap search on the 18° grid (uncertified) + final plan (best 5 + cap + rectum limit) | ~30 min |
+| `scripts/06a_*.py`, `06b_*.py`, `06c_*.py` | Second round: 18° grid certification and swap search (06a), rectal-limit search and voxel floor (06b), fine-angle search (06c) | hours each |
+| `scripts/07a_enumerate18.py`, `07b_*.py`, `07c_*.py` | K=4 certificate on the 18° grid (07a), fine-angle round 2 (07b), rectal limit on the good beams (07c) | hours each |
+| `scripts/08_final_figures.py` | Re-verifies the headline plans, makes Fig 7–10 and `final_comparison.csv` | ~3 min |
 | `scripts/04_analysis.py` | Figures and tables from saved solutions | ~5 min |
 | `scripts/05_verify_all.py` | Re-verifies every saved plan on the full grid → `verification_summary.csv` | ~5 min |
 | `.venv/bin/python -m pytest tests` | Loader tests (TG119) + synthetic tests (row generation, MILP relaxation, voxel floor) | <10 s |
@@ -54,6 +60,8 @@ Paths, prescriptions, weights and candidate grids are in `src/config.py`.
 | `swap_final.json` | Swap search and final plan |
 | `dvc_floor.json` | Proven-forced rectal voxels and the limit sweep |
 | `fig1_dvh.png` … `fig6_rectum_distance.png` | DVHs, dose maps, fluence, price of realism, price of a beam budget, rectum vs PTV distance |
+| `fig7_beam_budget_final.png` … `fig10_organ_means.png`, `final_comparison.csv` | Final round: certified vs best-found beam budget, DVHs by structure, rectal-limit trade-off, organ mean doses, metrics table |
+| `improve/` | Second-round runs, one folder per search, each with a `REPORT.md` (index: `improve/README.md`) |
 | `model_summary.csv`, `dose_table.csv`, `before_after_body_cap.csv`, `verification_summary.csv` | Tables |
 | `no_body_cap/` | The earlier run without the normal-tissue cap (superseded; kept for the comparison) |
 | `logs/` | Raw logs, including the failed exact MILP attempts |
@@ -65,6 +73,9 @@ Paths, prescriptions, weights and candidate grids are in `src/config.py`.
     src/easy_lp.py     LP model builder, body-cap row generation
     src/hard_bao.py    beam selection: reduced matrices, exact LP with all-row generation, MILP, heuristics
     src/hard_dvc.py    dose-volume limit: fix-and-resolve, provable voxel dose floor
+    src/bao_search.py  pruned enumeration of beam subsets (cutoff on the reduced LP's bound)
+    src/fine_search.py fine-angle (2°) coordinate descent
+    src/dvc_improve.py rectal-limit search: elastic swap on a persistent LP
     src/solvers.py     MIP backend (scipy.milp or highspy)
     src/verify.py      independent full-grid feasibility / objective checks
     src/plots.py       figures
