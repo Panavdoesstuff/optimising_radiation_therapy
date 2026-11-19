@@ -1,0 +1,12 @@
+208 not attempted; 14 forced before
+4 witnesses
+    0 of 208 ruled out by the witness plans
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+    solve 1: voxel 206 bound 64.01 -> forced; open 207, forced 1 (553s)
+    solve 2: voxel 207 bound 62.62 -> forced; open 206, forced 2 (1221s)
+    solve 3: voxel 202 bound 63.58 -> forced; open 205, forced 3 (2842s)
+    solve 4: voxel 197 bound 61.47 -> forced; open 204, forced 4 (3406s)
+    solve 5: voxel 201 bound 62.34 -> forced; open 203, forced 5 (4157s)
+    solve 6: voxel 187 bound 62.57 -> forced; open 201, forced 6 (6216s)
+{'n_attempted_set': 208, 'n_forced_total': 20, 'V_floor': 0.012172854534388313, 'counts': {'not attempted': 201, 'forced': 6, 'not forced': 1}, 'n_solves': 6, 'time': 6216.8610780239105, 'n_witnesses': 4}

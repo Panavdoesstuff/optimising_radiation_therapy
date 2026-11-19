@@ -1,0 +1,87 @@
+[
+  {
+    "file": "plan_equi_a170.npz",
+    "alpha": 0.17,
+    "objective": 52.68288070262724,
+    "V50_n": 279,
+    "V50": 0.16981132075471697,
+    "ok": true,
+    "checks": {
+      "x >= 0": true,
+      "x <= x_max": true,
+      "T68 d>=rx68": true,
+      "T56 d>=rx56": true,
+      "d<=d_cap on T68,T56,R,B": true,
+      "d<=d_cap on all BODY voxels outside targets": true,
+      "DVC Rectum: <= 17% above 50.0 Gy": true
+    }
+  },
+  {
+    "file": "plan_stA_a160.npz",
+    "alpha": 0.16,
+    "objective": 54.11289808369217,
+    "V50_n": 262,
+    "V50": 0.1594643944004869,
+    "ok": true,
+    "checks": {
+      "x >= 0": true,
+      "x <= x_max": true,
+      "T68 d>=rx68": true,
+      "T56 d>=rx56": true,
+      "d<=d_cap on T68,T56,R,B": true,
+      "d<=d_cap on all BODY voxels outside targets": true,
+      "DVC Rectum: <= 16% above 50.0 Gy": true
+    }
+  },
+  {
+    "file": "plan_stB_a160.npz",
+    "alpha": 0.16,
+    "objective": 55.0088788365524,
+    "V50_n": 262,
+    "V50": 0.1594643944004869,
+    "ok": true,
+    "checks": {
+      "x >= 0": true,
+      "x <= x_max": true,
+      "T68 d>=rx68": true,
+      "T56 d>=rx56": true,
+      "d<=d_cap on T68,T56,R,B": true,
+      "d<=d_cap on all BODY voxels outside targets": true,
+      "DVC Rectum: <= 16% above 50.0 Gy": true
+    }
+  },
+  {
+    "file": "plan_stD_a158.npz",
+    "alpha": 0.158,
+    "objective": 54.37531364242452,
+    "V50_n": 259,
+    "V50": 0.15763846622032868,
+    "ok": true,
+    "checks": {
+      "x >= 0": true,
+      "x <= x_max": true,
+      "T68 d>=rx68": true,
+      "T56 d>=rx56": true,
+      "d<=d_cap on T68,T56,R,B": true,
+      "d<=d_cap on all BODY voxels outside targets": true,
+      "DVC Rectum: <= 16% above 50.0 Gy": true
+    }
+  },
+  {
+    "file": "plan_stE_a165.npz",
+    "alpha": 0.165,
+    "objective": 53.061554404761125,
+    "V50_n": 271,
+    "V50": 0.16494217894096166,
+    "ok": true,
+    "checks": {
+      "x >= 0": true,
+      "x <= x_max": true,
+      "T68 d>=rx68": true,
+      "T56 d>=rx56": true,
+      "d<=d_cap on T68,T56,R,B": true,
+      "d<=d_cap on all BODY voxels outside targets": true,
+      "DVC Rectum: <= 16% above 50.0 Gy": true
+    }
+  }
+]

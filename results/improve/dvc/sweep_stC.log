@@ -1,0 +1,15 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[    91s] easy LP: cost 52.53441633869798 V50 n 307
+[    91s] start plan hot 262
+[   653s] alpha 0.155 K=254 elastic 0: cost 55.7055 viol 7 sum_e 7.18 hot 260
+[   912s] alpha 0.155 K=254 elastic 1: cost 55.4070 viol 3 sum_e 1.29 hot 257
+[  1026s] alpha 0.155 K=254 elastic 2: cost 55.0744 viol 3 sum_e 1.58 hot 257
+[  1126s] alpha 0.155 K=254 elastic 3: cost 55.4070 viol 3 sum_e 1.29 hot 257
+[  1216s] alpha 0.155 K=254 elastic 4: cost 55.0744 viol 3 sum_e 1.58 hot 257
+[  1312s] alpha 0.155 K=254 elastic 5: cost 55.4070 viol 3 sum_e 1.29 hot 257
+Traceback (most recent call last):
+  File "/Users/panavrg/optimising_radiation_therapy/scripts/06b_dvc_sweep.py", line 82, in <module>
+    F = fillF(hot); bestr, bestmeth = None, ""
+              ^^^
+NameError: name 'hot' is not defined

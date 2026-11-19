@@ -1,0 +1,14 @@
+[
+  {
+    "alpha": 0.16,
+    "objective": 55.0088788365524,
+    "price_pct": 4.710174149268465,
+    "n_over": 262,
+    "V50": 0.1594643944004869,
+    "allowed": 262,
+    "verified_ok": true,
+    "method": "reweighted hinge + polish",
+    "time_s": 641.093649148941,
+    "stageA_lam": 5.0
+  }
+]

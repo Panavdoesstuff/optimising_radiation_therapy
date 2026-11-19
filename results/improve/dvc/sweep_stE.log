@@ -1,0 +1,8 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[   150s] easy LP: cost 52.53441633869798 V50 n 307
+[   150s] start plan hot 279
+[   526s] alpha 0.165 K=271 elastic 0: cost 53.0616 viol 0 sum_e 0.00 hot 271
+[   527s]    polish/swap 0: cost 53.0616 hot 271 free 271
+[   527s] DONE {'alpha': 0.165, 'objective': 53.061554404761125, 'price_pct': 1.0034147189617482, 'n_over': 271, 'V50': 0.16494217894096166, 'allowed': 271, 'verified_ok': True, 'method': 'reweighted hinge + polish', 'time_s': 527.3018758296967, 'stageA_lam': 1.0}
+[   527s] finished

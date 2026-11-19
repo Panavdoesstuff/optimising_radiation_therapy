@@ -1,0 +1,10 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[    51s] easy LP: cost 52.53441633869798 V50 n 307
+[   241s] alpha 0.150 K=246 elastic 0: cost 56.1386 viol 20 sum_e 24.81 hot 266
+[   424s] alpha 0.150 K=246 elastic 1: cost 56.4379 viol 19 sum_e 27.25 hot 262
+[   560s] alpha 0.150 K=246 elastic 2: cost 55.8193 viol 16 sum_e 26.46 hot 261
+[   694s] alpha 0.150 K=246 elastic 3: cost 56.0439 viol 14 sum_e 15.24 hot 259
+[   904s] alpha 0.150 K=246 elastic 4: cost 56.0879 viol 15 sum_e 20.58 hot 261
+[  1106s] alpha 0.150 K=246 elastic 5: cost 56.4425 viol 15 sum_e 17.66 hot 260
+[  1256s] alpha 0.150 K=246 elastic 6: cost 56.0879 viol 15 sum_e 20.58 hot 261

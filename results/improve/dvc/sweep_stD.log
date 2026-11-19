@@ -1,0 +1,21 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+[   151s] easy LP: cost 52.53441633869798 V50 n 307
+[   151s] start plan hot 262
+[   641s] alpha 0.158 K=259 elastic 0: cost 54.5428 viol 2 sum_e 0.80 hot 261
+[   750s] alpha 0.158 K=259 elastic 1: cost 54.7822 viol 4 sum_e 1.24 hot 263
+[   906s] alpha 0.158 K=259 elastic 2: cost 55.4714 viol 5 sum_e 0.64 hot 262
+[  1140s] alpha 0.158 K=259 elastic 3: cost 54.5814 viol 3 sum_e 1.25 hot 261
+[  1222s] alpha 0.158 K=259 elastic 4: cost 54.3753 viol 0 sum_e 0.00 hot 259
+[  1223s]    polish/swap 0: cost 54.3753 hot 259 free 259
+[  1223s] DONE {'alpha': 0.158, 'objective': 54.37531364242452, 'price_pct': 3.5041738959427526, 'n_over': 259, 'V50': 0.15763846622032868, 'allowed': 259, 'verified_ok': True, 'method': 'reweighted hinge + polish', 'time_s': 1223.308394908905, 'stageA_lam': 1.0}
+[  1336s] alpha 0.156 K=256 elastic 0: cost 55.1677 viol 2 sum_e 0.40 hot 258
+[  1436s] alpha 0.156 K=256 elastic 1: cost 55.0927 viol 2 sum_e 0.52 hot 258
+[  1501s] alpha 0.156 K=256 elastic 2: cost 54.8034 viol 2 sum_e 0.63 hot 258
+[  1615s] alpha 0.156 K=256 elastic 3: cost 54.7360 viol 1 sum_e 0.48 hot 257
+[  1707s] alpha 0.156 K=256 elastic 4: cost 54.7853 viol 2 sum_e 0.26 hot 258
+[  1775s] alpha 0.156 K=256 elastic 5: cost 54.7348 viol 2 sum_e 1.05 hot 258
+[  1836s] alpha 0.156 K=256 elastic 6: cost 54.7853 viol 2 sum_e 0.26 hot 258
+[  1902s] alpha 0.156 K=256 elastic 7: cost 54.7348 viol 2 sum_e 1.05 hot 258
+[  1902s] FAIL {'alpha': 0.156, 'result': 'no plan found by elastic swap search (not a proof)', 'time_s': 1901.5700709819794}
+[  1902s] finished

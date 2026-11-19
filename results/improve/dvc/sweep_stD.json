@@ -1,0 +1,19 @@
+[
+  {
+    "alpha": 0.158,
+    "objective": 54.37531364242452,
+    "price_pct": 3.5041738959427526,
+    "n_over": 259,
+    "V50": 0.15763846622032868,
+    "allowed": 259,
+    "verified_ok": true,
+    "method": "reweighted hinge + polish",
+    "time_s": 1223.308394908905,
+    "stageA_lam": 1.0
+  },
+  {
+    "alpha": 0.156,
+    "result": "no plan found by elastic swap search (not a proof)",
+    "time_s": 1901.5700709819794
+  }
+]
